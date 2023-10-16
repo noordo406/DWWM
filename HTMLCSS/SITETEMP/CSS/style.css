@@ -1,0 +1,59 @@
+html{
+    background: #396ba5 url("../logoent.png") center no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+h1{
+    color: black;
+    margin: auto auto;
+    border: 5px solid black;
+    width: fit-content;
+    background-color: white;
+    padding:0% 10px;
+    text-transform: uppercase;
+}
+
+h2{
+    color: #c0c0c0;
+    text-align: center;
+}
+
+h3{
+    color: rgb(192, 128, 64);
+    text-align: center;
+}
+
+h4{
+    text-decoration: underline;
+}
+
+p{
+    margin:0;
+    text-indent: 3ch;
+}
+
+footer{
+    text-align: center;
+    border-top: 2px solid black;
+    padding-top: 8px;
+}
+
+.case{
+    background-color: #008080C0;
+    border: 5px double black;
+    margin-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.naked{
+    margin: 15px 3ch;
+    text-indent: 3ch;
+}
+
+.bgimg{
+    position: fixed;
+    margin:auto;
+    align-self: center;
+}

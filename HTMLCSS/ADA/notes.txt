@@ -1,0 +1,34 @@
+langage programmation orientée objet
+inspiré du pascal
+dvpt commence en 77, équipe dirigée par Jean Ichbiah, demande du dpt def us d'un langage unique pour tt ses systemes embarqués
+revision 88-95 : ada devient 1er langage oo standardisé au niveau international (iso), 3 ans avant c++
+amendement en 2005, revision en 2012
+
+ada lovelace, anglaise, realisatrice du premier programme informatique
+ada byron, 1815-1852, passionée de maths (surnommée princesse des parallélogrammes par son père)
+se marie avec comte william king 1835 et devient comtesse de lovelace
+1842 -> tourne son travail vers la machine analytique de charles babbage, traduit fr->en d'un article de journal suisse, puis en y ajoutant des notes suite a la recommandation de babbage
+7 notes, A-G, description d'algorithmes. G, calcul de nombres de bernoulli = premier programme informatique avec en plus une boucle conditionnelle
+meurt en 1852 d'un cancer de l'utérus, à l'age de 36 ans
+tombe dans l'oubli jusqu'a l'avenement de l'informatique, notamment avec le langage ada
+
+haut niveau de fiabilité et securité
+systèmes embarqués et systemes en temps réel (precision ms/µs)
+compilateur libre gnat (1992)
+strict, standardisé, typage statique, typage fort
+technologies de pointe, automobile, ferroviaire, aeronautique, aerospatial
+
+with Ada.Text_IO
+
+procedure Hello is
+begin
+	Ada.Text_IO.Put_Line("Hello, world!");
+end Hello;
+
+
+
+
+https://upload.wikimedia.org/wikipedia/commons/0/0f/Ada_lovelace.jpg
+https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Ada_horizon_green_logo_with_slogan.svg/1024px-Ada_horizon_green_logo_with_slogan.svg.png
+https://fr.wikipedia.org/wiki/Ada_(langage)
+https://www.adalog.fr/fr/langage_ada.html

@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root {
+  --color-blue: #396ba5;
+  --color-darkblue: #0B256B;
+  --color-gray: #D6D6CE;
+}
+body {
+  background: var(--color-blue) url(img/logo.png) center no-repeat;
+  background-attachment: fixed;
+  background-size: 50vh;
+}
+.onglet {
+  user-select: none;
+  overflow: hidden;
+  margin-right: 3px;
+  min-width: none;
+  max-width: 200px;
+}
+.onglet div {
+  display: flex;
+  min-width: none;
+  align-items: center;
+  background-color: var(--color-gray);
+  border-top: solid 2px white;
+  border-left: solid 2px white;
+  border-bottom: solid 2px gray;
+  border-right: solid 2px gray;
+  width: 100%;
+  height: 100%;
+}
+.onglet div img {
+  margin: auto 3px;
+  height: 20px;
+}
+.onglet div span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-right: 3px;
+}
+.onglet input[type="checkbox"] {
+  display: none;
+}
+.onglet input[type="checkbox"]:active + div,
+.onglet input[type="checkbox"]:checked + div {
+  border-top: solid 2px gray;
+  border-left: solid 2px gray;
+  border-bottom: solid 2px white;
+  border-right: solid 2px white;
+  background-color: #F0F0F0;
+  font-weight: bold;
+}
+.menudemarrer {
+  position: absolute;
+  bottom: 40px;
+  left: 10px;
+  height: 240px;
+  width: 200px;
+  background: var(--color-gray);
+  border-top: solid 2px white;
+  border-left: solid 2px white;
+  border-bottom: solid 2px gray;
+  border-right: solid 2px gray;
+  z-index: 100;
+  display: none;
+}
+.menudemarrer aside {
+  height: 100%;
+  width: 22px;
+  background: linear-gradient(to top, blue, black);
+  color: white;
+}
+.menudemarrer aside p {
+  position: absolute;
+  bottom: -20px;
+  height: 22px;
+  width: 400px;
+  transform-origin: 0 0;
+  transform: rotate(-90deg);
+}
+.menudemarrer .demarrercontainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.menudemarrer .demarrercontainer .demarrerdiv {
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.menudemarrer .demarrercontainer div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.menudemarrer .demarrercontainer div img {
+  margin: 4px;
+  width: 32px;
+}
+.menudemarrer .demarrercontainer input[type="checkbox"] {
+  display: none;
+}
+.menudemarrer .demarrercontainer input[type="checkbox"]:active + div,
+.menudemarrer .demarrercontainer input[type="checkbox"]:checked + div,
+.menudemarrer .demarrercontainer input[type="checkbox"]:hover + div {
+  background-color: #010082;
+  color: white;
+}
+.fenetre {
+  position: absolute;
+  background-color: var(--color-gray);
+  border-top: solid 2px white;
+  border-left: solid 2px white;
+  border-bottom: solid 2px gray;
+  border-right: solid 2px gray;
+}
+.fenetrehead {
+  width: 100%;
+  background: linear-gradient(to right, var(--color-darkblue), #A6CAF0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.fenetretitre {
+  color: white;
+  width: 100%;
+  height: 24px;
+  padding-left: 4px;
+}
+.fenetreclose {
+  background-color: var(--color-gray);
+  font-weight: bold;
+  height: 20px;
+  min-width: 20px;
+  border-top: solid 2px white;
+  border-left: solid 2px white;
+  border-bottom: solid 2px gray;
+  border-right: solid 2px gray;
+  margin: 2px;
+}
+.fenetreclose:active {
+  border-top: solid 2px gray;
+  border-left: solid 2px gray;
+  border-bottom: solid 2px white;
+  border-right: solid 2px white;
+}
+#f1 {
+  height: 200px;
+  width: 300px;
+}
+#subf1 {
+  margin: 5px;
+  margin-top: 50px;
+  height: calc(100% - 24px - 10px - 50px);
+  width: calc(100% - 10px);
+}
+footer {
+  background-color: var(--color-gray);
+  height: 40px;
+  width: 100vw;
+  overflow: hidden;
+  bottom: 0;
+  position: absolute;
+  display: flex;
+  flex-wrap: nowrap;
+}
+footer .demarrer {
+  user-select: none;
+  margin: 6px 3px;
+  min-width: fit-content;
+}
+footer .demarrer div {
+  display: flex;
+  height: 31px;
+  width: fit-content;
+  align-items: center;
+  padding: 2px 4px;
+  background: var(--color-gray);
+  border-top: solid 2px white;
+  border-left: solid 2px white;
+  border-bottom: solid 2px gray;
+  border-right: solid 2px gray;
+}
+footer .demarrer div img {
+  height: 24px;
+}
+footer .demarrer div span {
+  margin: 0 4px;
+  font-weight: bold;
+  font-size: 18px;
+}
+footer .demarrer input[type="checkbox"] {
+  display: none;
+}
+footer .demarrer input[type="checkbox"]:active + div,
+footer .demarrer input[type="checkbox"]:checked + div {
+  border-top: solid 2px gray;
+  border-left: solid 2px gray;
+  border-bottom: solid 2px white;
+  border-right: solid 2px white;
+  background-color: #F0F0F0;
+  font-weight: bold;
+}
+footer div.separator0 {
+  height: 0;
+  width: 100vw;
+  position: absolute;
+  top: 2px;
+  border: solid 1px white;
+}
+footer div.separator1 {
+  position: relative;
+  margin: 6px 3px 3px 0;
+  border-left: solid 2px gray;
+  border-right: solid 2px white;
+}
+footer div.separator2 {
+  position: relative;
+  min-width: 4px;
+  margin: 12px 3px 9px 0;
+  border-top: solid 2px white;
+  border-left: solid 2px white;
+  border-bottom: solid 2px gray;
+  border-right: solid 2px gray;
+}
+footer div.ongletcontainer {
+  display: flex;
+  overflow: hidden;
+  margin: 6px 3px 3px 0;
+  width: 100%;
+}
+footer div.ongletoverflow {
+  display: none;
+}
+footer div.info {
+  user-select: none;
+  width: fit-content;
+  margin: 6px 3px 3px 0;
+  padding: 3px;
+  border-top: solid 2px darkgray;
+  border-left: solid 2px darkgray;
+  border-bottom: solid 2px white;
+  border-right: solid 2px white;
+}
+footer div .langue {
+  background-color: darkblue;
+  color: white;
+  padding: 0 2px;
+  margin-right: 3px;
+}
+@media screen and (max-width: 1000px) {
+  .onglet:nth-of-type(5) {
+    display: none;
+  }
+  footer div.ongletoverflow {
+    width: 20px;
+    min-width: 20px;
+    text-align: center;
+    font-size: 20px;
+    display: block;
+  }
+}
+@media screen and (max-width: 768px) {
+  .onglet:nth-of-type(4) {
+    display: none;
+  }
+}
+@media screen and (max-width: 560px) {
+  body {
+    background-size: 40vh;
+  }
+  .onglet:nth-of-type(3) {
+    display: none;
+  }
+}
+@media screen and (max-width: 360px) {
+  body {
+    background-size: 30vh;
+  }
+  .onglet:nth-of-type(2) {
+    display: none;
+  }
+}

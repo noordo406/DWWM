@@ -1,0 +1,62 @@
+body{
+    background-color: #ccc;
+}
+
+div {
+    border: solid 2px #00000050;
+}
+
+.box {
+    background-color: skyblue;
+    display: flex;
+    flex-flow: column;
+}
+
+.elem {
+    margin: 1%;
+}
+
+.e1 {
+    background-color: orange;
+    height: 200px;
+}
+
+.e2 {
+    height: 500px;
+    border: none;
+    display: flex;
+    flex-flow: row;
+}
+
+.e21 {
+    width: 50%;
+    margin-right: 1%;
+    border: none;
+    display: flex;
+    flex-flow: column;
+}
+
+.elem21 {
+    background-color: lightblue;
+    margin: 1% 0;
+    height: 100%;
+}
+
+.e22 {
+    width: 150%;
+    height: 100%;
+    border: none;
+    display: flex;
+    flex-flow: column;
+}
+
+.elem22 {
+    background-color: cyan;
+    margin: 1% 0;
+    height: 100%;
+}
+
+.e3 {
+    background-color: lime;
+    height: 200px;
+}

@@ -1,0 +1,61 @@
+*{
+    background: radial-gradient(circle at bottom, white, violet);
+    height: 100%;
+    overflow: hidden;
+}
+
+#rectangle{
+    fill: url(#gradient);
+}
+
+.stop1 {
+    stop-color: blue;
+}
+.stop2 {
+    stop-color: black; stop-opacity: 0;
+}
+.stop3 {
+    stop-color: lime;
+}
+
+svg{
+    position: absolute;
+    left: calc(50% - 300px);
+    top: calc(50% - 200px);
+    width: 600px;
+    height: 400px;
+}
+
+.spinner{
+}
+
+.c1{
+    stroke:black;
+    animation: move1 2s ease-in-out alternate infinite, spin 4s ease-in-out infinite;
+    stroke-width: 10;
+    stroke-dasharray: calc(pi * 300px);
+    fill:none;
+}
+
+@keyframes spin {
+    0%{
+        stroke-dashoffset: calc(pi * 0px);
+    }
+    50%{
+        stroke-dashoffset: calc(pi * 600px);
+    }
+    100%{
+        stroke-dashoffset: calc(pi * 1200px);
+    }
+}
+
+@keyframes move1 {
+    from{
+        transform: translate(0px);
+        filter: drop-shadow(200px 0 cyan);
+    }
+    to{
+        transform: translate(200px);
+        filter: drop-shadow(-200px 0 cyan);
+    }
+}
