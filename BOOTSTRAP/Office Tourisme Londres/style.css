@@ -1,0 +1,17 @@
+:root {
+    --bs-primary-rgb: 127,0,0;
+    --bs-primary: #7F0000;
+}
+
+.global-container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+img {
+    object-fit: cover;
+}
+
+.border-primary {
+    border-color: var(--bs-primary) !important;
+}
