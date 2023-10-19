@@ -11,15 +11,53 @@
 
 <body>
 
-    <div class="fenetre" id="f1">
+    <div class="fenetre f1">
         <div class="fenetrehead">
-            <span class="fenetretitre">Titre</span>
-            <button class="fenetreclose"><svg height="16" width="16">
+            <span class="fenetretitre">Mon Profil</span>
+            <button class="fenetreclose">
+                <svg height="16" width="16">
                     <line x1="3" y1="3" x2="13" y2="13" stroke="black" stroke-width="2" />
                     <line x1="13" y1="3" x2="3" y2="13" stroke="black" stroke-width="2" />
                 </svg></button>
         </div>
-        <div class="fenetre" id="subf1"></div>
+
+        <div class="f1ongletcontainer">
+            <label class="f1onglet">
+                <input type="checkbox">
+                <div>Compétences</div>
+            </label>
+            <label class="f1onglet">
+                <input type="checkbox">
+                <div>A propos de moi</div>
+            </label>
+            <label class="f1onglet">
+                <input type="checkbox" checked>
+                <div>Ce site web</div>
+            </label>
+        </div>
+        <div class="fenetre subf1">
+            <div class="cesiteweb">
+                <div class="preview">
+                    <img src="img/ecran1.png" alt=""  id="preview1">
+                    <img src="img/ecran2.png" alt=""  id="preview2">
+                    <img src="img/ecran3.png" alt=""  id="preview3">
+                </div>
+                <div class="content">
+                    <p class="content1">dadada
+                        <ul>
+                            <li>oui</li>
+                            <li>oui</li>
+                        </ul>
+                    </p>
+                    <p class="content2"></p>
+                    <p class="content3"></p>
+                </div>
+            </div>
+        </div>
+        
+        <button class="f1button" onclick="">Mon CV (PDF)</button>
+
+        
     </div>
 
     <div class="menudemarrer">
@@ -29,23 +67,23 @@
         <div class="demarrercontainer">
             <label class="demarrerdiv">
                 <input type="checkbox">
-                <div><img src="./img/logo24hd.png" alt="">Redémarrer</div>
+                <div><img src="./img/redemarrer.png" alt="">Redémarrer</div>
             </label>
             <label class="demarrerdiv">
                 <input type="checkbox">
-                <div><img src="./img/logo24hd.png" alt="">Réalisations</div>
+                <div><img src="./img/realisations.png" alt="">Réalisations</div>
             </label>
             <label class="demarrerdiv">
                 <input type="checkbox">
-                <div><img src="./img/logo24hd.png" alt="">Mon Profil</div>
+                <div><img src="./img/profile24.png" alt="">Mon Profil</div>
             </label>
             <label class="demarrerdiv">
                 <input type="checkbox">
-                <div><img src="./img/logo24hd.png" alt="">Contact</div>
+                <div><img src="./img/contact.png" alt="">Contact</div>
             </label>
             <label class="demarrerdiv">
                 <input type="checkbox">
-                <div><img src="./img/logo24hd.png" alt="">Fond d'écran</div>
+                <div><img src="./img/fonddecran.png" alt="">Fond d'écran</div>
             </label>
         </div>
     </div>
@@ -62,7 +100,7 @@
         <div class="ongletcontainer">
             <label class="onglet">
                 <input type="checkbox">
-                <div><img src="./img/logo24hd.png" alt="" draggable="false"><span>blablablablablablablablablabla</span>
+                <div><img src="./img/profile16.png" alt="" draggable="false"><span>Mon Profil</span>
                 </div>
             </label>
             <label class="onglet">

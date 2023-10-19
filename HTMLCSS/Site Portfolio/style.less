@@ -8,13 +8,14 @@
 :root {
     --color-blue: #396ba5;
     --color-darkblue: #0B256B;
+    --color-teal: #008080;
     --color-gray: #D6D6CE;
   }
 
 body{
     background: var(--color-blue) url(./img/logo.png) center no-repeat;
     background-attachment: fixed;
-    background-size: 50vh;
+    background-size: 40vh;
 }
 
 
@@ -23,7 +24,7 @@ body{
     overflow: hidden;
     margin-right: 3px;
     min-width: none;
-    max-width: 200px;
+    width: 200px;
     div {
         display: flex;
         min-width: none;
@@ -43,7 +44,7 @@ body{
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
-            margin-right: 3px
+            margin-right: 6px
         };
     }
     input[type="checkbox"] {
@@ -71,13 +72,14 @@ body{
     border-bottom: solid 2px gray;
     border-right: solid 2px gray;
     z-index: 100;
-    // display: flex;
     display: none;
+    display: flex;
     aside {
         height: 100%;
         width: 22px;
         background: linear-gradient(to top, blue, black);
         color: white;
+        user-select: none;
         p {
             position: absolute;
             bottom: -20px;
@@ -156,15 +158,90 @@ body{
     }
 }
 
-#f1 {
-    height: 200px;
-    width: 300px;
+.f1 {
+    height: 400px;
+    width: 400px;
 }
-#subf1 {
-    margin: 5px;
-    margin-top: 50px;
-    height: calc(100% - 24px - 10px - 50px);
+.f1ongletcontainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    margin-top: 10px;
+    margin-left: 5px;
     width: calc(100% - 10px);
+    position: relative;
+}
+.f1onglet {
+    user-select: none;
+    div {
+        padding: 1px 5px 2px;
+        margin-left: -2px;
+        background-color: #B8B4AC;
+        border-top: solid 2px white;
+        border-right: solid 2px gray; 
+        border-left: solid 2px white;
+        position: relative;
+    }
+    &:nth-last-of-type(1) div {
+        margin-left: 0px;
+    }
+    input[type="checkbox"] {
+        display: none;
+    }
+    input[type="checkbox"]:active+div, input[type="checkbox"]:checked+div{
+        border-top: solid 2px white;
+        background-color: var(--color-gray);
+        z-index: 1;
+    }
+}
+.subf1 {
+    margin: 5px;
+    margin-top: -2px;
+    height: calc(100% - 24px - 38px - 30px);
+    width: calc(100% - 10px);
+    position: relative;
+    div {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    .preview {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        img {
+            max-width: 128px;
+            margin-top: 24px;
+        }
+        #preview2, #preview3 {
+            display: none;
+        }
+    }
+    .content {
+        background-color: blue;
+        width: 50%;
+        padding-top: 24px;
+    }
+}
+
+.f1button {
+    position: relative;
+    margin-right: 5px;
+    margin-left:auto;
+    display: block;
+    padding: 2px 4px;
+    background-color: var(--color-gray);
+    border-top: solid 2px white;
+    border-left: solid 2px white;
+    border-bottom: solid 2px gray;
+    border-right: solid 2px gray;
+    &:active {
+        border-top: solid 2px gray;
+        border-left: solid 2px gray;
+        border-bottom: solid 2px white;
+        border-right: solid 2px white;
+    }
 }
 
 
@@ -290,7 +367,7 @@ footer{
 
 @media screen and (max-width:560px) {
     body {
-        background-size: 40vh;
+        background-size: 30vh;
     }
     .onglet {
         &:nth-of-type(3){
@@ -301,7 +378,7 @@ footer{
 
 @media screen and (max-width:360px) {
     body {
-        background-size: 30vh;
+        background-size: 25vh;
     }
     .onglet:nth-of-type(2) {
         display: none;

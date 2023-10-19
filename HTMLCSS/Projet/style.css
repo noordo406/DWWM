@@ -1,6 +1,6 @@
 :root {
   --main-blue: #0050B0;
-  --light-blue: #00a0E0;
+  --light-blue: #00A0E0;
   --dark-blue: #002080;
 }
 * {
@@ -29,6 +29,13 @@ nav {
   background-color: var(--light-blue);
   border: none;
   padding: 10px;
+}
+.navbtn:nth-of-type(1) {
+  font-weight: bold;
+  font-size: 48px;
+}
+.navbtn:nth-of-type(1) div {
+  display: flex;
 }
 .navbtn:hover {
   background-color: var(--main-blue);
@@ -68,9 +75,96 @@ nav {
   white-space: nowrap;
   text-align: end;
 }
+.sect1 div.sect1search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sect1 div.sect1search .search {
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+.sect1 div.sect1search .searchgeneral {
+  height: 200px;
+  width: 80%;
+  border-radius: 25px;
+  background-color: white;
+  margin-bottom: 20px;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+}
+.sect1 div.sect1search .searchgeneral label {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.sect1 div.sect1search .searchgeneral .searchbar {
+  width: 100%;
+  border: none;
+  background-color: #eee;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.sect1 div.sect1search .searchgeneral .submitsearch {
+  font-size: 24px;
+  background-color: var(--light-blue);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.sect1 div.sect1search .searchgeneral .submitsearch:hover {
+  background-color: #00C0E0;
+  cursor: pointer;
+  transition: 400ms ease;
+}
+.sect1 div.sect1search .searchregion {
+  height: 108px;
+  border-radius: 54px;
+  background-color: var(--light-blue);
+  color: white;
+  font-size: 2em;
+  border: none;
+  padding: 0 20px;
+}
+.sect1 div.sect1search .searchregion:hover {
+  background-color: #00C0E0;
+  cursor: pointer;
+  transition: 400ms ease;
+}
+.sect1 div.sect1search .searchregion img {
+  height: 60px;
+  width: 60px;
+  margin: 0 20px 0 0;
+}
 .sect1 img {
   width: 50vw;
   object-fit: cover;
+}
+.sectmobile {
+  display: none;
+  flex-direction: column;
+}
+.sectmobile .mobilesearchregion {
+  display: flex;
+  align-items: center;
+  background-color: var(--dark-blue);
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 20px;
+  font-size: 40px;
+  text-decoration: none;
+}
+.sectmobile .mobilesearchregion img {
+  height: 100px;
+  width: 100px;
+  margin: 0 20px 0 0;
 }
 footer {
   position: absolute;
@@ -88,11 +182,15 @@ footer .footerelem {
   padding: 20px;
   font-size: 24px;
 }
-@media screen and (max-width: 768px) {
+footer .footerelem:nth-of-type(1) {
+  font-size: 32px;
+  font-weight: bold;
+}
+@media screen and (max-width: 1100px) {
   .sect1 div {
     width: 100%;
   }
-  .sect1 div.sect1preview {
+  .sect1 div.sect1search {
     display: none;
   }
   .sect1 div.sect1image {
@@ -102,5 +200,40 @@ footer .footerelem {
   }
   .sect1 img {
     width: 100vw;
+  }
+  .sectmobile {
+    display: flex;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sect1 {
+    height: 400px;
+  }
+  .sect1 div.sect1image h1 {
+    font-size: 108px;
+  }
+  .sect1 div.sect1image h2 {
+    font-size: 24px;
+  }
+  .sectmobile .mobilesearchregion {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .sect1 {
+    height: 300px;
+  }
+  .sect1 div.sect1image h1 {
+    font-size: 80px;
+  }
+  .sect1 div.sect1image h2 {
+    font-size: 18px;
+  }
+  .sectmobile .mobilesearchregion {
+    font-size: 28px;
+  }
+  .sectmobile .mobilesearchregion img {
+    height: 80px;
+    width: 80px;
   }
 }
