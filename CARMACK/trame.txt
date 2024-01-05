@@ -1,0 +1,54 @@
+introduction :
+programmeur americain, ingénieur en informatique, développeur de jeux vidéos
+cofondateur de la société id software
+connu pour ses innovations techniques dans le domaine des graphismes dans les jeux vidéos
+travaillé sur les séries wolfenstein, doom et quake
+
+- vie personnelle -
+chronologie :
+1970 naissance
+porte un interêt pour les ordinateurs dès son jeune âge
+introduction aux jv via space invaders, pacman, et nintendo
+
+1990 employé à softdisk pour travailler sur des magazines sur diskette
+rencontre john romero, adrian carmack, tom hall, avec qui il va fonder id software en 91
+développe (surtout les moteurs graphiques) commander keen, wolfenstein 3d, doom 1 et 2, quake 1 2 3, doom 3 et rage
+
+2008 investit dans armadillo aerospace (aerospatial)
+
+2013 rejoint oculus en tant que directeur technique, et démissionne de id software
+
+2019 devient directeur technique consultant pour consacrer plus de temps dans le domaine de ia generale
+
+2022 fonde keen technologies et quitte oculus
+
+anecdotes:
+10h/6j de travail intensif, qui l'aide à rester concentré, "working more gets more done"
+mais peu compatible avec le travail en groupe (ex developpement de quake, travail chez meta)
+fan de ferraris, en a donné une au vainqueur d'un tournoi de quake en 1997
+marié en 2000 avec katherine anna kang (rencontrée à une convention dédiée à quake) avec qui il a eu 2 enfants. divorce en 2022
+cambriolé une école à 14 ans avec de la thermite pour voler des apple II. 1an en etablissement pénitaire pour mineurs
+
+- travail -
+inventé ou popularisé des techniques de programmation de graphismes
+commander keen, sidescroller sur pc à une époque ou le pc était en retard sur les consoles
+pour économiser du temps de travail, développe adaptive tile refresh (ne redessine que les blocs qui sont changés)
+
+premiers jeux 3d : hovertank, catacomb (texture mapping), wolfenstein 3d (raycasting), pas de simulation de la hauteur, sprites 2d pour les entités
+doom : espace 3d limité, textures de sol et plafonds, murs non orthogonaux, tailles entité infinie, pas d'étages superposés, partition binaire de l'espace, support multijoueur
+apparté build engine : simulation d'étages par téléporteurs silencieux, destruction d'environnement, visée verticale manuelle
+quake : espace et modèles 3d sans carte graphique, support acceleration 3d via opengl, cache de surface, musique non-midi
+moteur graphique utilisé comme base pour le moteur d'autres jeux : half-life (goldsrc), unreal (unreal engine), call of duty (iw engine)
+quake 2 et 3: iteration du moteur
+doom 3 : carmack's reverse (rendu d'ombres dynamiques)
+
+ex: racine carré inverse rapide q3 (approximation 4x plus rapide)
+afficher ex avec commentaires originaux
+réel X
+X2 = X/2
+X converti en int
+shift 1 bit vers la droite
+0x5F3759DF - X
+X converti en réel
+
+X * (3/2 - X2 * X²) approximation de newton (precision)
