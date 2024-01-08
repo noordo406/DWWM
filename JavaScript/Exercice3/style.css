@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.boutonAjouter {
+  background-color: lime;
+  border: solid 2px lime;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+}
+.boutonModifier {
+  background-color: yellow;
+  border: 2px solid black;
+  margin: 2px;
+  padding: 2px;
+}
+.boutonEffacer {
+  background-color: red;
+  border: 2px solid black;
+  margin: 2px;
+  padding: 2px;
+}

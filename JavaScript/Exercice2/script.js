@@ -1,11 +1,16 @@
-var menuActive = 0;
-const btn = document.querySelector("#menuBtn");
-btn.addEventListener("click", () => {
-    if (menuActive) {
-        menuActive = 0;
-        document.querySelector('.menu').style.marginLeft = "-200px";
+let menu = document.querySelector('.menu');
+let main = document.querySelector('.main');
+function toggleMenu() {
+    if (menu.style.marginLeft === "0px") {
+        menu.style.marginLeft = "-200px";
     } else {
-        menuActive = 1;
-        document.querySelector('.menu').style.marginLeft = "0";
+        menu.style.marginLeft = "0px";
     }
-});
+};
+
+let titreElement = document.getElementById('titre');
+titreElement.innerHTML = "Contenu généré dynamiquement";
+
+let nouveauParagraphe = document.createElement('p');
+nouveauParagraphe.textContent = "Paragraphe généré dynamiquement";
+document.body.appendChild(nouveauParagraphe);
