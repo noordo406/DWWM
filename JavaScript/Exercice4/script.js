@@ -5,31 +5,14 @@ const pi = 3.141592653589793
 var floatList = [];
 var floatIndex = 0;
 var isFloat = 0;
+var startingZero = 0;
 input.value = "";
 for (let button of buttonAll) {
     button.setAttribute("onclick", "addInput(\"" + button.textContent + "\")");
 }
 
 function addInput(char) {
-    if (char == "c") {
-        input.value = "";
-        floatList = [];
-        floatIndex = 0;
-        isFloat = 0;
-    } else if (char == "<") {
-        if (input.value != "") {
-            var lastChar = input.value.slice(-1);
-            input.value = input.value.slice(0, -1);
-            if (lastChar == "." | lastChar == 'π') {
-                isFloat = 0;
-            } else if (operateurs.includes(lastChar)) {
-                if (!(lastChar == "-" & input.value != "" & !operateurs.includes(input.value.slice(-1)))) {
-                    floatIndex--;
-                    isFloat = floatList[floatIndex];
-                }
-            }
-        }
-    } else if (char == "=") {
+    if (char == "=") {
         if (!operateurs.includes(input.value.slice(-1)) & input.value != "") {
             const resultat = document.createElement("span");
             resultat.textContent = eval(input.value.replace("^", "**").replace("π", pi));
@@ -43,11 +26,38 @@ function addInput(char) {
             floatIndex = 0;
             isFloat = 0;
         }
+    } else if (char == "<") {
+        if (input.value != "") {
+            var lastChar = input.value.slice(-1);
+            input.value = input.value.slice(0, -1);
+            if (startingZero) {
+                startingZero = 0;
+            }
+            if (lastChar == ".") {
+                isFloat = 0;
+                startingZero = 1;
+            }
+            if (lastChar == 'π') {
+                isFloat = 0;
+            }
+            if (operateurs.includes(lastChar)) {
+                if (!(lastChar == "-" & input.value != "" & !operateurs.includes(input.value.slice(-1)))) {
+                    floatIndex--;
+                    isFloat = floatList[floatIndex];
+                }
+            }
+        }
+    } else if (char == "c") {
+        input.value = "";
+        floatList = [];
+        floatIndex = 0;
+        isFloat = 0;
     } else if (operateurs.includes(char)) {
         if ((!operateurs.includes(input.value.slice(-1)) & input.value != "") | char == "-" & input.value.slice(-1) != "-") {
             input.value += char;
             floatList[floatIndex] = isFloat;
             isFloat = 0;
+            startingZero=0;
             floatIndex++;
         }
     } else if (char == ".") {
@@ -56,6 +66,7 @@ function addInput(char) {
                 input.value += "0";
             }
             isFloat = 1;
+            startingZero=0;
             input.value += char;
         }
     } else if (char == "π") {
@@ -64,7 +75,13 @@ function addInput(char) {
             input.value += char;
         }
     } else {
-        if (input.value.slice(-1) != "π") {
+        if (char == "0") {
+            if (operateurs.includes(input.value.slice(-1)) | input.value == "") {
+                startingZero=1;
+                input.value += char;
+            }
+        }
+        if (input.value.slice(-1) != "π" & !startingZero) {
             input.value += char;
         }
     }
