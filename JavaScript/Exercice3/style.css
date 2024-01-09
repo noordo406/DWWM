@@ -6,6 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: background-color 300ms ease;
 }
 #darktoggle {
   position: absolute;
@@ -14,6 +15,7 @@ body {
 }
 h1 {
   font-size: 48px;
+  transition: color 300ms ease;
 }
 .boutonAjouter {
   background-color: lime;
@@ -34,4 +36,7 @@ h1 {
   border: 2px solid black;
   margin: 2px;
   padding: 2px;
+}
+span {
+  transition: color 300ms ease;
 }

@@ -2,10 +2,10 @@ var tacheId = 0;
 var darkMode = 0;
 
 function modifierTache(id) {
-    const tache = document.querySelector('.tache' + id).firstChild.textContent;
+    const tache = document.querySelector('.tache' + id).querySelector("span").textContent;
     let modif = prompt("Modifier la tâche", tache);
     if (modif != null && modif != "") {
-        document.querySelector('.tache' + id).firstChild.textContent = modif;
+        document.querySelector('.tache' + id).querySelector("span").textContent = modif;
     }
 }
 function supprimerTache(id) {
@@ -36,6 +36,7 @@ function ajouterTache() {
         conteneur.classList.add("tache" + tacheId);
         tacheId++;
         document.querySelector("#listeTaches").appendChild(conteneur);
+        document.querySelector('#nouvelleTache').value = "";
     }
 }
 
