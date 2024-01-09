@@ -1,4 +1,5 @@
 var tacheId = 0;
+var darkMode = 0;
 
 function modifierTache(id) {
     const tache = document.querySelector('.tache' + id).firstChild.textContent;
@@ -35,5 +36,19 @@ function ajouterTache() {
         conteneur.classList.add("tache" + tacheId);
         tacheId++;
         document.querySelector("#listeTaches").appendChild(conteneur);
+    }
+}
+
+function toggleDark(){
+    var body = document.querySelector("body");
+    var text = document.querySelector("*");
+    if (!darkMode) {
+        darkMode=1;
+        body.style.backgroundColor = "#333";
+        text.style.color = "white";
+    } else {
+        darkMode=0;
+        body.style.backgroundColor = "white";
+        text.style.color = "black";
     }
 }
