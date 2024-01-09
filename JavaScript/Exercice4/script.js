@@ -64,6 +64,8 @@ function addInput(char) {
             input.value += char;
         }
     } else {
-        input.value += char;
+        if (input.value.slice(-1) != "π") {
+            input.value += char;
+        }
     }
 }
