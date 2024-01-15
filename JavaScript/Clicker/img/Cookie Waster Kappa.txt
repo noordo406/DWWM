@@ -1,0 +1,2886 @@
+Let's make a game!
+	-Cookie Waster
+	-by LunaticLunarian
+	-created on 22/04/2014
+	-last updated on 11/01/2015
+	-version Kappa 1C
+
+Settings :
+	-prices increase by 110%
+	-selling gives back 60%
+	-resources are visible by default
+	-clickables are hidden by default
+	-buildings are hidden by default
+	-upgrades are hidden by default
+	-custom stylesheet : http://pastebin.com/raw.php?i=QGZ6h1Us
+	-show log
+	-text color : #000000
+
+Resources :
+	*Menu1
+	-displayed as ------Resources------
+	*Points
+	-named point|points
+	-displayed as You currently have %a %r.
+	*Muffins
+	-named muffin|muffins
+	-displayed as You currently have %a %r.
+	*Rainbows
+	-named rainbow coin|rainbow coins
+	-displayed as You currently have %a %r.
+	*Energy
+	-named energy
+	-displayed as You currently are at %a% of your maximum energy.
+	*Potential
+	-named potential
+	-abstract
+	-starts at 100.5
+	*NukeEnd
+	-named nuclear launch code|nuclear launch codes
+	-displayed as You currently have %a %r.
+	*NovaEnd
+	-named supernova material
+	-displayed as You currently have %a %r.
+	*AntiEnd
+	-named antimatter explosive|antimatter explosives
+	-displayed as You currently have %a %r.
+
+	*Menu2
+	-displayed as ------Stats------
+	*Cookies
+	-named cookie wasted|cookies wasted
+	-displayed as You wasted a total of %a cookie%s.
+	*MuffinsAT
+	-named all-time muffin|all-time muffins
+	-displayed as You got a total of %a muffin%s.
+	*RainbowsAT
+	-named all-time rainbow coin|all-time rainbow coins
+	-displayed as You got a total of %a rainbow coin%s.
+	*Building
+	-named building|buildings
+	-displayed as You currently have %a %r.
+	*Menu2a
+	-displayed as ------
+	*Hand
+	-named manually wasted cookies
+	-displayed as You wasted %a cookie%s by yourself.
+	*Prod1
+	-displayed as %a cookie%s were wasted by auto-clicking.
+	*Prod2
+	-displayed as %a cookie%s were wasted by professionals.
+	*Prod3
+	-displayed as %a cookie%s were crushed by crushers.
+	*Prod4
+	-displayed as %a cookies were driven to destruction.
+	*Prod5
+	-displayed as %a cookies were shot with a lethal precision.
+	*Prod6
+	-displayed as %a cookies are now muffins.
+	*Prod7
+	-displayed as %a cookies didn't survive the "tests".
+	*Prod8
+	-displayed as %a cookies were burnt to ashes.
+	*Prod9
+	-displayed as %a cookies are still falling.
+	*Prod10
+	-displayed as %a cookies were anihilated.
+	*Prod11
+	-displayed as %a cookies were hard-reseted.
+	*Prod12
+	-displayed as %a COOKIES WERE WASTED BY SOUNDWAVES!!!!!!!
+	*Prod13
+	-displayed as %a cookies were logicaly wasted.
+	*Prod14
+	-displayed as %a cookies didn't believe in the apocalpse.
+	*Prod15
+	-displayed as %a cookies are banned from our universe.
+	*ProdR
+	-displayed as You were lucky enough to find %a rainbow coin%s.
+	-named rainbow coin manually found|rainbow coins manually found
+	*ProdR1a
+	-displayed as %a cookies fed the unicorns.
+	*ProdR2
+	-displayed as NomNomNomNomNomNomNomNomNomNom %a cookies.
+	*ProdR1b
+	-displayed as Unicorn pooped an equivalent of %a rainbow coin%s.
+	*Menu2b
+	-displayed as ------
+
+	*Menu3
+	-displayed as ------Goals and Prestige------
+	*Res00
+	-named weapon research time left
+	-displayed as %a second%s left until next ultimate weapon unlock.
+	-show 0 digits
+	*Res0
+	-abstract
+	-named weapon research time
+	*Goal
+	-named extermination stage
+	-displayed as You completed stage %a of the cookie extermination plan.
+	*Nuke
+	-named nuke explosion|nuke explosions
+	-displayed as You activated %a nuke%s.
+	*Nova
+	-named stellar explosion|stellar explosions
+	-displayed as You activated %a stellar bomb%s.
+	*AntiBomb
+	-named antimatter implosion|antimatter implosions
+	-displayed as You activated %a antimatter bomb%s.
+
+	*JPL
+	-abstract
+
+Clickables :
+	*Waste1
+	-gives 1 Cookies, 1 Points, 1 Hand
+	-visible
+	-named Waste cookies
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Waste1_zps8de79376.png
+
+	*Waste2
+	-gives 0.5 Cookies, 0.5 Points, 0.5 Hand
+	-converts Energy to Potential
+	-named Waste a lot of cookies
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Waste2_zps2a7b854f.png
+
+	*RainbowSearch1
+	-gives 100 Potential requiring 100 Energy
+	-gives 1 Rainbows, 1 RainbowsAT, 1 ProdR 15% of the time for 100 Energy
+	-named Search for rainbow coins (15%)
+	-on success say You successfuly found a rainbow coin!
+	-visible
+
+	*RainbowSearch2
+	-gives 85 Potential requiring 85 Energy
+	-gives 1 Rainbows, 1 RainbowsAT, 1 ProdR 33% of the time for 85 Energy
+	-named Search for rainbow coins (33%)
+	-on success say You successfuly found a rainbow coin!
+
+	*RainbowSearch3
+	-gives 65 Potential requiring 65 Energy
+	-gives 1 Rainbows, 1 RainbowsAT, 1 ProdR 50% of the time for 65 Energy
+	-named Search for rainbow coins (50%)
+	-on success say You successfuly found a rainbow coin!
+
+	*RainbowSearch4
+	-gives 40 Potential requiring 40 Energy
+	-gives 1 Rainbows, 1 RainbowsAT, 1 ProdR 80% of the time for 40 Energy
+	-named Search for rainbow coins (80%)
+	-on success say You successfuly found a rainbow coin!
+
+	*RainbowSearch5
+	-gives 25 Potential requiring 25 Energy
+	-gives 1 Rainbows, 1 RainbowsAT, 1 ProdR 99.99% of the time for 25 Energy
+	-named Search for rainbow coins (100%)
+	-on success say You successfuly found a rainbow coin!
+
+	*RainbowSearch6
+	-gives 1 Rainbows, 1 RainbowsAT, 1 ProdR 99.99% of the time.
+	-named Get rainbow coins
+Buildings :
+	//*GoalRes1
+	//-"Begin research of the first ultimate cookie wasting weapon."
+	//-gives 301 Res00, 1 NukeEnd when bought
+	//-costs 1000000000000 Cookies
+	//-locks GoalRes1
+	//-visible
+	//-named Cookie extermination, stage 1
+	//*GoalRes2
+	//-"Begin research of the second ultimate cookie wasting weapon."
+	//-gives 600 Res00, 1 NovaEnd when bought
+	//-locks GoalRes2
+	//-costs 1000000000000000 Cookies
+	//-named Cookie extermination, stage 2
+	//*GoalRes3
+	//-"Begin research of the third ultimate cookie wasting weapon."
+	//-gives 900 Res00, 1 AntiEnd when bought
+	//-locks GoalRes3
+	//-costs 100000000000000000 Cookies
+	//-named Cookie extermination, stage 3
+	//*Goal1
+	//-"Launch a nuclear missile towards a big cookie factory.<br>Awards <b>250 billion</b> points.<br>Unlocks <b>stage 2</b> of cookie extermination.<br><i>I bet you camped to get those 25 kills...</i>"
+	//-gives 250000000000 Points when bought
+	//-unlocks at 1 NukeEnd
+	//-costs 1 NukeEnd
+	//-requires 300 Res0
+	//-represents 1 Goal
+	//-represents 1 Nuke
+	//-unlocks GoalRes2
+	//-locks Goal1
+	//-named Nuke
+	//*Goal2
+	//-"Activate a stellar bomb in the biggest cookieverse portal.<br>Awards <b>25 trillion</b> points.<br>Unlocks <b>stage 3</b> of cookie extermination.<br><i>"a soopernoveh iz nut an asplosin u dumahss 1/5"</i>"
+	//-gives 250000000000000 Points when bought
+	//-unlocks at 1 NovaEnd
+	//-costs 1 NovaEnd
+	//-requires 900 Res0
+	//-represents 1 Goal
+	//-represents 1 Nova
+	//-unlocks GoalRes3
+	//-locks Goal2
+	//-named Supernova
+	//*Goal3
+	//-"Activate a bomb that attracts every cookie in the world then implode.<br>Awards <b>2.5 quadrillion</b> points.<br><i>May also actract cupcakes, butterflies and mutant-ninja-zombie-cows.<br>YOU HAD ONE JOB BERT!!</i>"
+	//-gives 25000000000000000 Points when bought
+	//-unlocks at 1 AntiEnd
+	//-costs 1 AntiEnd
+	//-requires 1800 Res0
+	//-represents 1 Goal
+	//-represents 1 AntiBomb
+	//-locks Goal3
+	//-named Antimatter bomb
+
+	*Build1
+	-"Automaticaly clicks the "Waste cookies" button!<br>Waste <b>1</b> cookie every <b>4</b> seconds."
+	-costs 15 Points
+	-gives 0.25 Cookies, 0.25 Points, 0.25 Prod1
+	-represents 1 Building
+	-visible
+	-named Auto-clicker
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Build0_zps50e6ca45.png
+
+	*Build2
+	-"Helps you wasting cookies!<br>Waste <b>1</b> cookie per second."
+	-costs 120 Points
+	-gives 1 Cookies, 1 Points, 1 Prod2
+	-represents 1 Building
+	-unlocks at 120 Cookies
+	-named Waster
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Build1_zps9e4460f7.png
+
+	*Build3
+	-"Automaticaly crushes cookies!<br>Waste <b>8</b> cookies per second."
+	-costs 1024 Points
+	-gives 8 Cookies, 8 Points, 8 Prod3
+	-represents 1 Building
+	-unlocks at 1024 Cookies
+	-named Crushing facility
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Build2_zpsf9a7ef72.png
+
+	*Build4
+	-"Crushes cookie with cars and stuff!<br>Waste <b>50</b> cookies per second."
+	-costs 8500 Points
+	-gives 50 Cookies, 50 Points, 50 Prod4
+	-represents 1 Building
+	-unlocks at 8500 Cookies
+	-named Cookie Highway
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Build3_zpsbe11a3a7.png
+
+	*Build5
+	-"Aim for the crisps!<br>Waste <b>265</b> cookies per second."
+	-costs 55600 Points
+	-gives 265 Cookies, 265 Points, 265 Prod5
+	-represents 1 Building
+	-unlocks at 55600 Cookies
+	-named Cookie shooting range
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Build4_zpsf9d8b1ca.png
+
+	*Build6
+	-"<i>Nobody likes muffins.</i> -Orteil<br>Waste <b>2222</b> cookies per second."
+	-costs 555555 Points
+	-gives 2222 Cookies, 2222 Points, 2222 Muffins, 2222 MuffinsAT, 2222 Prod6
+	-represents 1 Building
+	-unlocks at 555555 Cookies
+	-named Cookies2Muffins converter
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Build5_zps688d10d4.png
+
+	*Build6b
+	-"Increase the flavor of all muffins.<br>Add an additive bonus of <b>2%</b> to converters."
+	-costs 444444 Muffins
+	-represents 1 Building
+	-named Flavoring Facilities
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Build5b_zpsc9aa2c31.png
+
+	*Build7
+	-""Tests" things on cookies<br>Waste <b>11,999</b> cookies per second."
+	-costs 3599999 Points
+	-gives 11999 Cookies, 11999 Points, 11999 Prod7
+	-represents 1 Building
+	-unlocks at 3599999 Cookies
+	-named Cookie testing lab
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Build6_zpsf52c3616.png
+
+	*Build8
+	-"Kill it with fire!<br>Waste <b>66,666</b> cookies per second."
+	-costs 33333333 Points
+	-gives 66666 Cookies, 66666 Points, 66666 Prod8
+	-represents 1 Building
+	-unlocks at 33333333 Cookies
+	-named Incinerator
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Build9_zps379df547.png
+
+	*Build9
+	-"You don't end up in China by jumping into it.<br>Waste <b>350,000</b> cookies per second."
+	-costs 300000000 Points
+	-gives 35000 Cookies, 35000 Points, 35000 Prod9
+	-represents 1 Building
+	-unlocks at 300000000 Cookies
+	-named Bottomless pit
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Build10_zps84348d52.png
+
+	*Build10
+	-"Delivers 5,000 democracies per minute.<br>Waste <b>1,010,101</b> cookies per second."
+	-costs 1001111001 Points
+	-gives 1010101 Cookies, 1010101 Points, 1010101 Prod10
+	-represents 1 Building
+	-unlocks at 1001111001 Cookies
+	-named Cookie wasting warmachine
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Build11_zps3f17d8c7.png
+
+	*Build11
+	-""worst idea evur 1/5."<br>Waste <b>5 million</b> cookies per second."
+	-costs 7999999999 Points
+	-gives 5000000 Cookies, 5000000 Points, 5000000 Prod11
+	-represents 1 Building
+	-unlocks at 7999999999 Cookies
+	-named Unstable antimatter condenser
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Build12_zpsc8b826d3.png
+
+	*Build12
+	-"Plays music so loudly it can break cookies.<br>Waste <b>23 million</b> cookies per second."
+	-costs 47000000000 Points
+	-gives 23000000 Cookies, 23000000 Points, 23000000 Prod12
+	-represents 1 Building
+	-unlocks at 47000000000 Cookies
+	-named DragonSound Hero Maniac Deluxe 9001
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Build13_zps3f6003fc.png
+
+	*Build13
+	-"The only place where you can waste cookies with a monitor, super-glue and two waffles.<br>Waste <b>216 million</b> cookies per second."
+	-costs 543000000000 Points
+	-gives 216000000 Cookies, 216000000 Points, 216000000 Prod13
+	-represents 1 Building
+	-unlocks at 543000000000 Cookies
+	-named Completely Logic Cookie Wasting Corporation (CLCWC)
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Build14_zps0b13966b.png
+
+	*Build14
+	-"Massive cookie annihilation, everywhere.<br>Waste <b>1,414,141,414</b> cookies per second."
+	-costs 4242424242424 Points
+	-gives 1414141414 Cookies, 1414141414 Points, 1414141414 Prod14
+	-represents 1 Building
+	-unlocks at 4242424242424 Cookies
+	-named Cookiocalypse
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Build14_zps1417292d.png
+
+	*Build15
+	-"Cookies don't belong in our world.<br>Waste <b>13,379,001,000</b> cookies per second."
+	-costs 67322363500373 Points
+	-gives 13379001000 Cookies, 13379001000 Points, 13379001000 Prod15
+	-represents 1 Building
+	-unlocks at 67322363500373 Cookies
+	-named Parallel universe portal
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Build15_zps6a425e8e.png
+
+	*BuildR1
+	-"They eat cookies and poop rainbows!<br>Waste <b>7,777</b> cookies per second and randomly gives rainbow coins."
+	-costs 7 Rainbows
+	-gives 7777 Cookies, 7777 Points 7777 ProdR1a
+	-gives 1 Rainbows, 1 RainbowsAT, 1 ProdR1b 10% of the time
+	-represents 1 Building
+	-named Unicorn stable
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Build8_zps9eb5b5a8.png
+
+	*BuildR2
+	-"Eats cookies faster than anyone else!<br>Waste <b>77 million</b> cookies per second."
+	-costs 777 Rainbows
+	-gives 77000000 Cookies, 77000000 Points, 77000000 ProdR2
+	-price increases by 107%
+	-represents 1 Building
+	-named Cookie Monster
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Build16_zps954adc06.png
+
+	*EnergyGen
+	-abstract
+	-gives 1 Energy for 1 Potential
+	-starts at 1
+	*BuildRes
+	-abstract
+	-gives 1 Res0 for 1 Res00
+	-starts at 1
+	*BuildJPL
+	-abstract
+	-gives 1 JPL 0.000002% of the time
+	-starts at 1
+Upgrades :
+	*UnTutorial
+	-"<b>Unlock the beginner's guide to CW.</b><br><i>Read this before asking questions about how things work.</i>"
+	-unlocks at 1 Cookies
+	-unlocks Tutorial1
+	-named Buy this!
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/UnTutorialEnd_zpsb752511d.png
+	*Tutorial1
+	-"<i>You get 1% energy per second. Energy is used to search for rainbow coins and later, to waste a lot of cookies at once.</i><br><br><b>Buy this to continue.</b>"
+	-unlocks Tutorial2
+	-named Beginner's guide to CW - Energy
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Tutorial1_zps9891676d.png
+	*Tutorial2
+	-"<i>Rainbow coins are a unique feature to CW. To search for rainbow coins, you need your energy to be at 100%, but remember that you don't find a RC every time! Later upgrades increase your chances to find a RC and decrease energy needed to search. Even later in the game, you can buy special buildings with your RCs.</i><br><br><b>Buy this to continue.</b>"
+	-unlocks TutorialEnd
+	-named Beginner's guide to CW - Rainbow coins
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Tutorial3_zpsc5dda5ed.png
+	*Tutorial3
+	-"<i>You can now waste a lot of cookies at once at the cost of all your energy. You waste 0.5 cookies per click and an extra 0.05 per energy point spent, that means you waste 1 cookie at 10%, 5 at 50% and 10 at 100%. Clicking upgrades also boost that action.</i><br><br><b>This time, you'll get a 20% clicking bonus.</b>"
+	-multiplies efficiency of Waste1 by 120%
+	-multiplies efficiency of Waste2 by 120%
+	-named Beginner's guide to CW - Wasting a lot
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Tutorial2_zps72722eb2.png
+	*Tutorial4
+	-"<i>The magic grimoire of Knowledge is a mysterious book containing random hints about in-game achievements. Unlocking pages of this grimoire also give a small overall wasting bonus, increasing for each page found.</i><br><br><b>It's also a reference to one of my favorite characters from one of my favorite game series.</b>"
+	-named Beginner's guide to CW - The magic grimoire of Knowledge
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Tutorial4_zps7ebeeaba.png
+	*TutorialEnd
+	-"<i>Right now there's nothing else to tell you about, progress in the game to unlock extra infos on unique features of CW.</i><br><br><b>And as a bonus, you get an extra 5% overall wasting increase!</b>"
+	-multiplies efficiency of Waste1 by 105%
+	-multiplies efficiency of Waste2 by 105%
+	-multiplies efficiency of Build1 by 105%
+	-multiplies efficiency of Build2 by 105%
+	-multiplies efficiency of Build3 by 105%
+	-multiplies efficiency of Build4 by 105%
+	-multiplies efficiency of Build5 by 105%
+	-multiplies efficiency of Build6 by 105%
+	-multiplies efficiency of Build7 by 105%
+	-multiplies efficiency of Build8 by 105%
+	-multiplies efficiency of Build9 by 105%
+	-multiplies efficiency of Build10 by 105%
+	-multiplies efficiency of Build11 by 105%
+	-multiplies efficiency of Build12 by 105%
+	-multiplies efficiency of Build13 by 105%
+	-multiplies efficiency of Build14 by 105%
+	-multiplies efficiency of Build15 by 105%
+	-multiplies efficiency of BuildR1 by 105%
+	-multiplies efficiency of BuildR2 by 105%
+	-named Beginner's guide to CW - Last page
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/UnTutorialEnd_zpsb752511d.png
+
+	*UnBuild1
+	-"<b>Unlocks the ability to get rainbow coins constantly.</b><br><i>Plus they're extra awesome.</i>"
+	-unlocks at 7 RainbowsAT
+	-unlocks BuildR1
+	-costs 777777 Points
+	-named Unicorn/verse
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up0e_zps1bb779da.png
+	*UnBuild2
+	-"<b>Unlocks a new building.</b><br><i>Insert intentional pun about flavor texts here.</i>"
+	-unlocks at 22222222 MuffinsAT
+	-unlocks Build6b
+	-multiplies efficiency of Build6 by 2% per Build6b
+	-costs 22222222 Points
+	-named Flavoring Factories
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up0g_zps06c0d930.png
+	*UnBuild3
+	-"<b>Unlocks another building to spend your rainbow coins on.</b><br><i>EMERGEHD, COOKEHZ!!1!"
+	-unlocks at 777 RainbowsAT
+	-unlocks BuildR2
+	-costs 7777777777 Points
+	-named Cookie Monster
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/UnBuild3_zps961bd021.png
+
+	*UpClick0
+	-"<b>Clicking is 4 times as efficient.</b><br><i>Nom nom nom nom...</i>"
+	-multiplies efficiency of Waste1 by 400%
+	-multiplies efficiency of Waste2 by 400%
+	-unlocks at 100 Hand
+	-costs 75 Points
+	-named Cookie Eater
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up0a_zpsce80c2e2.png
+	*UpClick1
+	-"<b>Clicking is 2.5 times as efficient.</b><br><i>Isn't that an upgrade in Cookie Clicker already?</i>"
+	-multiplies efficiency of Waste1 by 250%
+	-multiplies efficiency of Waste2 by 250%
+	-unlocks at 1000 Hand
+	-costs 750 Points
+	-named Plastic Mouse
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up0b_zps17520881.png
+	*UpClick2
+	-"<b>Clicking is 2.5 times as efficient.</b><br><i>Also acid resistant.</i>"
+	-multiplies efficiency of Waste1 by 250%
+	-multiplies efficiency of Waste2 by 250%
+	-unlocks at 10000 Hand
+	-costs 7500 Points
+	-named Copper Mouse
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up0d_zps86d05de8.png
+	*UpClick3
+	-"<b>Clicking is twice as efficient.</b><br><i>Like titanium, but weaker and lighter.</i>"
+	-multiplies efficiency of Waste1 by 200%
+	-multiplies efficiency of Waste2 by 200%
+	-unlocks at 100000 Hand
+	-costs 75000 Points
+	-named Aluminium Mouse
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up0h_zpsbcbb6fbb.png
+	*UnWaste2
+	-"<b>Unlocks the ability to waste a lot of cookies at once.</b><br><i>Morer wordser endinger iner -er!!</i>"
+	-unlocks Waste2
+	-unlocks Tutorial3
+	-unlocks at 1000000 Hand
+	-multiplies efficiency of Waste2 by 10% per Energy
+	-costs 750000 Points
+	-named Cookier Wasterer
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up0m_zps981efe81.png
+	*UpClick4
+	-"<b>Clicking is twice as efficient.</b><br><i>At this price, it's almost a STEAL!!.</i>"
+	-multiplies efficiency of Waste1 by 200%
+	-multiplies efficiency of Waste2 by 200%
+	-unlocks at 10000000 Hand
+	-costs 7500000 Points
+	-named Steel Mouse
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up0i_zps2ccf7c90.png
+	*UpClick5
+	-"<b>Clicking is twice as efficient.</b><br><i>It's blue so it's awesome.</i>"
+	-multiplies efficiency of Waste1 by 200%
+	-multiplies efficiency of Waste2 by 200%
+	-unlocks at 1000000000 Hand
+	-costs 750000000 Points
+	-named Cobalt Mouse
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up0k_zps514c8e59.png
+	*UpClick6
+	-"<b>Clicking is twice as efficient.</b><br><i>We couldn't find a better metal than cobalt and we ran out of titanium...</i>"
+	-multiplies efficiency of Waste1 by 200%
+	-multiplies efficiency of Waste2 by 200%
+	-unlocks at 100000000000 Hand
+	-costs 75000000000 Points
+	-named Crystal Mouse
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up0l_zpse39297f8.png
+	*UpClick7
+	-"<b>Clicking is twice as efficient.</b><br><i>The first mouse that can kill you.</i>
+	-multiplies efficiency of Waste1 by 200%
+	-multiplies efficiency of Waste2 by 200%
+	-unlocks at 10000000000000 Hand
+	-costs 7500000000000 Points
+	-named Uranium Mouse
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up0m_zps9e4776db.png
+	*UpClick8
+	-"<b>Clicking is twice as efficient.</b><br><i>Not actual blood, don't try to eat it.</i>"
+	-multiplies efficiency of Waste1 by 200%
+	-multiplies efficiency of Waste2 by 200%
+	-unlocks at 1000000000000000 Hand
+	-costs 750000000000000 Points
+	-named Bloodstone Mouse
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up0p_zps6b3e2973.png
+	*UpClick9
+	-"<b>Clicking is twice as efficient.</b><br><i>I don't even know how this is possible.</i>"
+	-multiplies efficiency of Waste1 by 200%
+	-multiplies efficiency of Waste2 by 200%
+	-unlocks at 100000000000000000 Hand
+	-costs 75000000000000000 Points
+	-named Frozen Nitrogen Mouse
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up0r_zps694eceb3.png
+	*UpClick10
+	-"<b>Clicking is twice as efficient.</b><br><i>It is said there's a soul in it.</i>"
+	-multiplies efficiency of Waste1 by 200%
+	-multiplies efficiency of Waste2 by 200%
+	-unlocks at 10000000000000000000 Hand
+	-costs 7500000000000000000 Points
+	-named Corrupted Crystal Mouse
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/UpClick10_zps7f909cc7.png
+
+	//*UpEnMax1
+	//-"<b>Your maximum energy is increased by 15%.</b><br><i>If you want, you can.</i>"
+	//-gives 15 Potential when bought
+	//-unlocks at 20000 Cookies
+	//-costs 12000 Points
+	//-named Strong Mind
+	//-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/UpEnMax1_zpsa1cd9b72.png
+	*UpEnRec1
+	-"<b>Your energy recovery rate is increased by 10%.</b><br><i>Your daily dose of caffeine.</i>"
+	-multiplies efficiency of EnergyGen by 110%.
+	-unlocks at 20000 Cookies
+	-costs 12000 Points
+	-named Coffee
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/UpEnRec1_zpsb6eac8ca.png
+	//*UpEnMax2
+	//-"<b>Your maximum energy is increased by 15%.</b><br><i>Your body is now ready.</i>"
+	//-gives 15 Potential when bought
+	//-unlocks at 800000 Cookies
+	//-costs 480000 Points
+	//-named Improved Endurance
+	//-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/UpEnMax2_zpsde117a4d.png
+	*UpEnRec2
+	-"<b>Your energy recovery rate is increased by 20%.</b><br><i>Way fancier than coffee, made in China.</i>"
+	-multiplies efficiency of EnergyGen by 120%
+	-unlocks at 800000 Cookies
+	-costs 480000 Points
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/UpEnRec2_zps76c3b304.png
+	-named Tea
+	//*UpEnMax3
+	//-"<b>Your maximum energy is increased by 20%.</b><br><i>Breathing problems are for the weak and people with breathing problems.</i>"
+	//-gives 20 Potential when bought
+	//-unlocks at 32000000 Cookies
+	//-costs 19200000 Points
+	//-named Quality Lungs
+	//-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/UpEnMax3_zps4298faf7.png
+	*UpEnRec3
+	-"<b>Your energy recovery rate is increased by 25%.</b><br><i>Batteries not included.</i>"
+	-multiplies efficiency of EnergyGen by 125%
+	-unlocks at 32000000 Cookies
+	-costs 19200000 Points
+	-named Special Charging Station
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/UpEnRec3_zpsddc21801.png
+
+	*UpProd1
+	-"<b>Increase overall wasting by 5%.</b><br><i>All you need to do is remove 50% of a specific ingredient.</i>"
+	-multiplies efficiency of Waste1 by 105%
+	-multiplies efficiency of Waste2 by 105%
+	-multiplies efficiency of Build1 by 105%
+	-multiplies efficiency of Build2 by 105%
+	-multiplies efficiency of Build3 by 105%
+	-multiplies efficiency of Build4 by 105%
+	-multiplies efficiency of Build5 by 105%
+	-multiplies efficiency of Build6 by 105%
+	-multiplies efficiency of Build7 by 105%
+	-multiplies efficiency of Build8 by 105%
+	-multiplies efficiency of Build9 by 105%
+	-multiplies efficiency of Build10 by 105%
+	-multiplies efficiency of Build11 by 105%
+	-multiplies efficiency of Build12 by 105%
+	-multiplies efficiency of Build13 by 105%
+	-multiplies efficiency of Build14 by 105%
+	-multiplies efficiency of Build15 by 105%
+	-multiplies efficiency of BuildR1 by 105%
+	-multiplies efficiency of BuildR2 by 105%
+	-unlocks at 10000 Cookies
+	-costs 75000 Points
+	-named Weaker Cookies
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up0j_zps17e15f9f.png
+	*UpProd2
+	-"<b>Increase overall wasting by 5%.</b><br><i>It's like eating pure salt.</i>"
+	-multiplies efficiency of Waste1 by 105%
+	-multiplies efficiency of Waste2 by 105%
+	-multiplies efficiency of Build1 by 105%
+	-multiplies efficiency of Build2 by 105%
+	-multiplies efficiency of Build3 by 105%
+	-multiplies efficiency of Build4 by 105%
+	-multiplies efficiency of Build5 by 105%
+	-multiplies efficiency of Build6 by 105%
+	-multiplies efficiency of Build7 by 105%
+	-multiplies efficiency of Build8 by 105%
+	-multiplies efficiency of Build9 by 105%
+	-multiplies efficiency of Build10 by 105%
+	-multiplies efficiency of Build11 by 105%
+	-multiplies efficiency of Build12 by 105%
+	-multiplies efficiency of Build13 by 105%
+	-multiplies efficiency of Build14 by 105%
+	-multiplies efficiency of Build15 by 105%
+	-multiplies efficiency of BuildR1 by 105%
+	-multiplies efficiency of BuildR2 by 105%
+	-unlocks at 1000000 Cookies
+	-costs 7500000 Points
+	-named Way Too Much Salted Cookies
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up0c_zpsacb334dc.png
+
+	*Up1a
+	-"<b>Auto-clickers and clicking are twice as efficient.</b><br><i>Comes free with Windows 7.</i>"
+	-multiplies efficiency of Build1 by 200%
+	-multiplies efficiency of Waste1 by 200%
+	-multiplies efficiency of Waste2 by 200%
+	-unlocks at 1 Build1
+	-costs 75 Points
+	-named Aero Cursor
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up00a_zps32efd091.png
+	*Up1b
+	-"<b>Auto-clickers and clicking are twice as efficient.</b><br><i>Faster is better.</i>"
+	-multiplies efficiency of Build1 by 200%
+	-multiplies efficiency of Waste1 by 200%
+	-multiplies efficiency of Waste2 by 200%
+	-unlocks at 10 Build1
+	-costs 175 Points
+	-named RAM
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up00b_zps654f8be2.png
+	*Up1c
+	-"<b>Auto-clickers and clicking are twice as efficient.</b><br><i>At least you'll have something to brag about.</i>"
+	-multiplies efficiency of Build1 by 200%
+	-multiplies efficiency of Waste1 by 200%
+	-multiplies efficiency of Waste2 by 200%
+	-unlocks at 25 Build1
+	-costs 750 Points
+	-named Custom Auto-Clicker
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up00c_zps3c0f0bef.png
+	*Up1d
+	-"<b>Clicking wastes 3% more cookies for each auto-clicker you have.</b><br><b>Auto-clickers are 1.5 times as efficient.</b><br><i>Feels a bit illogical, but whatever.</i>"
+	-multiplies efficiency of Waste1 by 3% per Build1
+	-multiplies efficiency of Waste2 by 3% per Build1
+	-multiplies efficiency of Build1 by 150%
+	-unlocks at 50 Build1
+	-costs 8000 Points
+	-named Addon 1.42
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up00e_zps5535ad52.png
+	*Up1e
+	-"<b>Auto-clickers are 3 times as efficient.<br>Clicking is twice as efficient.</b><br><i>Get rid of pop-ups that get in your way!</i>"
+	-multiplies efficiency of Build1 by 300%
+	-multiplies efficiency of Waste1 by 200%
+	-multiplies efficiency of Waste2 by 200%
+	-unlocks at 100 Build1
+	-costs 950000 Points
+	-named Ad-blocker
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up00d_zpsd6a006d9.png
+	*Up1f
+	-"<b>Auto-clickers waste 2% more cookies for each auto-clicker you have</b><br><i>Automatically click the "auto-click "waste cookies" button" button.</i>"
+	-multiplies efficiency of Build1 by 2% per Build1
+	-unlocks at 123 Build1
+	-costs 8500000 Points
+	-named Self-clicking Auto-clickers
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up00f_zps0e12118e.png
+	*Up1g
+	-"<b>Auto-clickers are 3 times as efficient.<br>Clicking is twice as efficient.</b><br><i>Custom things are always better.</i>"
+	-multiplies efficiency of Build1 by 300%
+	-multiplies efficiency of Waste1 by 200%
+	-multiplies efficiency of Waste2 by 200%
+	-unlocks at 150 Build1
+	-costs 110000000 Points
+	-named Custom Cursors
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up00g_zps7f60ab98.png
+	*Up1h
+	-"<b>Auto-clickers are 4 times as efficient.<br>Clicking is twice as efficient.</b><br><i>Twice the cursors, 4 times the power because I don't care.</i>"
+	-multiplies efficiency of Build1 by 400%
+	-multiplies efficiency of Waste1 by 200%
+	-multiplies efficiency of Waste2 by 200%
+	-unlocks at 200 Build1
+	-costs 13000000000 Points
+	-named Dual Cursors
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up00h_zpsc426e481.png
+	*Up1i
+	-"<b>Auto-clickers are 4 times as efficient.<br>Clicking is twice as efficient.</b><br><i>Other PCs connect to yours and auto-click for you.</i>"
+	-multiplies efficiency of Build1 by 400%
+	-multiplies efficiency of Waste1 by 200%
+	-multiplies efficiency of Waste2 by 200%
+	-unlocks at 250 Build1
+	-costs 1500000000000 Points
+	-named LAN Party
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up00i_zps2825ae91.png
+	*Up1j
+	-"<b>Auto-clickers are 5 times as efficient.<br>Clicking is twice as efficient.</b><br><i>PCs from the world can now share their auto-clicking power.</i>"
+	-multiplies efficiency of Build1 by 500%
+	-multiplies efficiency of Waste1 by 200%
+	-multiplies efficiency of Waste2 by 200%
+	-unlocks at 300 Build1
+	-costs 175000000000000 Points
+	-named Custom Server
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up00j_zpsf2adcb19.png
+	*Up1k
+	-"<b>Auto-clickers are 6 times as efficient.<br>Clicking is twice as efficient.</b><br><i>The more you have, the more you get.</i>"
+	-multiplies efficiency of Build1 by 600%
+	-multiplies efficiency of Waste1 by 200%
+	-multiplies efficiency of Waste2 by 200%
+	-unlocks at 350 Build1
+	-costs 20000000000000000 Points
+	-named Self-cloning Auto-clickers
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up00k_zps4c4d3810.png
+	*Up1l
+	-"<b>Auto-clickers are 7 times as efficient.<br>Clicking is twice as efficient.</b><br><i>They now use a glitch caused by holding down the button.</i>"
+	-multiplies efficiency of Build1 by 700%
+	-multiplies efficiency of Waste1 by 200%
+	-multiplies efficiency of Waste2 by 200%
+	-unlocks at 400 Build1
+	-costs 2500000000000000000 Points
+	-named Glitching Auto-Clickers
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up00l_zps60780799.png
+
+	*Up2a
+	-"<b>Wasters are twice as efficient.</b><br><i>Cookies to waste, train hard you must!</i>"
+	-multiplies efficiency of Build2 by 200%
+	-unlocks at 1 Build2
+	-costs 600 Points
+	-named Advanced Training
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up1a_zps7d2d87a7.png
+	*Up2b
+	-"<b>Wasters are twice as efficient</b><br><i>Actually coffee, but not decaf.</i>"
+	-multiplies efficiency of Build2 by 200%
+	-unlocks at 10 Build2
+	-costs 1400 Points
+	-named Energy Drinks
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up1b_zps1b44131b.png
+	*Up2c
+	-"<b>Wasters are twice as efficient.</b><br><i>It's natural, I swear!</i>"
+	-multiplies efficiency of Build2 by 200%
+	-unlocks at 25 Build2
+	-costs 6000 Points
+	-named Adrenalin
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up1c_zps543d8a90.png
+	*Up2d
+	-"<b>Clicking wastes 1% more cookies for each waster you have.</b><br><b>Wasters are 1.5 times as efficient.</b><br><i>Don't disapoint them.</i>
+	-multiplies efficiency of Waste1 by 1% per Build2
+	-multiplies efficiency of Waste2 by 1% per Build2
+	-multiplies efficiency of Build1 by 150%
+	-unlocks at 50 Build2
+	-costs 64000 Points
+	-named Membership
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up1e_zps0c9cae1b.png
+	*Up2e
+	-"<b>Wasters are 3 times as efficient.</b><br><i>Special type of special implants specialy created to waste more special cookies.</i>"
+	-multiplies efficiency of Build2 by 300%
+	-unlocks at 100 Build2
+	-costs 7500000 Points
+	-named Implants
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up1d_zps3f7032df.png
+	*Up2f
+	-"<b>Wasters waste 2% more cookies for each waster you have.</b><br><i>Why didn't they team up before?</i>"
+	-multiplies efficiency of Build2 by 2% per Build2
+	-unlocks at 123 Build2
+	-costs 67000000 Points
+	-named Teamwork
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up1f_zps69d799af.png
+	*Up2g
+	-"<b>Wasters are 3 times as efficient.</b><br><i>We forgot the wrecking balls though.</i>"
+	-multiplies efficiency of Build2 by 300%
+	-unlocks at 150 Build2
+	-costs 880000000 Points
+	-named Demolition Tools
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up1g_zpsdda4d485.png
+	*Up2h
+	-"<b>Wasters are 4 times as efficient.</b><br><i>Way more badass than saws and hammers.</i>"
+	-multiplies efficiency of Build2 by 400%
+	-unlocks at 200 Build2
+	-costs 100000000000 Points
+	-named Weapons
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up1h_zps1a044cbc.png
+	*Up2i
+	-"<b>Wasters are 4 times as efficient.</b><br><i>Not the bullet magnets you see in Madness Combat.</i>"
+	-multiplies efficiency of Build2 by 400%
+	-unlocks at 250 Build2
+	-costs 12000000000000 Points
+	-named 1337 Crew
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up1i_zps2ae09c5a.png
+	*Up2j
+	-"<b>Wasters are 5 times as efficient.</b><br><i>Make them fast like [overused as f*ck].</i>"
+	-multiplies efficiency of Build2 by 500%
+	-unlocks at 300 Build2
+	-costs 1400000000000000 Points
+	-named Speed Potions
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up1j_zps881455bd.png
+
+	*Up3a
+	-"<b>Facilities are twice as efficient.</b><br><i>Crushers are now made with a light metal, making them faster.</i>"
+	-multiplies efficiency of Build3 by 200%
+	-unlocks at 1 Build3
+	-costs 4096 Points
+	-named Light Alloys
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up2a_zpsb167a8f4.png
+	*Up3b
+	-"<b>Facilities are twice as efficient.</b><br><i>This metal is so light it's like it doesn't exist at all!</i>"
+	-multiplies efficiency of Build3 by 200%
+	-unlocks at 10 Build3
+	-costs 16384 Points
+	-named Lighter Alloys
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up2b_zps69c1710e.png
+	*Up3c
+	-"<b>Facilities are twice as efficient.</b><br><i>Electricity is better than coal!</i>"
+	-multiplies efficiency of Build3 by 200%
+	-unlocks at 25 Build3
+	-costs 65536 Points
+	-named Power Stations
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up2c_zps06b54df1.png
+	*Up3d
+	-"<b>Clicking wastes 1% more cookies for each facility you have.</b><br><b>Facilities are 1.5 times as efficient.</b><br><i>For some reason, you didn't think about crushing cookies with your fist.</i>"
+	-multiplies efficiency of Waste1 by 1% per Build3
+	-multiplies efficiency of Waste2 by 1% per Build3
+	-multiplies efficiency of Build3 by 150%
+	-unlocks at 50 Build3
+	-costs 524288 Points
+	-named Cookie Crusher
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up2e_zps837c4557.png
+	*Up3e
+	-"<b>Facilities are 3 times as efficient.</b><br><i>The "lighter alloy" wasn't powerful enough.</i>"
+	-multiplies efficiency of Build3 by 200%
+	-unlocks at 100 Build3
+	-costs 67108864 Points
+	-named Titanium Crushers
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up2d_zpsf61520f4.png
+	*Up3f
+	-"<b>Facilities waste 2% more cookies for each facility you have.</b><br><i>The more you have, the less each one has to do, and the less each one has to do, the more it can do!</i>"
+	-multiplies efficiency of Build3 by 2% per Build3
+	-unlocks at 123 Build3
+	-costs 536870912 Points
+	-named Crushing Chain
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up2f_zpsd67db622.png
+	*Up3g
+	-"<b>Facilities are 3 times as efficient.</b><br><i>They consume a lot, but are pretty effective!</i>"
+	-multiplies efficiency of Build3 by 300%
+	-unlocks at 150 Build3
+	-costs 8589934592 Points
+	-named Power Engines
+	-picture :  http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up2g_zpsc5c4d72d.png
+	*Up3h
+	-"<b>Facilities are 4 times as efficient.</b><br><i>3 times as dense as titanium.</i>"
+	-multiplies efficiency of Build3 by 400%
+	-unlocks at 200 Build3
+	-costs 1099511627776 Points
+	-named Tritanium Crushers
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up2h_zpse52b21e4.png
+	*Up3i
+	-"<b>Facilities are 4 times as efficient.</b><br><i>Crash often.</i>"
+	-multiplies efficiency of Build3 by 400%
+	-unlocks at 250 Build3
+	-costs 140737488355328 Points
+	-named Computer-Controled Crushers
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up2i_zpsa33fd5b1.png
+	*Up3j
+	-"<b>Facilities are 5 times as efficient.</b><br><i>The one who had this idea is now the employee of the year.</i>"
+	-multiplies efficiency of Build3 by 500%
+	-unlocks at 300 Build3
+	-costs 9007199254740992 Points
+	-named Spiked Crushers
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up2j_zpsf02a185c.png
+
+	*Up4a
+	-"<b>Highways are twice as efficient.</b><br><i>Faster, smaller and lighter.</i>"
+	-multiplies efficiency of Build4 by 200%
+	-unlocks at 1 Build4
+	-costs 45000 Points
+	-named Motorbikes
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up3a_zps37cba7f6.png
+	*Up4b
+	-"<b>Highways are twice as efficient.</b><br><i>Longer, heavier, with more people inside.</i>"
+	-multiplies efficiency of Build4 by 200%
+	-unlocks at 10 Build4
+	-costs 100000 Points
+	-named Buses
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up3b_zps29b10269.png
+	*Up4c
+	-"<b>Highways are twice as efficient.</b><br><i>Less traffic jams!</i>"
+	-multiplies efficiency of Build4 by 200%
+	-unlocks at 25 Build4
+	-costs 400000 Points
+	-named 3-lane Highways
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up3c_zpse479cfb8.png
+	*Up4d
+	-"<b>Clicking wastes 1% more cookies for each highway you have.</b><br><b>Highways are 1.5 times as efficient.</b><br><i>Feels like little bumps on the road.</i>"
+	-multiplies efficiency of Waste1 by 1% per Build4
+	-multiplies efficiency of Waste2 by 1% per Build4
+	-multiplies efficiency of Build4 by 150%
+	-unlocks at 50 Build4
+	-costs 4500000 Points
+	-named Cookie-crushing Car Driver
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up3e_zps2526314d.png
+	*Up4e
+	-"<b>Highways are 3 times as efficient.</b><br><i>No radars means you can go as fast as you can!</i>"
+	-multiplies efficiency of Build4 by 300%
+	-unlocks at 100 Build4
+	-costs 550000000 Points
+	-named Radar Breaker
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up3d_zps1c4c577d.png
+	*Up4f
+	-"<b>Highways waste 2% more cookies for each highway you have.</b><br><i>Allows you to have moar roads.</i>"
+	-multiplies efficiency of Build4 by 2% per Build4
+	-unlocks at 123 Build4
+	-costs 4500000000 Points
+	-named Bridges
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up3f_zpsaa65e75d.png
+	*Up4g
+	-"<b>Highways are 3 times as efficient.</b><br><i>Dozens of 'dozers.</i>"
+	-multiplies efficiency of Build4 by 300%
+	-unlocks at 150 Build4
+	-costs 60000000000 Points
+	-named Bulldozers
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up3g_zpsca4d738d.png
+	*Up4h
+	-"<b>Highways are 4 times as efficient.</b><br><i>Unloaded, unfortunately.</i>"
+	-multiplies efficiency of Build4 by 400%
+	-unlocks at 200 Build4
+	-costs 7500000000000 Points
+	-named Tanks
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up3h_zpsbaedb51a.png
+	*Up4i
+	-"<b>Highways are 4 times as efficient.</b><br><i>Effective car-butt-flamethrowers.</i>"
+	-multiplies efficiency of Build4 by 400%
+	-unlocks at 250 Build4
+	-costs 850000000000000 Points
+	-named Nitro Powerups
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up3i_zps5c5d7824.png
+	*Up4j
+	-"<b>Highways are 5 times as efficient.</b><br><i>We could place them all over the highways but we don't have enough budget.</i>"
+	-multiplies efficiency of Build4 by 500%
+	-unlocks at 300 Build4
+	-costs 100000000000000000 Points
+	-named Boosters
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up3j_zps4e257510.png
+
+	*Up5a
+	-"<b>Shooting ranges are twice as efficient.</b><br><i>Now don't tell me you missed.</i>"
+	-multiplies efficiency of Build5 by 200%
+	-unlocks at 1 Build5
+	-costs 270500 Points
+	-named Laser Sights
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up4a_zpsef06396f.png
+	*Up5b
+	-"<b>Shooting ranges are twice as efficient.</b><br><i>Recoil -5; Shotguns' rate of fire +1.</i>"
+	-multiplies efficiency of Build5 by 200%
+	-unlocks at 10 Build5
+	-costs 650500 Points
+	-named Front Grips
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up4b_zps899d2e44.png
+	*Up5c
+	-"<b>Shooting ranges are twice as efficient.</b><br><i>Pierces trough cookies like they were paper!</i>"
+	-multiplies efficiency of Build5 by 200%
+	-unlocks at 25 Build5
+	-costs 2700500 Points
+	-named FMJ Ammo
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up4c_zps41dae119.png
+	*Up5d
+	-"<b>Clicking wastes 1% more cookies for each shooting range you have.<br>Shooting ranges are 1.5 times as efficient.</b><br><i>I hope you know how to use a gun.</i>"
+	-multiplies efficiency of Waste1 by 1% per Build5
+	-multiplies efficiency of Waste2 by 1% per Build5
+	-multiplies efficiency of Build5 by 150%
+	-unlocks at 50 Build5
+	-costs 29000500 Points
+	-named Cookie Shooter
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up4e_zpsa89aaa11.png
+	*Up5e
+	-"<b>Shooting ranges are 3 times as efficient.</b><br><i>Easier to use than iron sights!</i>"
+	-multiplies efficiency of Build5 by 300%
+	-unlocks at 100 Build5
+	-costs 3400050000 Points
+	-named EOTech Sights
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up4d_zps7806453e.png
+	*Up5f
+	-"<b>Shooting ranges waste 2% more cookies for each shooting range you have.</b><br><i>Not M203s or Masterkeys, these are really guns you can use on your gun."
+	-multiplies efficiency of Build5 by 2% per Build5
+	-unlocks at 123 Build5
+	-costs 31000500000 Points
+	-named Underbarrel Guns
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up4f_zpscfb863aa.png
+	*Up5g
+	"<b>Shooting ranges are 3 times as efficient.</b><br><i>Not to be confused with dual-mags.</i>"
+	-multiplies efficiency of Build5 by 300%
+	-unlocks at 150 Build5
+	-costs 400005000000 Points
+	-named Extended Mags
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up4g_zpsad1004a2.png
+	*Up5h
+	-"<b>Shooting ranges are 4 times as efficient.</b><br><i>"akimbo noscope sniper 5/5"</i>"
+	-multiplies efficiency of Build5 by 400%
+	-unlocks at 200 Build5
+	-costs 47000500000000 Points
+	-named Akimbo
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up4h_zpsea0a727a.png
+	*Up5i
+	-"<b>Shooting ranges are 4 times as efficient.</b><br><i>Golden gun not included.</i>"
+	-multiplies efficiency of Build5 by 400%
+	-unlocks at 250 Build5
+	-costs 5600050000000000 Points
+	-named Golden Bullets
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up4i_zpseca59621.png
+	*Up5j
+	-"<b>Shooting ranges are 5 times as efficient.</b><br><i>Can't you C it looks NSFW?</i>"
+	-multiplies efficiency of Build5 by 500%
+	-unlocks at 300 Build5
+	-costs 660005000000000000 Points
+	-named C-Mags
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up4j_zpsa5e20c5f.png
+
+	*Up6a
+	-"<b>Converters are twice as efficient.</b><br><i>The more people buy, the more you'll need to produce!</i>"
+	-multiplies efficiency of Build6 by 200%
+	-unlocks at 1 Build6
+	-costs 2222222 Points
+	-named Advertisements
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up5a_zps9a5b9cd1.png
+	*Up6b
+	-"<b>Converters are twice as efficient.</b><br><i>They taste the same, however.</i>"
+	-multiplies efficiency of Build6 by 200%
+	-unlocks at 10 Build6
+	-costs 6666666 Points
+	-named Better Looking Muffins
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up5b_zpsa567eff0.png
+	*Up6c
+	-"<b>Converters are twice as efficient.</b><br><i>Just like cookies!</i>"
+	-multiplies efficiency of Build6 by 200%
+	-unlocks at 25 Build6
+	-costs 22222222 Points
+	-named Extra Chocolate Chips
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up5c_zpscbf34e19.png
+	*Up6d
+	-"<b>Clicking wastes 1% more cookies for each converter you have.</b><br><b>Converters are 1.5 times as efficient.</b><br><i>Don't try to eat the muffins.</i>"
+	-multiplies efficiency of Waste1 by 1% per Build6
+	-multiplies efficiency of Waste2 by 1% per Build6
+	-multiplies efficiency of Build6 by 150%
+	-unlocks at 50 Build6
+	-costs 333333333 Points
+	-named Cookie Converter
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up5e_zpsb23699f9.png
+	*Up6e
+	-"<b>Converters are 3 times as efficient.</b><br><i>Half the size means you can produce twice as much!</i>"
+	-multiplies efficiency of Build6 by 300%
+	-unlocks at 100 Build6
+	-costs 33333333333 Points
+	-named Smaller Muffins
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up5d_zps777600fb.png
+	*Up6f
+	-"<b>Converters waste 2% more cookies for each converter you have.</b><br><i>Every converter is directed here.</i>"
+	-multiplies efficiency of Build6 by 2% per Build6
+	-unlocks at 123 Build6
+	-costs 333333333333 Points
+	-named Muffin Corporation
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up5f_zpsf5aeea2b.png
+	*Up6g
+	-"<b>Converters are 3 times as efficient.</b><br><i>/give Muffins 64</i>"
+	-multiplies efficiency of Build6 by 300%
+	-unlocks at 150 Build6
+	-costs 4444444444444 Points
+	-named Too Many Muffins
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up5g_zps54a1c2d4.png
+	*Up6h
+	-"<b>Converters are 4 times as efficient.</b><br><i>We just take inspiration from the cookie flavors, that's all.</i>"
+	-multiplies efficiency of Build6 by 400%
+	-unlocks at 200 Build6
+	-costs 444444444444444 Points
+	-named Ripoff Ideas
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up5h_zps9398c012.png
+	*Up6i
+	-"<b>Converters are 4 times as efficient.</b><br><i>Actually made from [REDACTED], [REDACTED] and [REDACTED].</i>"
+	-multiplies efficiency of Build6 by 400%
+	-unlocks at 250 Build6
+	-costs 55555555555555555 Points
+	-named Secret Ingredient
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up5i_zps64b3f3f2.png
+	*Up6j
+	-"<b>Converters are 5 times as efficient.</b><br><i>We finally broke the heavenly chip secret and applied it to muffins!</i>"
+	-multiplies efficiency of Build6 by 500%
+	-unlocks at 300 Build6
+	-costs 6666666666666666666 Points
+	-named Heavenly Muffins
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up5j_zps776c1696.png
+
+	*Up7a
+	-"<b>Testing labs are twice as efficient.</b><br><i>"Tests" cookies' reaction to radioactivity.</i>"
+	-multiplies efficiency of Build7 by 200%
+	-unlocks at 1 Build7
+	-costs 17999999 Points
+	-named Radium
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up6a_zps5ea09f5e.png
+	*Up7b
+	-"<b>Testing labs are twice as efficient.</b><br><i>Like in cartoons.</i>"
+	-multiplies efficiency of Build7 by 200%
+	-unlocks at 10 Build7
+	-costs 42999999 Points
+	-named Exploding Stuff
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up6b_zps35f98f2c.png
+	*Up7c
+	-"<b>Testing labs are twice as efficient.</b><br><i>This mushroom comes from space!</i>"
+	-multiplies efficiency of Build7 by 200%
+	-unlocks at 25 Build7
+	-costs 179999999 Points
+	-named Toxic Spores
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up6c_zpseaa9eb1c.png
+	*Up7d
+	-"<b>Clicking wastes 1% more cookies for each testing lab you have.</b><br>Testing labs are 1.5 times as efficient.</b><br><i>I have no idea what I am doing!</i>"
+	-multiplies efficiency of Waste1 by 1% per Build7
+	-multiplies efficiency of Waste2 by 1% per Build7
+	-multiplies efficiency of Build7 by 150%
+	-unlocks at 50 Build7
+	-costs 1999999999 Points
+	-named Cookie Tester
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up6e_zps1fd33524.png
+	*Up7e
+	-"<b>Testing labs are 3 times as efficient.</b><br><i>What's nice with this experiment is that it continues even if you're not around.</i>"
+	-multiplies efficiency of Build7 by 300%
+	-unlocks at 100 Build7
+	-costs 229999999999 Points
+	-named Zombie Virus
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up6d_zps8e203270.png
+	*Up7f
+	-"<b>Testing labs waste 2% more cookies for each testing lab you have.</b><br><i>They test things on already tested on cookies.<br>They have no idea what they are doing.</i>"
+	-multiplies efficiency of Build7 by 2% per Build7
+	-unlocks at 123 Build7
+	-costs 2099999999999 Points
+	-named Dawgs
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up6f_zps8d9b68ba.png
+	*Up7g
+	-"<b>Testing labs are 3 times as efficient.</b><br><i>Do no breathe this, SERIOUSLY!</i>"
+	-multiplies efficiency of Build7 by 300%
+	-unlocks at 150 Build7
+	-costs 26999999999999 Points
+	-named Toxic Gazes
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up6g_zps37757b64.png
+	*Up7h
+	-"<b>Testing labs are 4 times as efficient.</b><br><i>Not the other kind of acid.</i>"
+	-multiplies efficiency of Build7 by 400%
+	-unlocks at 200 Build7
+	-costs 3199999999999999 Points
+	-named Acid
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up6h_zps192c9c83.png
+	*Up7i
+	-"<b>Testing labs are 4 times as efficient.</b><br><i>I FC*KING TOLD YOU NOT TO MESS WITH TIME PARADOXES, BERT!</i>"
+	-multiplies efficiency of Build7 by 400%
+	-unlocks at 250 Build7
+	-costs 369999999999999999 Points
+	-named Bloody Pocket Watch
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up6i_zps095af197.png
+	*Up7j
+	-"<b>Testing labs are 5 times as efficient.</b><br><i>The atoms are later reassembled to create muffins.</i>"
+	-multiplies efficiency of Build7 by 500%
+	-unlocks at 300 Build7
+	-costs 42999999999999999999 Points
+	-named Disintegration
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up6j_zpsb91e6cfe.png
+
+	*Up8a
+	-"<b>Incinerators are twice as efficient.</b><br><i>Not very tasty, but burn easily!</i>"
+	-multiplies efficiency of Build8 by 200%
+	-unlocks at 1 Build8
+	-costs 166666666 Points
+	-named Wooden Cookies
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up9a_zps9ba4ecf4.png
+	*Up8b
+	-"<b>Incinerators are twice as efficient.</b><br><i>A bit more freedom for your cookies.</i>"
+	-multiplies efficiency of Build8 by 200%
+	-unlocks at 10 Build8
+	-costs 366666666 Points
+	-named Oiled Cookies
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up9b_zpsf565e1e0.png
+	*Up8c
+	-"<b>Incinerators are twice as efficient.</b><br><i>With little burnt wood chips!</i>"
+	-multiplies efficiency of Build8 by 200%
+	-unlocks at 25 Build8
+	-costs 1666666666 Points
+	-named Coal Cookies
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up9c_zps0560ac1d.png
+	*Up8d
+	-"<b>Clicking wastes 1% more cookies for each incineratoryou have.</b><br><b>Incinerators are 1.5 times as efficient.</b><br><i>Works with CDs too.</i>"
+	-multiplies efficiency of Waste1 by 1% per Build8
+	-multiplies efficiency of Waste2 by 1% per Build8
+	-multiplies efficiency of Build8 by 150%
+	-unlocks at 50 Build8
+	-costs 16666666666 Points
+	-named Cookie Burner
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up9e_zpsa63770ae.png
+	*Up8e
+	-"<b>Incinerators are 3 times as efficient.</b><br><i>Why the f*ck are there crows in there?</i>"
+	-multiplies efficiency of Build8 by 300%
+	-unlocks at 100 Build8
+	-costs 2666666666666 Points
+	-named Nuclear Incinerators
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up9d_zps67b609ca.png
+	*Up8f
+	-"<b>Incinerators waste 2% more cookies for each incinerator you have.</b><br><i>People from USA may not understand if they don't know what Celsius is.</i>"
+	-multiplies efficiency of Build8 by 2% per Build8
+	-unlocks at 123 Build8
+	-costs 16666666666666 Points
+	-named 66°C
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up9f_zpsa510d3bd.png
+	*Up8g
+	-"<b>Incinerators are 3 times as efficient.</b><br><i>1 ticket to Nopeville, please!</i>"
+	-multiplies efficiency of Build8 by 300%
+	-unlocks at 150 Build8
+	-costs 266666666666666 Points
+	-named Spider Cookies
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up9g_zpsbfe67b69.png
+	*Up8h
+	-"<b>Incinerators are 4 times as efficient.</b><br><i>Two kinds of burn into one.</i>"
+	-multiplies efficiency of Build8 by 400%
+	-unlocks at 200 Build8
+	-costs 26666666666666666 Points
+	-named Corrosive Flames
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up9h_zpse75d61b5.png
+	*Up8i
+	-"<b>Incinerators are 4 times as efficient.</b><br><i>The chips are made of obsidian.</b>"
+	-multiplies efficiency of Build8 by 400%
+	-unlocks at 250 Build8
+	-costs 3666666666666666666 Points
+	-named Lava Cookies
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up9i_zps4c52992f.png
+	*Up8j
+	-"<b>Incinerators are 5 times as efficient.</b><br><i>The next logical step.</i>"
+	-multiplies efficiency of Build8 by 500%
+	-unlocks at 300 Build8
+	-costs 366666666666666666666 Points
+	-named Volcanoes
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up9j_zpsd1309f76.png
+
+	*Up9a
+	-"<b>Bottomless pits are twice as efficient.</b><br><i>What's a the point of having a such large hole if you can't fill it fast enough?</i>
+	-multiplies efficiency of Build9 by 200%
+	-unlocks at 1 Build9
+	-costs 1500000000 Points
+	-named Faster Trucks
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up10a_zps782cfa25.png
+	*Up9b
+	-"<b>Bottomless pits are twice as efficient.</b><br><i>Actually the problem told above.</i>"
+	-multiplies efficiency of Build9 by 200%
+	-unlocks at 10 Build9
+	-costs 3500000000 Points
+	-named Bigger Holes
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up10b_zps6879c589.png
+	*Up9c
+	-"<b>Bottomless pits are twice as efficient.</b><br><i>They got a new job.</i>"
+	-multiplies efficiency of Build9 by 200%
+	-unlocks at 25 Build9
+	-costs 15000000000 Points
+	-named Spartans
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up10c_zps68a2b33e.png
+	*Up9d
+	-"<b>Clicking wastes 1% more cookies for each bottomless pit you have.</b><br><b>Bottomless pits are 1.5 times as efficient.</b><br><i>Wub wub wub.</i>"
+	-multiplies efficiency of Waste1 by 1% per Build9
+	-multiplies efficiency of Waste2 by 1% per Build9
+	-multiplies efficiency of Build9 by 150%
+	-unlocks at 50 Build9
+	-costs 150000000000 Points
+	-named Cookie Dropper
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up10e_zps121a68e9.png
+	*Up9e
+	-"<b>Bottomless pits are 3 times as efficient.</b><br><i>Fast mens are faster than trucks, obviously.</i>"
+	-multiplies efficiency of Build9 by 200%
+	-unlocks at 100 Build9
+	-costs 15000000000000 Points
+	-named FASTER MENNER!!!!
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up10d_zps5f8979ed.png
+	*Up9f
+	-"<b>Bottomless pits waste 2% more cookies for each bottomless pit you have.</b><br><i>Mostly because of paradoxes 'n shyet.</i>"
+	-multiplies efficiency of Build9 by 2% per Build9
+	-unlocks at 123 Build9
+	-costs 150000000000000 Points
+	-named Holes in Holes
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up10f_zps25a1b5c6.png
+	*Up9g
+	-"<b>Bottomless pits are 3 times as efficient.</b><br><i>Well, well, well!</i>"
+	-multiplies efficiency of Build9 by 300%
+	-unlocks at 150 Build9
+	-costs 2500000000000000 Points
+	-named Blessing Wells
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up10g_zps8417822b.png
+	*Up9h
+	-"<b>Bottomless pits are 4 times as efficient.</b><br><i>Cookies got stuck sometimes, not anymore..</i>"
+	-multiplies efficiency of Build9 by 400%
+	-unlocks at 200 Build9
+	-costs 250000000000000000 Points
+	-named Tetris Tricks
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up10h_zpsb8569fc1.png
+	*Up9i
+	-"<b>Bottomless pits are 4 times as efficient.</b><br><i>Bert did something to the fast mens, we don't know what, but it's working nicely.</i>"
+	-multiplies efficiency of Build9 by 400%
+	-unlocks at 250 Build9
+	-costs 35000000000000000000 Points
+	-named fASter meNNeR!!1!
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up10i_zpsce44506c.png
+	*Up9j
+	-"<b>Bottomless pits are 5 times as efficient.</b><br><i>Never, ever dig down.</i>"
+	-multiplies efficiency of Build9 by 500%
+	-unlocks at 300 Build9
+	-costs 3500000000000000000000 Points
+	-named Rule Number #1
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up10j_zpsb70a48a5.png
+
+	*Up10a
+	-"<b>Warmachines are twice as efficient.</b><br><i>Less trips to the refueling station.</i>"
+	-multiplies efficiency of Build10 by 200%
+	-unlocks at 1 Build10
+	-costs 5005555005 Points
+	-named Better Engines
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up11a_zps6ed92174.png
+	*Up10b
+	-"<b>Warmachines are twice as efficient.</b><br><i>A classic.</i>"
+	-multiplies efficiency of Build10 by 200%
+	-unlocks at 10 Build10
+	-costs 11101010111 Points
+	-named Gatling Guns
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up11b_zps3e079fd3.png
+	*Up10c
+	-"<b>Warmachines are twice as efficient.</b><br><i>M202s, of course.</i>"
+	-multiplies efficiency of Build10 by 200%
+	-unlocks at 25 Build10
+	-costs 40440004404 Points
+	-named Rocket Launchers
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up11c_zps86c2e0d4.png
+	*Up10d
+	-"<b>Clicking waste 1% more cookies for each warmachine you have.<br>Warmachines are 1.5 times as efficient.</b><br><i>"360 noscop EZ dud 5/5"</i>"
+	-multiplies efficiency of Waste1 by 1% per Build10
+	-multiplies efficiency of Waste2 by 1% per Build10
+	-multiplies efficiency of Build10 by 150%
+	-unlocks at 50 Build10
+	-costs 555005500555 Points
+	-named Player-Friendly Controls
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up11e_zps68b3e97b.png
+	*Up10e
+	-"<b>Warmachines are 3 times as efficient.</b><br><i>Edges are made of multitanium; the more titanium, the better!</i>"
+	-multiplies efficiency of Build10 by 300%
+	-unlocks at 100 Build10
+	-costs 60066066066006 Points
+	-named Giant Swords
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up11d_zps3efba08f.png
+	*Up10f
+	-"<b>Warmachines waste 2% more cookies for each warmachine you have.</b><br><i>They react to each other and mutually increase their power.</i>"
+	-multiplies efficiency of Build10 by 2% per Build10
+	-unlocks at 123 Build10
+	-costs 505550050055505 Points
+	-named Syngergizing Engines
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up11f_zps5bebbebf.png
+	*Up10g
+	-"<b>Warmachines are 3 times as efficient.</b><i>Great for poking holes in titanium.</i>"
+	-multiplies efficiency of Build10 by 300%
+	-unlocks at 150 Build10
+	-costs 7007777007777007 Points
+	-named Gauss Rifles
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up11g_zps23158ec7.png
+	*Up10h
+	-"<b>Warmachines are 4 times as efficient.</b><i>There are days you don't feel like aiming at all.</i>"
+	-multiplies efficiency of Build10 by 400%
+	-unlocks at 200 Build10
+	-costs 800880880088088008 Points
+	-named Full-Auto Shotguns
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up11h_zps9a4561c8.png
+	*Up10i
+	-"<b>Warmachines are 4 times as efficient.</b><i>Metals which aren't melted by plasma are close to none.</i>"
+	-multiplies efficiency of Build10 by 400%
+	-unlocks at 250 Build10
+	-costs 101000110111011000101 Points
+	-named Plasma Canons
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up11i_zpsb0ac8d78.png
+	*Up10j
+	-"<b>Warmachines are 5 times as efficient.</b><i>IMA FIRING MAH LAZOR!</i>"
+	-multiplies efficiency of Build10 by 500%
+	-unlocks at 300 Build10
+	-costs 11110001100100110001111 Points
+	-named Laser Canons
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up11j_zpsd3a7eb27.png
+
+	*Up11a
+	-"<b>Unstable condensers are twice as efficient.</b><br><i>Now it's done on purpose.</i>"
+	-multiplies efficiency of Build11 by 200%
+	-unlocks at 1 Build11
+	-costs 39999999999 Points
+	-named Improved Instability
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up12a_zpsc257d147.png
+	*Up11b
+	-"<b>Unstable condensers are twice as efficient.</b><br><i>For bigger explosions.</i>"
+	-multiplies efficiency of Build11 by 200%
+	-unlocks at 10 Build11
+	-costs 99999999999 Points
+	-named Instable Materials
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up12b_zps82d8a0f4.png
+	*Up11c
+	-"<b>Unstable condensers are twice as efficient.</b><br><i>We were told not to do that, we personally don't give a damn.</i>"
+	-multiplies efficiency of Build11 by 200%
+	-unlocks at 25 Build11
+	-costs 399999999999 Points
+	-named C4
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up12c_zpsa234a034.png
+	*Up11d
+	-"<b>Clicking wastes 1% more cookies for each unstable condenser you have.</b><br><b>Unstable condensers are 1.5 times as efficient.</b><br><i>Look at your CC save now.</i>"
+	-multiplies efficiency of Waste1 by 1% per Build11
+	-multiplies efficiency of Waste2 by 1% per Build11
+	-multiplies efficiency of Build11 by 150%
+	-unlocks at 50 Build11
+	-costs 4999999999999 Points
+	-named Hard Reseter
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up12e_zpse93462ce.png
+	*Up11e
+	-"<b>Unstable condensers are 3 times as efficienct.</b><br><i>Way more unstable than unstable.</i>"
+	-multiplies efficiency of Build11 by 300%
+	-unlocks at 100 Build11
+	-costs 499999999999999 Points
+	-named Antimatter Materials
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up12d_zpsa22ffac6.png
+	*Up11f
+	-"<b>Unstable condensers waste 2% more cookies for each unstable condenser you have</b><br><i>Your condensers condense now cookies into antimatter, then use this antimatter to condense into cookies.</i><br><br><i>Oh yeah they become more instable with that.</i></br>"
+	-multiplies efficiency of Build12 by 2% per Build11
+	-unlocks at 123 Build11
+	-costs 4999999999999999 Points
+	-named Matter condensers
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up12f_zps4ab6d579.png
+	*Up11g
+	-"<b>Unstable condensers are 3 times as efficient.</b><br><i>Yeah if you could make more unstable things, that'd be great.</i>"
+	-multiplies efficiency of Build11 by 300%
+	-unlocks at 150 Build11
+	-costs 59999999999999999 Points
+	-named Unstable Antimatter
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up12g_zps97661a6a.png
+	*Up11h
+	-"<b>Unstable condensers are 4 times as efficient.</b><br><i>Adding anti- to anything makes it more unstable.</i>
+	-multiplies efficiency of Build11 by 400%
+	-unlocks at 200 Build11
+	-costs 6999999999999999999 Points
+	-named Antiantimatter
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up12h_zps0d6dac06.png
+	*Up11i
+	-"<b>Unstable condensers are 4 times as efficient.</b><br><i>Wait, wasn't that a testing lab upgrade?</i>"
+	-multiplies efficiency of Build11 by 400%
+	-unlocks at 250 Build11
+	-costs 799999999999999999999 Points
+	-named Nitroglycerin
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up12i_zps2146853f.png
+	*Up11j
+	-"<b>Unstable condensers are 5 times as efficient.</b><br><i>We don't know how we could rebuild ACs that fast in the first place.</i>"
+	-multiplies efficiency of Build11 by 500%
+	-unlocks at 300 Build11
+	-costs 99999999999999999999999 Points
+	-named FASTER ENGINER!!!!
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up12j_zps75da9d9f.png
+
+	*Up12a
+	-"<b>DragonSound devices are twice as efficient.</b><br><i>Ears will bleed!</i>"
+	-multiplies efficiency of Build12 by 200%
+	-unlocks at 1 Build12
+	-costs 230000000000 Points
+	-named High Pitched Sounds
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up13a_zps4c9fa0b0.png
+	*Up12b
+	-"<b>DragonSound devices are twice as efficient.</b><br><i>Ears will bleed even more!!</i>"
+	-multiplies efficiency of Build12 by 200%
+	-unlocks at 10 Build12
+	-costs 550000000000 Points
+	-named Crappy Music
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up13b_zpsea98baa9.png
+	*Up12c
+	-"<b>DragonSound devices are twice as efficient.</b><br><i>You may lose your soul by hearing this.</i>"
+	-multiplies efficiency of Build12 by 200%
+	-unlocks at 25 Build12
+	-costs 2300000000000 Points
+	-named G-major Sounds
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up13c_zps9f0c04c1.png
+	*Up12d
+	-"<b>Clicking wastes 1% more cookies for each DragonSound device you have.</b><br>DragonSound devices are 1.5 times as efficient.</b><br><i>It can records the sound of a mouse click and play on the devices.</i>"
+	-multiplies efficiency of Waste1 by 1% per Build12
+	-multiplies efficiency of Waste2 by 1% per Build12
+	-multiplies efficiency of Build12 by 150%
+	-unlocks at 50 Build12
+	-costs 25000000000000 Points
+	-named Mouse Mikes
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up13e_zps1c1343c4.png
+	*Up12e
+	-"<b>DragonSound devices are 3 times as efficient.</b><br><i>You can now use the devices at full power without causing any harm to people.</i>"
+	-multiplies efficiency of Build12 by 300%
+	-unlocks at 100 Build12
+	-costs 2900000000000000 Points
+	-named Audio Filters
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up13d_zps3bc75495.png
+	*Up12f
+	-"<b>DragonSound devices waste 2% more cookies for each DragonSound device you have.</b><br><i>Hopefuly the filters are still efficient no matter the power of the device.</i>"
+	-multiplies efficiency of Build13 by 2% per Build12
+	-unlocks at 123 Build12
+	-costs 26000000000000000 Points
+	-named Ever Increasing Power
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up13f_zps7124ae04.png
+	*Up12g
+	-"<b>DragonSound devices are 3 times as efficient.</b><br><i>With this, we can play good music without decreasing the devices' efficiency!</i>"
+	-multiplies efficiency of Build12 by 300%
+	-unlocks at 150 Build12
+	-costs 340000000000000000 Points
+	-named RealDragonSound Device
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up13g_zps0d27697a.png
+	*Up12h
+	-"<b>DragonSound devices are 4 times as efficient.</b><br><i>Stealth Bomba keytar not included in the pack.</i>"
+	-multiplies efficiency of Build12 by 400%
+	-unlocks at 200 Build12
+	-costs 40000000000000000000 Points
+	-named Guitar VS Piano
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up13h_zps3e6b24a0.png
+
+	*Up13a
+	-"<b>CLCWCs are twice as efficient.</b><br><i>CLCWCs have very illogical upgrades, now don't say I didn't warn you.</i>"
+	-multiplies efficiency of Build13 by 200%
+	-unlocks at 1 Build13
+	-costs 2710000000000 Points
+	-named Stickier Glue
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up14a_zps1b831861.png
+	*Up13b
+	-"<b>CLCWCs are twice as efficient.</b><br><i>Why knot?</i>"
+	-multiplies efficiency of Build13 by 200%
+	-unlocks at 10 Build13
+	-costs 6400000000000 Points
+	-named Ropes
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up14b_zpsaca74694.png
+	*Up13c
+	-"<b>CLCWCs are twice as efficient.</b><br><i>A pretty dark place, filled with both your dreams and nightmares. Also the best source of random sh*t.</i>"
+	-multiplies efficiency of Build13 by 200%
+	-unlocks at 25 Build13
+	-costs 26700000000000 Points
+	-named Internet Access
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up14c_zpsaa3f511d.png
+	*Up13d
+	-"<b>Clicking waste 1% more cookies for each CLCWC you have.<br>CLCWCs are 1.5 times as efficient.</b><br><i>There's no explanation to that, just a clicking boost.</i>"
+	-multiplies efficiency of Waste1 by 1% per Build13
+	-multiplies efficiency of Waste2 by 1% per Build13
+	-multiplies efficiency of Build13 by 150%
+	-unlocks at 50 Build13
+	-costs 289000000000000 Points
+	-named Clicking Boost
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up14e_zps69c5ccd6.png
+	*Up13e
+	-"<b>CLCWCs are 3 times as efficient.</b><br><i>Purrfect!</i>"
+	-multiplies efficiency of Build13 by 300%
+	-unlocks at 100 Build13
+	-costs 34000000000000000 Points
+	-named Wizard Cats In Tanks
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up14d_zps64c5232b.png
+	*Up13f
+	-"<b>CLCWCs waste 2% more cookies for each CLCWC you have.</b><br><i>Same thing as the clicking boost.</i>"
+	-multiplies efficiency of Build13 by 2% per Build13
+	-unlocks at 123 Build13
+	-costs 304000000000000000 Points
+	-named CLCWC Boost
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up14f_zps20914713.png
+	*Up13g
+	-"<b>CLCWCs are 3 times as efficient.</b><br><i>Wow, such upgrade, very originality.</i>
+	-multiplies efficiency of Build13 by 300%
+	-unlocks at 150 Build13
+	-costs 3990000000000000000 Points
+	-named Doge
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up14g_zps5a9b5050.png
+	*Up13h
+	-"<b>CLCWCs are 4 times as efficient.</b><br><i>"worst coworker ever 1/5" -Bert.</i>"
+	-multiplies efficiency of Build13 by 400%
+	-unlocks at 200 Build13
+	-costs 468000000000000000000 Points
+	-named Bob
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up14h_zps42e32e91.png
+
+	*Up14a
+	-"<b>Cookiocalypses are twice as efficient.</b><br><i>Totaly not because of an intense underground deathmatch.</i>"
+	-multiplies efficiency of Build14 by 200%
+	-unlocks at 1 Build14
+	-costs 21212121212121 Points
+	-named Quakes
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up14a_zpsc428fa4d.png
+	*Up14b
+	-"<b>Cookiocalypses are twice as efficient.</b><br><i>#MichaelBay</i>"
+	-multiplies efficiency of Build14 by 200%
+	-unlocks at 10 Build14
+	-costs 50505050505050 Points
+	-named Nuclear Explosions
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up14b_zps27bde5a1.png
+	*Up14c
+	-"<b>Cookiocalypses are twice as efficient.</b><br><i>Throw the cheese.</i>"
+	-multiplies efficiency of Build14 by 200%
+	-unlocks at 25 Build14
+	-costs 202020202020202 Points
+	-named Alien Attack
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up14c_zpsf23232a6.png
+	*Up14d
+	-"<b>Clicking wastes 1% more cookies for each cookiocalypse you have.<br>Cookiocalypses are 1.5 times as efficient.</b><br><i>"still a better movie than Sharknado."</i>"
+	-multiplies efficiency of Waste1 by 1% per Build14
+	-multiplies efficiency of Waste2 by 1% per Build14
+	-multiplies efficiency of Build14 by 150%
+	-unlocks at 50 Build14
+	-costs 2222222222222222 Points
+	-named Giant Cursors Coming from the Sky
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up14d_zps45d2100c.png
+	*Up14e
+	-"<b>Cookiocalypses are 3 times as efficient.</b><br><i>"best upgrade ever 0/0"</i>"
+	-multiplies efficiency of Build14 by 300%
+	-unlocks at 100 Build14
+	-costs 262626262626262626 Points
+	-named Division by 0
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up14e_zps385bafb4.png
+	*Up14f
+	-"<b>Cookiocalypses waste 2% more cookies for each cookiocalypse you have.</b><br><i>Watch the multipliers go high!</i>"
+	-multiplies efficiency of Build14 by 2% per Build14
+	-unlocks at 123 Build14
+	-costs 2323232323232323232 Points
+	-named Chain Reaction
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up14f_zps581eb72c.png
+	*Up14g
+	-"<b>Cookiocalypses are 3 times as efficient.</b><br><i>hey it's "egg_"!</i>"
+	-multiplies efficiency of Build14 by 300%
+	-unlocks at 150 Build14
+	-costs 31313131313131313131 Points
+	-named "egg_"
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up14g_zps9f5ac321.png
+	*Up14h
+	-"<b>Cookiocalypses are 4 times as efficient.</b><br><i>Probably worse than no connection at all.<br>Fortunately, this doesn't apply to CLCWCs.</i>"
+	-multiplies efficiency of Build14 by 400%
+	-unlocks at 200 Build14
+	-costs 3636363636363636363636 Points
+	-named Ultra Slow Internet Connection
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up14h_zps5ee495d8.png
+
+	*Up15a
+	-"<b>Portals are twice as efficient.</b><br><i>Portals are really tricky to understand, the first one created was just a stroke of luck.</i>"
+	-multiplies efficiency of Build15 by 200%
+	-unlocks at 1 Build15
+	-costs 313371337133713 Points
+	-named Portal Knowledge
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up15a_zps9829a8b8.png
+	*Up15b
+	-"<b>Portals are twice as efficient.</b><br><i>Knowledge is power, power makes things more efficient.</i>"
+	-multiplies efficiency of Build15 by 200%
+	-unlocks at 10 Build15
+	-costs 713371337133713 Points
+	-named Improved Efficiency
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up15b_zps90cbb4d6.png
+	*Up15c
+	-"<b>Portals are twice as efficient.</b><br><i>Well, that sucks.</i>"
+	-multiplies efficiency of Build15 by 200%
+	-unlocks at 25 Build15
+	-costs 3133713371337133 Points
+	-named Vaccum Portals
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up15c_zps7a077685.png
+	*Up15d
+	-"<b>Clicking wastes 1% more cookies for each portal you have.<br>Portals are 1.5 times as efficient.</b><br><i>Hammer time!</i>"
+	-multiplies efficiency of Waste1 by 1% per Build15
+	-multiplies efficiency of Waste2 by 1% per Build15
+	-multiplies efficiency of Build15 by 150%
+	-unlocks at 50 Build15
+	-costs 31337133713371337 Points
+	-named Ban Hammer Lulz
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up15d_zps89b4af1c.png
+	*Up15e
+	-"<b>Portals are 3 times as efficient.</b><br><i>Opening doors to other universes allow us to get powerful ways to waste cookies, or an infinite supply of waffles.</i>"
+	-multiplies efficiency of Build15 by 300%
+	-unlocks at 100 Build15	
+	-costs 4133713371337133713 Points
+	-named Universe Traveling
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up15e_zps26902da5.png
+	*Up15f
+	-"<b>Portals are 2% more efficient for each portal you have.</b><br><i>They fuse, they merge, they grow...oh wait.</i>"
+	-multiplies efficiency of Build15 by 2% per Build15
+	-unlocks at 123 Build15
+	-costs 31337133713371337133 Points
+	-named Portal Fusion
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up15f_zpscb4999f9.png
+	*Up15g
+	-"<b>Portals are 3 times as efficient.</b><br><i>It has some insanely powerful weapons, like the "noobgru" or the PM SpetsNaz.</i>"
+	-multiplies efficiency of Build15 by 300%
+	-unlocks at 150 Build15
+	-costs 413371337133713371337 Points
+	-named The Other CW
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up15g_zpsc9d924af.png
+	*Up15h
+	-"<b>Portals are 4 times as efficient.</b><br><i>Robots covered with an extremely dangerous substance? Yes please!</i>"
+	-multiplies efficiency of Build15 by 400%
+	-unlocks at 200 Build15
+	-costs 51337133713371337133713 Points
+	-named IGM Games Ripoffs
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up15h_zps3936cbb3.png
+
+	*UpR1a
+	-"<b>Unicorns are twice as efficient.</b><br><i>Rainbow-colored horns are a sign of illness.</i>"
+	-multiplies efficiency of BuildR1 by 200%
+	-unlocks at 1 BuildR1
+	-costs 37 Rainbows
+	-named White horns
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up8a_zpsce32ad58.png
+	*UpR1b
+	-"<b>Unicorns are twice as efficient.</b><br><i>Fancy as f*ck.</i>"
+	-multiplies efficiency of BuildR1 by 200%
+	-unlocks at 10 BuildR1
+	-costs 77 Rainbows
+	-named Improved fancyness
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up8b_zpsd8f049b2.png
+	*UpR1c
+	-"<b>Unicorns are twice as efficient.</b><br><i>Like Twilight, but better in every way.</i>
+	-multiplies efficiency of BuildR1 by 200%
+	-unlocks at 25 BuildR1
+	-costs 377 Rainbows
+	-named More sparkling stuff
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up8c_zps9e40a4e1.png
+	*UpR1d
+	-"<b>Manual rainbow coin production is 7% more powerful per unicorn stable.<br>Unicorns are twice as efficient.</b><br><i>Huehuehuehuehue.</i>"
+	-multiplies efficiency of RainbowSearch6 by 7% per BuildR1
+	-multiplies efficiency of BuildR1 by 200%
+	-unlocks at 50 BuildR1
+	-costs 3777 Rainbows
+	-named Corn Cursor
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up8e_zpsac842757.png
+	*UpR1e
+	-"<b>Unicorns are 3 times as efficient.</b><br><i>Don't do drugs IRL, they're bad, mkay?</i>"
+	-multiplies efficiency of BuildR1 by 300%
+	-unlocks at 100 BuildR1
+	-costs 477777 Rainbows
+	-named Drugs
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up8d_zps8475533c.png
+
+	*UpR2a
+	-"<b>Cookie monsters are twice as efficient.</b><br><i>"mOAr CooKIes NAO!!"</i>"
+	-multiplies efficiency of BuildR2 by 200%
+	-unlocks at 1 BuildR2
+	-costs 3777 Rainbows
+	-named Hungrier Monsters
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up16a_zpsd2ddfa79.png
+	*UpR2b
+	-"<b>Cookie monsters are twice as efficient.</b><br><i>You monster!</i>"
+	-multiplies efficiency of BuildR2 by 200%
+	-unlocks at 10 BuildR2
+	-costs 7777 Rainbows
+	-named Starving Monsters
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up16b_zps2ecf027f.png
+	*UpR2c
+	-"<b>Cookie monsters are twice as efficient.</b><br><i>"caN'T sToP EAtiNG!!"</i>"
+	-multiplies efficiency of BuildR2 by 200%
+	-unlocks at 25 BuildR2
+	-costs 17777 Rainbows
+	-named Cookie Addiction
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up16c_zps573b004c.png
+	*UpR2d
+	-"<b>Cookie monsters are twice as efficient.</b><br><i>Not milk-proof.</i>"
+	-multiplies efficiency of BuildR2 by 200%
+	-unlocks at 50 BuildR2
+	-costs 97777 Rainbows
+	-named Cookie Magnet
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up16d_zps4700b056.png
+	*UpR2e
+	-"<b>Cookie monsters are 3 times as efficient.</b><br><i>Monsters now act like vaccum cleaners.</i>"
+	-multiplies efficiency of BuildR2 by 300%
+	-unlocks at 100 BuildR2
+	-costs 3777777 Rainbows
+	-named Cookies Magicaly Being Attracted to Monsters' Mouths
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up16e_zps96f8569b.png
+
+	*UpRa
+	-"<b>Your luck increase from 15% to 33%.<br>You only need 85% energy to search for a rainbow coin.</b><br><i>Remember it HASEn't worked for the rabbit!</i>"
+	-locks RainbowSearch1
+	-unlocks RainbowSearch2
+	-unlocks UpRb
+	-unlocks at 1 RainbowsAT
+	-costs 7777 Points
+	-named Rabbit's Foot
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up7a_zps1ec28e81.png
+	*UpRb
+	-"<b>Your luck increase from 33% to 50%.<br>You only need 65% energy to search for a rainbow coin.</b><br><i>Guess who was unlucky enough to lose this!</i>"
+	-locks RainbowSearch2
+	-unlocks RainbowSearch3
+	-unlocks UpRc
+	-costs 7 Rainbows
+	-named Golden Horseshoe
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up7b_zps3fc13877.png
+	*UpRc
+	-"<b>Your luck increase from 50% to 80%.<br>You only need 40% energy to search for a rainbow coin.</b><br><i>Out of every clover you could find in you garden, it had to be the only one with 4 leaves!</i>
+	-locks RainbowSearch3
+	-unlocks RainbowSearch4
+	-unlocks UpRd
+	-costs 27 Rainbows
+	-named Four-leaf Clover
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up7c_zpsf56536fb.png
+	*UpRd
+	-"<b>You're so lucky you find rainbow coins everytime for only 25% of your energy!</b><br><i>Watch out when using this, it's not a miracle generator...</i>"
+	-locks RainbowSearch4
+	-unlocks RainbowSearch5
+	-unlocks AchUpR
+	-costs 77 Rainbows
+	-named Ultimate Lucky Charm
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up7d_zps7527a94d.png
+	*UpRe
+	-"<b>You don't need energy to get rainbow coins anymore!</b><br><i>Rainbow coins, rainbow coins everywhere!</i>"
+	-locks RainbowSearch5
+	-unlocks RainbowSearch6
+	-unlocks at 77 ProdR
+	-costs 777 Rainbows
+	-named Rainbow Coin Magnet
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up7e_zps9729d63b.png
+
+	*UpAch1
+	-"<b>Unlocks an achievement.</b><br><i>I love having fun with numbers.</i>"
+	-unlocks at 16777216 Cookies
+	-unlocks AchUp
+	-costs 5000000 Points
+	-named Achievement unlock
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/UpAch1_zps08717cf4.png
+
+	*UnGrimoire1
+	-"<b>Unlocks the magic grimoire of Knowledge.</b><br><i>The librarian wasn't happy when we took it, it resulted of most of the pages being heavily burnt.</i>"
+	-multiplies efficiency of Waste1 by 105%
+	-multiplies efficiency of Waste2 by 105%
+	-multiplies efficiency of Build1 by 105%
+	-multiplies efficiency of Build2 by 105%
+	-multiplies efficiency of Build3 by 105%
+	-multiplies efficiency of Build4 by 105%
+	-multiplies efficiency of Build5 by 105%
+	-multiplies efficiency of Build6 by 105%
+	-multiplies efficiency of Build7 by 105%
+	-multiplies efficiency of Build8 by 105%
+	-multiplies efficiency of Build9 by 105%
+	-multiplies efficiency of Build10 by 105%
+	-multiplies efficiency of Build11 by 105%
+	-multiplies efficiency of Build12 by 105%
+	-multiplies efficiency of Build13 by 105%
+	-multiplies efficiency of Build14 by 105%
+	-multiplies efficiency of Build15 by 105%
+	-multiplies efficiency of BuildR1 by 105%
+	-multiplies efficiency of BuildR2 by 105%
+	-unlocks at 1000000000 Cookies
+	-unlocks Grimoire1
+	-unlocks Tutorial4
+	-unlocks UnGrimoire2
+	-costs 110110110 Points
+	-named Magic Book Finding
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/UpAch2-3-4_zpse5e24a0e.png
+	*UnGrimoire2
+	-"<b>Unlocks the second page of the grimoire.</b><br><i>After hours of searching in the dark library, we finally found another page!</i>"
+	-multiplies efficiency of Waste1 by 105%
+	-multiplies efficiency of Waste2 by 105%
+	-multiplies efficiency of Build1 by 105%
+	-multiplies efficiency of Build2 by 105%
+	-multiplies efficiency of Build3 by 105%
+	-multiplies efficiency of Build4 by 105%
+	-multiplies efficiency of Build5 by 105%
+	-multiplies efficiency of Build6 by 105%
+	-multiplies efficiency of Build7 by 105%
+	-multiplies efficiency of Build8 by 105%
+	-multiplies efficiency of Build9 by 105%
+	-multiplies efficiency of Build10 by 105%
+	-multiplies efficiency of Build11 by 105%
+	-multiplies efficiency of Build12 by 105%
+	-multiplies efficiency of Build13 by 105%
+	-multiplies efficiency of Build14 by 105%
+	-multiplies efficiency of Build15 by 105%
+	-multiplies efficiency of BuildR1 by 105%
+	-multiplies efficiency of BuildR2 by 105%
+	-unlocks Grimoire2
+	-unlocks UnGrimoire3
+	-costs 330330330 Points
+	-named Second Page
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/UpAch2-3-4_zpse5e24a0e.png
+	*UnGrimoire3
+	-"<b>Unlocks the third page of the grimoire.</b><br><i>After browsing a while on the internet, we found out that the extra capital letter in the name of the book wasn't a mistake.</i>
+	-multiplies efficiency of Waste1 by 105%
+	-multiplies efficiency of Waste2 by 105%
+	-multiplies efficiency of Build1 by 105%
+	-multiplies efficiency of Build2 by 105%
+	-multiplies efficiency of Build3 by 105%
+	-multiplies efficiency of Build4 by 105%
+	-multiplies efficiency of Build5 by 105%
+	-multiplies efficiency of Build6 by 105%
+	-multiplies efficiency of Build7 by 105%
+	-multiplies efficiency of Build8 by 105%
+	-multiplies efficiency of Build9 by 105%
+	-multiplies efficiency of Build10 by 105%
+	-multiplies efficiency of Build11 by 105%
+	-multiplies efficiency of Build12 by 105%
+	-multiplies efficiency of Build13 by 105%
+	-multiplies efficiency of Build14 by 105%
+	-multiplies efficiency of Build15 by 105%
+	-multiplies efficiency of BuildR1 by 105%
+	-multiplies efficiency of BuildR2 by 105%
+	-unlocks Grimoire3
+	-unlocks UnGrimoire4
+	-costs 990990990 Points
+	-named Third Page
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/UpAch2-3-4_zpse5e24a0e.png
+	*UnGrimoire4
+	-"<b>Unlocks the fourth page of the grimoire.</b><br><i>Found at the top of a mansion.</i>"
+	-multiplies efficiency of Waste1 by 105%
+	-multiplies efficiency of Waste2 by 105%
+	-multiplies efficiency of Build1 by 105%
+	-multiplies efficiency of Build2 by 105%
+	-multiplies efficiency of Build3 by 105%
+	-multiplies efficiency of Build4 by 105%
+	-multiplies efficiency of Build5 by 105%
+	-multiplies efficiency of Build6 by 105%
+	-multiplies efficiency of Build7 by 105%
+	-multiplies efficiency of Build8 by 105%
+	-multiplies efficiency of Build9 by 105%
+	-multiplies efficiency of Build10 by 105%
+	-multiplies efficiency of Build11 by 105%
+	-multiplies efficiency of Build12 by 105%
+	-multiplies efficiency of Build13 by 105%
+	-multiplies efficiency of Build14 by 105%
+	-multiplies efficiency of Build15 by 105%
+	-multiplies efficiency of BuildR1 by 105%
+	-multiplies efficiency of BuildR2 by 105%
+	-unlocks Grimoire4
+	-costs 2972972970 Points
+	-named Fourth Page
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/UpAch2-3-4_zpse5e24a0e.png
+
+Achievements :
+	*Grimoire1
+	-named Magic grimoire of Knowledge, page 1
+	-"Last lunatic cookie wasting achievement requires <b>1.1*10^8</b> times more cookies wasted than the last normal cookie wasting achievement.<br><i>Also the correct sentence is "Omelette AU fromage".</i>"
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchUp2_zps0502be43.png
+	*Grimoire2
+	-named Magic grimoire of Knowledge, page 2
+	-"The most expensive upgrade costs <b>51 sextillion</b> points.<br><i>That's 2 times less than the last lunatic cookie wasting achievement.</i>"
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchUp3_zps9c9079ab.png
+	*Grimoire3
+	-named Magic grimoire of Knowledge, page 3
+	-"Last lunatic points achievement requires <b>56</b> times less points than the first lunatic cookie wasting achievement.<br><i>There are 3 lunatic cookie wasting and 3 lunatic points achievements ATM.</i>"
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchUp4_zpsc250380a.png
+	*Grimoire4
+	-named Magic grimoire of Knowledge, page 4
+	-"There's 0.01% of chance you wont get a rainbow coin with the ultimate lucky charm.<br><i>It's 5,000 times more frequent than getting [REDACTED, ONE HINT AT A TIME PLEASE].</i>"
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchUp5_zpsa1fec7de.png
+
+	*AchCookie1
+	-named Another cookie game?
+	-"Waste <b>1</b> cookie."
+	-unlocks at 1 Cookies
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchCookie1_zps527bb860.png
+	*AchCookie2
+	-named Oh i get it...
+	-"Waste <b>100</b> cookies."
+	-unlocks at 100 Cookies
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchCookie2_zps4631143d.png
+	*AchCookie3
+	-named Casual waster
+	-"Waste <b>1k</b> cookies."
+	-unlocks at 1000 Cookies
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchCookie3_zpsc5006e91.png
+	*AchCookie4
+	-named It's over 9000!!!
+	-"Waste <b>9,001</b> cookies."
+	-unlocks at 9001 Cookies
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchCookie4_zps6c5c9f68.png
+	*AchCookie5
+	-named Complete boredom
+	-"Waste <b>50k</b> cookies."
+	-unlocks at 50000 Cookies
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchCookie5_zps40696ba2.png
+	*AchCookie6
+	-named Cookie killer
+	-"Waste <b>500k</b> cookies."
+	-unlocks at 500000 Cookies
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchCookie6_zps46e22e3b.png
+	*AchCookie7
+	-named Hardcore waster
+	-"Waste <b>2.5 million</b> cookies."
+	-unlocks at 2500000 Cookies
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchCookie7_zpsd36460ef.png
+	*AchCookie8
+	-named 2^24
+	-"Waste <b>16,777,216</b> cookies."
+	-unlocks at 16777216 Cookies
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchCookie8_zpsc7bf1891.png
+	*AchCookie9
+	-named Hell no(w)!
+	-"Waste <b>666,666,666</b> cookies."
+	-unlocks at 666666666 Cookies
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchCookie9_zps27dac167.png
+	*AchCookie10
+	-named Bill-ionaire!
+	-"Waste <b>1 billion</b> cookies."
+	-unlocks at 1000000000 Cookies
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchCookie10_zps3715b92b.png
+	*AchCookie11
+	-named Universal waster
+	-"Waste <b>44,444,444,444</b> cookies."
+	-unlocks at 44444444444 Cookies
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchCookie11_zps648a731e.png
+	*AchCookie12
+	-named Trillion club
+	-"Waste <b>1 trillion</b> cookies.<br><i>Septillion club progress : 0.0000000001%.</i>"
+	-unlocks at 1000000000000 Cookies
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchCookie12_zpsaa1841c3.png
+	*AchCookie13
+	-named Now that's lucky!
+	-"Waste <b>77^7</b> cookies.<br><i>You do the math.</i>"
+	-unlocks at 16048523266853 Cookies
+	//That's about 16 trillion.
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchCookie13_zpsf3ac2409.png
+	*AchCookie14
+	-named Pie waster
+	-"Waste <b>314,159,265,358,979</b> cookies."
+	-unlocks at 314159265358979 Cookies
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchCookie14_zps0183aa47.png
+	*AchCookie15
+	-named Cookie genocide
+	-"Waste <b>1 quadrillion</b> cookies."
+	-unlocks at 1000000000000000 Cookies
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchCookie15_zps0005d416.png
+
+	*AchCookiesLunatic1
+	-named A billion of billionaires
+	-"Waste <b>1 billion of 1 billion</b> cookies.<br><i>A.k.a. a quintillion.</i>"
+	-unlocks at 1000000000000000000 Cookies
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchCookieL1_zpsff9066bb.png
+	*AchCookiesLunatic2
+	-named Numpad smash
+	-"Waste <b>56,448,667,345,843,618,366</b> cookies.<br><i>I didn't really smashed my keyboard >.<</i>"
+	-unlocks at 56448667345843618366 Cookies
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchCookieL2_zps1cb7930a.png
+	*AchCookiesLunatic3
+	-named Hexa-binairy pervert
+	-"Waste <b>DA7A55</b> cookies.<br><i>Convert this hexadecimal number into binairy for exact amount.</i>"
+	-unlocks at 110110100111101001010101 Cookies
+	//That's about 110 sextillion.
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchCookieL3_zps982daed0.png
+
+	*AchPoints1
+	-named Cookies? Points?
+	-"Have a least <b>10</b> points.<br><i>Accidental Anti-Idle reference.</i>"
+	-unlocks at 10 Points
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchPoints1_zps6ff1058e.png
+	*AchPoints2
+	-named Buying material
+	-"Have a least <b>200</b> points."
+	-unlocks at 200 Points
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchPoints2_zpsfb41159f.png
+	*AchPoints3
+	-named Invisible currency
+	-"Have a least <b>5k</b> points."
+	-unlocks at 5000 Points
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchPoints3_zpsb62321f7.png
+	*AchPoints4
+	-named Hoarder
+	-"Have a least <b>75k</b> points."
+	-unlocks at 75000 Points
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchPoints4_zpsd2f76518.png
+	*AchPoints5
+	-named Virtualy rich
+	-"Have a least <b>400k</b> points."
+	-unlocks at 400000 Points
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchPoints5_zpscde9d768.png
+	*AchPoints6
+	-named Ultra capitalist
+	-"Have at least <b>1 million</b> points."
+	-unlocks at 1000000 Points
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchPoints6_zps15b6fcf1.png
+	*AchPoints7
+	-named Inflated economy
+	-"Have at least <b>15 million</b> points."
+	-unlocks at 15000000 Points
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchPoints7_zps224e4089.png
+	*AchPoints8
+	-named Eternal debate
+	-"Have at least <b>99.99999... million</b> points."
+	-unlocks at 100000000 Points
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchPoints8_zpsf81734ef.png
+	*AchPoints9
+	-named Not so big spender
+	-"Have at least <b>1 billion</b> points."
+	-unlocks at 1000000000 Points
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchPoints9_zps9ad1e830.png
+	*AchPoints10
+	-named Buy buildings, ???
+	-"Have at least <b>10 billion</b> points.<br><i>PROFIT!!!</i>"
+	-unlocks at 10000000000 Points
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchPoints10_zps99a9c11d.png
+	*AchPoints11
+	-named Greedy
+	-"Have at least <b>123,456,789,010</b> points."
+	-unlocks at 123456789010 Points
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchPoints11_zps4173be9d.png
+	*AchPoints12
+	-named *insert pointless joke about points here*
+	-"Have at least <b>1 trillion</b> points.<br><i>I'm ashamed by my sense of humor. >.<</i>"
+	-unlocks at 1000000000000 Points
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchPoints12_zpsf0602013.png
+	*AchPoints13
+	-named Binairy
+	-"Have at least <b>12,345</b> points.<br><i>Things are not always what they seem.</i>"
+	-unlocks at 11000000111001 Points
+	//That's about 11 trillion.
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchPoints13_zpsf49fbe4a.png
+	*AchPoints14
+	-named 1 to 12
+	-"Have at least <b>123,456,789,101,112 trillion</b> points."
+	-unlocks at 123456789101112 Points
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchPoints14_zpsc93f50f9.png
+	*AchPoints15
+	-named Moneyvolution
+	-"Have at least <b></b> points."
+	-unlocks at 1000000000000000 Points
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchPoints15_zps2853bc1e.png
+
+	*AchPointsLunatic1
+	-named Idiot
+	-"Have at least <b>(9*9)^9</b> points."
+	-unlocks at 150094635296999121 Points
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchPointsL1_zps47a7905c.png
+	*AchPointsLunatic2
+	-named Quintillionaire
+	-"Have at least <b>1 quintillion</b> points."
+	-unlocks at 1000000000000000000 Points
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchPointsL2_zpsaf5a0eb4.png
+	*AchPointsLunatic3
+	-named Base 10
+	-"Have at least <b>10|100|1000|10000|100000</b> points."
+	-unlocks at 10100100010000100000 Points
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchPointsL3_zps46423129.png
+
+	*AchBuild1a
+	-named Auto-wasting
+	-"Own at least <b>1</b> auto-clicker."
+	-unlocks at 1 Build1
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild0a_zps4efd37b1.png
+	*AchBuild1b
+	-named Click
+	-"Own at least <b>10</b> auto-clickers."
+	-unlocks at 10 Build1
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild0b_zps106328d1.png
+	*AchBuild1c
+	-named Clickity
+	-"Own at least <b>50</b> auto-clickers."
+	-unlocks at 50 Build1
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild0c_zpsa968d544.png
+	*AchBuild1d
+	-named Automa-click
+	-"Own at least <b>100</b> auto-clickers."
+	-unlocks at 100 Build1
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild0d_zps6818f37e.png
+	*AchBuild1e
+	-named Frenetic clicking
+	-"Own at least <b>150</b> auto-clickers."
+	-unlocks at 150 Build1
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild0e_zps1fe5ed22.png
+	*AchBuild1f
+	-named Just another click
+	-"Own at least <b>200</b> auto-clickers."
+	-unlocks at 200 Build1
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild0f_zps96510447.png
+	*AchBuild1g
+	-named Maximum speed
+	-"Own at least <b>250</b> auto-clickers."
+	-unlocks at 250 Build1
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild0g_zpsfffd432a.png
+	*AchBuild1h
+	-named Beyond maximum speed
+	-"Own at least <b>300</b> auto-clickers."
+	-unlocks at 300 Build1
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild0h_zpsfb50769e.png
+	*AchBuild1i
+	-named Click liker
+	-"Own at least <b>400</b> auto-clickers."
+	-unlocks at 400 Build1
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild0i_zps6862104c.png
+
+	*AchBuild2a
+	-named A little help?
+	-"Own at least <b>1</b> waster."
+	-unlocks at 1 Build2
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild1_zps39c7e89e.png
+	*AchBuild2b
+	-named Time (and cookies) wasters
+	-"Own at least <b>10</b> wasters."
+	-unlocks at 10 Build2
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild1b_zps0aa0971d.png
+	*AchBuild2c
+	-named Nothing else to do
+	-"Own at least <b>50</b> wasters."
+	-unlocks at 50 Build2
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild1c_zpsa08881a4.png
+	*AchBuild2d
+	-named You waste, we waste
+	-"Own at least <b>100</b> wasters."
+	-unlocks at 100 Build2
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild1d_zps633fae25.png
+	*AchBuild2e
+	-named Waster achievement 5
+	-"Own at least <b>150</b> wasters.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 150 Build2
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild1e_zps1b56c81c.png
+	*AchBuild2f
+	-named Waster achievement 6
+	-"Own at least <b>200</b> wasters.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 200 Build2
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild1f_zps0c89bf3f.png
+	*AchBuild2g
+	-named Waster achievement 7
+	-"Own at least <b>250</b> wasters.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 250 Build2
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild1g_zps7fe28144.png
+	*AchBuild2h
+	-named Waster achievement 8
+	-"Own at least <b>300</b> wasters.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 300 Build2
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild1h_zpsc7681a11.png
+
+	*AchBuild3a
+	-named Auto-auto-wasting
+	-"Own at least <b>1</b> crushing facility."
+	-unlocks at 1 Build3
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild2a_zps3834d5f2.png
+	*AchBuild3b
+	-named *crash*
+	-"Own at least <b>10</b> crushing facilities."
+	-unlocks at 10 Build3
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild2b_zps92edb721.png
+	*AchBuild3c
+	-named *crush*
+	-"Own at least <b>50</b> crushing facilities."
+	-unlocks at 50 Build3
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild2c_zps83997e0e.png
+	*AchBuild3d
+	-named ( !2 4 5 !-!
+	-"Own at least <b>100</b> crushing facilities.<br><i>That's l33t speak.</i>"
+	-unlocks at 100 Build3
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild2d_zps9c5b8e16.png
+	*AchBuild3e
+	-named Crushing facility achievement 5
+	-"Own at least <b>150</b> crushing facilities.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 150 Build3
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild2e_zps69b41f0e.png
+	*AchBuild3f
+	-named Crushing facility achievement 6
+	-"Own at least <b>200</b> crushing facilities.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 200 Build3
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild2f_zpsdc8e8235.png
+	*AchBuild3g
+	-named Crushing facility achievement 7
+	-"Own at least <b>250</b> crushing facilities.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 250 Build3
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild2g_zpse856f10e.png
+	*AchBuild3h
+	-named Crushing facility achievement 8
+	-"Own at least <b>300</b> crushing facilities.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 300 Build3
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild2h_zps409bf7d8.png
+
+	*AchBuild4a
+	-named Road to success
+	-"Own at least <b>1</b> highway."
+	-unlocks at 1 Build4
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild3a_zps2e8f4dde.png
+	*AchBuild4b
+	-named Traffic jammer
+	-"Own at least <b>10</b> highways."
+	-unlocks at 10 Build4
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild3b_zps2325c2af.png
+	*AchBuild4c
+	-named Jam traffer
+	-"Own at least <b>50</b> highways."
+	-unlocks at 50 Build4
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild3c_zps2b9c11bb.png
+	*AchBuild4d
+	-named Smell of diesel
+	-"Own at least <b>100</b> highways.<br><i>*snif*</i>"
+	-unlocks at 100 Build4
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild3d_zpsae4b188b.png
+	*AchBuild4e
+	-named Highway achievement 5
+	-"Own at least <b>150</b> highways.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 150 Build4
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild3e_zps4aef404e.png
+	*AchBuild4f
+	-named Highway achievement 6
+	-"Own at least <b>200</b> highways.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 200 Build4
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild3f_zps22149265.png
+	*AchBuild4g
+	-named Highway achievement 7
+	-"Own at least <b>250</b> highways.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 250 Build4
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild3g_zpsa5754462.png
+	*AchBuild4h
+	-named Highway achievement 8
+	-"Own at least <b>300</b> highways.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 300 Build4
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild3h_zps2c1540b4.png
+
+	*AchBuild5a
+	-named Pew pew pew!
+	-"Own at least <b>1</b> shooting range."
+	-unlocks at 1 Build5
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild4a_zps60108a39.png
+	*AchBuild5b
+	-named Bang bang bang!
+	-"Own at least <b>10</b> shooting ranges."
+	-unlocks at 10 Build5
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild4b_zps935b2727.png
+	*AchBuild5c
+	-named Pow pow pow!
+	-"Own at least <b>50</b> shooting ranges."
+	-unlocks at 50 Build5
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild4c_zpscc6b99dc.png
+	*AchBuild5d
+	-named *gunshot* *gunshot* *gunshot*!
+	-"Own at least <b>100</b> shooting ranges."
+	-unlocks at 100 Build5
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild4d_zps8d6ed002.png
+	*AchBuild5e
+	-named Sharpshooter
+	-"Own at least <b>150</b> shooting ranges."
+	-unlocks at 150 Build5
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild4e_zps66da4df7.png
+	*AchBuild5f
+	-named Boom headshot
+	-"Own at least <b>200</b> shooting ranges."
+	-unlocks at 200 Build5
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild4f_zps1168eebe.png
+	*AchBuild5g
+	-named Ammo waster
+	-"Own at least <b>250</b> shooting ranges.<br><i>That's not the point of the game.</i>"
+	-unlocks at 250 Build5
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild4g_zps27ecf20f.png
+	*AchBuild5h
+	-named Eye of gold
+	-"Own at least <b>300</b> shooting ranges."
+	-unlocks at 300 Build5
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild4h_zps9f16640b.png
+
+	*AchBuild6a
+	-named Not the same
+	-"Own at least <b>1</b> cookies2muffins converter."
+	-unlocks at 1 Build6
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild5a_zps4176850d.png
+	*AchBuild6b
+	-named Not at all
+	-"Own at least <b>10</b> cookies2muffins converters."
+	-unlocks at 10 Build6
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild5b_zpsc2075218.png
+	*AchBuild6c
+	-named Tastes different
+	-"Own at least <b>50</b> cookies2muffins converters."
+	-unlocks at 50 Build6
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild5c_zpsbf37eca3.png
+	*AchBuild6d
+	-named Not so bad after all!
+	-"Own at least <b>100</b> cookies2muffins converters."
+	-unlocks at 100 Build6
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild5d_zpse8efe051.png
+	*AchBuild6e
+	-named Cookies2muffins converters achievement 5
+	-"Own at least <b>150</b> cookies2muffins converters.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 150 Build6
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild5e_zpsf064c6f1.png
+	*AchBuild6f
+	-named Cookies2muffins converters achievement 6
+	-"Own at least <b>200</b> cookies2muffins converters.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 200 Build6
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild5f_zps8a42abef.png
+	*AchBuild6g
+	-named Cookies2muffins converters achievement 7
+	-"Own at least <b>250</b> cookies2muffins converters.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 250 Build6
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild5g_zps17d38bf2.png
+	*AchBuild6h
+	-named Cookies2muffins converters achievement 8
+	-"Own at least <b>300</b> cookies2muffins converters.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 300 Build6
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild5h_zps130fa978.png
+
+	*AchBuild7a
+	-named That's a solution!
+	-"Own at least <b>1</b> testing lab."
+	-unlocks at 1 Build7
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild6a_zpsa6c86e84.png
+	*AchBuild7b
+	-named Chemistry fun
+	-"Own at least <b>10</b> testing labs."
+	-unlocks at 10 Build7
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild6b_zps2f7d0bed.png
+	*AchBuild7c
+	-named Sodium sodium sodium sodium sodium sodium sodium
+	-"Own at least <b>50</b> testing labs.<br><i>Batman!</i>"
+	-unlocks at 50 Build7
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild6c_zpsab726d6a.png
+	*AchBuild7d
+	-named Mutations
+	-"Own at least <b>100</b> testing labs."
+	-unlocks at 100 Build7
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild6d_zps7694534f.png
+	*AchBuild7e
+	-named Testing lab achievement 5
+	-"Own at least <b>150</b> testing labs.<i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 150 Build7
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild6e_zpsfc81d446.png
+	*AchBuild7f
+	-named Testing lab achievement 6
+	-"Own at least <b>200</b> testing labs.<i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 200 Build7
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild6f_zpsbad7cf23.png
+	*AchBuild7g
+	-named Testing lab achievement 7
+	-"Own at least <b>250</b> testing labs.<i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 250 Build7
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild6g_zps43c27b9c.png
+	*AchBuild7h
+	-named Testing lab achievement 8
+	-"Own at least <b>300</b> testing labs.<i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 300 Build7
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild6h_zpsa2221944.png
+
+	*AchBuild8a
+	-named BURN!
+	-"Own at least <b>1</b> incinerator."
+	-unlocks at 1 Build8
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild9_zpsf32fcf19.png
+	*AchBuild8b
+	-named Pyromaniac
+	-"Own at least <b>10</b> incinerators."
+	-unlocks at 10 Build8
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild9b_zpsa75db164.png
+	*AchBuild8c
+	-named Apply cold water...
+	-"Own at least <b>50</b> incinerators."
+	-unlocks at 50 Build8
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild9c_zps6c293171.png
+	*AchBuild8d
+	-named ...to burnt area.
+	-"Own at least <b>100</b> incinerators."
+	-unlocks at 100 Build8
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild9d_zps2294c02f.png
+	*AchBuild8e
+	-named Fireproof
+	-"Own at least <b>150</b> incinerators."
+	-unlocks at 150 Build8
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild9e_zpsf84f8eb4.png
+	*AchBuild8f
+	-named Disco inferno
+	-"Own at least <b>200</b> incinerators."
+	-unlocks at 200 Build8
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild9f_zpsf28895ac.png
+	*AchBuild8g
+	-named Bio-wasted
+	-"Own at least <b>250</b> incinerators.<br><i>Project 154 was out of control.</i>"
+	-unlocks at 250 Build8
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild9g_zps5ad5cf67.png
+	*AchBuild8h
+	-named Searing Divine Flame
+	-"Own at least <b>300</b> incinerators.<br><i>Who could it be?</i>"
+	-unlocks at 300 Build8
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild9h_zps17817aea.png
+
+	*AchBuild9a
+	-named This is blasphemy!
+	-"Own at least <b>1</b> bottomless pit."
+	-unlocks at 1 Build9
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild10a_zps7d1345a4.png
+	*AchBuild9b
+	-named This is madness!
+	-"Own at least <b>10</b> bottomless pits."
+	-unlocks at 10 Build9
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild10b_zps31b761a3.png
+	*AchBuild9c
+	-named Madness?
+	-"Own at least <b>50</b> bottomless pits."
+	-unlocks at 50 Build9
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild10c_zpsc35e2f2f.png
+	*AchBuild9d
+	-named THIS
+	-"Own at least <b>100</b> bottomless pits."
+	-unlocks at 100 Build9
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild10d_zps46cdc069.png
+	*AchBuild9e
+	-named IS
+	-"Own at least <b>150</b> bottomless pits."
+	-unlocks at 150 Build9
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild10e_zpsd5380197.png
+	*AchBuild9f
+	-named SPARTA!!
+	-"Own at least <b>200</b> bottomless pits."
+	-unlocks at 200 Build9
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild10f_zps46bb1ea7.png
+	*AchBuild9g
+	-named *techno remix engage*
+	-"Own at least <b>250</b> bottomless pits."
+	-unlocks at 250 Build9
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild10g_zpsdbc30a09.png
+	*AchBuild9h
+	-named [REDACTED]
+	-"Own at least <b>300</b> bottomless pits.<br><i>"yo mama" jokes are lame.</i>"
+	-unlocks at 300 Build9
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild10h_zps37ddd750.png
+
+	*AchBuild10a
+	-named Warmachine achievement 1
+	-"Own at least <b>1</b> warmachine.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 1 Build10
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild11a_zps52995d1b.png
+	*AchBuild10b
+	-named Warmachine achievement 2
+	-"Own at least <b>10</b> warmachines.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 10 Build10
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild11b_zps259c9b88.png
+	*AchBuild10c
+	-named Warmachine achievement 3
+	-"Own at least <b>50</b> warmachines.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 50 Build10
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild11c_zpscc2635d4.png
+	*AchBuild10d
+	-named Warmachine achievement 4
+	-"Own at least <b>100</b> warmachines.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 100 Build10
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild11d_zps649c3c96.png
+	*AchBuild10e
+	-named Warmachine achievement 5
+	-"Own at least <b>150</b> warmachines.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 150 Build10
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild11e_zps2b10ebae.png
+	*AchBuild10f
+	-named Warmachine achievement 6
+	-"Own at least <b>200</b> warmachines.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 200 Build10
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild11f_zpse0d5ae3b.png
+	*AchBuild10g
+	-named Warmachine achievement 7
+	-"Own at least <b>250</b> warmachines.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 250 Build10
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild11g_zps5300419a.png
+	*AchBuild10h
+	-named Warmachine achievement 8
+	-"Own at least <b>300</b> warmachines.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 300 Build10
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild11h_zpsfd927517.png
+
+	*AchBuild11a
+	-named Why?
+	-"Own at least <b>1</b> unstable antimatter condenser.<br><i>Are you serious?</i>"
+	-unlocks at 1 Build11
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild12a_zpsbe6c3fd4.png
+	*AchBuild11b
+	-named Big bangs
+	-"Own at least <b>10</b> unstable antimatter condensers."
+	-unlocks at 10 Build11
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild12b_zpsaba71d58.png
+	*AchBuild11c
+	-named Permanent danger
+	-"Own at least <b>50</b> unstable antimatter condensers."
+	-unlocks at 50 Build11
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild12c_zpsace8d566.png
+	*AchBuild11d
+	-named Hard-reset
+	-"Own at least <b>100</b> unstable antimatter condensers."
+	-unlocks at 100 Build11
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild12d_zpsfce28b8c.png
+	*AchBuild11e
+	-named Dematerialize
+	-"Own at least <b>150</b> unstable antimatter condensers.<br><i>Déjà vu...</i>"
+	-unlocks at 150 Build11
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild12e_zpsfaa625ba.png
+	*AchBuild11f
+	-named Anti-reality
+	-"Own at least <b>200</b> unstable antimatter condensers."
+	-unlocks at 200 Build11
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild12f_zpsa3e16da8.png
+	*AchBuild11g
+	-named Nothing matters
+	-"Own at least <b>250</b> unstable antimatter condensers."
+	-unlocks at 250 Build11
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild12g_zps7f6ef5d8.png
+	*AchBuild11h
+	-named Master of the Void
+	-"Own at least <b>300</b> unstable antimatter condensers."
+	-unlocks at 300 Build11
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild12h_zps8cb09228.png
+
+	*AchBuild12a
+	-named Glass breaker
+	-"Own at least <b>1</b> DragonSound device."
+	-unlocks at 1 Build12
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild13a_zpsdaaa0322.png
+	*AchBuild12b
+	-named Invisible waves
+	-"Own at least <b>10</b> DragonSound devices."
+	-unlocks at 10 Build12
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild13b_zpsd83c01df.png
+	*AchBuild12c
+	-named Destructive medley
+	-"Own at least <b>50</b> DragonSound devices."
+	-unlocks at 50 Build12
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild13c_zps8b919aa7.png
+	*AchBuild12d
+	-named Bells, bells, decibels.
+	-"Own at least <b>100</b> DragonSound devices."
+	-unlocks at 100 Build12
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild13d_zpsf5a24faa.png
+	*AchBuild12e
+	-named Noise storm
+	-"Own at least <b>150</b> DragonSound devices."
+	-unlocks at 150 Build12
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild13e_zps9b68fdc5.png
+	*AchBuild12f
+	-named Remixed awesomess
+	-"Own at least <b>200</b> DragonSound devices."
+	-unlocks at 200 Build12
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild13f_zps94823a85.png
+
+	*AchBuild13a
+	-named Wat?
+	-"Own at least <b>1</b> CLCWC."
+	-unlocks at 1 Build13
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild14a_zps2addd2bd.png
+	*AchBuild13b
+	-named Non-sense
+	-"Own at least <b>10</b> CLCWCs."
+	-unlocks at 10 Build13
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild14b_zps06c5cb58.png
+	*AchBuild13c
+	-named We have free cake
+	-"Own at least <b>50</b> CLCWCs.<br><i>I lied, don't trust sentient potatoes.</i>"
+	-unlocks at 50 Build13
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild14c_zps93c0154c.png
+	*AchBuild13d
+	-named Sorry for the long post
+	-"Own at least <b>100</b> CLCWCs.<br><i>Here's a golden potato.</i>"
+	-unlocks at 100 Build13
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild14d_zpsb5d29adf.png
+	*AchBuild13e
+	-named High originality
+	-"Own at least <b>150</b> CLCWCs."
+	-unlocks at 150 Build13
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild14e_zps151be523.png
+	*AchBuild13f
+	-named High originality
+	-"Own at least <b>200</b> CLCWCs.<br><i>What do you mean by "There's already an achievement named like that."?</i>"
+	-unlocks at 200 Build13
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild14f_zps5871e11c.png
+
+	*AchBuild14a
+	-named Armageddon
+	-"Own at least <b>1</b> cookiocalypse."
+	-unlocks at 1 Build14
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild14a_zps9208310e.png
+	*AchBuild14b
+	-named Obliterating
+	-"Own at least <b>10</b> cookiocalypses."
+	-unlocks at 10 Build14
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild14b_zpsbe77a0d9.png
+	*AchBuild14c
+	-named The end
+	-"Own at least <b>50</b> cookiocalypses."
+	-unlocks at 50 Build14
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild14c_zps0b631352.png
+	*AchBuild14d
+	-named 29/08/2014
+	-"Own at least <b>100</b> cookiocalypses.<br><i>Another 21/12/2012.</i>"
+	-unlocks at 100 Build14
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild14d_zps67cbca5c.png
+	*AchBuild14e
+	-named Billion years early
+	-"Own at least <b>150</b> cookiocalypses."
+	-unlocks at 150 Build14
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild14e_zps9042c1d4.png
+	*AchBuild14f
+	-named Inevitable fate
+	-"Own at least <b>200</b> cookiocalypses."
+	-unlocks at 200 Build14
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild14f_zps50c11ea0.png
+
+	*AchBuild15a
+	-named Confirmed theory
+	-"Own at least <b>1</b> portal."
+	-unlocks at 1 Build15
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild15a_zpse5e31776.png
+	*AchBuild15b
+	-named Parallelism
+	-"Own at least <b>10</b> portals."
+	-unlocks at 10 Build15
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild15b_zps9000fae4.png
+	*AchBuild15c
+	-named Another world
+	-"Own at least <b>50</b> portals."
+	-unlocks at 50 Build15
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild15c_zpse3bddb79.png
+	*AchBuild15d
+	-named Now you're thinking
+	-"Own at least <b>100</b> portals."
+	-unlocks at 100 Build15
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild15d_zps9dee47a3.png
+	*AchBuild15e
+	-named Dimensional rift
+	-"Own at least <b>150</b> portals."
+	-unlocks at 150 Build15
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild15e_zpse4a4f533.png
+	*AchBuild15f
+	-named But wait, there's more!
+	-"Own at least <b>200</b> portals."
+	-unlocks at 200 Build15
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild15f_zps3e4f7cbb.png
+
+	*AchBuildR1a
+	-named Charlie!
+	-"Own at least <b>1</b> unicorn stable."
+	-unlocks at 1 BuildR1
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild8a_zps20622d15.png
+	*AchBuildR1b
+	-named Not a pony
+	-"Own at least <b>10</b> unicorn stables."
+	-unlocks at 10 BuildR1
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild8b_zps2c008f4f.png
+	*AchBuildR1c
+	-named Horse-narwhals
+	-"Own at least <b>50</b> unicorn stables."
+	-unlocks at 50 BuildR1
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild8c_zpsdf25f36f.png
+	*AchBuildR1d
+	-named My little unicorn
+	-"Own at least <b>100</b> unicorn stables."
+	-unlocks at 100 BuildR1
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild8d_zpsd0d2416f.png
+	*AchBuildR1e
+	-named Unicorn stable achievement 5
+	-"Own at least <b>150</b> unicorn stables.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 150 BuildR1
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild8e_zps8b470082.png
+	*AchBuildR1f
+	-named Unicorn stable achievement 6
+	-"Own at least <b>200</b> unicorn stables.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 200 BuildR1
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild8f_zpsfaf33fa1.png
+	*AchBuildR1g
+	-named Unicorn stable achievement 7
+	-"Own at least <b>250</b> unicorn stables.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 250 BuildR1
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild8g_zps6f4dc4f9.png
+	*AchBuildR1h
+	-named Unicorn stable achievement 8
+	-"Own at least <b>300</b> unicorn stables.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 300 BuildR1
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild8h_zps4b0b2746.png
+
+	*AchBuildR2a
+	-named Cookie monster achievement 1
+	-"Own at least <b>1</b> cookie monster.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 1 BuildR2
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild16a_zps861aa793.png
+	*AchBuildR2b
+	-named Cookie monster achievement 2
+	-"Own at least <b>10</b> cookie monsters.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 10 BuildR2
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild16b_zps62877eac.png
+	*AchBuildR2c
+	-named Cookie monster achievement 3
+	-"Own at least <b>50</b> cookie monsters.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 50 BuildR2
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild16c_zpsc6ded5e3.png
+	*AchBuildR2d
+	-named Cookie monster achievement 4
+	-"Own at least <b>100</b> cookie monsters.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 100 BuildR2
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild16d_zps0939b0eb.png
+	*AchBuildR2e
+	-named Cookie monster achievement 5
+	-"Own at least <b>150</b> cookie monsters.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 150 BuildR2
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild16e_zps1997f462.png
+	*AchBuildR2f
+	-named Cookie monster achievement 6
+	-"Own at least <b>200</b> cookie monsters.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 200 BuildR2
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild16f_zps535e1204.png
+	*AchBuildR2g
+	-named Cookie monster achievement 7
+	-"Own at least <b>250</b> cookie monsters.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 250 BuildR2
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild16g_zps05ebe6b4.png
+	*AchBuildR2h
+	-named Cookie monster achievement 8
+	-"Own at least <b>300</b> cookie monsters.<br><i>I'll add flavor once I get all the ideas. :)</i>"
+	-unlocks at 300 BuildR2
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchBuild16h_zps07b9a937.png
+
+	*AchRainbow1
+	-named Lucky!
+	-"Get a total of <b>1</b> rainbow coin."
+	-unlocks at 1 RainbowsAT
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchRainbow1_zpsbcf724a8.png
+	*AchRainbow2
+	-named Luckier!
+	-"Get a total of <b>7</b> rainbow coins."
+	-unlocks at 7 RainbowsAT
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchRainbow2_zpsa7c81215.png
+	*AchRainbow3
+	-named Not golden cookies
+	-"Get a total of <b>47</b> rainbow coins."
+	-unlocks at 47 RainbowsAT
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchRainbow3_zpsb57fa2f7.png
+	*AchRainbow4
+	-named "Du hast schwein!"
+	-"Get a total of <b>77</b> rainbow coins."
+	-unlocks at 77 RainbowsAT
+	//"Du hast schwein!" is a german expression used to tell someone he's lucky (just like "Tu as du bol" in french).
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchRainbow4_zps21b155a4.png
+	*AchRainbow5
+	-named Jackpot
+	-"Get a total of <b>137</b> rainbow coins."
+	-unlocks at 137 RainbowsAT
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchRainbow5_zpscec7b9f1.png
+	*AchRainbow6
+	-named BAR
+	-"Get a total of <b>377</b> rainbow coins."
+	-unlocks at 377 RainbowsAT
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchRainbow6_zpsaf352adc.png
+
+	*AchUp
+	-named Sheep
+	-"You couldn't resist, could you?"
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/AchUp1_zps569fbd8a.png
+	*AchUpR
+	-named Champagne!
+	-"You're now the luckiest person alive!"
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up7d_zps7527a94d.png
+
+	*AchLunatic1
+	-named Just plain lucky
+	-"<i>Lunatic achievement</i><br><br>Exactly the same as Cookie Clicker"
+	-unlocks at 1 JPL
+	-picture : http://i1279.photobucket.com/albums/y526/LunaticLunarian/Up7c_zpsf56536fb.png

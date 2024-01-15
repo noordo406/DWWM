@@ -6,7 +6,7 @@ muffin converter
 steam roller
 weaponised drone
 explosives
-bottomless pit
+big ol' pit
 stock exchange
 spellbook
 cookie wasting corp
@@ -25,10 +25,144 @@ nightmare manifestation enabler
 ouroboros engine
 idle engine
 metacomputer
-potential negater
+potential controller
 identity disassociator
 concept eraser
 
+1
+5
+10
+25
+50
+75
+100
++50
+
+clicking upgrades 
+wood | stone | copper | bronze | iron | aluminium | steel | obsidian | tungsten | uranium | titanium | cobalt | moonstone | mythril | superium | diamond | khamarack | perfectium | divinium | galaxium | universalite | oneirite
+
+waster upgrades
+positive reinforcement | energy drinks | backpacks | sidearms | implants | neural enhancements | wasting techniques | leaderboards | wasting license | elite training | cloning vats | black gloves
+pet racon
+
+racon upgrades
+silly costumes | racomplex | toilet in every home | racon studies | mice | rats | oppossums | 
+racon family
+
+crusher upgrades
+stronger alloys | spikes | hydraulics | safety bypass | compounded crushers | supersonic crushers | precision machining
+racon crusher
+
+incinerator upgrades
+longer chimneys | cooling systems | hellfire | oxygen pumps | heat rays | pre-heated coals | frostburn | insta-fire | heat treated materials | lava pumps | eternal flames | heat-resistant suits | phlogiston duplication
+racon pyro
+
+muffin converter upgrades
+more conveyor belts | convenient packaging | cupcakes! | mini-converters | the muffin clown | liquid muffin | the perfect recipe
+racon muffin
+
+steamroller upgrades
+bigger rollers | bigger engines | high-quality fuel | spiked rollers | 
+racon driver
+
+weaponised drone upgrades
+reboot protocols | nanobots | multi-wavelength scanners | ai learning | 
+racon robot
+
+explosives upgrades
+more gunpowder | chain reaction | sonic boom | cluster bombs | double explosion | 
+racon demolitionist
+
+big ol' pit upgrades
+gravity enhancer | stronger shovels | power tools | structural integrity |
+racon spartan
+
+stock exchange upgrades
+buy high sell low | predictive algorithms | dump it | 
+racon trader
+
+spellbook upgrades
+dust-removal spells | possession | table of contents | fire-proofing | grand library | 
+racon wizard
+
+cookie wasting corp upgrades
+coffee machines | maintenance crew | weekly meetings | truth and honesty |
+racon employee
+
+propaganda campaign upgrades
+subliminal messages | slander | third-party studies | reject morality | 
+racon activist
+
+rocket launch facility upgrades
+ejection unit | cookie fuel | 
+racon astronaut
+
+cookievore upgrades
+gene splicing | mitosis | regenerative tissue | acid glands | 
+racon monster
+
+cookie plague upgrades
+symptom attenuation | hibernation | conditional lethality inhibitor | symbiotic parasite | post-mortem transmission | spore release | cross-species contamination | periodic dna shuffling | accelerated mutation | 
+racon scientist
+
+summoning circle upgrades
+cookie sacrifices | egg_ |
+racon cultist
+
+localised apocalypse drive upgrades
+asteroid catcher | the recipe for disaster | 
+racon meteor
+
+antimatter condenser upgrades
+backup generator | unstability controller | unstable anticookies | antiantiantimatter condensing | 
+antiracon
+
+dimensional gate upgrades
+
+raccoon
+
+cosmic cannon upgrades
+stellar capacitor | 
+racon star
+
+mystery building upgrades
+mystery upgrade | surprise mechanics
+mystery racon
+
+long distance pulse machine upgrades
+noise cancelling | signal amplifiers | disintegration wave | feedback looper | frequency isolator | molecular integrity destabilisation | 
+racon wave
+
+nightmare manifestation enabler upgrades
+full brain scan | dreamcatchers | 
+racon nightmare
+
+ouroboros engine upgrades
+the cookie cycle | exponentiation | nested engines | 
+raconroboros
+
+idle engine upgrades
+faster idling | incrementation | self-sustainable engines | 
+racon idler
+
+metacomputer upgrades
+error handler | arbitrary code execution | 2048-bit processor | cookie waster | spell-checking | code that does what you want it to do | decompiler | reprogramming reality for dummies | despaghettification
+racon programmer
+
+potential controller upgrades
+inverse production | wasted potential
+racon replacer
+
+identity disassociator upgrades
+identity reassignement | inverse ontology | 
+gray animal with a masked face and a ringed tail
+
+concept eraser upgrades
+
+"racon"
+
 autoclicker
 unicorn
-pointmaker
+point printer
+point miner
+point maker
