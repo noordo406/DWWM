@@ -1,0 +1,94 @@
+/* Réinitialisation des styles de base */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style de base pour le corps de la page */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    display: flex; /* Utilisation de flexbox */
+    flex-direction: column; /* Disposition en colonne pour les enfants (header, main, footer) */
+    min-height: 100vh; /* Hauteur minimale de la fenêtre visible */
+}
+
+/* Style de l'en-tête */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    /* padding: 10px 0; */
+    display: flex; /* Utilisation de flexbox */
+    justify-content: space-between; /* Espacement des éléments */
+    align-items: center; /* Centrage vertical des éléments */
+}
+
+.logo {
+    width: 100px;
+}
+
+nav {
+    /* Aucun float nécessaire */
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Utilisation de flexbox pour la barre de navigation */
+    justify-content: center; /* Centrage horizontal des éléments de la barre de navigation */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 10px;
+}
+
+/* Style de la section principale */
+main {
+    text-align: center;
+    display: flex; /* Utilisation de flexbox pour les parties */
+    flex-direction: column; /* Disposition en colonne pour les parties */
+    align-items: center; /* Centrage vertical des parties */
+    flex: 1; /* Fait en sorte que main prenne tout l'espace disponible restant */
+}
+
+h1 {
+    margin-bottom: 20px; /* Espacement sous le h1 */
+    font-size: 50px;
+}
+
+.container {
+    border: 2px solid black;
+    border-radius: 0.5em;
+    padding: 20px; /* Ajuster le rembourrage pour plus d'espace à l'intérieur */
+    margin: 10px;
+    max-width: 1024px; /* Ajuster la largeur maximale selon vos besoins */
+    width: 100%; /* Utiliser 100% de la largeur disponible */
+}
+
+.partie {
+    text-align: left; /* Aligner le texte à gauche dans chaque partie */
+    max-width: 100%; /* Utiliser 100% de la largeur disponible */
+    padding: 10px;
+}
+
+.partie h2 {
+    color: red;
+}
+
+/* Style du pied de page */
+footer {
+    background-color: #283645;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.selected {
+    background-color: grey;
+}
+
+.hidden {
+    display:none;
+}

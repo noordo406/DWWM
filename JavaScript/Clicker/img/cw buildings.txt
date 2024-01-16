@@ -46,11 +46,11 @@ positive reinforcement | energy drinks | backpacks | sidearms | implants | neura
 pet racon
 
 racon upgrades
-silly costumes | racomplex | toilet in every home | racon studies | mice | rats | oppossums | 
+silly costumes | toilet in every home | racon studies | mice | rats | oppossums | red pandas | racon metropolis | racon housings | 
 racon family
 
 crusher upgrades
-stronger alloys | spikes | hydraulics | safety bypass | compounded crushers | supersonic crushers | precision machining
+stronger alloys | spikes | hydraulics | safe speed bypass | compounded crushers | supersonic crushers | precision machining | electromagnets | pre-crushing | double crushers | sextuple crushers | octuple hypercrushers | protective gloves | air crushers | CBT
 racon crusher
 
 incinerator upgrades
@@ -58,47 +58,47 @@ longer chimneys | cooling systems | hellfire | oxygen pumps | heat rays | pre-he
 racon pyro
 
 muffin converter upgrades
-more conveyor belts | convenient packaging | cupcakes! | mini-converters | the muffin clown | liquid muffin | the perfect recipe
+more conveyor belts | convenient packaging | cupcakes! | mini-converters | the muffin clown | liquid muffin | the perfect recipe | 1:1 ratio | 
 racon muffin
 
 steamroller upgrades
-bigger rollers | bigger engines | high-quality fuel | spiked rollers | 
+bigger rollers | bigger engines | high-quality fuel | spiked rollers | dual rollers | nuclear engine | ferrofluid rollers | 
 racon driver
 
 weaponised drone upgrades
-reboot protocols | nanobots | multi-wavelength scanners | ai learning | 
+reboot protocols | nanobots | multi-wavelength scanners | ai learning | battery packs | spider drones | autotanks | self-repairing | electro-magnetic shielding | 1st law of robotics | androids | 
 racon robot
 
 explosives upgrades
-more gunpowder | chain reaction | sonic boom | cluster bombs | double explosion | 
+more gunpowder | chain reaction | sonic boom | cluster bombs | double explosion | gravity grenades | imploder-exploder
 racon demolitionist
 
 big ol' pit upgrades
-gravity enhancer | stronger shovels | power tools | structural integrity |
+gravity enhancer | stronger shovels | power tools | improved structural integrity | elevators | laser drills | MOLE units | mining helmets | mineral sorter | 
 racon spartan
 
 stock exchange upgrades
-buy high sell low | predictive algorithms | dump it | 
+buy high sell low | predictive algorithms | global trade puppet masters | diamond hands | fancy suits | expensive watches | negative value | shorting | betting | massive vaults full of gold coins | flooding the market
 racon trader
 
 spellbook upgrades
-dust-removal spells | possession | table of contents | fire-proofing | grand library | 
+dust-removal spells | possession | table of contents | fire-proofing | grand library | self-writing books | typewriters | universal spellcasting language | silent spellcasting
 racon wizard
 
 cookie wasting corp upgrades
-coffee machines | maintenance crew | weekly meetings | truth and honesty |
+coffee machines | maintenance crew | weekly meetings | truth and honesty | more budget for the coffee machines | coffee plantations | coffee lobbyists | applying the peter principle
 racon employee
 
 propaganda campaign upgrades
-subliminal messages | slander | third-party studies | reject morality | 
+subliminal messages | slander | third-party studies | reject morality | memes | video essays | astroturfing | gaslighting
 racon activist
 
 rocket launch facility upgrades
-ejection unit | cookie fuel | 
+ejection unit | cookie fuel | wormhole generator | solar pannels | plasma cannons | ship ai | galactic mapping | black hole detectors
 racon astronaut
 
 cookievore upgrades
-gene splicing | mitosis | regenerative tissue | acid glands | 
+gene splicing | mitosis | regenerative tissue | acid glands | cancer immunity | night-vision | titanium claws
 racon monster
 
 cookie plague upgrades
@@ -106,11 +106,11 @@ symptom attenuation | hibernation | conditional lethality inhibitor | symbiotic 
 racon scientist
 
 summoning circle upgrades
-cookie sacrifices | egg_ |
+cookie sacrifices | egg_ | titans | the light lord | 
 racon cultist
 
 localised apocalypse drive upgrades
-asteroid catcher | the recipe for disaster | 
+asteroid catcher | the recipe for disaster | cookienadoes | 
 racon meteor
 
 antimatter condenser upgrades
@@ -118,15 +118,15 @@ backup generator | unstability controller | unstable anticookies | antiantiantim
 antiracon
 
 dimensional gate upgrades
-
+hexagons | trade routes | tiled dimension | antiemetics | 
 raccoon
 
 cosmic cannon upgrades
-stellar capacitor | 
+stellar capacitor | dyson swarm | planetary core extraction | focused energy beams | 
 racon star
 
 mystery building upgrades
-mystery upgrade | surprise mechanics
+mystery upgrade | surprise mechanics | reduce guesswork | empirical improvements | colorful buttons | measuring instruments | theory of everything (inside) | 
 mystery racon
 
 long distance pulse machine upgrades
@@ -142,24 +142,64 @@ the cookie cycle | exponentiation | nested engines |
 raconroboros
 
 idle engine upgrades
-faster idling | incrementation | self-sustainable engines | 
+faster idling | incrementation | self-sustainability | additional clocks | 
 racon idler
 
 metacomputer upgrades
-error handler | arbitrary code execution | 2048-bit processor | cookie waster | spell-checking | code that does what you want it to do | decompiler | reprogramming reality for dummies | despaghettification
+error handler | arbitrary code execution | 2048-bit processor | cookie waster | spell-checking | code that does what you want it to do | decompiler | reprogramming reality for dummies | despaghettification | all the terraflops | 
 racon programmer
 
 potential controller upgrades
-inverse production | wasted potential
+inverse production | wasted potential | potential energy recycling | 
 racon replacer
 
 identity disassociator upgrades
-identity reassignement | inverse ontology | 
+identity reassignement | inverse ontology | upgrade | ego death | 
 gray animal with a masked face and a ringed tail
 
 concept eraser upgrades
-
+erase grandma | dedefintion | mind wipe | redundancy checks
 "racon"
+
+dual upgrades 
+
+waster | cwc : team synergy
+apocalypse |`summoning : harbingers
+antimatter | explosive : antimatter bombs
+propaganda | spellbook : summon politician
+idle engine | stock exchange : time economics
+steamroller | pit : rock grinders
+cosmic cannon | incinerator : planetary furnace
+mystery | gate : mystery dimension
+metacomputer | disassociator : remove variable
+rocket | pulse : motion wave
+nme | cookievore : man-made horror
+ouroboros | plague : ouroboros virus
+muffin | potential : potential transfer
+crusher | drone : piston-jumpers
+
+racon | stock : raconomics
+explosive | idle : time bombs
+incinerator | summon : fire wisps
+antimatter | metacomputer : hard reset
+propaganda | cookievore : monsters are people
+muffin | cwc : muffin department
+cosmic | spellbook : magicannon
+concept | mystery : erasing the mystery
+plague | crusher : crush cookie virus
+
+waster
+steam roller
+weaponised drone
+big ol' pit
+rocket launch facility
+localised apocalypse drive
+dimensional gate
+long distance pulse machine
+nightmare manifestation enabler
+ouroboros engine
+potential controller
+identity disassociator
 
 autoclicker
 unicorn
