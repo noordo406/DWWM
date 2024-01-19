@@ -39,7 +39,7 @@ concept eraser
 +50
 
 clicking upgrades 
-wood | stone | copper | bronze | iron | aluminium | steel | obsidian | tungsten | uranium | titanium | cobalt | moonstone | mythril | superium | diamond | khamarack | perfectium | divinium | galaxium | universalite | oneirite
+wood | stone | copper | bronze | iron | aluminium | steel | obsidian | tungsten | uranium | titanium | cobalt | moonstone | mythril | superium | diamond | khamarack | perfectium | unobtainium | divinium | galaxium | universalite | oneirite
 
 waster upgrades
 positive reinforcement | energy drinks | backpacks | sidearms | implants | neural enhancements | wasting techniques | leaderboards | wasting license | elite training | cloning vats | black gloves
@@ -90,7 +90,7 @@ coffee machines | maintenance crew | weekly meetings | truth and honesty | more 
 racon employee
 
 propaganda campaign upgrades
-subliminal messages | slander | third-party studies | reject morality | memes | video essays | astroturfing | gaslighting
+subliminal messages | slander | third-party studies | reject morality | memes | video essays | astroturfing | gaslighting | lawyers
 racon activist
 
 rocket launch facility upgrades
@@ -106,7 +106,7 @@ symptom attenuation | hibernation | conditional lethality inhibitor | symbiotic 
 racon scientist
 
 summoning circle upgrades
-cookie sacrifices | egg_ | titans | the light lord | 
+cookie sacrifices | egg_ | titans | the light lord | the plagued
 racon cultist
 
 localised apocalypse drive upgrades
@@ -164,7 +164,7 @@ erase grandma | dedefintion | mind wipe | redundancy checks
 dual upgrades 
 
 waster | cwc : team synergy
-apocalypse |`summoning : harbingers
+apocalypse | summoning : horsemen
 antimatter | explosive : antimatter bombs
 propaganda | spellbook : summon politician
 idle engine | stock exchange : time economics
@@ -187,22 +187,23 @@ muffin | cwc : muffin department
 cosmic | spellbook : magicannon
 concept | mystery : erasing the mystery
 plague | crusher : crush cookie virus
+pit | apocalypse : tunnel to hell
+waster | potential : potential waster
+gate | rocket : interdimensional travel
+drones | steamroller : killdozer
+dissaciociator | nme : super ego extraction
+pulse | ouroboros : 
 
-waster
-steam roller
-weaponised drone
-big ol' pit
-rocket launch facility
-localised apocalypse drive
-dimensional gate
-long distance pulse machine
-nightmare manifestation enabler
-ouroboros engine
-potential controller
-identity disassociator
 
 autoclicker
+
 unicorn
+prism
+
 point printer
 point miner
 point maker
+
+dynamo
+generator
+energy pump
