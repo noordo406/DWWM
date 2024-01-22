@@ -6,13 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Vérification Mot De Passe</h1>
-    <label for="mdp">Entrez votre mot de passe: </label><input type="password" name="mdp" id="mdp">
+    <h2>Vérification Mot De Passe</h2>
+    <label for="mdp">Entrez votre mot de passe: </label><input type="password" name="mdp" id="mdp"><span id="complexite" style="margin-left : 10px"></span><br><br>
+    <label for="repeatmdp">Répétez votre mot de passe: </label><input type="password" name="repeatmdp" id="repeatmdp"><span id="repeatcorrect" style="margin-left : 10px"></span>
     <p id="mdpLength" style="color: red">Doit comporter au minimum 8 caractères</p>
     <p id="mdpUpper" style="color: red">Au moins une majuscule</p>
     <p id="mdpLower" style="color: red">Au moins une minuscule</p>
     <p id="mdpNumber" style="color: red">Au moins un chiffre</p>
     <p id="mdpSpecial" style="color: red">Au moins un caractère spécial</p>
+
+    <h2>Générateur Mot De Passe</h2>
+    <input type="text" name="genmdp" id="genmdp">
+    <input type="range" name="genLength" id="genLength" min="3" max="32">
+    <input type="checkbox" name="genLower" id="genLower">
+    <input type="checkbox" name="genUpper" id="genUpper">
+    <input type="checkbox" name="genNumber" id="genNumber">
+    <input type="checkbox" name="genSpecial" id="genSpecial">
     <script src="ex.js"></script>
 </body>
 </html>
