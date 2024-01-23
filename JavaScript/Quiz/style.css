@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, #questioncontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    border: solid 1px black;
+    margin: 10px 0;
+    padding: 20px;
+}
+
+
+input {
+    margin-right: 5px;
+}
+
+.win {
+    background-color: green;
+}
+
+.lose {
+    background-color: red;
+}
