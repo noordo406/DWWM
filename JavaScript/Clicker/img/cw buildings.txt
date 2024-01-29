@@ -302,3 +302,80 @@ cold static energy		spirit
 cold flowing matter		water
 cold flowing energy		air
 
+dishwasher
+burger shop mopper
+cashier
+executive cashier
+assistant manager
+assistant to the manager
+manager
+super duper extreme manager
+fried food specialist
+sandwich superstar
+chief food scientist
+burger chef
+burger master
+burger deity
+
+store owner
+franchise owner
+vp of burger shop
+president of burger shop
+ceo, burger shop enterprises
+chairman, burger shop universal
+burger shop overlord
+captain burger
+5 star burger general
+president of earth
+galactic ruler
+supreme total burger master
+
+burger shop mopper
+vp of marketing
+fry oil disposal technician
+assistant to the assistant to burgertron
+cashier
+executive cashier
+voice of the drive thru
+chef slicer
+head dicer
+waffle grid designer
+carbonation specialist
+head of cereal
+chief burger patty shaper
+fry cook
+line cook
+saucier
+saucier that knows what a saucier is
+food item description copywriter
+cola steward
+maitre d
+snooty maitre d
+assistant manager
+assistant to the manager
+manager
+sous chef
+executive chef
+head rank generator
+vp of chicken
+vp of beef
+fried food specialist
+chief food scientist
+burger chef
+conveyor belt wizard
+potential burger master
+burger master in training
+burger master
+10th degree burger master
+burger deity
+
+store owner
+franchise owner
+vp of burger shop
+president of burger shop
+ceo, burger shop enterprises
+chairman, burger shop universal
+burger shop overlord
+captain burger
+
+supreme total burger master
