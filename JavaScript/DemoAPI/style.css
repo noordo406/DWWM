@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: skyblue;
+    transition: 600ms ease all;
+}
+
+#ball {
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    top: 5%;
+    transition: 600ms ease background-color, 600ms ease left;
+
+}
+
+.weather-container {
+    text-align: center;
+    background-color: #FFFFFFCC;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+#errormessage {
+    text-decoration: underline red 2px;
+}
+
+#call-time {
+    color: #888;
+    font-size: small;
+}
+
+#weather-icon {
+    border-radius: 16px;
+}
+#weather-description {
+    text-transform: capitalize;
+}
+
+.day {
+    background-color: skyblue;
+    box-shadow: 0 100vh 50vh -50vh lightblue inset;
+}
+.night {
+    background-color: #336;
+    box-shadow: 0 100vh 50vh -50vh #558 inset;
+}
+.sun {
+    background-color: yellow;
+    left: 20%;
+}
+.moon {
+    background-color: lightgoldenrodyellow;
+    left: calc(80% - 200px);
+}
+.hot {
+    color: red
+}
+.cold {
+    color: blue;
+}

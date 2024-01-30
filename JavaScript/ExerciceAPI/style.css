@@ -1,0 +1,100 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Helvetica, sans-serif;
+    height: 100vh;
+    margin: 0;
+    background-color: #396ba5;
+}
+
+#container {
+    background-color: #CCC;
+    border: solid 4px #EEE;
+    border-right: solid 4px gray;
+    border-bottom: solid 4px gray;
+}
+
+#content {
+    padding: 16px;
+    padding-top: 8px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 16px;
+    background: linear-gradient(to right, #0B256B, #A6CAF0);
+    color: white;
+    padding: 4px;
+}
+
+h2 {
+    margin: 5px;
+    font-size: 48px;
+}
+
+#convertline {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#input {
+    font-size: 20px;
+    width: 100%;
+    border: solid 2px gray;
+    border-right: solid 2px #EEE;
+    border-bottom: solid 2px #EEE;
+}
+
+#input:focus {
+    outline: none;
+}
+
+#monnaie1,
+#monnaie2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#monnaie1 {
+    margin: 0 8px;
+}
+
+#monnaie2 {
+    margin-left: 8px;
+}
+
+select {
+    background-color: white;
+}
+
+button {
+    display: block;
+    position: relative;
+    margin-right: 0;
+    margin-left: auto;
+    margin-top: 10px;
+    box-shadow: 5px;
+    font-size: 24px;
+    padding: 4px 12px;
+    font-weight: bold;
+    background-color: #CCC;
+    border: solid 4px #EEE;
+    border-right: solid 4px gray;
+    border-bottom: solid 4px gray;
+}
+
+button:active {
+    border: solid 4px gray;
+    border-right: solid 4px #EEE;
+    border-bottom: solid 4px #EEE;
+}
+
+#output {
+    margin: 10px 0;
+    text-align: center;
+}
