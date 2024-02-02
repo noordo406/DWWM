@@ -198,19 +198,19 @@ all : rainbow button |
 racon button
 
 unicorn
-increased : happiness | colorfulness | sparkliness | forcefulness | shininess | fancyness | horniness | luckyness | charmingness | quickness | lumninousnesss | aromaticalness | cleanliness | sweetness | 
+increased : happiness | colorfulness | sparkliness | forcefulness | shininess | fancyness | horniness | luckyness | charmingness | quickness | lumninousnesss | aromaticalness | cleanliness | sweetness | shimmeringness | cuteness | beautifulness | prettiness
 uniracon
 
 prism
-remove impurities | scratch-free materials | 
+remove impurities | scratch-free materials | ultra-bright lightbulbs | fluorescent materials | 
 rainbow racon
 
 point printer
-higher quality picture | space optimisation | ink subscription | paper subscription | printer subscription | fancier design | gold paper | paper printers | firmware update | improved hardware | negative currency | iridescent ink | ink inc. | automated printing | e-printing | 3d printing | 4d printing
+modern printers | higher quality picture | space optimisation | ink subscription | paper subscription | printer subscription | fancier design | gold paper | paper printers | firmware update | improved hardware | negative currency | iridescent ink | ink inc. | automated printing | e-printing | 3d printing | 4d printing
 dablon
 
 point miner
-ruby | emerald | sapphire | topaz | amethyst | quartz | diamond | onyx | moonstone | jade | opal | garnet | jet | pearl | tanzanite | aquamarine | amber | malachite | lapis lazuli | spinel | zircon | tiger's eye | black opal | red beryl | rose quartz | agate | jasper | 
+ruby | emerald | sapphire | topaz | amethyst | quartz | diamond | onyx | moonstone | jade | opal | garnet | jet | pearl | tanzanite | aquamarine | amber | malachite | lapis lazuli | spinel | zircon | tiger's eye | black opal | red beryl | rose quartz | agate | jasper | tourmaline | 
 racon miner
 
 point synthetiser
@@ -222,11 +222,11 @@ rust removal | greased chains | gearbox |
 racon cyclist
 
 generator
-
+paper | dry wood | wood pellets | charcoal | coal | gasoline | kerosene | gunpowder | nitro | hydrogen | methane | uranium fission | thorium fission | hydrogen fusion | ethanol | 
 racon fuel
 
 extractor
-
+mana crystal | gemstone | calorie | money | nothing | atom | plasma | 
 racon energy
 
 
