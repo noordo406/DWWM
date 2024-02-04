@@ -219,7 +219,7 @@ incinerator
 cookie burner | can't handle the heat | disco inferno | fire and flames | 1000 degrees | super hot | hot | the burning you feel | incendiary | 
 
 muffin converter
-cookie converter | muffin shop | not enough muffins | just enough muffins | too many muffins | muffin empire | galactic muffin empire | inter-galactic muffin empire | supreme total muffin master | 5 star muffin general | captain muffin | muffin master
+cookie converter | muffin shop | not enough muffins | just enough muffins | too many muffins | muffin emperor | galactic muffin emperor | inter-galactic muffin emperor | supreme total muffin master | 5 star muffin general | captain muffin | muffin master | muffin deity
 
 steam roller
 cookie flattener | powered by steam | rolling around very far from the speed of sound | steamroller coming through | unstoppable force | 
