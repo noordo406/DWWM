@@ -7,7 +7,7 @@ steam roller						|	mechanical
 weaponised drone					|	high-tech
 explosives							|	misc
 big ol' pit							|	misc
-stock exchange						|	abstract
+stock exchange						|	misc
 spellbook							|	magic
 cookie wasting corp					|	misc
 propaganda campaign					|	misc
