@@ -12,6 +12,7 @@ spellbook							|	magic
 cookie wasting corp					|	misc
 propaganda campaign					|	misc
 rocket launch facility				|	high-tech
+warmech								|	high-tech
 cookievore							|	organic
 cookie plague						|	organic
 summoning circle					|	magic
@@ -28,6 +29,20 @@ potential controller				|	abstract
 concept eraser						|	abstract
 normality restorator				|	abstract
 
+autoclicker							|	clicking		|	1cps base, +0.1 per level
+button								|	clicking		|	multiple upgradable stats : power, crit amount, crit chance, charge amount, charge speed, boost amount, boost decay
+
+unicorn								|	rainbow			|	random chance per second
+prism								|	rainbow			|	constant production, drains power
+
+point printer						|	point			|	produces on interval
+point miner							|	point			|	pay to open mine, then constant production
+point synthetiser					|	point			|	offline production
+
+dynamo								|	energy			|	click to crank
+generator							|	energy			|	constant production, needs refueling
+extractor							|	energy			|	click to harvest when done
+
 1
 5
 10
@@ -37,125 +52,183 @@ normality restorator				|	abstract
 100
 +50
 
-clicking upgrades 
+clicking 
 wood | stone | copper | bronze | iron | aluminium | steel | obsidian | tungsten | uranium | titanium | cobalt | moonstone | mythril | superium | diamond | khamarack | perfectium | unobtainium | divinium | galaxium | universalite | oneirite
 
-waster upgrades
-positive reinforcement | energy drinks | backpacks | sidearms | implants | neural enhancements | wasting techniques | leaderboards | wasting license | elite training | cloning vats | black gloves | speed potions | instant training | 
+waster
+positive reinforcement | energy drinks | backpacks | sidearms | implants | neural enhancements | wasting techniques | leaderboards | wasting license | elite training | cloning vats | black gloves | speed potions | instant training | tools | 
 pet racon
 
-racon upgrades
+racon
 silly costumes | toilet in every home | studies | metropolis | housings | feeding throughs | free trash | documentaries | free healthcare | villas | underground complex | research labs | super racon program | 
 racon family
-friends : mice | rats | oppossums | red pandas | foxes | grizzly bears | black bears | polar bears | fennecs | hedgehogs | beavers | capybaras | hamsters | guinea pigs | panda bears | bunnies | jackrabbits | squirrels | echidnas | chinchillas | jerboas | skunks | badgers | platypi | marmots | porcupines | armadillos | pangolins | flying squirrels | sugar gliders | gerbils | anteaters | fruit bats | otters | moles | shrews | megazostrodon | zapper rat | zapper hedgehog | jackalope | parrots | kookaburas | toucans | robins | magpies | blue jays | swallows | kingfishers | sparrows | hummingbirds | peafowls | kiwis | pigeons | pūkekos | owls | mallards | canaries | crows | cuckoos
+friends : oppossums | red pandas | foxes | skunks | badgers | otters | moles | anteaters | weasels | wolverine | mongooses | brown bears | black bears | moon bears | polar bears
+rodent friends : mice | rats | hedgehogs | beavers | hamsters | guinea pigs | bunnies | jackrabbits | squirrels | chinchillas | marmots | porcupines | gerbils | shrews |
+exotic friends : capybaras | fennecs | platypi | armadillos | pangolins | megazostrodon | echidnas | jerboas | sugar gliders | flying squirrels | fruit bats | meerkats | panda bears
+feathery friends : parrots | kookaburas | toucans | robins | magpies | blue jays | swallows | kingfishers | sparrows | hummingbirds | peafowls | kiwis | pigeons | pūkekos | owls | mallards | canaries | crows | cuckoos | chickens
+legendary friends : zapper rat | zapper hedgehog | jackalope | 
+sea friends :  seahorses | crabs | 
+cold friends : geckos | chameleons | 
 
-crusher upgrades
-stronger alloys | spikes | hydraulics | safe speed bypass | compounded crushers | supersonic crushers | precision machining | electromagnets | pre-crushing | double crushers | sextuple crushers | octuple hypercrushers | padded gloves | air crushers | CBT | bidirectional crusher | depressuriser | 
+crusher
+stronger alloys | ultra-dense alloys | spikes | hydraulics | safe speed bypass | compounded crushers | supersonic crushers | precision machining | electromagnets | pre-crushing | double crushers | sextuple crushers | octuple hypercrushers | padded gloves | air crushers | CBT | bidirectional crusher | depressuriser | 
 racon crusher
 
-incinerator upgrades
-longer chimneys | cooling systems | hellfire | oxygen pumps | heat rays | pre-heated coals | frostburn | insta-fire | heat treated materials | lava furnace | eternal flames | heat-resistant suits | phlogiston duplication
+incinerator
+longer chimneys | cooling systems | hellfire | oxygen pumps | heat rays | pre-heated coals | frostburn | insta-fire | heat treated materials | lava furnace | eternal flames | heat-resistant suits | phlogiston duplication | thermal shock | nuclear fusion | corrosive flames |
 racon pyro
 
-muffin converter upgrades
+muffin converter
 more conveyor belts | convenient packaging | cupcakes! | mini-converters | the muffin clown | liquid muffin | the perfect recipe | self-lubricating gears | molecular recombinator | milk dispenser | waste recycling | mini-muffins | compressed cookie chunks | 
 racon muffin
 
-steamroller upgrades
-bigger rollers | bigger engines | high-quality fuel | spiked rollers | dual rollers | nuclear engine | ferrofluid rollers | nos injector | nitroglycerimethanol | engine assists | aerodynamic design
+steamroller
+bigger rollers | bigger engines | high-quality fuel | spiked rollers | dual rollers | nuclear engine | ferrofluid rollers | nos injector | nitroglycerimethanol | engine assists | aerodynamic design | speed boosters | 
 racon driver
 
-weaponised drone upgrades
+weaponised drone
 reboot protocols | nanobots | multi-wavelength scanners | ai learning | battery packs | spider drones | autotanks | self-repairing | electro-magnetic shielding | laws of robotics | androids | automatic evolution | machine duplication
 racon robot
 
-explosives upgrades
+explosives
 more gunpowder | chain reaction | sonic boom | cluster bombs | double explosion | gravity grenades | imploder-exploder | plasma grenade | plastic explosive | grenade launchers | napalm | fragmentation | aftershock
 racon demolitionist
 
-big ol' pit upgrades
-gravity enhancer | stronger shovels | power tools | improved structural integrity | elevators | laser drills | MOLE units | mining helmets | mineral sorter | diamond tools | sharpened edges | compact dirt storage | 
+big ol' pit
+gravity enhancer | stronger shovels | power tools | improved structural integrity | elevators | laser drills | MOLE units | mining helmets | mineral sorter | diamond-tipped | diamond tools | sharpened edges | compact dirt storage | giant plunger | declogging chemicals
 racon spartan
 
-stock exchange upgrades
+stock exchange
 buy high sell low | predictive algorithms | global trade puppet masters | diamond hands | fancy suits | expensive watches | negative value | shorting | betting | massive vaults full of gold coins | flooding the market | tax evasion | inflation
 racon trader
 
-spellbook upgrades
-dust-removal spells | possession | table of contents | fire-proofing | grand library | self-writing books | typewriters | universal spellcasting language | silent spellcasting | mana surge | cookienadoes | 
+spellbook
+dust-removal spells | possession | table of contents | fire-proofing | grand library | self-writing books | typewriters | universal spellcasting language | silent spellcasting | mana surge | cookienadoes | density spell
 racon wizard
 
-cookie wasting corp upgrades
-coffee machines | maintenance crew | weekly meetings | truth and honesty | more budget for the coffee machines | coffee plantations | coffee lobbyists | applying the peter principle | ceo mindset | restructuring | market research
+cookie wasting corp
+coffee machines | maintenance crew | weekly meetings | truth and honesty | more budget for the coffee machines | coffee plantations | coffee lobbyists | applying the peter principle | ceo mindset | restructuring | market research | team-building exercises
 racon employee
 
-propaganda campaign upgrades
-subliminal messages | slander | third-party studies | reject morality | memes | video essays | astroturfing | gaslighting | lawyers | sabotage operations | logical fallacies | brainwashing | influencers | revisionists | ad hominem
+propaganda campaign
+subliminal messages | slander | third-party studies | reject morality | memes | video essays | astroturfing | gaslighting | lawyers | sabotage operations | logical fallacies | brainwashing | influencers | revisionists | ad hominem | rumors | ad campaigns
 racon activist
 
-rocket launch facility upgrades
-ejection unit | cookie fuel | wormhole generator | solar pannels | plasma cannons | ship ai | galactic mapping | black hole detectors | gravitational slingshot | radiation shielding | ftl engine
+rocket launch facility
+ejection unit | cookie fuel | wormhole generator | solar pannels | plasma cannons | ship ai | galactic mapping | black hole detectors | gravitational slingshot | radiation shielding | ftl engine | autopilot
 racon astronaut
 
-cookievore upgrades
+warmech
+missile launchers | miniguns | shoulder cannon | tesla guns | coilguns | plasma throwers | grenade launchers | flamethrower | laser guns | megablade | chainsaw megablades | cerberus miniguns | flak cannon | heads-up display | jet boosters | antigrav engine | pneumatic punch | depleted uranium rounds | titanic frame | underbarrel weapons | intuitive controls
+cyber-racon
+
+cookievore
 gene splicing | regrowable teeth | regenerative tissue | toxin glands | cancer immunity | night-vision | titanium claws | full-spectrum vision | cyberisation | chromatic fur | acid blood | hypersonic scream | emergency crystalisation | grafting | 
 racon monster
 
-cookie plague upgrades
+cookie plague
 symptom attenuation | hibernation | conditional lethality inhibitor | symbiotic parasite | post-mortem transmission | spore release | cross-species contamination | periodic dna shuffling | accelerated mutation | computer infection 
 racon scientist
 
-summoning circle upgrades
+summoning circle
 cookie sacrifices | egg_ | the titans | the light lord | the plagued | the leviathan | cultists | the starved | the dead | the barbaric | the fallen | the nephilim | forums | the hellhounds
 racon cultist
 
-antimatter condenser upgrades
-backup generator | unstability controller | unstable anticookies | antiantiantimatter condensing | matter inverter | quantum everything | negative periodic table | half nucleons | 
+antimatter condenser
+backup generator | unstability controller | unstable anticookies | antiantiantimatter condensing | matter inverter | quantum everything | negative periodic table | half nucleons | antimatter antimatter condensers
 antiracon
 
-dimensional gate upgrades
+dimensional gate
 hexagons | trade routes | tiled dimension | antiemetics | more accurate destination calculations | fishing dimension | full-body protection | mirror dimension | euclidian standardiser | classic dimension
 racon dimension
 
-cosmic cannon upgrades
+cosmic cannon
 stellar capacitor | planetary core extraction | focused energy beams | galaxo-centric engine | gravitational engine | fusion engine | superplasma | supernova capacitor | black-hole stabilisers | atom splitter | 
 racon star
 
-mystery building upgrades
+mystery building
 mystery upgrade | surprise mechanics | reduce guesswork | empirical improvements | colorful buttons | measuring instruments | coin slot | item slot | instruction manual | mystery building wiki | monkeys on typewriters | data collectors | increase storage space | quantum everything
 mystery racon
 
-long distance pulse machine upgrades
-noise cancelling | signal amplifiers | disintegration wave | frequency isolator | molecular integrity destabilisation | wave-particle accelerator | bigger capacitors | hyperspeed chargers | 
+long distance pulse machine
+noise cancelling | signal amplifiers | disintegration wave | frequency isolator | molecular integrity destabilisation | wave-particle accelerator | bigger capacitors | hyperspeed chargers | rhythmic boost | perfect rhythmic boost | combo rhythmic boost | full combo rhythmic boost | dragonflame music pack | exiled music pack | blast burst music pack | drifter's music pack | string rivalry music pack | commuter of stink music pack | slayer's music pack | blood fueled music pack | chaoz music pack | nexus music pack | alternative frequency
 racon wave
 
-nightmare manifestation enabler upgrades
-full brain scan | dreamcatchers | sleep paralysis inducer | hypnosis | sensory deprivation tanks | neural upload | dream journal | partial lucidity | ai-assisted dreaming | full lucidity | artificial coma | 
+nightmare manifestation enabler
+full brain scan | dreamcatchers | sleep paralysis inducer | hypnosis | sensory deprivation tanks | neural upload | dream journal | partial lucidity | ai-assisted dreaming | full lucidity | artificial coma | quantum dreaming
 racon nightmare
 
-ouroboros engine upgrades
-the cookie cycle | exponentiation | nested engines | faster processing | virtualisation | sequentialisation | backup cookies | fractalisation | cookie kickstarter | 
-raconroboros
+ouroboros engine
+the cookie cycle | exponentiation | nested engines | faster processing | virtualisation | sequentialisation | backup cookies | fractalisation | cookie kickstarter | cave full of gold coins | 
+dracon
 
-idle engine upgrades
+idle engine
 faster idling | incrementation | self-sustainability | additional clocks | flavoring | upgrades | shinies | buildings | synergies | buttons | autoclicker | offline production | ascension | login rewards | microtransactions
 racon idler
 
-metacomputer upgrades
-error handler | arbitrary code execution | 2048-bit processor | cookie waster | spell-checking | code that does what you want it to do | decompiler | reprogramming reality for dummies | despaghettification | all the terraflops | quantum processor | memory editor | overclocking | save wipe | software update | vr headset
+metacomputer
+error handler | arbitrary code execution | 2048-bit processor | cookie waster | spell-checking | code that does what you want it to do | decompiler | reprogramming reality for dummies | despaghettification | all the terraflops | quantum processor | memory editor | overclocking | save wipe | software update | vr headset | multithreading
 racon programmer
 
-potential controller upgrades
-inverse production | wasted potential | potential energy recycling | potential redirector | infinite potential | production redirection | potential creator | butterfly effect | 
+potential controller
+inverse production | wasted potential | potential energy recycling | redirector | infinite potential | increased reserves | butterfly effect | 
 racon replacer
 
-concept eraser upgrades
+concept eraser
 erase grandma | dedefintion | mind wipe | redundancy checks | purpose reestabilisher | axiomatic termination | blank replacement | babel protocol | identity reassignement | inverse ontology | word detector | upgrade
 gray animal with a masked face and a ringed tail
 
 normality restorator
 miniature improbability drive | universe desaturation | idle game devolution | alchemy labs | finger removal surgeries | retirement homes | timeline rewinding | deindustrialisation | mana catalysers | 
 perfectly normal racon
+
+autoclicker
+reduced latency | custom code | lifetime license | pop-up blocker | download more ram | daily click limit bypass | sealed memory leaks | second cursor | 
+racon cursor
+
+supercharger
+power : white | platinum | silver | gray | black | slate
+crit amount : red | vermillion | carmine | salmon | pink | apple red | amaranth | maroon
+crit chance : orange | amber | brown | rosewood | garnet | cinamon | bronze
+charge amount : yellow | chartreuse | golden | peach | cream | lemon | 
+charge speed : green | spring | lime | mint | aquamarine | emerald | evergreen | jade | turquoise
+boost amount : blue | cyan | azure | cerulean | cobalt | indigo | teal | navy
+boost decay : fuschia | violet | purple | rose | magenta | amethyst | aubergine | mauve | lavender | plum | 
+all : rainbow button | 
+racon button
+
+unicorn
+increased : happiness | colorfulness | sparkliness | forcefulness | shininess | fancyness | horniness | luckyness | charmingness | quickness | lumninousnesss | aromaticalness | cleanliness | sweetness | shimmeringness | cuteness | beautifulness | prettiness
+uniracon
+
+prism
+remove impurities | scratch-free materials | ultra-bright lightbulbs | fluorescent materials | 
+rainbow racon
+
+point printer
+modern printers | higher quality picture | space optimisation | ink subscription | paper subscription | printer subscription | fancier design | gold paper | paper printers | firmware update | improved hardware | negative currency | iridescent ink | ink inc. | automated printing | e-printing | 3d printing | 4d printing
+dablon
+
+point miner
+ruby | emerald | sapphire | topaz | amethyst | quartz | diamond | onyx | moonstone | jade | opal | garnet | jet | pearl | tanzanite | aquamarine | amber | malachite | lapis lazuli | spinel | zircon | tiger's eye | black opal | red beryl | rose quartz | agate | jasper | tourmaline | 
+racon miner
+
+point synthetiser
+
+artificial racon
+
+dynamo
+rust removal | greased chains | gearbox | 
+racon cyclist
+
+generator
+paper | dry wood | wood pellets | charcoal | coal | gasoline | kerosene | gunpowder | nitro | hydrogen | methane | uranium fission | thorium fission | hydrogen fusion | ethanol | 
+racon fuel
+
+extractor
+mana crystal | gemstone | calorie | money | nothing | atom | plasma | 
+racon energy
+
 
 dual upgrades 
 
@@ -191,23 +264,10 @@ dissaciociator | nme : super ego extraction
 pulse | ouroboros : feedback loop
 
 
-autoclicker
-supercharger
-
-unicorn
-prism
-
-point printer
-point miner
-point synthetiser
-
-dynamo
-generator
-extractor
 
 achievements 1 | 5 | 10 | 25 | 50 | 100
 waster
-cookie waster | hired help | co-op wasting | better with friends | popular | send dudes | 
+cookie waster | hired help | co-op wasting | better with friends | popular | send dudes | brothers in arms | one for all, all for one | wasting with purpose | maybe the real wasting was the friends we made along the way | 
 
 racon
 cookie eater | animal tamer | silly little creatures | trash party | weird dogs | dumpster divers | sewer dwellers
@@ -216,13 +276,13 @@ crusher
 cookie crusher | biscuit basher | sugar smasher | chocolate chipper | breakfast breaker | snack snapper | wheat whacker | 
 
 incinerator
-cookie burner | can't handle the heat | disco inferno | fire and flames | 1000 degrees | super hot | hot | the burning you feel | incendiary | 
+cookie burner | can't handle the heat | disco inferno | fire and flames | 1000 degrees | super hot | hot | the burning you feel | incendiary | scorch the earth | pyromaniac | ashes to ashes | 
 
 muffin converter
 cookie converter | muffin shop | not enough muffins | just enough muffins | too many muffins | muffin emperor | galactic muffin emperor | inter-galactic muffin emperor | supreme total muffin master | 5 star muffin general | captain muffin | muffin master | muffin deity
 
 steam roller
-cookie flattener | powered by steam | rolling around very far from the speed of sound | steamroller coming through | unstoppable force | 
+cookie flattener | powered by steam | rolling around very far from the speed of sound | steamroller coming through | unstoppable force | i love the smell of diesel in the morning
 
 weaponised drone
 cookie terminator | automation | father of machines | beep boop beep | cyber initiative | mechanical friends | judgment day | 
@@ -234,64 +294,79 @@ big ol' pit
 cookie dumper | voyage to the center of the earth | swiss cheese | it's hole! time! | diggy diggy | deep diving | elite deep diving | you dig | 
 
 stock exchange
-cookie trader | oh the economy | aaaand it's gone | distrust fund | i'm in debt and i smell like wet concrete | all risk and no reward | 
+cookie trader | oh the economy | aaaand it's gone | distrust fund | i'm in debt and i smell like wet concrete | all risk and no reward | a lot of cash to spare | 
 
 spellbook
-cookie zapper | apprentice | scholar | bookworm | acolyte | spellmaster | grand wizard | 
+cookie zapper | apprentice | scholar | bookworm | acolyte | spellmaster | grand wizard | skidaddle skidoodle | for my next trick, i'll make the cookies disappear | extraordinary magician | 
 
 cookie wasting corp
 cookie waster(tm) | intern | part-time job | contractor | employee | employee of the month | employee of the year | team leader | assistant manager | assistant to the manager | manager | ceo | corporate overlord | president of earth
 
 propaganda campaign
-cookie demoniser | literally 1984 | you will waste the cookies and you will be happy | do it | 
+cookie demoniser | literally 1984 | you will waste the cookies and you will be happy | do it | i need you to waste cookies | big brother | 
 
 rocket launch facility
-cookie launcher | reach for the stars | space race | rocket league | cosmic traveller | ludicrous speed | goodbye earth | 
+cookie launcher | reach for the stars | space race | rocket league | cosmic traveller | ludicrous speed | cookie space program | blasting off
+
+warmech
+cookie exterminator | the war is on | just like your chinese cartoons | size matters | heavy weapon | mechanical commando | cookie wasting warmachine
 
 cookievore
-cookie devourer | man-made horrors | it's alive! | mother nature would not approve | monster madness | what's that coming over the hill? | playing god
+cookie devourer | man-made horrors | it's alive! | mother nature would not approve | monster madness | what's that coming over the hill? | playing god | 
 
 cookie plague
-cookie infector | microbiological weapon | pandemic | epidemic | 
+cookie infector | biohazard | pandemic | epidemic | wicked sick | infectonator | greenland won't save you | 
 
 summoning circle
 cookie doomer | delightfully devilish | let's make a cult! | crudux cruo | pandemonium | waking the profane | this is it, the apocalypse | 
 
 antimatter condenser
-anticookie clicker | hard-reset | recipe for disaster | weird science | schrödinger's achievement | scientific mumbo jumbo | 
+anticookie clicker | hard-reset | recipe for disaster | weird science | schrödinger's achievement | scientific mumbo jumbo | nothing matters | 
 
 dimensional gate
-cookie waster (from an alternate dimension) | now you're thinking | 
+cookie waster (from an alternate dimension) | now you're thinking | but first, we need to talk about parallel universe | 
 
 cosmic cannon
-cookie obliterator | BFG | planet cracker | firing my laser | star cannon | 
+cookie obliterator | BFG | planet cracker | firing mah laser | star cannon | 
 
 mystery building
 thing doer | mystery achievement | knowledge is power | i know that i know nothing | what's in the box? | seeking the truth | theory of everything | 
 
 long distance pulse machine
-cookie pulser | hectohertz | beatmaker | 
+cookie beater | hectohertz | beatmaker | harmonious harm | noisestorm | breaker of wine glasses | stereo madness | sound of infinity | 
 
 nightmare manifestation enabler
-cookie dreamer | night terror | afraid of the dark | boo! | 
+cookie dreamer | night terror | scared of the dark | afraid? | boo! | make your nightmares come true | i wake up -> there's another eldritch horror | slumber party | 
 
 ouroboros engine
 cookie looper | the cookie dragon eating its tail | exploiting loopholes | destroy to create | 
 
 idle engine
-cookie idler | tick tock | until the end of time | perpetual motion machine | time waster | wasting cookies by doing absolutely nothing | number go up | 
+cookie idler | tick tock | until the end of time | perpetual motion machine | time waster | wasting cookies by doing absolutely nothing | number go up | deconstructing the medium | 
 
 metacomputer
-rm cookie | virtual reality | system operator | codemaster | superadmin | deep into the code | 
+rm cookie | virtual reality | system operator | codemaster | superadmin | deep into the code | functional | it just works | 
 
 potential controller
-production stopper | just waste more | what could have been | what will not be | 
+production stopper | just waste more | what could have been | what will not be | crisis averted | better safe than sorry | 
 
 concept eraser
-cookies? | knowing what a cookie is by knowing what is isn't | blissful ignorance | therefore cookies aren't | imagine a world without cookies | 
+cookies? | knowing what a cookie is by knowing what is isn't | blissful ignorance | therefore cookies aren't | imagine a world without cookies | total cookie death
 
 normality restorator
-cookie normalifier | cookie clicker and its consequences... 
+cookie normalifier | cookie clicker and its consequences... | insanity for the fly | law of the normal | what they took from you | 
+
+autoclicker & supercharger
+cookie clicker | click clique | clickity click | automa-click | frenetic clicking | frantic clicking | clicking frenzy | super click | hyper click | mega click | giga click | ULTRACLICK | clicktastic | still clicking | 
+
+unicorn & prism
+rainbow realiser | taste the rainbow | colorful collection | stimulating the eye cones | full spectrum | 
+
+point printer & miner & synthestiser
+money maker | payday fellas | venture capitalist | time is money | 
+
+dynamo & generator & extractor
+power producer | power play | 
 
 
 
@@ -307,33 +382,6 @@ cold static energy		spirit
 cold flowing matter		water
 cold flowing energy		air
 
-dishwasher
-burger shop mopper
-cashier
-executive cashier
-assistant manager
-assistant to the manager
-manager
-super duper extreme manager
-fried food specialist
-sandwich superstar
-chief food scientist
-burger chef
-burger master
-burger deity
-
-store owner
-franchise owner
-vp of burger shop
-president of burger shop
-ceo, burger shop enterprises
-chairman, burger shop universal
-burger shop overlord
-captain burger
-5 star burger general
-president of earth
-galactic ruler
-supreme total burger master
 
 burger shop mopper
 vp of marketing
@@ -365,6 +413,7 @@ head rank generator
 vp of chicken
 vp of beef
 fried food specialist
+sandwich superstar
 chief food scientist
 burger chef
 conveyor belt wizard
@@ -384,3 +433,9 @@ burger shop overlord
 captain burger
 
 supreme total burger master
+
+
+5 star burger general
+president of earth
+galactic ruler
+
