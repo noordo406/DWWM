@@ -1,0 +1,3091 @@
+Let's make a game!
+	-[creative name]
+	-by LunaticLunarian
+	-created on 26/05/15
+	-last updated on 06/07/15
+	-version 
+
+Settings :
+	-prices increase by 110%
+	-selling gives back 60%
+	-resources are visible by default
+	-clickables are hidden by default
+	-buildings are visible by default
+	-upgrades are hidden by default
+	-achievements are hidden by default
+	-custom stylesheet : http://pastebin.com/raw.php?i=NVGeFgZN
+	-show log
+	-text color : #000000
+
+Resources :
+	*Cash
+	-named cash
+	-displayed as You have %a cash.
+	*Points
+	-named point|points
+	-displayed as You have %a point%s.
+	*Springs
+	-named giant colored spring|giant colored springs.
+	-displayed as You have %a giant colored spring%s.
+	*EnergyCell
+	-named energy cell|energy cells
+	-displayed as You have %a energy cell%s.
+	*SoulFragment
+	-named soul fragment|soul fragments
+	-displayed as You have %a soul fragment%s.
+
+	*Divider1
+	-starts at 1
+	-displayed as -------------------------------------------
+	*Click
+	-named button click|button clicks
+	-displayed as You've clicked %a time%s.
+	*Res1
+	-displayed as You've autoclicked %a time%s.
+	*Res2
+	-displayed as You've printed %a cash worth of bank bills.
+	*Res3
+	-displayed as Your pets got you %a cash.
+	*Res4
+	-displayed as You've created %a byte%s of data.
+	*Res5
+	-displayed as You've done %a point%s of damage.
+	*Res6
+	-displayed as Your music got you %a cash.
+	*Res7
+	-displayed as You've generated %a achievements.
+	*Res8
+	-displayed as Your stars have an awesome rating of %a.
+	*Res9
+	-displayed as Your Lenny ( ͡° ͜ʖ ͡°)ed %a times.
+	*Res10
+	-displayed as Your Hexagons killed %a people.
+
+	*Divider2
+	-starts at 1
+	-displayed as -------------------------------------------
+	*Building
+	-displayed as You have %a building%s.
+	*Reset
+	-displayed as You've reset %a time%s.
+	-named reset
+	*Sock
+	-displayed as You've gotten %a sock%s by resetting.
+	-named sock
+	*SSeconds
+	-displayed as Your current session lasted for %a "second%s".
+	*SMinutes
+	-displayed as or %a "minute%s".
+	*Seconds
+	-displayed as You played for %a second%s.
+	*Minutes
+	-displayed as or %a minute%s.
+
+	*Na
+	-abstract
+	*Entity
+	-starts at 40000
+	-abstract
+	*AEntity
+	-abstract
+Clickables :
+	*Button
+	-gives 1 Cash, 1 Points, 1 Click
+	-picture : http://i.imgur.com/iu1ifqF.png
+	-visible
+
+	*ResetButton
+	-locks UpReset
+	-locks ResetButton
+	-converts Cash to Na
+	-converts Click to Na
+	-converts Res1 to Na
+	-converts Res2 to Na
+	-converts Res3 to Na
+	-converts Res4 to Na
+	-converts Res5 to Na
+	-converts Res6 to Na
+	-converts Res7 to Na
+	-converts Res8 to Na
+	-converts Res9 to Na
+	-converts Res10 to Na
+	-converts SSeconds to Na
+	-converts SMinutes to Na
+	-converts Build1 to Na
+	-converts Build2 to Na
+	-converts Build3 to Na
+	-converts Build4 to Na
+	-converts Build5 to Na
+	-converts Build6 to Na
+	-converts Build7 to Na
+	-converts Build8 to Na
+	-converts Build9 to Na
+	-converts Build10 to Na
+	-converts Building to Na
+	-multiplies Points 0.0000000000001%
+	-converts Points to EnergyCell
+	-multiplies Springs 5%
+	-gives 1 Reset
+	-unlocks ResetUnlock
+	-named Reset the goddamn game already!
+
+	*EntConvert
+	-converts AEntity to Entity
+	-locks EntConvert
+	-named Get Entity back
+
+	*ResetUnlock
+	-unlocks UpReset
+	-locks ResetUnlock
+	-named Get the reset upgrade back.
+
+	*ResetSoulButton
+	-locks UpResetSoul
+	-locks ResetSoulButton
+	-converts Cash to Na
+	-converts Click to Na
+	-converts Res1 to Na
+	-converts Res2 to Na
+	-converts Res3 to Na
+	-converts Res4 to Na
+	-converts Res5 to Na
+	-converts Res6 to Na
+	-converts Res7 to Na
+	-converts Res8 to Na
+	-converts Res9 to Na
+	-converts Res10 to Na
+	-converts SSeconds to Na
+	-converts SMinutes to Na
+	-converts Build1 to Na
+	-converts Build2 to Na
+	-converts Build3 to Na
+	-converts Build4 to Na
+	-converts Build5 to Na
+	-converts Build6 to Na
+	-converts Build7 to Na
+	-converts Build8 to Na
+	-converts Build9 to Na
+	-converts Build10 to Na
+	-multiplies EnergyCell 95%
+	-multiplies Points 0.000000000001%
+	-converts Points to EnergyCell
+	-multiplies Springs 5%
+	-converts Springs to SoulFragment
+	-gives 1 Reset
+	-unlocks ResetSoulUnlock
+	-named gib soul plox
+
+	*ResetSoulUnlock
+	-unlocks UpResetSoul
+	-gives 1 Sock
+	-locks ResetSoulUnlock
+	-named Get a sock (same value as your soul)
+Buildings :
+	*Build1
+	-"<b>Power = 0.1</b><br>Generic first building for scrublords without imagination."
+	-gives 0.1 Cash, 0.1 Points, 0.1 Res1
+	-costs 20 Cash
+	-represents 1 Building
+	-named Autoclicker
+	-picture : http://i.imgur.com/eGDYckZ.png
+	*Build2
+	-"<b>Power =  4</b><br>a.k.a. your mom's old as f*ck printer that does an unimaginable amount of noise. Or was it the fax machine?"
+	-gives 4 Cash, 4 Points, 4 Res2
+	-costs 200 Cash
+	-represents 1 Building
+	-named Money Printer
+	-picture : http://i.imgur.com/HIIBWgv.png
+	*Build3
+	-"<b>Power =  25</b><br>Idle game logic, don't argue."
+	-gives 25 Cash, 25 Points, 25 Res3
+	-costs 3000 Cash
+	-represents 1 Building
+	-named Pet That Gets You Cash
+	-picture : http://i.imgur.com/rmbhdDS.png
+	*Build4
+	-"<b>Power =  512</b><br>It's not an overly efficient computer, it's just a computer that merits the adjective "super"."
+	-gives 512 Cash, 512 Points, 512 Res4
+	-costs 131072 Cash
+	-represents 1 Building
+	-named Super Computer
+	-picture : http://i.imgur.com/WNFPvpQ.png
+	*Build5
+	-"<b>Power =  11250</b><br>The kind of stuff I won't run out of ideas for."
+	-gives 11250 Cash, 11250 Points, 11250 Res5
+	-costs 4500000 Cash
+	-represents 1 Building
+	-named Guns!
+	-picture : http://i.imgur.com/9aFUQGd.png
+	*Build6
+	-"<b>Power =  250000</b><br>Of course it will includes music I'll find awesome and you won't, but this is my game and therefore my opinions are better than yours, got it?"
+	-gives 250000 Cash, 250000 Points, 250000 Res6
+	-costs 250000000 Cash
+	-represents 1 Building
+	-named Music
+	-picture : http://i.imgur.com/NBAbYec.png
+	*Build7
+	-"<b>Power =  7.2 million</b><br>Achievements are like Pokémons, you always feel the need to get them all."
+	-gives 7200000 Cash, 7200000 Points, 7200000 Res7
+	-costs 18000000000 Cash
+	-represents 1 Building
+	-named Achievement Generator
+	-picture : http://i.imgur.com/Q7ix7Vg.png
+	*Build8
+	-"<b>Power =  1 billion</b><br>Asking why this star is awesome is like arguing with a moron : a waste of time."
+	-gives 1e+9 Cash, 1e+9 Points, 1e+9 Res8
+	-costs 7777777777777 Cash
+	-represents 1 Building
+	-named Awesome Star
+	-picture : http://i.imgur.com/wleF6sR.png
+	*Build9
+	-"<b>Power =  5 trillion</b><br>( ͡° ͜ʖ ͡°)"
+	-gives 5e+12 Cash, 5e+12 Points, 5e+12 Res9
+	-costs 1e+17 Cash
+	-represents 1 Building
+	-named Le Lenny
+	-picture : http://i.imgur.com/jK160nG.png
+	*Build10
+	-"<b>Power =  60 quadrillion</b><br>For some reason I always have to include these f*ckers in my stuff."
+	-gives 6e+16 Cash, 6e+16 Points, 6e+16 Res10
+	-costs 6.66666e+21 Cash
+	-price increases by 115%
+	-represents 1 Building
+	-named Hexagon
+	-picture : http://i.imgur.com/1MdUkmg.png
+
+	*BuildSpring
+	-named factory
+	-gives 1 Springs
+	-abstract
+	*BuildEntity
+	-named Entity generator
+	-gives 1 AEntity for 1 Entity
+	-abstract
+	*BuildSTime
+	-gives 1 SSeconds, 0.016666666666 SMinutes
+	-starts at 1
+	-abstract
+	*BuildTime
+	-gives 1 Seconds, 0.016666666666 Minutes
+	-starts at 1
+	-abstract
+Upgrades :
+	*Welcome
+	-"<b>X1.01 everything power.</b><br>c:"
+	-multiplies efficiency of Button by 101%
+	-multiplies efficiency of Build1 by 101%
+	-multiplies efficiency of Build2 by 101%
+	-multiplies efficiency of Build3 by 101%
+	-multiplies efficiency of Build4 by 101%
+	-multiplies efficiency of Build5 by 101%
+	-multiplies efficiency of Build6 by 101%
+	-multiplies efficiency of Build7 by 101%
+	-multiplies efficiency of Build8 by 101%
+	-multiplies efficiency of Build9 by 101%
+	-multiplies efficiency of Build10 by 101%
+	-visible
+	-named This Is A Free 1% Bonus
+	-picture : http://i.imgur.com/agTtygQ.png
+
+	*Lel
+	-"<b>X1.1 spring production.</b><br>Entity happened and it doesn't give out regular updates anymore.<br>But I guess you already found out about the later.<br><i>What do you mean my messages are too cryptic?</i>"
+	-multiplies efficiency of BuildSpring by 110%
+	-unlocks at 1000000 Springs
+	-named motivation.exe Reboot
+	-picture : http://i.imgur.com/J0BVULa.png
+
+	*UpReset
+	-"<b>Unlocks the reset button.</b><br>No upgrades will be locked except this one.<br>Cash, production statistics and session time will be erased.<br>Points will be converted to energy cells. (1 quadrillion points for 1 cell)<br>You'll only keep 5% of your giant colored springs.
+	-costs 5000 Springs
+	-unlocks ResetButton
+	-named Reset Confirmation
+	-picture : http://i.imgur.com/jaHUgOT.png
+	*UpResetSoul
+	-"<b>Unlocks another reset button.</b><br>Same effects as the normal reset button except  :<br>Springs you normally keep after reset (5%) will be instead converted into soul fragments.<br>You'll get 10 times more energy cells but you'll lose 5% of them before point convertion."
+	-costs 100000 Springs
+	-unlocks ResetSoulButton
+	-named Trade Your Soul
+	-picture : http://i.imgur.com/f8FOWji.png
+
+	*Objective1
+	-"<b>Launch the production of giant colored springs.</b><br>They're all yellow, director's decision.<br><i>Objective #1</i>"
+	-unlocks at 1 Points
+	-requires 1000000 Points
+	-costs -1 BuildSpring
+	-unlocks Objective2
+	-named Springs And Co.
+	-picture : http://i.imgur.com/JawUL9g.png
+	*Objective2
+	-"<b>X[RNG] everything power.</b><br>You should ALWAYS have some of it on you in case you need it.<br><i>Objective #2</i>"
+	-multiplies efficiency of Button by 188%
+	-multiplies efficiency of Build1 by 114%
+	-multiplies efficiency of Build2 by 170%
+	-multiplies efficiency of Build3 by 292%
+	-multiplies efficiency of Build4 by 124%
+	-multiplies efficiency of Build5 by 223%
+	-multiplies efficiency of Build6 by 239%
+	-multiplies efficiency of Build7 by 137%
+	-multiplies efficiency of Build8 by 108%
+	-multiplies efficiency of Build9 by 128%
+	-multiplies efficiency of Build10 by 249%
+	-requires 1000000000 Points
+	-unlocks Objective3
+	-named Ethylenetetracarboxilyc Dianhydride
+	-picture : http://i.imgur.com/azgR4BX.png
+	*Objective3
+	-"<b>+0.1% building power per building just before it.</b><br>A raise of -100 dollars, so they owe you 100 dollars.<br><i>Objective #3</i>"
+	-multiplies efficiency of Build1 by 0.1% per Build10
+	-multiplies efficiency of Build2 by 0.1% per Build1
+	-multiplies efficiency of Build3 by 0.1% per Build2
+	-multiplies efficiency of Build4 by 0.1% per Build3
+	-multiplies efficiency of Build5 by 0.1% per Build4
+	-multiplies efficiency of Build6 by 0.1% per Build5
+	-multiplies efficiency of Build7 by 0.1% per Build6
+	-multiplies efficiency of Build8 by 0.1% per Build7
+	-multiplies efficiency of Build9 by 0.1% per Build8
+	-multiplies efficiency of Build10 by 0.1% per Build9
+	-requires 1e+12 Points
+	-unlocks Objective4
+	-named Salary Raises
+	-picture : http://i.imgur.com/AYJhgc9.png
+	*Objective4
+	-"<b>Unlocks another upgrade which will unlock the possibility to reset.</b><br>Technical purposes.<br><i>Objective #4</i>"
+	-requires 1e+15 Points
+	-unlocks UpReset
+	-unlocks Objective5
+	-named Big Reset Button
+	-picture : http://i.imgur.com/1DeapWy.png
+	*Objective5
+	-"<b>+1% spring production per reset.</b><br>A banana peel in the middle of the corridor is more efficient than you think. (except against aliens)<br><i>Objective #5</i>"
+	-requires 1e+18 Points
+	-multiplies efficiency of BuildSpring by 1% per Reset
+	-unlocks Objective6
+	-named Security System
+	-picture : http://i.imgur.com/Mxa4spU.png
+	*Objective6
+	-"<b>Buildings increase the production of giant colored springs.</b><br>For sticking people on their chairs.<br><i>Objective #6</i>"
+	-multiplies efficiency of BuildSpring by 0.05% per Build1
+	-multiplies efficiency of BuildSpring by 0.1% per Build2
+	-multiplies efficiency of BuildSpring by 0.15% per Build3
+	-multiplies efficiency of BuildSpring by 0.2% per Build4
+	-multiplies efficiency of BuildSpring by 0.25% per Build5
+	-multiplies efficiency of BuildSpring by 0.3% per Build6
+	-multiplies efficiency of BuildSpring by 0.35% per Build7
+	-multiplies efficiency of BuildSpring by 0.4% per Build8
+	-multiplies efficiency of BuildSpring by 0.45% per Build9
+	-multiplies efficiency of BuildSpring by 0.5% per Build10
+	-requires 1e+21 Points
+	-unlocks Objective7
+	-named Currant Jam
+	-picture : http://i.imgur.com/vS5N8u1.png
+	*Objective7
+	-"<b>+0.01% spring production per session minute.</b><br>He's a human.<br>It's funny because my brother is also one.<br><i>Objective #7</i>"
+	-multiplies efficiency of BuildSpring by 0.01% per SMinutes
+	-requires 1e+24 Points
+	-unlocks Objective8
+	-named Get Your Father Back
+	-picture : http://i.imgur.com/kARjtEN.png
+	*Objective8
+	-"<b>+0.01% everything power per session minute.</b><br>Don't ask how your office got there.<br><i>Objective #8</i>"
+	-multiplies efficiency of Button by 0.01% per SMinutes
+	-multiplies efficiency of Build1 by 0.01% per SMinutes
+	-multiplies efficiency of Build2 by 0.01% per SMinutes
+	-multiplies efficiency of Build3 by 0.01% per SMinutes
+	-multiplies efficiency of Build4 by 0.01% per SMinutes
+	-multiplies efficiency of Build5 by 0.01% per SMinutes
+	-multiplies efficiency of Build6 by 0.01% per SMinutes
+	-multiplies efficiency of Build7 by 0.01% per SMinutes
+	-multiplies efficiency of Build8 by 0.01% per SMinutes
+	-multiplies efficiency of Build9 by 0.01% per SMinutes
+	-multiplies efficiency of Build10 by 0.01% per SMinutes
+	-requires 1e+27 Points
+	-unlocks Objective9
+	-named Tiled Parallel Dimension
+	-picture : http://i.imgur.com/6AAzqPd.png
+	*Objective9
+	-"<b>Unlocks a new reset upgrade.</b><br>Someone stole it from is willing to give it back for your soul.<br><i>Objective #9</i>"
+	-unlocks UpResetSoul
+	-requires 1e+30 Points
+	-unlocks Objective10
+	-named Get Your Job Back
+	-picture : http://i.imgur.com/VbD47VJ.png
+	*Objective10
+	-"<b>+1% spring production per sock.</b><br>Tigers meow BECAUSE I F*CKING SAID SO!!<br><i>Objective #10</i>"
+	-multiplies efficiency of BuildSpring by 1% per Sock
+	-requires 1e+33 Points
+	-unlocks Objective11
+	-named Tigers
+	-picture : http://i.imgur.com/YGsiMhp.png
+	*Objective11
+	-"It's only a placeholder for future objectives.<br>I don't think you can actually buy this anyway."
+	-requires 1e+309 Points
+	-named Don't Buy This
+	-picture : http://i.imgur.com/D45yvGK.png
+
+	*Bonus1
+	-"<b>X1.1 everything power.</b><br>The letter B!"
+	-multiplies efficiency of Button by 110%
+	-multiplies efficiency of Build1 by 110%
+	-multiplies efficiency of Build2 by 110%
+	-multiplies efficiency of Build3 by 110%
+	-multiplies efficiency of Build4 by 110%
+	-multiplies efficiency of Build5 by 110%
+	-multiplies efficiency of Build6 by 110%
+	-multiplies efficiency of Build7 by 110%
+	-multiplies efficiency of Build8 by 110%
+	-multiplies efficiency of Build9 by 110%
+	-multiplies efficiency of Build10 by 110%
+	-unlocks at 1000000 Points
+	-costs 100000 Cash
+	-named B
+	-picture : http://i.imgur.com/mFW5FLK.png
+	*Bonus2
+	-"<b>X1.1 everything power.</b><br>MORE SHINY!!!!"
+	-multiplies efficiency of Button by 110%
+	-multiplies efficiency of Build1 by 110%
+	-multiplies efficiency of Build2 by 110%
+	-multiplies efficiency of Build3 by 110%
+	-multiplies efficiency of Build4 by 110%
+	-multiplies efficiency of Build5 by 110%
+	-multiplies efficiency of Build6 by 110%
+	-multiplies efficiency of Build7 by 110%
+	-multiplies efficiency of Build8 by 110%
+	-multiplies efficiency of Build9 by 110%
+	-multiplies efficiency of Build10 by 110%
+	-unlocks at 100000000 Points
+	-costs 10000000 Cash
+	-named Gold Coin
+	-picture : http://i.imgur.com/uc2JKiG.png
+	*Bonus3
+	-"<b>X1.1 everything power + secret effect.</b><br>Composed of garlic, sugar and a secret ingredient."
+	-multiplies efficiency of Button by 110%
+	-multiplies efficiency of Build1 by 110%
+	-multiplies efficiency of Build2 by 110%
+	-multiplies efficiency of Build3 by 110%
+	-multiplies efficiency of Build4 by 110%
+	-multiplies efficiency of Build5 by 110%
+	-multiplies efficiency of Build6 by 110%
+	-multiplies efficiency of Build7 by 110%
+	-multiplies efficiency of Build8 by 110%
+	-multiplies efficiency of Build9 by 110%
+	-multiplies efficiency of Build10 by 110%
+	-multiplies efficiency of Button by 0.1% per Building
+	-multiplies efficiency of Build1 by 0.1% per Building
+	-multiplies efficiency of Build2 by 0.1% per Building
+	-multiplies efficiency of Build3 by 0.1% per Building
+	-multiplies efficiency of Build4 by 0.1% per Building
+	-multiplies efficiency of Build5 by 0.1% per Building
+	-multiplies efficiency of Build6 by 0.1% per Building
+	-multiplies efficiency of Build7 by 0.1% per Building
+	-multiplies efficiency of Build8 by 0.1% per Building
+	-multiplies efficiency of Build9 by 0.1% per Building
+	-multiplies efficiency of Build10 by 0.1% per Building
+	-unlocks at 10000000000 Points
+	-costs 1000000000 Cash
+	-named Secret Sauce
+	-picture : http://i.imgur.com/rcejbej.png
+	*Bonus4
+	-"<b>X1.1 everything power.</b><br>Warning : pointless."
+	-multiplies efficiency of Button by 110%
+	-multiplies efficiency of Build1 by 110%
+	-multiplies efficiency of Build2 by 110%
+	-multiplies efficiency of Build3 by 110%
+	-multiplies efficiency of Build4 by 110%
+	-multiplies efficiency of Build5 by 110%
+	-multiplies efficiency of Build6 by 110%
+	-multiplies efficiency of Build7 by 110%
+	-multiplies efficiency of Build8 by 110%
+	-multiplies efficiency of Build9 by 110%
+	-multiplies efficiency of Build10 by 110%
+	-unlocks at 1e+12 Points
+	-costs 100000000000 Cash
+	-named Pointless Button
+	-picture : http://i.imgur.com/Wdbjl87.png
+	*Bonus5
+	-"<b>X1.1 everything power.</b><br>Blah blah blah fast like men and stuff like that..."
+	-multiplies efficiency of Button by 110%
+	-multiplies efficiency of Build1 by 110%
+	-multiplies efficiency of Build2 by 110%
+	-multiplies efficiency of Build3 by 110%
+	-multiplies efficiency of Build4 by 110%
+	-multiplies efficiency of Build5 by 110%
+	-multiplies efficiency of Build6 by 110%
+	-multiplies efficiency of Build7 by 110%
+	-multiplies efficiency of Build8 by 110%
+	-multiplies efficiency of Build9 by 110%
+	-multiplies efficiency of Build10 by 110%
+	-unlocks at 1e+14 Points
+	-costs 1e+13 Cash
+	-named Speed Potion
+	-picture : http://i.imgur.com/tl3ciIA.png
+	*Bonus6
+	-"<b>X1.1 everything power + secret effect.</b><br>Toasty."
+	-multiplies efficiency of Button by 110%
+	-multiplies efficiency of Build1 by 110%
+	-multiplies efficiency of Build2 by 110%
+	-multiplies efficiency of Build3 by 110%
+	-multiplies efficiency of Build4 by 110%
+	-multiplies efficiency of Build5 by 110%
+	-multiplies efficiency of Build6 by 110%
+	-multiplies efficiency of Build7 by 110%
+	-multiplies efficiency of Build8 by 110%
+	-multiplies efficiency of Build9 by 110%
+	-multiplies efficiency of Build10 by 110%
+	-multiplies efficiency of Button by 1% per Build1
+	-multiplies efficiency of Build1 by 1% per Build1
+	-multiplies efficiency of Build2 by 1% per Build2
+	-multiplies efficiency of Build3 by 1% per Build3
+	-multiplies efficiency of Build4 by 1% per Build4
+	-multiplies efficiency of Build5 by 1% per Build5
+	-multiplies efficiency of Build6 by 1% per Build6
+	-multiplies efficiency of Build7 by 1% per Build7
+	-multiplies efficiency of Build8 by 1% per Build8
+	-multiplies efficiency of Build9 by 1% per Build9
+	-multiplies efficiency of Build10 by 1% per Build10
+	-unlocks at 1e+16 Points
+	-costs 1e+15 Cash
+	-named Flaming Skull
+	-picture : http://i.imgur.com/cjvVaSW.png
+	*Bonus7
+	-"<b>X1.1 everything power.</b><br>What the f*ck is it doing here?"
+	-multiplies efficiency of Button by 110%
+	-multiplies efficiency of Build1 by 110%
+	-multiplies efficiency of Build2 by 110%
+	-multiplies efficiency of Build3 by 110%
+	-multiplies efficiency of Build4 by 110%
+	-multiplies efficiency of Build5 by 110%
+	-multiplies efficiency of Build6 by 110%
+	-multiplies efficiency of Build7 by 110%
+	-multiplies efficiency of Build8 by 110%
+	-multiplies efficiency of Build9 by 110%
+	-multiplies efficiency of Build10 by 110%
+	-unlocks at 1e+18 Points
+	-costs 1e+17 Cash
+	-named "egg_"
+	-picture : http://i.imgur.com/SD5lZVi.png
+	*Bonus8
+	-"<b>X1.1 everything power.</b><br>There's a bug that randomly causes the program to crash."
+	-multiplies efficiency of Button by 110%
+	-multiplies efficiency of Build1 by 110%
+	-multiplies efficiency of Build2 by 110%
+	-multiplies efficiency of Build3 by 110%
+	-multiplies efficiency of Build4 by 110%
+	-multiplies efficiency of Build5 by 110%
+	-multiplies efficiency of Build6 by 110%
+	-multiplies efficiency of Build7 by 110%
+	-multiplies efficiency of Build8 by 110%
+	-multiplies efficiency of Build9 by 110%
+	-multiplies efficiency of Build10 by 110%
+	-unlocks at 1e+20 Points
+	-costs 1e+19 Cash
+	-named motivation.exe
+	-picture : http://i.imgur.com/HHBkSuj.png
+	*Bonus9
+	-"<b>X1.1 everything power + secret effect.</b><br>I BET YOU DIDN'T SEE IT COMING!!"
+	-multiplies efficiency of Button by 110%
+	-multiplies efficiency of Build1 by 110%
+	-multiplies efficiency of Build2 by 110%
+	-multiplies efficiency of Build3 by 110%
+	-multiplies efficiency of Build4 by 110%
+	-multiplies efficiency of Build5 by 110%
+	-multiplies efficiency of Build6 by 110%
+	-multiplies efficiency of Build7 by 110%
+	-multiplies efficiency of Build8 by 110%
+	-multiplies efficiency of Build9 by 110%
+	-multiplies efficiency of Build10 by 110%
+	-multiplies efficiency of BuildSTime by 150%
+	-unlocks at 1e+22 Points
+	-costs 1e+21 Cash
+	-named Blood Stained Watch
+	-picture : http://i.imgur.com/nUyIyzZ.png
+	*Bonus10
+	-"<b>X1.1 everything power.</b><br>Deal with it."
+	-multiplies efficiency of Button by 110%
+	-multiplies efficiency of Build1 by 110%
+	-multiplies efficiency of Build2 by 110%
+	-multiplies efficiency of Build3 by 110%
+	-multiplies efficiency of Build4 by 110%
+	-multiplies efficiency of Build5 by 110%
+	-multiplies efficiency of Build6 by 110%
+	-multiplies efficiency of Build7 by 110%
+	-multiplies efficiency of Build8 by 110%
+	-multiplies efficiency of Build9 by 110%
+	-multiplies efficiency of Build10 by 110%
+	-unlocks at 1e+24 Points
+	-costs 1e+23 Cash
+	-named Drug Dealer Sunglasses
+	-picture : http://i.imgur.com/jXFtAoe.png
+	*Bonus11
+	-"<b>X1.1 everything power.</b><br>The thumb serves as a lighter.<br><i>Smoking can get you get killed by possessed superagents with assault rifles.</i>"
+	-multiplies efficiency of Button by 110%
+	-multiplies efficiency of Build1 by 110%
+	-multiplies efficiency of Build2 by 110%
+	-multiplies efficiency of Build3 by 110%
+	-multiplies efficiency of Build4 by 110%
+	-multiplies efficiency of Build5 by 110%
+	-multiplies efficiency of Build6 by 110%
+	-multiplies efficiency of Build7 by 110%
+	-multiplies efficiency of Build8 by 110%
+	-multiplies efficiency of Build9 by 110%
+	-multiplies efficiency of Build10 by 110%
+	-unlocks at 1e+26 Points
+	-costs 1e+25 Cash
+	-named Deimos' Hand
+	-picture : http://i.imgur.com/DhrFFar.png
+	*Bonus12
+	-"<b>X1.1 everything power + secret effect.</b><br><i>May have negative impact on production.<br>Don't buy if you don't have a high enough production speed."
+	-multiplies efficiency of Button by 110%
+	-multiplies efficiency of Build1 by 110%
+	-multiplies efficiency of Build2 by 110%
+	-multiplies efficiency of Build3 by 110%
+	-multiplies efficiency of Build4 by 110%
+	-multiplies efficiency of Build5 by 110%
+	-multiplies efficiency of Build6 by 110%
+	-multiplies efficiency of Build7 by 110%
+	-multiplies efficiency of Build8 by 110%
+	-multiplies efficiency of Build9 by 110%
+	-multiplies efficiency of Build10 by 110%
+	-multiplies efficiency of Button by 0.01% per Entity
+	-multiplies efficiency of Build1 by 0.01% per Entity
+	-multiplies efficiency of Build2 by 0.01% per Entity
+	-multiplies efficiency of Build3 by 0.01% per Entity
+	-multiplies efficiency of Build4 by 0.01% per Entity
+	-multiplies efficiency of Build5 by 0.01% per Entity
+	-multiplies efficiency of Build6 by 0.01% per Entity
+	-multiplies efficiency of Build7 by 0.01% per Entity
+	-multiplies efficiency of Build8 by 0.01% per Entity
+	-multiplies efficiency of Build9 by 0.01% per Entity
+	-multiplies efficiency of Button by 25%
+	-multiplies efficiency of Build1 by 25%
+	-multiplies efficiency of Build2 by 25%
+	-multiplies efficiency of Build3 by 25%
+	-multiplies efficiency of Build4 by 25%
+	-multiplies efficiency of Build5 by 25%
+	-multiplies efficiency of Build6 by 25%
+	-multiplies efficiency of Build7 by 25%
+	-multiplies efficiency of Build8 by 25%
+	-multiplies efficiency of Build9 by 25%
+	-costs -1 BuildEntity
+	-unlocks UpEnt1
+	-unlocks at 1e+28 Points
+	-costs 1e+27 Cash
+	-named Entity
+	-picture : http://i.imgur.com/bmam701.png
+	*Bonus13
+	-"<b>X1.1 everything power.</b><br>o_o"
+	-multiplies efficiency of Button by 110%
+	-multiplies efficiency of Build1 by 110%
+	-multiplies efficiency of Build2 by 110%
+	-multiplies efficiency of Build3 by 110%
+	-multiplies efficiency of Build4 by 110%
+	-multiplies efficiency of Build5 by 110%
+	-multiplies efficiency of Build6 by 110%
+	-multiplies efficiency of Build7 by 110%
+	-multiplies efficiency of Build8 by 110%
+	-multiplies efficiency of Build9 by 110%
+	-multiplies efficiency of Build10 by 110%
+	-unlocks at 1e+30 Points
+	-costs 1e+29 Cash
+	-named Eyeball
+	-picture : http://i.imgur.com/rPsWqCC.png
+
+	*UpEnt1
+	-"<b>Increased Entity power.</b><br>Best idea I ever had -.-"
+	-multiplies efficiency of Button by 0.0025% per Entity
+	-multiplies efficiency of Build1 by 0.0025% per Entity
+	-multiplies efficiency of Build2 by 0.0025% per Entity
+	-multiplies efficiency of Build3 by 0.0025% per Entity
+	-multiplies efficiency of Build4 by 0.0025% per Entity
+	-multiplies efficiency of Build5 by 0.0025% per Entity
+	-multiplies efficiency of Build6 by 0.0025% per Entity
+	-multiplies efficiency of Build7 by 0.0025% per Entity
+	-multiplies efficiency of Build8 by 0.0025% per Entity
+	-multiplies efficiency of Build9 by 0.0025% per Entity
+	-multiplies efficiency of BuildEntity by 200%
+	-costs 4e+27 Cash
+	-unlocks UpEnt2
+	-named Incident 0703
+	-picture : http://i.imgur.com/eZDLovs.png
+	*UpEnt2
+	-"<b>Increased Entity power.</b><br>Better late than never, right?<br>Guys?"
+	-multiplies efficiency of Button by 0.0025% per Entity
+	-multiplies efficiency of Build1 by 0.0025% per Entity
+	-multiplies efficiency of Build2 by 0.0025% per Entity
+	-multiplies efficiency of Build3 by 0.0025% per Entity
+	-multiplies efficiency of Build4 by 0.0025% per Entity
+	-multiplies efficiency of Build5 by 0.0025% per Entity
+	-multiplies efficiency of Build6 by 0.0025% per Entity
+	-multiplies efficiency of Build7 by 0.0025% per Entity
+	-multiplies efficiency of Build8 by 0.0025% per Entity
+	-multiplies efficiency of Build9 by 0.0025% per Entity
+	-multiplies efficiency of BuildEntity by 200%
+	-unlocks UpEnt3
+	-costs 8e+27 Cash
+	-named Event Cake
+	-picture : http://i.imgur.com/HblVo6d.png
+	*UpEnt3
+	-"<b>Increased Entity power.</b><br>At this point you should know what Entity refers to."
+	-multiplies efficiency of Button by 0.0025% per Entity
+	-multiplies efficiency of Build1 by 0.0025% per Entity
+	-multiplies efficiency of Build2 by 0.0025% per Entity
+	-multiplies efficiency of Build3 by 0.0025% per Entity
+	-multiplies efficiency of Build4 by 0.0025% per Entity
+	-multiplies efficiency of Build5 by 0.0025% per Entity
+	-multiplies efficiency of Build6 by 0.0025% per Entity
+	-multiplies efficiency of Build7 by 0.0025% per Entity
+	-multiplies efficiency of Build8 by 0.0025% per Entity
+	-multiplies efficiency of Build9 by 0.0025% per Entity
+	-unlocks UpEnt4
+	-costs 1.6e+28 Cash
+	-named Brain
+	-picture : http://i.imgur.com/dyEkbrg.png
+	*UpEnt4
+	-"<b>X0.5 Entity dangerouseness.</b><br>I don't have any ideas for Entity power reduction upgrades so I'll just go with songs with a (subjectively) feel per minute ratio higher than normal along with pictures of a slowly becoming happy face."
+	-multiplies efficiency of BuildEntity by 50%
+	-unlocks UpEnt5
+	-costs 3.2e+28 Cash
+	-named Collision Course
+	-picture : http://i.imgur.com/WuSppYs.png
+	*UpEnt5
+	-"<b>X0.5 Entity dangerouseness.</b><br>I already talked about this one."
+	-multiplies efficiency of BuildEntity by 50%
+	-unlocks UpEnt6
+	-costs 6.4e+28 Cash
+	-named Soulwind
+	-picture : http://i.imgur.com/jOSNg49.png
+	*UpEnt6
+	-"<b>X0.5 Entity dangerouseness.</b><br>0tMXh8wpBfU<br>See video description."
+	-multiplies efficiency of BuildEntity by 50%
+	-unlocks UpEntFinal
+	-costs 1.28e+29 Cash
+	-named Freeze
+	-picture : http://i.imgur.com/WeK1hYQ.png
+	*UpEntFinal
+	-"<b>Entity doesn't decrease production anymore.</b><br>Did you know that Hexagons are unaffected by Entity?"
+	-costs 1 BuildEntity
+	-costs 1.024e+30 Cash
+	-unlocks UpEntPower
+	-named Disable Entity
+	-picture : http://i.imgur.com/5jp83pL.png
+	*UpEntPower
+	-"<b>Get all your Entity power back.</b><br>Don't go near Hexagons."
+	-costs 1.31072e+32 Cash
+	-unlocks EntConvert
+	-unlocks UpEntControl
+	-named Entity Power Absorption
+	-picture : http://i.imgur.com/xaIxRDx.png
+	*UpEntControl
+	-"<i>Wait for Entity update part 3.</i>"
+	-costs 1e+309 Cash
+	-named Soon™
+	-picture : http://i.imgur.com/D45yvGK.png
+
+	*UpClick1
+	-"<b>X2 button power.</b><br>Yay color flavored buttons!"
+	-multiplies efficiency of Button by 200%
+	-unlocks at 100 Click
+	-costs 120 Cash
+	-named Brown Button
+	-picture : http://i.imgur.com/3yPE40D.png
+	*UpClick2
+	-"<b>X2 button power.</b><br>Only one shade.<br>Don't start thinking about button porn."
+	-multiplies efficiency of Button by 200%
+	-unlocks at 1000 Click
+	-costs 1200 Cash
+	-named Grey Button
+	-picture : http://i.imgur.com/lfkH1Un.png
+	*UpClick3
+	-"<b>X2 button power.</b><br>I can't make any jokes because someone could get offended."
+	-multiplies efficiency of Button by 200%
+	-unlocks at 10000 Click
+	-costs 12000 Cash
+	-named Black Button
+	-picture : http://i.imgur.com/Di5mYfH.png
+	*UpClick4
+	-"<b>X2 button power.</b><br>Tastes like egg yolk.<br>I'm not the one who said that."
+	-multiplies efficiency of Button by 200%
+	-unlocks at 100000 Click
+	-costs 120000 Cash
+	-named Yellow Button
+	-picture : http://i.imgur.com/S13czmJ.png
+	*UpClick5
+	-"<b>X2 button power.</b><br>Flowers started growing on it."
+	-multiplies efficiency of Button by 200%
+	-unlocks at 1000000 Click
+	-costs 1200000 Cash
+	-named Green Button
+	-picture : http://i.imgur.com/XfeAejk.png
+	*UpClick6
+	-"<b>X2.5 button power.</b><br>Nuclear missiles not included."
+	-multiplies efficiency of Button by 250%
+	-unlocks at 100000000 Click
+	-costs 120000000 Cash
+	-named Red Button
+	-picture : http://i.imgur.com/4BhSSid.png
+	*UpClick7
+	-"<b>X2.5 button power.</b><br>This button has feelings.<br>Let's take them back ᕕ( ᐛ )ᕗ"
+	-multiplies efficiency of Button by 250%
+	-unlocks at 10000000000 Click
+	-costs 12000000000 Cash
+	-named Blue Button
+	-picture : http://i.imgur.com/jgr3Eof.png
+	*UpClick8
+	-"<b>X2.5 button power.</b><br>Actually white that's not green."
+	-multiplies efficiency of Button by 250%
+	-unlocks at 1e+12 Click
+	-costs 1.2e+12 Cash
+	-named Pink Button
+	-picture : http://i.imgur.com/DabgTOX.png
+	*UpClick9
+	-"<b>X2.5 button power.</b><br>What's the deal with everyone finding purple awesome?"
+	-multiplies efficiency of Button by 250%
+	-unlocks at 1e+14 Click
+	-costs 1.2e+14 Cash
+	-named Purple Button
+	-picture : http://i.imgur.com/0AjDkzL.png
+	*UpClick10
+	-"<b>X2.5 button power.</b><br>Orange stuff are always of better quality than purple ones."
+	-multiplies efficiency of Button by 250%
+	-unlocks at 1e+16 Click
+	-costs 1.2e+16 Cash
+	-named Orange Button
+	-picture : http://i.imgur.com/l4j8KxU.png
+	*UpClick11
+	-"<b>X3 button power.</b><br>Democracy not included."
+	-multiplies efficiency of Button by 300%
+	-unlocks at 1e+19 Click
+	-costs 1.2e+19 Cash
+	-named Navy Blue Button
+	-picture : http://i.imgur.com/BOzySrv.png
+	*UpClick12
+	-"<b>X3 button power.</b><br>Or fuchsia, both are the same."
+	-multiplies efficiency of Button by 300%
+	-unlocks at 1e+22 Click
+	-costs 1.2e+22 Cash
+	-named Magenta Button
+	-picture : http://i.imgur.com/mMcCodM.png
+	*UpClick13
+	-"<b>X3 button power.</b><br>Eventually shoots lasers that break the sky."
+	-multiplies efficiency of Button by 300%
+	-unlocks at 1e+25 Click
+	-costs 1.2e+25 Cash
+	-named Dark Red Button
+	-picture : http://i.imgur.com/iEnkojO.png
+	*UpClick14
+	-"<b>X3 button power.</b><br>Everytime you press it, some random dude gets nominated for the "worst broken arm from punching a wall" contest."
+	-multiplies efficiency of Button by 300%
+	-unlocks at 1e+28 Click
+	-costs 1.2e+28 Cash
+	-named Turquoise Button
+	-picture : http://i.imgur.com/RmR5nWZ.png
+	*UpClick15
+	-"<b>X3 button power.</b><br>The most racist color because it's "more powerful than the other ones"."
+	-multiplies efficiency of Button by 300%
+	-unlocks at 1e+31 Click
+	-costs 1.2e+31 Cash
+	-named White Button
+	-picture : http://i.imgur.com/t2O7WQ3.png
+	*UpClick16
+	-"<b>X4 button power.</b><br>It's not a button made of bronze, it's just bronze melted on the button.<br>I don't even know what the button is made of."
+	-multiplies efficiency of Button by 400%
+	-unlocks at 1e+35 Click
+	-costs 1.2e+35 Cash
+	-named Bronze Button
+	-picture : http://i.imgur.com/qQOtn6V.png
+	*UpClick17
+	-"<b>X4 button power.</b><br>A million times more efficient on blood moons, which don't happen in this game."
+	-multiplies efficiency of Button by 400%
+	-unlocks at 1e+39 Click
+	-costs 1.2e+39 Cash
+	-named Silver Button
+	-picture : http://i.imgur.com/XPGMwY6.png
+	*UpClick18
+	-"<b>X4 button power.</b><br>It's not a trophy.<br>You can't even lift it."
+	-multiplies efficiency of Button by 400%
+	-unlocks at 1e+43 Click
+	-costs 1.2e+43 Cash
+	-named Golden Button
+	-picture : http://i.imgur.com/WUSz5hO.png
+	*UpClick19
+	-"<b>X4 button power.</b><br>It's an unusual cool metal so it's ranked higher than gold."
+	-multiplies efficiency of Button by 400%
+	-unlocks at 1e+47 Click
+	-costs 1.2e+47 Cash
+	-named Cobalt Button
+	-picture : http://i.imgur.com/LLjip2x.png
+	*UpClick20
+	-"<b>X4 button power.</b><br>The only unreal thing you can find in these button upgrades."
+	-multiplies efficiency of Button by 400%
+	-unlocks at 1e+51 Click
+	-costs 1.2e+51 Cash
+	-named Mithril Button
+	-picture : http://i.imgur.com/Wu86Dfk.png
+	*UpClick21
+	-"<b>X5 button power.</b><br>It's still not what the button is made of."
+	-multiplies efficiency of Button by 500%
+	-unlocks at 1e+56 Click
+	-costs 1.2e+56 Cash
+	-named Topaz Button
+	-picture : http://i.imgur.com/H0zPzb9.png
+	*UpClick22
+	-"<b>X5 button power.</b><br>Did you know not all sapphires are blue? I didn't either."
+	-multiplies efficiency of Button by 500%
+	-unlocks at 1e+61 Click
+	-costs 1.2e+61 Cash
+	-named Sapphire Button
+	-picture : http://i.imgur.com/xMaer11.png
+	*UpClick23
+	-"<b>X5 button power.</b><br>Not to be confused with Oryx, a god in a multiplayer game.<br>Even though both share the same color."
+	-multiplies efficiency of Button by 500%
+	-unlocks at 1e+66 Click
+	-costs 1.2e+66 Cash
+	-named Onyx Button
+	-picture : http://i.imgur.com/5gAOjDR.png
+	*UpClick24
+	-"<b>X5 button power.</b><br>Diamonds are forever, this upgrade isn't."
+	-multiplies efficiency of Button by 500%
+	-unlocks at 1e+71 Click
+	-costs 1.2e+71 Cash
+	-named Diamond Button
+	-picture : http://i.imgur.com/mS5rYCw.png
+	*UpClick25
+	-"<b>X5 button power.</b><br>I don't care if it's "not logical to not put diamond as the last gem upgrade", it's my goddamn game and I put stuff based on how much I like them."
+	-multiplies efficiency of Button by 500%
+	-unlocks at 1e+76 Click
+	-costs 1.2e+76 Cash
+	-named Moonstone Button
+	-picture : http://i.imgur.com/VCUw93h.png
+
+	*UpBuild1a
+	-"<b>X2 autoclicker and button power.</b><br>An upgrade as original as the building."
+	-multiplies efficiency of Build1 by 200%
+	-multiplies efficiency of Button by 200%
+	-unlocks at 1 Build1
+	-costs 80 Cash
+	-named Stronger Clicks
+	-picture : http://i.imgur.com/M3AyJIv.png
+	*UpBuild1b
+	-"<b>X2 autoclicker and button power.</b><br>A flavor text as original as the previous."
+	-multiplies efficiency of Build1 by 200%
+	-multiplies efficiency of Button by 200%
+	-unlocks at 5 Build1
+	-costs 130 Cash
+	-named Faster Clicks
+	-picture : http://i.imgur.com/4lbfO7W.png
+	*UpBuild1c
+	-"<b>X2 autoclicker and button power.</b><br>You can never make too much jokes about originality"
+	-multiplies efficiency of Build1 by 200%
+	-multiplies efficiency of Button by 200%
+	-unlocks at 10 Build1
+	-costs 210 Cash
+	-named Bigger Clicks
+	-picture : http://i.imgur.com/Dal7d8k.png
+	*UpBuild1d
+	-"<b>X2 autoclicker and button power.</b><br>A cursor with 2 tips, 2 clicks for the price of one."
+	-multiplies efficiency of Build1 by 200%
+	-multiplies efficiency of Button by 200%
+	-unlocks at 20 Build1
+	-costs 540 Cash
+	-named Double-Tipped Cursor
+	-picture : http://i.imgur.com/R2G9BJB.png
+	*UpBuild1e
+	-"<b>X2 autoclicker power and +5% button power per autoclicker.</b><br>Fixed misclicks on the "refresh" button."
+	-multiplies efficiency of Build1 by 200%
+	-multiplies efficiency of Button by 5% per Build1
+	-unlocks at 50 Build1
+	-costs 11500 Cash
+	-named Cursor v1.01
+	-picture : http://i.imgur.com/bynxQtW.png
+	*UpBuild1f
+	-"<b>X2 autoclicker and button power.</b><br>Gold makes everything better."
+	-multiplies efficiency of Build1 by 200%
+	-multiplies efficiency of Button by 200%
+	-unlocks at 75 Build1
+	-costs 128000 Cash
+	-named Golden Cursor
+	-picture : http://i.imgur.com/X0ZciJX.png
+	*UpBuild1g
+	-"<b>X3 autoclicker and X2 button power.</b><br>Pretty good at capturing flags."
+	-multiplies efficiency of Build1 by 300%
+	-multiplies efficiency of Button by 200%
+	-unlocks at 100 Build1
+	-costs 1380000 Cash
+	-named Phantom Cursor
+	-picture : http://i.imgur.com/ppBtsew.png
+	*UpBuild1h
+	-"<b>X3 autoclicker and X2 button power.</b><br>More gold = more better."
+	-multiplies efficiency of Build1 by 300%
+	-multiplies efficiency of Button by 200%
+	-unlocks at 125 Build1
+	-costs 18000000 Cash
+	-named Massive Gold Cursor
+	-picture : http://i.imgur.com/geJ75lC.png
+	*UpBuild1i
+	-"<b>X3 autoclicker and X2 button power.</b><br>Goes through the button to hit it's system more.<br>Seriously what did I say about button porn? ._."
+	-multiplies efficiency of Build1 by 300%
+	-multiplies efficiency of Button by 200%
+	-unlocks at 150 Build1
+	-costs 194000000 Cash
+	-named Sharpened Cursor
+	-picture : http://i.imgur.com/DINfx2l.png
+	*UpBuild1j
+	-"<b>X3 autoclicker power and +2% button power per autoclicker.</b><br>Don't worry about the possible complications this experment can cause."
+	-multiplies efficiency of Build1 by 300%
+	-multiplies efficiency of Button by 2% per Build1
+	-unlocks at 200 Build1
+	-costs 26500000000 Cash
+	-named Siamese Cursors
+	-picture : http://i.imgur.com/5NoSGUi.png
+	*UpBuild1k
+	-"<b>X4 autoclicker and X2.5 button power.</b><br>aka Siamese Cursors v2"
+	-multiplies efficiency of Build1 by 400%
+	-multiplies efficiency of Button by 250%
+	-unlocks at 250 Build1
+	-costs 3.56e+12 Cash
+	-named Double-End Cursors
+	-picture : http://i.imgur.com/YeIzXug.png
+	*UpBuild1l
+	-"<b>X4 autoclicker and X2.5 button power.</b><br>A simple add-on that boosts the speed of autoclickers.<br>WHY HAVE WE NOT THOUGHT OF THAT BEFORE??!!!"
+	-multiplies efficiency of Build1 by 400%
+	-multiplies efficiency of Button by 250%
+	-unlocks at 300 Build1
+	-costs 4.71e+14 Cash
+	-named coffee.igm
+	-picture : http://i.imgur.com/ymfCwRI.png
+	*UpBuild1m
+	-"<b>X4 autoclicker and X2.5 button power.</b><br>A mod that boosts speed even more.<br>Here we go again..."
+	-multiplies efficiency of Build1 by 400%
+	-multiplies efficiency of Button by 250%
+	-unlocks at 350 Build1
+	-costs 6.1e+16 Cash
+	-named Speed Mod
+	-picture : http://i.imgur.com/rTgO7hT.png
+	*UpBuild1n
+	-"<b>X4 autoclicker and X2.5 button power.</b><br>So fast it's like you can't even see them."
+	-multiplies efficiency of Build1 by 400%
+	-multiplies efficiency of Button by 250%
+	-unlocks at 400 Build1
+	-costs 7.2e+18 Cash
+	-named Ninja Cursors
+	-picture : http://i.imgur.com/GrMDW90.png
+	*UpBuild1o
+	-"<b>X4 autoclicker power and +2% button power per autoclicker.</b><br>Spikes are actually little cursors."
+	-multiplies efficiency of Build1 by 400%
+	-multiplies efficiency of Button by 2% per Build1
+	-unlocks at 450 Build1
+	-costs 8.4e+20 Cash
+	-named Spiked Cursors
+	-picture : http://i.imgur.com/7cL9UGN.png
+	*UpBuild1p
+	-"<b>X5 autoclicker and X3 button power.</b><br>*throws computer screen*"
+	-multiplies efficiency of Build1 by 500%
+	-multiplies efficiency of Button by 300%
+	-unlocks at 500 Build1
+	-costs 1.1e+23 Cash
+	-named Speed Hacks
+	-picture : http://i.imgur.com/8JiaFD5.png
+	*UpBuild1q
+	-"<b>X5 autoclicker and X3 button power.</b><br>Cursors made of cobalt and tungsten because plutonium nitrogen sulfur."
+	-multiplies efficiency of Build1 by 500%
+	-multiplies efficiency of Button by 300%
+	-unlocks at 550 Build1
+	-costs 1.5e+25 Cash
+	-named CoW Cursors
+	-picture : http://i.imgur.com/bLXKGQv.png
+	*UpBuild1r
+	-"<b>X5 autoclicker and X3 button power.</b><br>There's always a reality with stuff better than ours."
+	-multiplies efficiency of Build1 by 500%
+	-multiplies efficiency of Button by 300%
+	-unlocks at 600 Build1
+	-costs 1.9e+27 Cash
+	-named Alternate Reality Cursors
+	-picture : http://i.imgur.com/H1atYM8.png
+	*UpBuild1s
+	-"<b>X5 autoclicker and X3 button power.</b><br>Rainbows are usually colorful."
+	-multiplies efficiency of Build1 by 500%
+	-multiplies efficiency of Button by 300%
+	-unlocks at 700 Build1
+	-costs 2.8e+31 Cash
+	-named Colorful Rainbow Cursors
+	-picture : http://i.imgur.com/WstThj2.png
+	*UpBuild1t
+	-"<b>X5 autoclicker and +2% button power per autoclicker.</b><br>It's called a cutton."
+	-multiplies efficiency of Build1 by 500%
+	-multiplies efficiency of Button by 2% per Build1
+	-unlocks at 800 Build1
+	-costs 4.4e+35 Cash
+	-named Cursor/Button Fusion
+	-picture : http://i.imgur.com/qm7UPz8.png
+
+	*UpBuild2a
+	-"<b>X2 printer power.</b><br>Needs more jpeg."
+	-multiplies efficiency of Build2 by 200%
+	-unlocks at 1 Build2
+	-costs 800 Cash
+	-named Higher Quality Money Pictures
+	-picture : http://i.imgur.com/jM1SYfs.png
+	*UpBuild2b
+	-"<b>X2 printer power.</b><br>Reduces paper loss by 3.9%"
+	-multiplies efficiency of Build2 by 200%
+	-unlocks at 5 Build2
+	-costs 1300 Cash
+	-named Space Optimization
+	-picture : http://i.imgur.com/IC3s6EB.png
+	*UpBuild2c
+	-"<b>X2 printer power.</b><br>Necessary to keep your sanity."
+	-multiplies efficiency of Build2 by 200%
+	-unlocks at 10 Build2
+	-costs 2000 Cash
+	-named Noise Reduction
+	-picture : http://i.imgur.com/XizxczA.png
+	*UpBuild2d
+	-"<b>X2 printer power.</b><br>Have you tried turning it off and on again?"
+	-multiplies efficiency of Build2 by 200%
+	-unlocks at 20 Build2
+	-costs 5400 Cash
+	-named Reduced Crashes
+	-picture : http://i.imgur.com/E5CAop2.png
+	*UpBuild2e
+	-"<b>X2 printer power and +2% button power per printer.</b><br>Your neighbor kept sending you pictures of black people. He got shot by a cop."
+	-multiplies efficiency of Build2 by 200%
+	-multiplies efficiency of Button by 2% per Build2
+	-unlocks at 50 Build2
+	-costs 115000 Cash
+	-named Private Printer
+	-picture : http://i.imgur.com/iXsNb8Y.png
+	*UpBuild2f
+	-"<b>X2 printer power.</b><br>er*"
+	-multiplies efficiency of Build2 by 200%
+	-unlocks at 75 Build2
+	-costs 1280000 Cash
+	-named Faster Printing
+	-picture : http://i.imgur.com/H8ZeKgo.png
+	*UpBuild2g
+	-"<b>X3 printer power.</b><br>This sh*t is expensive."
+	-multiplies efficiency of Build2 by 300%
+	-unlocks at 100 Build2
+	-costs 13800000 Cash
+	-named Better Ink Usage
+	-picture : http://i.imgur.com/Bz3zB0r.png
+	*UpBuild2h
+	-"<b>X3 printer power.</b><br>Zimbabwean dollars are worth less than paper."
+	-multiplies efficiency of Build2 by 300%
+	-unlocks at 125 Build2
+	-costs 180000000 Cash
+	-named Higher Value Bills
+	-picture : http://i.imgur.com/9Ur3pPt.png
+	*UpBuild2i
+	-"<b>X3 printer power.</b><br>Just in case."
+	-multiplies efficiency of Build2 by 300%
+	-unlocks at 150 Build2
+	-costs 1940000000 Cash
+	-named Warranty
+	-picture : http://i.imgur.com/61CjCjJ.png
+	*UpBuild2j
+	-"<b>X3 printer power.</b><br>Never run out of paper."
+	-multiplies efficiency of Build2 by 300%
+	-unlocks at 200 Build2
+	-costs 265000000000 Cash
+	-named Paper Printer
+	-picture : http://i.imgur.com/NZV4CV5.png
+	*UpBuild2k
+	-"<b>X4 printer power.</b><br>Can do all the colors at once and never runs out."
+	-multiplies efficiency of Build2 by 400%
+	-unlocks at 250 Build2
+	-costs 3.56e+13 Cash
+	-named Infinit-ink Cartridge
+	-picture : http://i.imgur.com/gX8TUzZ.png
+	*UpBuild2l
+	-"<b>X4 printer power.</b><br>Even higher value than any other bill existing."
+	-multiplies efficiency of Build2 by 400%
+	-unlocks at 300 Build2
+	-costs 4.71e+15 Cash
+	-named New Bill Creation
+	-picture : http://i.imgur.com/d5uyKnH.png
+	*UpBuild2m
+	-"<b>X4 printer power.</b><br>You can fit even more in a single sheet of paper."
+	-multiplies efficiency of Build2 by 400%
+	-unlocks at 350 Build2
+	-costs 6.1e+17 Cash
+	-named New Bill Change
+	-picture : http://i.imgur.com/BdaGEnJ.png
+	*UpBuild2n
+	-"<b>X4 printer power.</b><br>Prints even faster! That totally needed a new version!"
+	-multiplies efficiency of Build2 by 400%
+	-unlocks at 400 Build2
+	-costs 7.2e+19 Cash
+	-named Money Printer 2.0
+	-picture : http://i.imgur.com/K64tEwn.png
+	*UpBuild2o
+	-"<b>X4 printer power.</b><br>It's up to you to think about what got magically improved."
+	-multiplies efficiency of Build2 by 400%
+	-unlocks at 450 Build2
+	-costs 8.4e+21 Cash
+	-named Magical Improvements
+	-picture : http://i.imgur.com/b7sEdKJ.png
+	*UpBuild2p
+	-"<b>X5 printer power.</b><br>SSeconds and SMinutes won't increase."
+	-multiplies efficiency of Build2 by 500%
+	-unlocks at 500 Build2
+	-costs 1.1e+24 Cash
+	-named Time Bending Printer
+	-picture : http://i.imgur.com/dOfqQOS.png
+	*UpBuild2q
+	-"<b>X5 printer power.</b><br>Gold is created directly by the printer through magical improvements."
+	-multiplies efficiency of Build2 by 500%
+	-unlocks at 550 Build2
+	-costs 1.5e+26 Cash
+	-named Golden Paper
+	-picture : http://i.imgur.com/dU2OOVg.png
+	*UpBuild2r
+	-"<b>X5 printer power.</b><br>Includes alternate reality money."
+	-multiplies efficiency of Build2 by 500%
+	-unlocks at 600 Build2
+	-costs 1.9e+28 Cash
+	-named Alternate Reality Printer
+	-picture : http://i.imgur.com/lkyPS7f.png
+	*UpBuild2s
+	-"<b>X5 printer power.</b><br>WOAH IT LOOKS SO REAL"
+	-multiplies efficiency of Build2 by 500%
+	-unlocks at 700 Build2
+	-costs 2.8e+32 Cash
+	-named 4D Money
+	-picture : http://i.imgur.com/orIEnFs.png
+	*UpBuild2t
+	-"<b>X5 printer power.</b><br>I do not regret creating this upgrade type at all."
+	-multiplies efficiency of Build2 by 500%
+	-unlocks at 800 Build2
+	-costs 4.4e+36 Cash
+	-named secretprinterimprovements.igm
+	-picture : http://i.imgur.com/OoMzDla.png
+
+	*Sy12a
+	-"<b>+5% autoclicker power per printer and +2% printer power per autoclicker.</b><br>Another step towards full printer automatism."
+	-multiplies efficiency of Build1 by 5% per Build2
+	-multiplies efficiency of Build2 by 2% per Build1
+	-unlocks at 25 Build1, 25 Build2
+	-costs 19000 Cash
+	-named Autoclick "Print" Button
+	-picture : http://i.imgur.com/pddNtQ8.png
+	*Sy12b
+	-"<b>+2.5% autoclicker power per printer and +1.25% printer power per autoclicker.</b><br>Prints cursors that'll click on buttons, including those who print more cursors."
+	-multiplies efficiency of Build1 by 2.5% per Build2
+	-multiplies efficiency of Build2 by 1.25% per Build1
+	-unlocks at 150 Build1, 150 Build2
+	-costs 4260000000 Cash
+	-named Cursor Printer
+	-picture : http://i.imgur.com/O0h8n52.png
+	*Sy12c
+	-"<b>+1% autoclicker power per printer and +0.5% printer power per autoclicker.</b><br>Much more valuable than regular cursors."
+	-multiplies efficiency of Build1 by 1% per Build2
+	-multiplies efficiency of Build2 by 0.5% per Build1
+	-unlocks at 400 Build1, 400 Build2
+	-costs 1.58e+20 Cash
+	-named Cash Cursors
+	-picture : http://i.imgur.com/7q312Fr.png
+	*Sy12d
+	-"<b>+0.5% autoclicker power per printer and +0.25% printer power per autoclicker.</b><br>I know it's ridiculous.<br>At least it's creative."
+	-multiplies efficiency of Build1 by 0.5% per Build2
+	-multiplies efficiency of Build2 by 0.25% per Build1
+	-unlocks at 750 Build1, 750 Build2
+	-costs 7.8e+34 Cash
+	-named Printer Printing Cursors
+	-picture : http://i.imgur.com/xOi1lrD.png
+
+	*UpBuild3a
+	-"<b>X2 pet power.</b><br>My jokes about originality are getting unoriginal.<br>F*ck."
+	-multiplies efficiency of Build3 by 200%
+	-unlocks at 1 Build3
+	-costs 12000 Cash
+	-named Cat
+	-picture : http://i.imgur.com/JHtOtf3.png
+	*UpBuild3b
+	-"<b>X2 pet power.</b><br>Seriously?"
+	-multiplies efficiency of Build3 by 200%
+	-unlocks at 5 Build3
+	-costs 19000 Cash
+	-named Orly
+	-picture : http://i.imgur.com/Py0k8r9.png
+	*UpBuild3c
+	-"<b>X2 pet power.</b><br>Wow."
+	-multiplies efficiency of Build3 by 200%
+	-unlocks at 10 Build3
+	-costs 31000 Cash
+	-named Doge
+	-picture : http://i.imgur.com/YXHs6AN.png
+	*UpBuild3d
+	-"<b>X2 pet power.</b><br>Keep away from animated Japanese porn."
+	-multiplies efficiency of Build3 by 200%
+	-unlocks at 20 Build3
+	-costs 81000 Cash
+	-named Octopus
+	-picture : http://i.imgur.com/APRBdFZ.png
+	*UpBuild3e
+	-"<b>X2 pet power and +2% button power per pet.</b><br>Your very own pet rock!"
+	-multiplies efficiency of Build3 by 200%
+	-multiplies efficiency of Button by 2% per Build3
+	-unlocks at 50 Build3
+	-costs 1760000 Cash
+	-named Dwayne Johnson
+	-picture : http://i.imgur.com/eLnf0Ku.png
+	*UpBuild3f
+	-"<b>X2 pet power.</b><br>Prefers soda over juice."
+	-multiplies efficiency of Build3 by 200%
+	-unlocks at 75 Build3
+	-costs 19000000 Cash
+	-named A Dolphin
+	-picture : http://i.imgur.com/lXFi5vO.png
+	*UpBuild3g
+	-"<b>X3 pet power.</b><br>Won't get you rainbow coins."
+	-multiplies efficiency of Build3 by 300%
+	-unlocks at 100 Build3
+	-costs 206000000 Cash
+	-named Unicorn
+	-picture : http://i.imgur.com/GkV6mhl.png
+	*UpBuild3h
+	-"<b>X3 pet power.</b><br>Not actually made of gold."
+	-multiplies efficiency of Build3 by 300%
+	-unlocks at 125 Build3
+	-costs 2680000000 Cash
+	-named Goldfish
+	-picture : http://i.imgur.com/jDXB85V.png
+	*UpBuild3i
+	-"<b>X3 pet power.</b><br>Watch out, they breed like rabbits."
+	-multiplies efficiency of Build3 by 300%
+	-unlocks at 150 Build3
+	-costs 29000000000 Cash
+	-named Bunny
+	-picture : http://i.imgur.com/vIpwa45.png
+	*UpBuild3j
+	-"<b>X3 pet power.</b><br>Coming straight from Nopeville!"
+	-multiplies efficiency of Build3 by 300%
+	-unlocks at 200 Build3
+	-costs 4e+12 Cash
+	-named Some Random Huge F*cking Spider
+	-picture : http://i.imgur.com/JFB96eq.png
+	*UpBuild3k
+	-"<b>X4 pet power.</b><br>Not edible."
+	-multiplies efficiency of Build3 by 400%
+	-unlocks at 250 Build3
+	-costs 5.4e+14 Cash
+	-named Blob
+	-picture : http://i.imgur.com/pwPjGAE.png
+	*UpBuild3l
+	-"<b>X4 pet power.</b><br>"I shall call him..Mini Me.""
+	-multiplies efficiency of Build3 by 400%
+	-unlocks at 300 Build3
+	-costs 7.1e+16 Cash
+	-named Mini Clone Of Yourself
+	-picture : http://i.imgur.com/mH6bwVI.png
+	*UpBuild3m
+	-"<b>X4 pet power.</b><br>A must-have during summer, or a trip in Australia."
+	-multiplies efficiency of Build3 by 400%
+	-unlocks at 350 Build3
+	-costs 9.2e+18 Cash
+	-named Your Biggest Fan
+	-picture : http://i.imgur.com/pITyxs4.png
+	*UpBuild3n
+	-"<b>X4 pet power.</b><br>I do not own a plant named Gareth."
+	-multiplies efficiency of Build3 by 400%
+	-unlocks at 400 Build3
+	-costs 1e+21 Cash
+	-named Plant Named Gareth
+	-picture : http://i.imgur.com/e2bBKrM.png
+	*UpBuild3o
+	-"<b>X4 pet power.</b><br><br><i>Flavor text is also invisible.</i>"
+	-multiplies efficiency of Build3 by 400%
+	-unlocks at 450 Build3
+	-costs 1.2e+23 Cash
+	-named Invisible Zebra
+	-picture : http://i.imgur.com/OgSA9f6.png
+	*UpBuild3p
+	-"<b>X5 pet power.</b><br>Arm wrestling champion."
+	-multiplies efficiency of Build3 by 500%
+	-unlocks at 500 Build3
+	-costs 1.7e+25 Cash
+	-named T-rex That Shoots Lasers Out Of Its Eyes
+	-picture : http://i.imgur.com/cPdC9Vf.png
+	*UpBuild3q
+	-"<b>X5 pet power.</b><br>I picked a Pikachu to peek at you.<br>Say it 10 times in 5 seconds."
+	-multiplies efficiency of Build3 by 500%
+	-unlocks at 550 Build3
+	-costs 2.3e+27 Cash
+	-named Pikachu
+	-picture : http://i.imgur.com/716Cno2.png
+	*UpBuild3r
+	-"<b>X5 pet power.</b><br>"I'll buy it for Infinity cash."-(͡ ͡° ͜ つ ͡͡°)"
+	-multiplies efficiency of Build3 by 500%
+	-unlocks at 600 Build3
+	-costs 2.9e+29 Cash
+	-named wergf
+	-picture : http://i.imgur.com/hZbMHFT.png
+	*UpBuild3s
+	-"<b>X5 pet power.</b><br>Facial expressions are hard :c"
+	-multiplies efficiency of Build3 by 500%
+	-unlocks at 700 Build3
+	-costs 4.2e+33 Cash
+	-named Cage Cat
+	-picture : http://i.imgur.com/7KdJpsM.png
+	*UpBuild3t
+	-"<b>X5 pet power.</b><br>I gave up ._."
+	-multiplies efficiency of Build3 by 500%
+	-unlocks at 800 Build3
+	-costs 6.6e+37 Cash
+	-named Pillow
+	-picture : http://i.imgur.com/iU9fccd.png
+
+	*UpBuild4a
+	-"<b>X2 computer power.</b><br>Note to self : kill the guy who installed Vista."
+	-multiplies efficiency of Build4 by 200%
+	-unlocks at 1 Build4
+	-costs 524288 Cash
+	-named Better OS
+	-picture : http://i.imgur.com/W96qgke.png
+	*UpBuild4b
+	-"<b>X2 computer power.</b><br>New year resolution."
+	-multiplies efficiency of Build4 by 200%
+	-unlocks at 5 Build4
+	-costs 1048576 Cash
+	-named 1080p
+	-picture : http://i.imgur.com/Dti02zF.png
+	*UpBuild4c
+	-"<b>X2 computer power.</b><br>Woah flashy colors!"
+	-multiplies efficiency of Build4 by 200%
+	-unlocks at 10 Build4
+	-costs 2097152 Cash
+	-named Screensaver
+	-picture : http://i.imgur.com/mcDeHcS.png
+	*UpBuild4d
+	-"<b>X2 computer power.</b><br>An upgrade that merits the adjective "super"."
+	-multiplies efficiency of Build4 by 200%
+	-unlocks at 20 Build4
+	-costs 4194304 Cash
+	-named Super Upgrade
+	-picture : http://i.imgur.com/JuWV3tl.png
+	*UpBuild4e
+	-"<b>X2 computer power and +2% button power per computer.</b><br>Better for multitasking, gaming, or both."
+	-multiplies efficiency of Build4 by 200%
+	-multiplies efficiency of Button by 2% per Build4
+	-unlocks at 50 Build4
+	-costs 67108864 Cash
+	-named Dual Screen
+	-picture : http://i.imgur.com/rXKnBBT.png
+	*UpBuild4f
+	-"<b>X2 computer power.</b><br>Not going to prevent computer AIDS, if that exists."
+	-multiplies efficiency of Build4 by 200%
+	-unlocks at 75 Build4
+	-costs 536870912 Cash
+	-named Antivirus Updates
+	-picture : http://i.imgur.com/4WjnnSt.png
+	*UpBuild4g
+	-"<b>X3 computer power.</b><br>kkkk"
+	-multiplies efficiency of Build4 by 300%
+	-unlocks at 100 Build4
+	-costs 8589934592 Cash
+	-named 4k Resolution
+	-picture : http://i.imgur.com/9rrgYVf.png
+	*UpBuild4h
+	-"<b>X3 computer power.</b><br>TASTE THE RAINBOW!!!"
+	-multiplies efficiency of Build4 by 300%
+	-unlocks at 125 Build4
+	-costs 137438953472 Cash
+	-named Colorful Neons
+	-picture : http://i.imgur.com/PBBkdMX.png
+	*UpBuild4i
+	-"<b>X3 computer power.</b><br>Not just solid materials that merit the adjective "super"."
+	-multiplies efficiency of Build4 by 300%
+	-unlocks at 150 Build4
+	-costs 1099511627776 Cash
+	-named Super Solid Materials
+	-picture : http://i.imgur.com/zXhrQ0c.png
+	*UpBuild4j
+	-"<b>X3 computer power.</b><br>Yes, it's possible."
+	-multiplies efficiency of Build4 by 300%
+	-unlocks at 200 Build4
+	-costs 140737488355328 Cash
+	-named Perfect Programming Language
+	-picture : http://i.imgur.com/Q9PSw53.png
+	*UpBuild4k
+	-"<b>X4 computer power.</b><br>It's just a program that adds lines of code to itself.<br><i>If only I could do that with my game...</i>"
+	-multiplies efficiency of Build4 by 400%
+	-unlocks at 250 Build4
+	-costs 1.80143e+16 Cash
+	-named Auto-Coding Program
+	-picture : http://i.imgur.com/gzW4Qf9.png
+	*UpBuild4l
+	-"<b>X4 computer power.</b><br>Anything that shoots lasers is instantly 653% more epic."
+	-multiplies efficiency of Build4 by 400%
+	-unlocks at 300 Build4
+	-costs 2.30584e+18 Cash
+	-named Webcam That Shoots Lasers
+	-picture : http://i.imgur.com/4mbbB3f.png
+	*UpBuild4m
+	-"<b>X4 computer power.</b><br>A computer inside a computer."
+	-multiplies efficiency of Build4 by 400%
+	-unlocks at 350 Build4
+	-costs 2.95148e+20 Cash
+	-named Virtual Computer
+	-picture : http://i.imgur.com/wK4ifC2.png
+	*UpBuild4n
+	-"<b>X4 computer power.</b><br>No more "WTF I HAVEN'T SAVED THIS F*CKING WORD DOCUMENT IN 4 HOURS!!!"."
+	-multiplies efficiency of Build4 by 400%
+	-unlocks at 400 Build4
+	-costs 3.77789e+22 Cash
+	-named Self-Powering Computer
+	-picture : http://i.imgur.com/3AXZOYn.png
+	*UpBuild4o
+	-"<b>X4 computer power.</b><br>The BMW of computers."
+	-multiplies efficiency of Build4 by 400%
+	-unlocks at 450 Build4
+	-costs 4.83570e+24 Cash
+	-named PC MASTER RACE
+	-picture : http://i.imgur.com/zM95bp2.png
+	*UpBuild4p
+	-"<b>X5 computer power.</b><br>You probably don't want your computer to burn your desk."
+	-multiplies efficiency of Build4 by 500%
+	-unlocks at 500 Build4
+	-costs 6.18970e+26 Cash
+	-named Hyper-Efficient Fans
+	-picture : http://i.imgur.com/8h53z6e.png
+	*UpBuild4q
+	-"<b>X5 computer power.</b><br>( ͡° ͜ʖ ͡°)"
+	-multiplies efficiency of Build4 by 500%
+	-unlocks at 550 Build4
+	-costs 7.92282e+28 Cash
+	-named Unlimited Storage
+	-picture : http://i.imgur.com/4wvhm1F.png
+	*UpBuild4r
+	-"<b>X5 computer power.</b><br>Most realistic simulation ever created."
+	-multiplies efficiency of Build4 by 500%
+	-unlocks at 600 Build4
+	-costs 1.01412e+31 Cash
+	-named Simulation Simulator
+	-picture : http://i.imgur.com/LFO3AZ4.png
+	*UpBuild4s
+	-"<b>X5 computer power.</b><br>How to make Simulation Simulator even more real."
+	-multiplies efficiency of Build4 by 500%
+	-unlocks at 700 Build4
+	-costs 1.66153e+35 Cash
+	-named Virtual Reality
+	-picture : http://i.imgur.com/cBnyHK5.png
+	*UpBuild4t
+	-"<b>X5 computer power.</b><br>Isn't that super?"
+	-multiplies efficiency of Build4 by 500%
+	-unlocks at 800 Build4
+	-costs 2.72226e+39 Cash
+	-named Self-Empowering Computer
+	-picture : http://i.imgur.com/8YJlyXO.png
+
+	*Sy34a
+	-"<b>+3% pet power per computer and +1% computer power per pet.</b><br>A pet that lives in your computer.<br>Still needs to be fed."
+	-multiplies efficiency of Build3 by 3% per Build4
+	-multiplies efficiency of Build4 by 1% per Build4
+	-unlocks at 25 Build3, 25 Build4
+	-costs 7700000 Cash
+	-named Virtual Pet
+	-picture : http://i.imgur.com/POBl5hI.png
+	*Sy34b
+	-"<b>+2% pet power per computer and +1% computer power per pet.</b><br>I'm not gonna re-explain the joke."
+	-multiplies efficiency of Build3 by 2% per Build4
+	-multiplies efficiency of Build4 by 1% per Build3
+	-unlocks at 150 Build3, 150 Build4
+	-costs 4199023255552 Cash
+	-named Super Pet
+	-picture : http://i.imgur.com/dkTc6XV.png
+	*Sy34c
+	-"<b>+0.8% pet power per computer and +0.3% computer power per pet.</b><br>BEEP BOOP BEEP"
+	-multiplies efficiency of Build3 by 0.8% per Build4
+	-multiplies efficiency of Build4 by 0.3% per Build3
+	-unlocks at 400 Build3, 400 Build4
+	-costs 6.4e+22 Cash
+	-named Pet Computer
+	-picture : http://i.imgur.com/h8Xnpu2.png
+	*Sy34d
+	-"<b>+0.5% pet power per computer and +0.1% computer power per pet.</b><br>Ahem..."
+	-multiplies efficiency of Build3 by 0.5% per Build4
+	-multiplies efficiency of Build4 by 0.1% per Build3
+	-unlocks at 800 Build3, 800 Build4
+	-costs 5.4445e+39 Cash
+	-named Super Pet Computer
+	-picture : http://i.imgur.com/pCh4HkU.png
+
+	*UpBuild5a
+	-"<b>X2 gun power.</b><br>The best gun ever created. And it's the first you unlock!"
+	-multiplies efficiency of Build5 by 200%
+	-unlocks at 1 Build5
+	-costs 18000000 Cash
+	-named PM Makarov
+	-picture : http://i.imgur.com/Qup7J9I.png
+	*UpBuild5b
+	-"<b>X2 gun power.</b><br>It's a baby eagle."
+	-multiplies efficiency of Build5 by 200%
+	-unlocks at 5 Build5
+	-costs 29000000 Cash
+	-named Jericho 941
+	-picture : http://i.imgur.com/oOCS60F.png
+	*UpBuild5c
+	-"<b>X2 gun power.</b><br>Every game that has it gives it less range than a knife."
+	-multiplies efficiency of Build5 by 200%
+	-unlocks at 10 Build5
+	-costs 47000000 Cash
+	-named Skorpion vz.61
+	-picture : http://i.imgur.com/gXmdS3G.png
+	*UpBuild5d
+	-"<b>X2 gun power.</b><br>"It looks like a brick.""
+	-multiplies efficiency of Build5 by 200%
+	-unlocks at 20 Build5
+	-costs 120000000 Cash
+	-named Kriss Kard
+	-picture : http://i.imgur.com/FnfgcXp.png
+	*UpBuild5e
+	-"<b>X2 gun power and +2% button power per gun.</b><br>This is the real gangster weapon, not the UZI."
+	-multiplies efficiency of Build5 by 200%
+	-multiplies efficiency of Button by 2% per Build5
+	-unlocks at 50 Build5
+	-costs 2600000000 Cash
+	-named Thompson
+	-picture : http://i.imgur.com/MFIAVHL.png
+	*UpBuild5f
+	-"<b>X2 gun power.</b><br>Use two of them and everybody lose their minds."
+	-multiplies efficiency of Build5 by 200%
+	-unlocks at 75 Build5
+	-costs 28000000000 Cash
+	-named FMG-9
+	-picture : http://i.imgur.com/RdcnjAJ.png
+	*UpBuild5g
+	-"<b>X3 gun power.</b><br>An oversized PDW with the caliber of an AR and the rate of fire of an SMG.<br>If you know what these mean."
+	-multiplies efficiency of Build5 by 300%
+	-unlocks at 100 Build5
+	-costs 310000000000 Cash
+	-named Thor A1 PDW
+	-picture : http://i.imgur.com/NBYQJ8N.png
+	*UpBuild5h
+	-"<b>X3 gun power.</b><br>The gun that became famous because of its variants more than itself."
+	-multiplies efficiency of Build5 by 300%
+	-unlocks at 125 Build5
+	-costs 4e+12 Cash
+	-named AR-15
+	-picture : http://i.imgur.com/9vNhs3X.png
+	*UpBuild5i
+	-"<b>X3 gun power.</b><br>Chambered with caseless ammo and fires bursts of 3 bullets so fast you'll feel like only one left the gun."
+	-multiplies efficiency of Build5 by 300%
+	-unlocks at 150 Build5
+	-costs 4.4e+13 Cash
+	-named HK G11
+	-picture : http://i.imgur.com/GNpVmoq.png
+	*UpBuild5j
+	-"<b>X3 gun power.</b><br>The gun used by Simo Häyhä.<br>I'll let you google him."
+	-multiplies efficiency of Build5 by 300%
+	-unlocks at 200 Build5
+	-costs 6e+15 Cash
+	-named Mosin-Nagant
+	-picture : http://i.imgur.com/HpkZP8x.png
+	*UpBuild5k
+	-"<b>X4 gun power.</b><br>Smoke mid everyday."
+	-multiplies efficiency of Build5 by 400%
+	-unlocks at 250 Build5
+	-costs 8e+17 Cash
+	-named AWP
+	-picture : http://i.imgur.com/KaDR82C.png
+	*UpBuild5l
+	-"<b>X4 gun power.</b><br>If you really want to turn someone into swiss cheese."
+	-multiplies efficiency of Build5 by 400%
+	-unlocks at 300 Build5
+	-costs 1e+20 Cash
+	-named AA-12
+	-picture : http://i.imgur.com/mwQgXri.png
+	*UpBuild5m
+	-"<b>X4 gun power.</b><br>"1v1 me on rust fgit""
+	-multiplies efficiency of Build5 by 400%
+	-unlocks at 350 Build5
+	-costs 1.3e+22 Cash
+	-named CheyTac Intervention
+	-picture : http://i.imgur.com/re3XEVM.png
+	*UpBuild5n
+	-"<b>X4 gun power.</b><br>Where the f*ck did my arm go?"
+	-multiplies efficiency of Build5 by 400%
+	-unlocks at 400 Build5
+	-costs 1.6e+24 Cash
+	-named HK21
+	-picture : http://i.imgur.com/XsyetP7.png
+	*UpBuild5o
+	-"<b>X4 gun power.</b><br>Usually you have ARs with grenade launcher attachements, this thing is a grenade launcher with an AR attachement."
+	-multiplies efficiency of Build5 by 400%
+	-unlocks at 450 Build5
+	-costs 1.9e+26 Cash
+	-named XM29 OICW
+	-picture : http://i.imgur.com/BGnJqLQ.png
+	*UpBuild5p
+	-"<b>X5 gun power.</b><br>They won't hear their limbs come off."
+	-multiplies efficiency of Build5 by 500%
+	-unlocks at 500 Build5
+	-costs 2.7e+28 Cash
+	-named VSSK Vihklop
+	-picture : http://i.imgur.com/wjl8i3x.png
+	*UpBuild5q
+	-"<b>X5 gun power.</b><br>Aimbot in real life."
+	-multiplies efficiency of Build5 by 500%
+	-unlocks at 550 Build5
+	-costs 3.4e+30 Cash
+	-named Epic A3
+	-picture : http://i.imgur.com/Q6nBljh.png
+	*UpBuild5r
+	-"<b>X5 gun power.</b><br>Because normal boom headshots aren't explosive enough."
+	-multiplies efficiency of Build5 by 500%
+	-unlocks at 600 Build5
+	-costs 4.3e+32 Cash
+	-named Barrett XM109
+	-picture : http://i.imgur.com/U8c7HH2.png
+	*UpBuild5s
+	-"<b>X5 gun power.</b><br>A triple barrelled revolver for when you want to transform watermelons into bowling balls."
+	-multiplies efficiency of Build5 by 500%
+	-unlocks at 700 Build5
+	-costs 6.4e+36 Cash
+	-named Pistola Con Caricato
+	-picture : http://i.imgur.com/4FPY8nF.png
+	*UpBuild5t
+	-"<b>X5 gun power.</b><br>A 12-rounds semi-auto grenade laucher because f*ck you and everyone near you."
+	-multiplies efficiency of Build5 by 500%
+	-unlocks at 800 Build5
+	-costs 9.9e+40 Cash
+	-named Hawk MM-1
+	-picture : http://i.imgur.com/DJTSkig.png
+
+	*UpBuild6a
+	-"<b>X2 music power.</b><br>By Loopmaster<br>I don't feel like writing flavor for every music I put in these upgrades.<br>Yet..."
+	-multiplies efficiency of Build6 by 200%
+	-unlocks at 1 Build6
+	-costs 1000000000 Cash
+	-named The Damned
+	-picture : http://i.imgur.com/zuEoLlG.png
+	*UpBuild6b
+	-"<b>X2 music power.</b><br>By ArisingFlame"
+	-multiplies efficiency of Build6 by 200%
+	-unlocks at 5 Build6
+	-costs 1600000000 Cash
+	-named Looking Back
+	-picture : http://i.imgur.com/Znuonga.png
+	*UpBuild6c
+	-"<b>X2 music power.</b><br>By Dimrain47"
+	-multiplies efficiency of Build6 by 200%
+	-unlocks at 10 Build6
+	-costs 2600000000 Cash
+	-picture : http://i.imgur.com/W5FRTaM.png
+	-named Surface
+	*UpBuild6d
+	-"<b>X2 music power.</b><br>By dj-Nate"
+	-multiplies efficiency of Build6 by 200%
+	-unlocks at 20 Build6
+	-costs 6700000000 Cash
+	-named The Beginning Of Time
+	-picture : http://i.imgur.com/aXPmCe7.png
+	*UpBuild6e
+	-"<b>X2 music power and +2% button power per music.</b><br>By F-777."
+	-multiplies efficiency of Build6 by 200%
+	-multiplies efficiency of Button by 2% per Build6
+	-unlocks at 50 Build6
+	-costs 150000000000 Cash
+	-named Triple Fuse
+	-picture : http://i.imgur.com/BmP5msd.png
+	*UpBuild6f
+	-"<b>X2 music power.</b><br>By Waterflame"
+	-multiplies efficiency of Build6 by 200%
+	-unlocks at 75 Build6
+	-costs 1.6e+12 Cash
+	-named Sky Fortress
+	-picture : http://i.imgur.com/vO7y5Ra.png
+	*UpBuild6g
+	-"<b>X3 music power.</b><br>By F-777"
+	-multiplies efficiency of Build6 by 300%
+	-unlocks at 100 Build6
+	-costs 1.7e+13 Cash
+	-named Deadlocked
+	-picture : http://i.imgur.com/iYdbvuh.png
+	*UpBuild6h
+	-"<b>X3 music power.</b><br>By B0UNC3"
+	-multiplies efficiency of Build6 by 300%
+	-unlocks at 125 Build6
+	-costs 2.2e+14 Cash
+	-named Paradise On E
+	-picture : http://i.imgur.com/EB09HHM.png
+	*UpBuild6i
+	-"<b>X3 music power.</b><br>By cornandbeans"
+	-multiplies efficiency of Build6 by 300%
+	-unlocks at 150 Build6
+	-costs 2.4e+15 Cash
+	-named Blaze
+	-picture : http://i.imgur.com/q28StWZ.png
+	*UpBuild6j
+	-"<b>X3 music power.</b><br>By Dimrain47"
+	-multiplies efficiency of Build6 by 300%
+	-unlocks at 200 Build6
+	-costs 3.3e+17 Cash
+	-named Revolutions
+	-picture : http://i.imgur.com/UM2TeDz.png
+	*UpBuild6k
+	-"<b>X4 music power.</b><br>By dj-Nate"
+	-multiplies efficiency of Build6 by 400%
+	-unlocks at 250 Build6
+	-costs 4.4e+19 Cash
+	-named Center Of Existance
+	-picture : http://i.imgur.com/0YgggAq.png
+	*UpBuild6l
+	-"<b>X4 music power.</b><br>By Goukisan"
+	-multiplies efficiency of Build6 by 400%
+	-unlocks at 300 Build6
+	-costs 5.9e+21 Cash
+	-named Betrayal Of Fear
+	-picture : http://i.imgur.com/ZaFXZ6B.png
+	*UpBuild6m
+	-"<b>X4 music power.</b><br>By F-777"
+	-multiplies efficiency of Build6 by 400%
+	-unlocks at 350 Build6
+	-costs 7.7e+23 Cash
+	-named Ludicrous Speed
+	-picture : http://i.imgur.com/s8PD1Ir.png
+	*UpBuild6n
+	-"<b>X4 music power.</b><br>By Helix6"
+	-multiplies efficiency of Build6 by 400%
+	-unlocks at 400 Build6
+	-costs 9e+25 Cash
+	-named Archetype
+	-picture : http://i.imgur.com/OtyGWnE.png
+	*UpBuild6o
+	-"<b>X4 music power.</b><br>By Kid2Will"
+	-multiplies efficiency of Build6 by 400%
+	-unlocks at 450 Build6
+	-costs 1.1e+28 Cash
+	-named Fire Aura
+	-picture : http://i.imgur.com/Rm7GW1y.png
+	*UpBuild6p
+	-"<b>X5 music power.</b><br>O2Jam soundtrack"
+	-multiplies efficiency of Build6 by 500%
+	-unlocks at 500 Build6
+	-costs 1.5e+30 Cash
+	-named Death Moon
+	-picture : http://i.imgur.com/YIRT1pu.png
+	*UpBuild6q
+	-"<b>X5 music power.</b><br>By Dimrain47"
+	-multiplies efficiency of Build6 by 500%
+	-unlocks at 550 Build6
+	-costs 1.9e+32 Cash
+	-named Revolutions
+	-picture : http://i.imgur.com/YvRr4vp.png
+	*UpBuild6r
+	-"<b>X5 music power.</b><br>By Dimrain47"
+	-multiplies efficiency of Build6 by 500%
+	-unlocks at 600 Build6
+	-costs 2.4e+34 Cash
+	-named At The Speed Of Light
+	-picture : http://i.imgur.com/Q7qKvNH.png
+	*UpBuild6s
+	-"<b>X5 music power.</b><br>By Waterflame"
+	-multiplies efficiency of Build6 by 500%
+	-unlocks at 700 Build6
+	-costs 3.5e+38 Cash
+	-named Electroman Adventures
+	-picture : http://i.imgur.com/nXjp7Ub.png
+	*UpBuild6t
+	-"<b>X5 music power.</b><br>By Shinrog"
+	-multiplies efficiency of Build6 by 500%
+	-unlocks at 800 Build6
+	-costs 5.5e+42 Cash
+	-named Infertehno
+	-picture : http://i.imgur.com/86iTI6v.png
+
+	*Sy56a
+	-"<b>+2% gun power per music and +1% music power per gun.</b><br>Gunshots syncronized with music."
+	-multiplies efficiency of Build5 by 2% per Build6
+	-multiplies efficiency of Build6 by 1% per Build5
+	-unlocks at 25 Build5, 25 Build6
+	-costs 13200000000 Cash
+	-named Gun Sync
+	-picture : http://i.imgur.com/m9VK6h8.png
+	*Sy56b
+	-"<b>+1.5% gun power per music and +0.75% music power per gun.</b><br>Music created with gunshots."
+	-multiplies efficiency of Build5 by 1.5% per Build6
+	-multiplies efficiency of Build6 by 0.75% per Build5
+	-unlocks at 150 Build5, 150 Build6
+	-costs 2.9e+15 Cash
+	-named Gun Music
+	-picture : http://i.imgur.com/SQkVSOM.png
+	*Sy56c
+	-"<b>+1% gun power per music and +0.5% music power per gun.</b><br>Guns doing music when they shoot."
+	-multiplies efficiency of Build5 by 1% per Build6
+	-multiplies efficiency of Build6 by 0.5% per Build5
+	-unlocks at 400 Build5, 400 Build6
+	-costs 1.1e+26 Cash
+	-named Instrument Guns
+	-picture : http://i.imgur.com/vsq7Wmr.png
+	*Sy56d
+	-"<b>+0.5% gun power per music and +0.2% music power per gun.</b><br>Totally not a rip-off of the dubstep gun."
+	-multiplies efficiency of Build5 by 0.5% per Build6
+	-multiplies efficiency of Build6 by 0.2% per Build5
+	-unlocks at 800 Build5, 800 Build6
+	-costs 6.7e+42 Cash
+	-named DragonSound RythmBlaster Device
+	-picture : http://i.imgur.com/gQ3zOaY.png
+
+	*UpBuild7a
+	-"<b>X2 achievement generator power.</b><br>You can never have enough."
+	-multiplies efficiency of Build7 by 200%
+	-unlocks at 1 Build7
+	-costs 72000000000 Cash
+	-named Extra Achievements
+	-picture : http://i.imgur.com/lwbgQEm.png
+	*UpBuild7b
+	-"<b>X2 achievement generator power.</b><br>The joy of getting millions of achievements a second will probably not last long."
+	-multiplies efficiency of Build7 by 200%
+	-unlocks at 5 Build7
+	-costs 120000000000 Cash
+	-named Sound Effects
+	-picture : http://i.imgur.com/oNGCPWS.png
+	*UpBuild7c
+	-"<b>X2 achievement generator power.</b><br>Not epilepsy-friendly."
+	-multiplies efficiency of Build7 by 200%
+	-unlocks at 10 Build7
+	-costs 180000000000 Cash
+	-named Visual Effects
+	-picture : http://i.imgur.com/ZiIDJSD.png
+	*UpBuild7d
+	-"<b>X2 achievement generator power.</b><br>Yay."
+	-multiplies efficiency of Build7 by 200%
+	-unlocks at 20 Build7
+	-costs 480000000000 Cash
+	-named No More Things That Make Getting Achievements Annoying
+	-picture : http://i.imgur.com/wJeTTr6.png
+	*UpBuild7e
+	-"<b>X2 achievement generator power and +2% button power per achievement generator.</b><br>Gives more incentive to get achievements."
+	-multiplies efficiency of Build7 by 200%
+	-multiplies efficiency of Button by 2% per Build7
+	-unlocks at 50 Build7
+	-costs 1e+13 Cash
+	-named Better Rewards
+	-picture : http://i.imgur.com/Pz3QGBO.png
+	*UpBuild7f
+	-"<b>X2 achievement generator power.</b><br>Achievementception."
+	-multiplies efficiency of Build7 by 200%
+	-unlocks at 75 Build7
+	-costs 1.1e+14 Cash
+	-named Achievements That Unlock More Achievements
+	-picture : http://i.imgur.com/HpxMndD.png
+	*UpBuild7g
+	-"<b>X3 achievement generator power.</b><br>cuzynot ᕕ( ᐛ )ᕗ"
+	-multiplies efficiency of Build7 by 300%
+	-unlocks at 100 Build7
+	-costs 1.2e+15 Cash
+	-named I Am Beginning To Make Overly Long Upgrade Names
+	-picture : http://i.imgur.com/B4r2vKh.png
+	*UpBuild7h
+	-"<b>X3 achievement generator power.</b><br>Isn't that what you do in idle games?"
+	-multiplies efficiency of Build7 by 300%
+	-unlocks at 125 Build7
+	-costs 1.6e+16 Cash
+	-named Achievements For Doing Nothing
+	-picture : http://i.imgur.com/OA25wzC.png
+	*UpBuild7i
+	-"<b>X3 achievement generator power.</b><br>That would mean achievements are also achievement generators."
+	-multiplies efficiency of Build7 by 300%
+	-unlocks at 150 Build7
+	-costs 1.7e+17 Cash
+	-named Achievements For Getting Achievements
+	-picture : http://i.imgur.com/X2UDa83.png
+	*UpBuild7j
+	-"<b>X3 achievement generator power.</b><br>Am I really going to put every stupid idea I write in flavor texts?"
+	-multiplies efficiency of Build7 by 300%
+	-unlocks at 200 Build7
+	-costs 2.4e+19 Cash
+	-named Achievements Generators For Getting Achievements
+	-picture : http://i.imgur.com/KN9TbZL.png
+	*UpBuild7k
+	-"<b>X4 achievement generator power.</b><br>Oh damn..."
+	-multiplies efficiency of Build7 by 400%
+	-unlocks at 250 Build7
+	-costs 3.2e+21 Cash
+	-named Yes
+	-picture : http://i.imgur.com/pe8AAIH.png
+
+	*UpBuild8a
+	-"<b>X2 awesome star power.</b><br>Don't even think of thinking about asking how."
+	-multiplies efficiency of Build8 by 200%
+	-unlocks at 1 Build8
+	-costs 3.33333e+13 Cash
+	-named Increased Awesomess
+	-picture : http://i.imgur.com/splxp0I.png
+	*UpBuild8b
+	-"<b>X2 awesome star power.</b><br>Actually you shouldn't bother to try finding logic in any of these upgrades."
+	-multiplies efficiency of Build8 by 200%
+	-unlocks at 5 Build8
+	-costs 5.55555e+13 Cash
+	-named Increased Colorfulness
+	-picture : http://i.imgur.com/f0IBEzk.png
+	*UpBuild8c
+	-"<b>X2 awesome star power.</b><br>F*ck..."
+	-multiplies efficiency of Build8 by 200%
+	-unlocks at 10 Build8
+	-costs 8.88888e+13 Cash
+	-named Increased Logic
+	-picture : http://i.imgur.com/1Z2EwYr.png
+	*UpBuild8d
+	-"<b>X2 awesome star power.</b><br>Is that even a word?"
+	-multiplies efficiency of Build8 by 200%
+	-unlocks at 20 Build8
+	-costs 2.22222e+14 Cash
+	-named Increased Starness
+	-picture : http://i.imgur.com/xiyG4aZ.png
+	*UpBuild8e
+	-"<b>X2 awesome star power and +2% button power per awesome star.</b><br>I'm not going to say anything about "h" because it's unrelated to this."
+	-multiplies efficiency of Build8 by 200%
+	-multiplies efficiency of Button by 2% per Build8
+	-unlocks at 50 Build8
+	-costs 4.44444e+15 Cash
+	-named Increased Hydrogen
+	-picture : http://i.imgur.com/M6dG2YS.png
+	*UpBuild8f
+	-"<b>X2 awesome star power.</b><br>Not cool bro..."
+	-multiplies efficiency of Build8 by 200%
+	-unlocks at 75 Build8
+	-costs 4.44444e+16 Cash
+	-named Increased Heat
+	-picture : http://i.imgur.com/3JMaCus.png
+	*UpBuild8g
+	-"<b>X3 awesome star power.</b><br>Flavor is 4 upgrades before."
+	-multiplies efficiency of Build8 by 300%
+	-unlocks at 100 Build8
+	-costs 5.55555e+17 Cash
+	-named Increased Power
+	-picture : http://i.imgur.com/bWOVycN.png
+	*UpBuild8h
+	-"<b>X3 awesome star power.</b><br>"not star-looking enough 1/5""
+	-multiplies efficiency of Build8 by 300%
+	-unlocks at 125 Build8
+	-costs 6.66666e+18 Cash
+	-named Increased Shapeness
+	-picture : http://i.imgur.com/w9yK7Mg.png
+	*UpBuild8i
+	-"<b>X3 awesome star power.</b><br>Just because there are 7s in the price."
+	-multiplies efficiency of Build8 by 300%
+	-unlocks at 150 Build8
+	-costs 7.77777e+19 Cash
+	-named Increased Luckyness
+	-picture : http://i.imgur.com/pBjt6iC.png
+	*UpBuild8j
+	-"<b>X3 awesome star power.</b><br>1/5s aren't awesome."
+	-multiplies efficiency of Build8 by 300%
+	-unlocks at 200 Build8
+	-costs 1.11111e+22 Cash
+	-named Increased Ratings
+	-picture : http://i.imgur.com/ITuhs99.png
+
+	*Sy78a
+	-"<b>+2% achievement generator power per awesome star and +1% awesome star power per achievement generator.</b><br>Some achievements become more awesome than other<br>No one knows why."
+	-multiplies efficiency of Build7 by 2% per Build8
+	-multiplies efficiency of Build8 by 1% per Build7
+	-unlocks at 25 Build7, 25 Build8
+	-costs 3.8e+14 Cash
+	-named Awesome Achievements
+	-picture : http://i.imgur.com/3DCgLCC.png
+	*Sy78b
+	-"<b>+1% achievement generator power per awesome star and +0.5% awesome star power per achievement generator.</b><br>So you feel extra awesome for unlocking achievements."
+	-multiplies efficiency of Build7 by 1% per Build8
+	-multiplies efficiency of Build8 by 0.5% per Build7
+	-unlocks at 150 Build7, 150 Build8
+	-costs 8.88888e+20 Cash
+	-named Star Awarding Achievements
+	-picture : http://i.imgur.com/vgSFFIM.png
+
+	*UpBuild9a
+	-"<b>X2 Lenny power.</b><br>( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°)<br>( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°)( ͡° ͜ʖ ͡°)"
+	-multiplies efficiency of Build9 by 200%
+	-unlocks at 1 Build9
+	-costs 4e+17 Cash
+	-named Spambots
+	-picture : http://i.imgur.com/UHixBro.png
+	*UpBuild9b
+	-"<b>X2 Lenny power.</b><br>Don't forget le French accent ( ͡° ͜ʖ ͡°)"
+	-multiplies efficiency of Build9 by 200%
+	-unlocks at 5 Build9
+	-costs 6e+17 Cash
+	-named Le Prefix
+	-picture : http://i.imgur.com/6nfHKMV.png
+	*UpBuild9c
+	-"<b>X2 Lenny power.</b><br>tak 3 per dai 4 abslut perfikt gramer ( ͡° ͜ʖ ͡°)"
+	-multiplies efficiency of Build9 by 200%
+	-unlocks at 10 Build9
+	-costs 1e+18 Cash
+	-named Grammer Pilz
+	-picture : http://i.imgur.com/oBNF3ke.png
+	*UpBuild9d
+	-"<b>X2 Lenny power.</b><br>u dun need those brain cellz ( ͡° ͜ʖ ͡°)"
+	-multiplies efficiency of Build9 by 200%
+	-unlocks at 20 Build9
+	-costs 3e+18 Cash
+	-named Decreased Mentality
+	-picture : http://i.imgur.com/v45zgS7.png
+	*UpBuild9e
+	-"<b>X2 Lenny power and +2% button power per Lenny.</b><br>just liek ur mum ( ͡° ͜ʖ ͡°)"
+	-multiplies efficiency of Build9 by 200%
+	-multiplies efficiency of Button by 2% per Build9
+	-unlocks at 50 Build9
+	-costs 6e+19 Cash
+	-named Internet Spread
+	-picture : http://i.imgur.com/QsVt05O.png
+	*UpBuild9f
+	-"<b>X2 Lenny power.</b><br>lelelelelelel ( ͡° ͜ʖ ͡°)"
+	-multiplies efficiency of Build9 by 200%
+	-unlocks at 75 Build9
+	-costs 6e+20 Cash
+	-named Extensive Trolling
+	-picture : http://i.imgur.com/RrqvcGk.png
+	*UpBuild9g
+	-"<b>X3 Lenny power.</b><br>ᕦ( ͡° ͜ʖ ͡°)ᕤ"
+	-multiplies efficiency of Build9 by 300%
+	-unlocks at 100 Build9
+	-costs 7e+21 Cash
+	-named Superiority Over Other Faces
+	-picture : http://i.imgur.com/qlYxwbT.png
+	*UpBuild9h
+	-"<b>X3 Lenny power.</b><br>"( ͡° ͜ʖ ͡°)" -( ͡° ͜ʖ ͡°)"
+	-multiplies efficiency of Build9 by 300%
+	-unlocks at 125 Build9
+	-costs 9e+22 Cash
+	-named ( ͡° ͜ʖ ͡°) In Upgrade Titles
+	-picture : http://i.imgur.com/5HiQmJh.png
+	*UpBuild9i
+	-"<b>X3 Lenny power.</b><br>( ͡°     ͜ʖ    ͡ °)"
+	-multiplies efficiency of Build9 by 300%
+	-unlocks at 150 Build9
+	-costs 1e+24 Cash
+	-named Maybe Not That Legal Medicine
+	-picture : http://i.imgur.com/ahMiR1g.png
+
+	*UpBuild10a
+	-"<b>X2 Hexagon power.</b><br>It always make things look more evil."
+	-multiplies efficiency of Build10 by 200%
+	-unlocks at 1 Build10
+	-costs 2.66666e+22 Cash
+	-named Dark Crimson Tint
+	-picture : http://i.imgur.com/WonMXMO.png
+	*UpBuild10b
+	-"<b>X2 Hexagon power.</b><br>An excuse to have blood splaters all over them."
+	-multiplies efficiency of Build10 by 200%
+	-unlocks at 5 Build10
+	-costs 4.66666e+22 Cash
+	-named Sharper Corners
+	-picture : http://i.imgur.com/DD40T9j.png
+	*UpBuild10c
+	-"<b>X2 Hexagon power.</b><br>Bad guys always have stuff with a sh*tload of spikes on them."
+	-multiplies efficiency of Build10 by 200%
+	-unlocks at 10 Build10
+	-costs 6.66666e+22 Cash
+	-named Spikes
+	-picture : http://i.imgur.com/wKdg9mZ.png
+	*UpBuild10d
+	-"<b>X2 Hexagon power.</b><br>That's just evil."
+	-multiplies efficiency of Build10 by 200%
+	-unlocks at 20 Build10
+	-costs 1.66666e+23 Cash
+	-named Triple-Spikes
+	-picture : http://i.imgur.com/j3kGN8V.png
+	*UpBuild10e
+	-"<b>X2 Hexagon power and +2% button power per Hexagon.</b><br>If we can call that a brain."
+	-multiplies efficiency of Build10 by 200%
+	-multiplies efficiency of Button by 2% per Build10
+	-unlocks at 50 Build10
+	-costs 3.66666e+24 Cash
+	-named Brainwashing
+	-picture : http://i.imgur.com/FlN67oR.png
+	*UpBuild10f
+	-"<b>X2 Hexagon power.</b><br>Generic horror noise."
+	-multiplies efficiency of Build10 by 200%
+	-unlocks at 75 Build10
+	-costs 4.66666e+25 Cash
+	-named White Noise
+	-picture : http://i.imgur.com/hwRneU5.png
+	*UpBuild10g
+	-"<b>X2 Hexagon power.</b><br>Made harder to see while keeping 100% of an original Hexagon's efficiency."
+	-multiplies efficiency of Build10 by 300%
+	-unlocks at 100 Build10
+	-costs 4.66666e+26 Cash
+	-named Mini Hexagons
+	-picture : http://i.imgur.com/uXUAtGy.png
+
+	*Sy910a
+	-"<b>+0.2% Lenny power per Hexagon and +0.03% Hexagon power per Lenny.</b><br>more power ( ͡° ͜ʖ ͡°)"
+	-multiplies efficiency of Build9 by 0.2% per Build10
+	-multiplies efficiency of Build10 by 0.03% per Build9
+	-unlocks at 25 Build9, 25 Build10
+	-costs 3.2e+23 Cash
+	-named Lenny Faced Hexagons
+	-picture : http://i.imgur.com/bOyJ1In.png
+
+	*Prestige1
+	-"<b>X1.2 everything power and X1.5 spring production.</b><br>Let's start a kickass collection of sword with something that's not even a sword!"
+	-multiplies efficiency of Button by 120%
+	-multiplies efficiency of Build1 by 120%
+	-multiplies efficiency of Build2 by 120%
+	-multiplies efficiency of Build3 by 120%
+	-multiplies efficiency of Build4 by 120%
+	-multiplies efficiency of Build5 by 120%
+	-multiplies efficiency of Build6 by 120%
+	-multiplies efficiency of Build7 by 120%
+	-multiplies efficiency of Build8 by 120%
+	-multiplies efficiency of Build9 by 120%
+	-multiplies efficiency of Build10 by 120%
+	-multiplies efficiency of BuildSpring by 150%
+	-costs 1 Springs
+	-unlocks at 1 EnergyCell
+	-named Dagger
+	-picture : http://i.imgur.com/cHdGGKd.png
+	*Prestige2
+	-"<b>X1.2 everything power and X1.5 spring production.</b><br>An unusually large knife for unusually large wounds."
+	-multiplies efficiency of Button by 120%
+	-multiplies efficiency of Build1 by 120%
+	-multiplies efficiency of Build2 by 120%
+	-multiplies efficiency of Build3 by 120%
+	-multiplies efficiency of Build4 by 120%
+	-multiplies efficiency of Build5 by 120%
+	-multiplies efficiency of Build6 by 120%
+	-multiplies efficiency of Build7 by 120%
+	-multiplies efficiency of Build8 by 120%
+	-multiplies efficiency of Build9 by 120%
+	-multiplies efficiency of Build10 by 120%
+	-multiplies efficiency of BuildSpring by 150%
+	-costs 3 Springs
+	-unlocks at 5 EnergyCell
+	-named Bowie Knife
+	-picture : http://i.imgur.com/4AQRteK.png
+	*Prestige3
+	-"<b>X1.2 everything power and X1.5 spring production.</b><br>FINALLY A SWORD!!!"
+	-multiplies efficiency of Button by 120%
+	-multiplies efficiency of Build1 by 120%
+	-multiplies efficiency of Build2 by 120%
+	-multiplies efficiency of Build3 by 120%
+	-multiplies efficiency of Build4 by 120%
+	-multiplies efficiency of Build5 by 120%
+	-multiplies efficiency of Build6 by 120%
+	-multiplies efficiency of Build7 by 120%
+	-multiplies efficiency of Build8 by 120%
+	-multiplies efficiency of Build9 by 120%
+	-multiplies efficiency of Build10 by 120%
+	-multiplies efficiency of BuildSpring by 150%
+	-costs 9 Springs
+	-unlocks at 25 EnergyCell
+	-named Machete
+	-picture : http://i.imgur.com/L7VYFQD.png
+	*Prestige4
+	-"<b>X1.22 everything power and X1.5 spring production.</b><br>You know what? I'll just recycle some flavor from that game I released but never finished.<br>It's not like you bothered to play it a lot."
+	-multiplies efficiency of Button by 122%
+	-multiplies efficiency of Build1 by 122%
+	-multiplies efficiency of Build2 by 122%
+	-multiplies efficiency of Build3 by 122%
+	-multiplies efficiency of Build4 by 122%
+	-multiplies efficiency of Build5 by 122%
+	-multiplies efficiency of Build6 by 122%
+	-multiplies efficiency of Build7 by 122%
+	-multiplies efficiency of Build8 by 122%
+	-multiplies efficiency of Build9 by 122%
+	-multiplies efficiency of Build10 by 122%
+	-multiplies efficiency of BuildSpring by 150%
+	-costs 27 Springs
+	-unlocks at 125 EnergyCell
+	-named Rapier
+	-picture : http://i.imgur.com/YlQvvnO.png
+	*Prestige5
+	-"<b>X1.22 everything power and X1.5 spring production.</b><br>Unlike the shortsword, this one is long.<br>Yes I'm assuming you are stupid."
+	-multiplies efficiency of Button by 122%
+	-multiplies efficiency of Build1 by 122%
+	-multiplies efficiency of Build2 by 122%
+	-multiplies efficiency of Build3 by 122%
+	-multiplies efficiency of Build4 by 122%
+	-multiplies efficiency of Build5 by 122%
+	-multiplies efficiency of Build6 by 122%
+	-multiplies efficiency of Build7 by 122%
+	-multiplies efficiency of Build8 by 122%
+	-multiplies efficiency of Build9 by 122%
+	-multiplies efficiency of Build10 by 122%
+	-multiplies efficiency of BuildSpring by 150%
+	-costs 81 Springs
+	-unlocks at 625 EnergyCell
+	-named Longsword
+	-picture : http://i.imgur.com/tf0NvOz.png
+	*Prestige6
+	-"<b>X1.22 everything power and X1.5 spring production.</b><br>It's a mini katana, in case you didn't know."
+	-multiplies efficiency of Button by 122%
+	-multiplies efficiency of Build1 by 122%
+	-multiplies efficiency of Build2 by 122%
+	-multiplies efficiency of Build3 by 122%
+	-multiplies efficiency of Build4 by 122%
+	-multiplies efficiency of Build5 by 122%
+	-multiplies efficiency of Build6 by 122%
+	-multiplies efficiency of Build7 by 122%
+	-multiplies efficiency of Build8 by 122%
+	-multiplies efficiency of Build9 by 122%
+	-multiplies efficiency of Build10 by 122%
+	-multiplies efficiency of BuildSpring by 150%
+	-costs 243 Springs
+	-unlocks at 3125 EnergyCell
+	-named Washisaki
+	-picture : http://i.imgur.com/TAGl6va.png
+	*Prestige7
+	-"<b>X1.24 everything power and X1.5 spring production.</b><br>Not to be confused with a boardsword, which is a toy for little kids."
+	-multiplies efficiency of Button by 124%
+	-multiplies efficiency of Build1 by 124%
+	-multiplies efficiency of Build2 by 124%
+	-multiplies efficiency of Build3 by 124%
+	-multiplies efficiency of Build4 by 124%
+	-multiplies efficiency of Build5 by 124%
+	-multiplies efficiency of Build6 by 124%
+	-multiplies efficiency of Build7 by 124%
+	-multiplies efficiency of Build8 by 124%
+	-multiplies efficiency of Build9 by 124%
+	-multiplies efficiency of Build10 by 124%
+	-multiplies efficiency of BuildSpring by 150%
+	-costs 729 Springs
+	-unlocks at 15625 EnergyCell
+	-named Broadsword
+	-picture : http://i.imgur.com/Ld9G8XQ.png
+	*Prestige8
+	-"<b>X1.24 everything power and X1.5 spring production.</b><br>Probably the most kickass sword ever created."
+	-multiplies efficiency of Button by 124%
+	-multiplies efficiency of Build1 by 124%
+	-multiplies efficiency of Build2 by 124%
+	-multiplies efficiency of Build3 by 124%
+	-multiplies efficiency of Build4 by 124%
+	-multiplies efficiency of Build5 by 124%
+	-multiplies efficiency of Build6 by 124%
+	-multiplies efficiency of Build7 by 124%
+	-multiplies efficiency of Build8 by 124%
+	-multiplies efficiency of Build9 by 124%
+	-multiplies efficiency of Build10 by 124%
+	-multiplies efficiency of BuildSpring by 150%
+	-costs 2187 Springs
+	-unlocks at 78125 EnergyCell
+	-named Katana
+	-picture : http://i.imgur.com/DIcLuVu.png
+	*Prestige9
+	-"<b>X1.24 everything power and X1.5 spring production.</b><br>99% of the people who died because of this didn't know which side the plasma comes out."
+	-multiplies efficiency of Button by 124%
+	-multiplies efficiency of Build1 by 124%
+	-multiplies efficiency of Build2 by 124%
+	-multiplies efficiency of Build3 by 124%
+	-multiplies efficiency of Build4 by 124%
+	-multiplies efficiency of Build5 by 124%
+	-multiplies efficiency of Build6 by 124%
+	-multiplies efficiency of Build7 by 124%
+	-multiplies efficiency of Build8 by 124%
+	-multiplies efficiency of Build9 by 124%
+	-multiplies efficiency of Build10 by 124%
+	-multiplies efficiency of BuildSpring by 150%
+	-costs 6561 Springs
+	-unlocks at 390625 EnergyCell
+	-named Lightsaber
+	-picture : http://i.imgur.com/bdStopE.png
+	*Prestige10
+	-"<b>X1.26 everything power and X1.5 spring production.</b><br>I'll let you guess how to wield this thing."
+	-multiplies efficiency of Button by 126%
+	-multiplies efficiency of Build1 by 126%
+	-multiplies efficiency of Build2 by 126%
+	-multiplies efficiency of Build3 by 126%
+	-multiplies efficiency of Build4 by 126%
+	-multiplies efficiency of Build5 by 126%
+	-multiplies efficiency of Build6 by 126%
+	-multiplies efficiency of Build7 by 126%
+	-multiplies efficiency of Build8 by 126%
+	-multiplies efficiency of Build9 by 126%
+	-multiplies efficiency of Build10 by 126%
+	-multiplies efficiency of BuildSpring by 150%
+	-costs 19683 Springs
+	-unlocks at 1953125 EnergyCell
+	-named Buster Sword
+	-picture : http://i.imgur.com/biBlBj4.png
+	*Presitge11
+	-"<b>X1.26 everything power and X1.5 spring production.</b><br>It's still a katana, but because it has a name it's ranked higher."
+	-multiplies efficiency of Button by 126%
+	-multiplies efficiency of Build1 by 126%
+	-multiplies efficiency of Build2 by 126%
+	-multiplies efficiency of Build3 by 126%
+	-multiplies efficiency of Build4 by 126%
+	-multiplies efficiency of Build5 by 126%
+	-multiplies efficiency of Build6 by 126%
+	-multiplies efficiency of Build7 by 126%
+	-multiplies efficiency of Build8 by 126%
+	-multiplies efficiency of Build9 by 126%
+	-multiplies efficiency of Build10 by 126%
+	-multiplies efficiency of BuildSpring by 150%
+	-costs 59049 Springs
+	-unlocks at 9765625 EnergyCell
+	-named Masamune
+	-picture : http://i.imgur.com/4XBSjgQ.png
+	*Prestige12
+	-"<b>X1.26 everything power and X1.5 spring production.</b><br>"Light and dark. Black and white. Life and death. The Binary Sword holds no middle ground as it turns your opponents OFF.""
+	-multiplies efficiency of Button by 126%
+	-multiplies efficiency of Build1 by 126%
+	-multiplies efficiency of Build2 by 126%
+	-multiplies efficiency of Build3 by 126%
+	-multiplies efficiency of Build4 by 126%
+	-multiplies efficiency of Build5 by 126%
+	-multiplies efficiency of Build6 by 126%
+	-multiplies efficiency of Build7 by 126%
+	-multiplies efficiency of Build8 by 126%
+	-multiplies efficiency of Build9 by 126%
+	-multiplies efficiency of Build10 by 126%
+	-multiplies efficiency of BuildSpring by 150%
+	-costs 177147 Springs
+	-unlocks at 48828125 EnergyCell
+	-named Binary Sword
+	-picture : http://i.imgur.com/HTgFlCt.png
+	*Prestige13
+	-"<b>X1.28 everything power and X1.5 spring production.</b><br>We accidentaly ripped the rock off while trying to take it out.<br>It's not like you were actually using it anyway."
+	-multiplies efficiency of Button by 128%
+	-multiplies efficiency of Build1 by 128%
+	-multiplies efficiency of Build2 by 128%
+	-multiplies efficiency of Build3 by 128%
+	-multiplies efficiency of Build4 by 128%
+	-multiplies efficiency of Build5 by 128%
+	-multiplies efficiency of Build6 by 128%
+	-multiplies efficiency of Build7 by 128%
+	-multiplies efficiency of Build8 by 128%
+	-multiplies efficiency of Build9 by 128%
+	-multiplies efficiency of Build10 by 128%
+	-multiplies efficiency of BuildSpring by 150%
+	-costs 531441 Springs
+	-unlocks at 244140625 EnergyCell
+	-named Excalibur
+	-picture : http://i.imgur.com/32K6SKr.png
+	*Prestige14
+	-"<b>X1.28 everything power and X1.5 spring production.</b><br>You probably should save a few bombs/extra lives, just in case."
+	-multiplies efficiency of Button by 128%
+	-multiplies efficiency of Build1 by 128%
+	-multiplies efficiency of Build2 by 128%
+	-multiplies efficiency of Build3 by 128%
+	-multiplies efficiency of Build4 by 128%
+	-multiplies efficiency of Build5 by 128%
+	-multiplies efficiency of Build6 by 128%
+	-multiplies efficiency of Build7 by 128%
+	-multiplies efficiency of Build8 by 128%
+	-multiplies efficiency of Build9 by 128%
+	-multiplies efficiency of Build10 by 128%
+	-multiplies efficiency of BuildSpring by 150%
+	-costs 1594323 Springs
+	-unlocks at 1220703125 EnergyCell
+	-named Lævateinn
+	-picture : http://i.imgur.com/miK2FYV.png
+	*Prestige15
+	-"<b>X1.28 everything power and X1.5 spring production.</b><br>THIS THING IS SO F*CKING BADASS IT HAS TO BE WRITTEN IN ALL CAPS!"
+	-multiplies efficiency of Button by 128%
+	-multiplies efficiency of Build1 by 128%
+	-multiplies efficiency of Build2 by 128%
+	-multiplies efficiency of Build3 by 128%
+	-multiplies efficiency of Build4 by 128%
+	-multiplies efficiency of Build5 by 128%
+	-multiplies efficiency of Build6 by 128%
+	-multiplies efficiency of Build7 by 128%
+	-multiplies efficiency of Build8 by 128%
+	-multiplies efficiency of Build9 by 128%
+	-multiplies efficiency of Build10 by 128%
+	-multiplies efficiency of BuildSpring by 150%
+	-costs 4782969 Springs
+	-unlocks at 6103515625 EnergyCell
+	-named MOTHERF*CKING KATANA CHAINSAW
+	-picture : http://i.imgur.com/p38ZjbG.png
+	*Prestige16
+	-"<b>X1.3 everything power and X1.5 spring production.</b><br>Strangely, titanium just goes "na"."
+	-multiplies efficiency of Button by 130%
+	-multiplies efficiency of Build1 by 130%
+	-multiplies efficiency of Build2 by 130%
+	-multiplies efficiency of Build3 by 130%
+	-multiplies efficiency of Build4 by 130%
+	-multiplies efficiency of Build5 by 130%
+	-multiplies efficiency of Build6 by 130%
+	-multiplies efficiency of Build7 by 130%
+	-multiplies efficiency of Build8 by 130%
+	-multiplies efficiency of Build9 by 130%
+	-multiplies efficiency of Build10 by 130%
+	-multiplies efficiency of BuildSpring by 150%
+	-costs 14348907 Springs
+	-unlocks at 30517578125 EnergyCell
+	-named Atom Splitter
+	-picture : http://i.imgur.com/17SoScy.png
+	*Prestige17
+	-"<b>X1.3 everything power and X1.5 spring production.</b><br>Don't ask why Hexagons get more power from this."
+	-multiplies efficiency of Button by 130%
+	-multiplies efficiency of Build1 by 130%
+	-multiplies efficiency of Build2 by 130%
+	-multiplies efficiency of Build3 by 130%
+	-multiplies efficiency of Build4 by 130%
+	-multiplies efficiency of Build5 by 130%
+	-multiplies efficiency of Build6 by 130%
+	-multiplies efficiency of Build7 by 130%
+	-multiplies efficiency of Build8 by 130%
+	-multiplies efficiency of Build9 by 130%
+	-multiplies efficiency of Build10 by 130%
+	-multiplies efficiency of BuildSpring by 150%
+	-costs 43046721 Springs
+	-unlocks at 152587890625 EnergyCell
+	-named Hexagon Obliterator
+	-picture : http://i.imgur.com/zH3rXqS.png
+	*Prestige18
+	-"<b>X1.3 everything power and X1.5 spring production.</b><br>As its name says, it's 1000000 times more powerful than a regular sword."
+	-multiplies efficiency of Button by 130%
+	-multiplies efficiency of Build1 by 130%
+	-multiplies efficiency of Build2 by 130%
+	-multiplies efficiency of Build3 by 130%
+	-multiplies efficiency of Build4 by 130%
+	-multiplies efficiency of Build5 by 130%
+	-multiplies efficiency of Build6 by 130%
+	-multiplies efficiency of Build7 by 130%
+	-multiplies efficiency of Build8 by 130%
+	-multiplies efficiency of Build9 by 130%
+	-multiplies efficiency of Build10 by 130%
+	-multiplies efficiency of BuildSpring by 150%
+	-costs 129140163 Springs
+	-unlocks at 762939453125 EnergyCell
+	-named One In A Million
+	-picture : http://i.imgur.com/LyX1yOJ.png
+	*Prestige19
+	-"<b>X1.31 everything power and X1.5 spring production.</b><br>A 4D-printer sword.<br>Don't ask how it exists."
+	-multiplies efficiency of Button by 131%
+	-multiplies efficiency of Build1 by 131%
+	-multiplies efficiency of Build2 by 131%
+	-multiplies efficiency of Build3 by 131%
+	-multiplies efficiency of Build4 by 131%
+	-multiplies efficiency of Build5 by 131%
+	-multiplies efficiency of Build6 by 131%
+	-multiplies efficiency of Build7 by 131%
+	-multiplies efficiency of Build8 by 131%
+	-multiplies efficiency of Build9 by 131%
+	-multiplies efficiency of Build10 by 131%
+	-multiplies efficiency of BuildSpring by 150%
+	-costs 387420489 Springs
+	-unlocks at 3814697265625 EnergyCell
+	-named Hypersword
+	-picture : http://i.imgur.com/DtbSrkP.png
+	*Prestige20
+	-"<b>X1.32 everything power and X1.5 spring production.</b><br>Allows you to remove parts of the reality like you cut an image with scissors."
+	-multiplies efficiency of Button by 132%
+	-multiplies efficiency of Build1 by 132%
+	-multiplies efficiency of Build2 by 132%
+	-multiplies efficiency of Build3 by 132%
+	-multiplies efficiency of Build4 by 132%
+	-multiplies efficiency of Build5 by 132%
+	-multiplies efficiency of Build6 by 132%
+	-multiplies efficiency of Build7 by 132%
+	-multiplies efficiency of Build8 by 132%
+	-multiplies efficiency of Build9 by 132%
+	-multiplies efficiency of Build10 by 132%
+	-multiplies efficiency of BuildSpring by 150%
+	-costs 1162261467 Springs
+	-unlocks at 19073486328125 EnergyCell
+	-named Reality Breacher
+	-picture : http://i.imgur.com/dvtpAuF.png
+	*Prestige21
+	-"<b>X1.33 everything power and X1.5 spring production.</b><br>Hah!<br>You better have BURN HEAL!"
+	-multiplies efficiency of Button by 133%
+	-multiplies efficiency of Build1 by 133%
+	-multiplies efficiency of Build2 by 133%
+	-multiplies efficiency of Build3 by 133%
+	-multiplies efficiency of Build4 by 133%
+	-multiplies efficiency of Build5 by 133%
+	-multiplies efficiency of Build6 by 133%
+	-multiplies efficiency of Build7 by 133%
+	-multiplies efficiency of Build8 by 133%
+	-multiplies efficiency of Build9 by 133%
+	-multiplies efficiency of Build10 by 133%
+	-multiplies efficiency of BuildSpring by 150%
+	-costs 3486784401 Springs
+	-unlocks at 95367431640625 EnergyCell
+	-named Infernoplex
+	-picture : http://i.imgur.com/Y0KWzdK.png
+	*Prestige22
+	-"<b>X1.34 everything power and X1.5 spring production.</b><br>Responsible of the death of thousands of cubes each minute."
+	-multiplies efficiency of Button by 134%
+	-multiplies efficiency of Build1 by 134%
+	-multiplies efficiency of Build2 by 134%
+	-multiplies efficiency of Build3 by 134%
+	-multiplies efficiency of Build4 by 134%
+	-multiplies efficiency of Build5 by 134%
+	-multiplies efficiency of Build6 by 134%
+	-multiplies efficiency of Build7 by 134%
+	-multiplies efficiency of Build8 by 134%
+	-multiplies efficiency of Build9 by 134%
+	-multiplies efficiency of Build10 by 134%
+	-multiplies efficiency of BuildSpring by 150%
+	-costs 10460353203 Springs
+	-unlocks at 476837158203125 EnergyCell
+	-named Cataclysm
+	-picture : http://i.imgur.com/EPzvv62.png
+	*Prestige23
+	-"<b>X1.35 everything power and X1.5 spring production.</b><br>A sword stronger than itself."
+	-multiplies efficiency of Button by 135%
+	-multiplies efficiency of Build1 by 135%
+	-multiplies efficiency of Build2 by 135%
+	-multiplies efficiency of Build3 by 135%
+	-multiplies efficiency of Build4 by 135%
+	-multiplies efficiency of Build5 by 135%
+	-multiplies efficiency of Build6 by 135%
+	-multiplies efficiency of Build7 by 135%
+	-multiplies efficiency of Build8 by 135%
+	-multiplies efficiency of Build9 by 135%
+	-multiplies efficiency of Build10 by 135%
+	-multiplies efficiency of BuildSpring by 150%
+	-costs 31381059609 Springs
+	-unlocks at 2384185791015625 EnergyCell
+	-named Infinity
+	-picture : http://i.imgur.com/rit8ozz.png
+	*Prestige24
+	-"<b>X1.4 everything power and X1.5 spring production.</b><br>A demonic sword made of frozen carbon X which requires you to slow time down 10 times in order to handle it (except for 3 people in this world(alternate realities not included))."
+	-multiplies efficiency of Button by 140%
+	-multiplies efficiency of Build1 by 140%
+	-multiplies efficiency of Build2 by 140%
+	-multiplies efficiency of Build3 by 140%
+	-multiplies efficiency of Build4 by 140%
+	-multiplies efficiency of Build5 by 140%
+	-multiplies efficiency of Build6 by 140%
+	-multiplies efficiency of Build7 by 140%
+	-multiplies efficiency of Build8 by 140%
+	-multiplies efficiency of Build9 by 140%
+	-multiplies efficiency of Build10 by 140%
+	-multiplies efficiency of BuildSpring by 150%
+	-costs 94143178827 Springs
+	-unlocks at 11920928955078125 EnergyCell
+	-named ICD-H4X
+	-picture : http://i.imgur.com/1VPWiOO.png
+	*Prestige25
+	-"<b>X1.5 everything power and spring production.</b><br>Its power level is over [large number]."
+	-multiplies efficiency of Button by 150%
+	-multiplies efficiency of Build1 by 150%
+	-multiplies efficiency of Build2 by 150%
+	-multiplies efficiency of Build3 by 150%
+	-multiplies efficiency of Build4 by 150%
+	-multiplies efficiency of Build5 by 150%
+	-multiplies efficiency of Build6 by 150%
+	-multiplies efficiency of Build7 by 150%
+	-multiplies efficiency of Build8 by 150%
+	-multiplies efficiency of Build9 by 150%
+	-multiplies efficiency of Build10 by 150%
+	-multiplies efficiency of BuildSpring by 150%
+	-costs 282429536481 Springs
+	-unlocks at 59604644775390625 EnergyCell
+	-named [creative sword name]
+	-picture : http://i.imgur.com/zW9P55b.png
+
+	*PrestigeSoul0a
+	-"<b>+2% button power per sock.</b><br>x1.26 better drawings on button"
+	-multiplies efficiency of Button by 2% per Sock
+	-unlocks at 1 Sock
+	-costs 100000 SoulFragment
+	-named Ascended Button
+	-picture : http://i.imgur.com/HlZzV8c.png
+	*PrestigeSoul1a
+	-"<b>+2% autoclicker power per sock.</b><br>+38% clicking speed"
+	-multiplies efficiency of Build1 by 2% per Sock
+	-unlocks at 1 Sock
+	-costs 100000 SoulFragment
+	-named Ascended Autoclickers
+	-picture : http://i.imgur.com/5zXYsfn.png
+	*PrestigeSoul2a
+	-"<b>+2% printer power per sock.</b><br>-0.3sec printing time"
+	-multiplies efficiency of Build2 by 2% per Sock
+	-unlocks at 1 Sock
+	-costs 100000 SoulFragment
+	-named Ascended Printers
+	-picture : http://i.imgur.com/lyYizov.png
+	*PrestigeSoul3a
+	-"<b>+2% pet power per sock.</b><br>+5 licks"
+	-multiplies efficiency of Build3 by 2% per Sock
+	-unlocks at 1 Sock
+	-costs 100000 SoulFragment
+	-named Ascended Pets
+	-picture : http://i.imgur.com/D3Q9pjX.png
+	*PrestigeSoul4a
+	-"<b>+2% computer power per sock.</b><br>x100110 binary jokes"
+	-multiplies efficiency of Build4 by 2% per Sock
+	-unlocks at 1 Sock
+	-costs 100000 SoulFragment
+	-named Ascended Computers
+	-picture : http://i.imgur.com/HxmkssT.png
+	*PrestigeSoul5a
+	-"<b>+2% gun power per sock.</b><br>+12.7mm caliber increase"
+	-multiplies efficiency of Build5 by 2% per Sock
+	-unlocks at 1 Sock
+	-costs 100000 SoulFragment
+	-named Ascended Guns
+	-picture : http://i.imgur.com/0A3oy5V.png
+	*PrestigeSoul6a
+	-"<b>+2% music power per sock.</b><br>-64% ear rape"
+	-multiplies efficiency of Build6 by 2% per Sock
+	-unlocks at 1 Sock
+	-costs 100000 SoulFragment
+	-named Ascended Musics
+	-picture : http://i.imgur.com/R1kNc1S.png
+	*PrestigeSoul7a
+	-"<b>+2% achievement generator power per sock.</b><br>/2 achievement requirements"
+	-multiplies efficiency of Build7 by 2% per Sock
+	-unlocks at 1 Sock
+	-costs 100000 SoulFragment
+	-named Ascended Generators
+	-picture : http://i.imgur.com/QyFdBUl.png
+	*PrestigeSoul8a
+	-"<b>+2% awesome star power per sock.</b><br>x0.26 chances of epilepsy"
+	-multiplies efficiency of Build8 by 2% per Sock
+	-unlocks at 1 Sock
+	-costs 100000 SoulFragment
+	-named Ascended Stars
+	-picture : http://i.imgur.com/gJKDdNN.png
+	*PrestigeSoul9a
+	-"<b>+2% Lenny power per sock.</b><br>x1 power ( ͡° ͜ʖ ͡°)"
+	-multiplies efficiency of Build9 by 2% per Sock
+	-unlocks at 1 Sock
+	-costs 100000 SoulFragment
+	-named Ascended Lenny
+	-picture : http://i.imgur.com/7QMgXRE.png
+	*PrestigeSoul10a
+	-"<b>+2% Hexagon power per sock.</b><br>+0 sides"
+	-multiplies efficiency of Build10 by 2% per Sock
+	-unlocks at 1 Sock
+	-costs 100000 SoulFragment
+	-named Ascended Hexagons
+	-picture : http://i.imgur.com/8X2yT6E.png
+Achievements :
+	*AchBuild1a
+	-"<i>Unlocked at 1 autoclicker.</i>"
+	-unlocks at 1 Build1
+	-named Much Idle
+	*AchBuild1b
+	-"<i>Unlocked at 15 autoclickers.</i>"
+	-unlocks at 15 Build1
+	-named Nice Mice
+	*AchBuild1c
+	-"<i>Unlocked at 40 autoclickers.</i><br>Make that game.<br>NOW!!"
+	-unlocks at 40 Build1
+	-named Forty Clicker
+	*AchBuild1d
+	-"<i>Unlocked at 70 autoclickers.</i><br>I already made too much jokes about stealing stuff from CW, but they're in games I never finished and you probably never played so I keep doing it."
+	-unlocks at 70 Build1
+	-named Auto-Wasting
+	*AchBuild1e
+	-"<i>Unlocked at 100 autoclickers.</i>"
+	-unlocks at 100 Build1
+	-named First 100
+	*AchBuild1f
+	-"<i>Unlocked at 140 autoclickers.</i>"
+	-unlocks at 140 Build1
+	-named Insane Clicking
+	*AchBuild1g
+	-"<i>Unlocked at 190 autoclickers.</i>"
+	-unlocks at 190 Build1
+	-named Frantic Clicking
+	*AchBuild1h
+	-"<i>Unlocked at 250 autoclickers.</i><br>Normally you should be way beyond that, but I won't criticize your play style."
+	-unlocks at 250 Build1
+	-named Maximum Speed
+	*AchBuild1i
+	-"<i>Unlocked at 320 autoclickers.</i>"
+	-unlocks at 320 Build1
+	-named Gatclicking Gun
+	*AchBuild1j
+	-"<i>Unlocked at 400 autoclickers.</i><br>I gave up >.<"
+	-unlocks at 400 Build1
+	-named buton raep!!!!!!1!!111!1!!
+	*AchBuild1k
+	-"<i>Unlocked at 490 autoclickers.</i>"
+	-unlocks at 490 Build1
+	-named Gotta Click Fast
+
+	*AchBuild2a
+	-"<i>Unlocked at 1 printer.</i>"
+	-unlocks at 1 Build2
+	-named This Is Illegal You Know
+	*AchBuild2b
+	-"<i>Unlocked at 15 printers.</i>"
+	-unlocks at 15 Build2
+	-named Pretty Printing
+	*AchBuild2c
+	-"<i>Unlocked at 40 printers.</i>Wait a sec..."
+	-unlocks at 40 Build2
+	-named Paid To Press A Button
+	*AchBuild2d
+	-"<i>Unlocked at 70 printers.</i>"
+	-unlocks at 70 Build2
+	-named Copy Pasting
+	*AchBuild2e
+	-"<i>Unlocked at 100 printers.</i>"
+	-unlocks at 100 Build2
+	-named Ink Inc.
+	*AchBuild2f
+	-"<i>Unlocked at 140 printers.</i>"
+	-unlocks at 140 Build2
+	-named Mass Inflation
+	*AchBuild2g
+	-"<i>Unlocked at 190 printers.</i>"
+	-unlocks at 190 Build2
+	-named Living The Dream
+	*AchBuild2h
+	-"<i>Unlocked at 250 printers.</i>"
+	-unlocks at 250 Build2
+	-named Capitalistic
+	*AchBuild2i
+	-"<i>Unlocked at 320 printers.</i><br>And paper and ink and electricity and printers."
+	-unlocks at 320 Build2
+	-named Money Is Time
+	*AchBuild2j
+	-"<i>Unlocked at 400 printers.</i>"
+	-unlocks at 400 Build2
+	-named Fresh Prints Of Bel Air
+
+	*AchBuild3a
+	-"<i>Unlocked at 1 pet.</i>"
+	-unlocks at 1 Build3
+	-named Meow
+	*AchBuild3b
+	-"<i>Unlocked at 15 pets.</i>"
+	-unlocks at 15 Build3
+	-named Not So Lonely Anymore
+	*AchBuild3c
+	-"<i>Unlocked at 40 pets.</i>"
+	-unlocks at 40 Build3
+	-named Man's Best Friend
+	*AchBuild3d
+	-"<i>Unlocked at 70 pets.</i><br>Purr purr purr."
+	-unlocks at 70 Build3
+	-named Little Ball Of Fur
+	*AchBuild3e
+	-"<i>Unlocked at 100 pets.</i><br>I wasn't going to change my achievement unlocking pattern just to get a reference right."
+	-unlocks at 100 Build3
+	-named 100 Dalmatians
+	*AchBuild3f
+	-"<i>Unlocked at 140 pets.</i>"
+	-unlocks at 140 Build3
+	-named Cuteness Overload
+	*AchBuild3g
+	-"<i>Unlocked at 190 pets.</i>"
+	-unlocks at 190 Build3
+	-named My Pet Protector
+	*AchBuild3h
+	-"<i>Unlocked at 250 pets.</i>"
+	-unlocks at 250 Build3
+	-named Animal Shelter
+	*AchBuild3i
+	-"<i>Unlocked at 320 pets.</i>"
+	-unlocks at 320 Build3
+	-named Animality
+	*AchBuild3j
+	-"<i>Unlocked at 400 pets.</i>"
+	-unlocks at 400 Build3
+	-named Noah's Ark
+
+	*AchBuild4a
+	-"<i>Unlocked at 1 computer.</i>"
+	-unlocks at 1 Build4
+	-named c0mpu73r
+	*AchBuild4b
+	-"<i>Unlocked at 15 computers.</i>"
+	-unlocks at 15 Build4
+	-named LAN Party
+	*AchBuild4c
+	-"<i>Unlocked at 40 computers.</i><br>Do it and get 1000 points c:"
+	-unlocks at 40 Build4
+	-named Alt+F4
+	*AchBuild4d
+	-"<i>Unlocked at 70 computers.</i>"
+	-unlocks at 70 Build4
+	-named [adjective] Computer
+	*AchBuild4e
+	-"<i>Unlocked at 100 computers.</i>"
+	-unlocks at 100 Build4
+	-named Steam Machine
+	*AchBuild4f
+	-"<i>Unlocked at 140 computers.</i><br>File size is waaaaaaay bigger than this game's."
+	-unlocks at 140 Build4
+	-named reasonswhycomputersaresuper.txt
+	*AchBuild4g
+	-"<i>Unlocked at 190 computers.</i><br>Beautiful Screen of Doritos."
+	-unlocks at 190 Build4
+	-named BSoD
+	*AchBuild4h
+	-"<i>Unlocked at 250 computers.</i>"
+	-unlocks at 250 Build4
+	-named Never Ending Network
+	*AchBuild4i
+	-"<i>Unlocked at 320 computers.</i>"
+	-unlocks at 320 Build4
+	-named Master Programmer
+
+	*AchBuild5a
+	-"<i>Unlocked at 1 gun.</i>"
+	-unlocks at 1 Build5
+	-named Pew
+	*AchBuild5b
+	-"<i>Unlocked at 15 guns.</i>"
+	-unlocks at 15 Build5
+	-named Bang
+	*AchBuild5c
+	-"<i>Unlocked at 40 guns.</i><br>Wait, it feels familiar..."
+	-unlocks at 40 Build5
+	-named *gunshot*
+	*AchBuild5d
+	-"<i>Unlocked at 70 guns.</i>"
+	-unlocks at 70 Build5
+	-named Armed To The Teeth
+	*AchBuild5e
+	-"<i>Unlocked at 100 guns.</i>"
+	-unlocks at 100 Build5
+	-named Spray And Pray
+	*AchBuild5f
+	-"<i>Unlocked at 140 guns.</i>"
+	-unlocks at 140 Build5
+	-named Gun Nut
+	*AchBuild5g
+	-"<i>Unlocked at 190 guns.</i>"
+	-unlocks at 190 Build5
+	-named Guns, Lots Of Guns...
+	*AchBuild5h
+	-"<i>Unlocked at 250 guns.</i>"
+	-unlocks at 250 Build5
+	-named Pro Pipe Pro
+	*AchBuild5i
+	-"<i>Unlocked at 320 guns.</i>"
+	-unlocks at 320 Build5
+	-named Kiss My Arsenal
+
+	*AchBuild6a
+	-"<i>Unlocked at 1 music.</i>"
+	-unlocks at 1 Build6
+	-named Stereo Madness
+	*AchBuild6b
+	-"<i>Unlocked at 15 musics.</i>"
+	-unlocks at 15 Build6
+	-named Freedom Of Trance
+	*AchBuild6c
+	-"<i>Unlocked at 40 musics.</i>"
+	-unlocks at 40 Build6
+	-named Guitar vs Piano
+	*AchBuild6d
+	-"<i>Unlocked at 70 musics.</i>"
+	-unlocks at 70 Build6
+	-named Twilight Techno
+	*AchBuild6e
+	-"<i>Unlocked at 100 musics.</i>"
+	-unlocks at 100 Build6
+	-named Speed Metal Messiah
+	*AchBuild6f
+	-"<i>Unlocked at 140 musics.</i>"
+	-unlocks at 140 Build6
+	-named Club Step
+	*AchBuild6g
+	-"<i>Unlocked at 190 musics.</i>"
+	-unlocks at 190 Build6
+	-named Sound Of Infinity
+	*AchBuild6h
+	-"<i>Unlocked at 250 musics.</i>"
+	-unlocks at 250 Build6
+	-named Orchestral Angels
+
+	*AchBuild7a
+	-"<i>Unlocked at 1 achievement generator.</i>"
+	-unlocks at 1 Build7
+	-named Achievement Unlocked
+	*AchBuild7b
+	-"<i>Unlocked at 15 achievement generators.</i>"
+	-unlocks at 15 Build7
+	-named Can't Get More Meta Than This
+	*AchBuild7c
+	-"<i>Unlocked at 40 achievement generators.</i>"
+	-unlocks at 40 Build7
+	-named Achievement Collector
+	*AchBuild7d
+	-"<i>Unlocked at 70 achievement generators.</i>"
+	-unlocks at 70 Build7
+	-named Gotta Unlock Them All
+	*AchBuild7e
+	-"<i>Unlocked at 100 achievement generators.</i>"
+	-unlocks at 100 Build7
+	-named Another Another Achievement
+	*AchBuild7f
+	-"<i>Unlocked at 140 achievement generators.</i><br>Also known in the retarded world as "OCD"."
+	-unlocks at 140 Build7
+	-named Completionist Complex
+	*AchBuild7g
+	-"<i>Unlocked at 190 achievement generators.</i>"
+	-unlocks at 190 Build7
+	-named Never Enough
+	*AchBuild7h
+	-"<i>Unlocked at 250 achievement generators.</i>"
+	-unlocks at 250 Build7
+	-named Unsatiable Need
+
+	*AchBuild8a
+	-"<i>Unlocked at 1 awesome star.</i>"
+	-unlocks at 1 Build8
+	-named Astronomer
+	*AchBuild8b
+	-"<i>Unlocked at 15 awesome stars.</i>"
+	-unlocks at 15 Build8
+	-named Oh, Shiny!
+	*AchBuild8c
+	-"<i>Unlocked at 40 awesome stars.</i>"
+	-unlocks at 40 Build8
+	-named Rising Star
+	*AchBuild8d
+	-"<i>Unlocked at 70 awesome stars.</i>"
+	-unlocks at 70 Build8
+	-named Epic Master Collector
+	*AchBuild8e
+	-"<i>Unlocked at 100 awesome stars.</i><br>I wanted to put "Master Spark", but I realized the only relation with stars is the character who uses it and that about 88% of DashNet forumers wouldn't get the reference right."
+	-unlocks at 100 Build8
+	-named Stardust Reverie
+	*AchBuild8f
+	-"<i>Unlocked at 140 awesome stars.</i>"
+	-unlocks at 140 Build8
+	-named Hubble Hobble
+	*AchBuild8g
+	-"<i>Unlocked at 190 awesome stars.</i>"
+	-unlocks at 190 Build8
+	-named Wish Upon A Star
+
+	*AchBuild9a
+	-"<i>Unlocked at 1 Lenny.</i><br>( ͡° ͜ʖ ͡°)"
+	-unlocks at 1 Build9
+	-named Look At Dat Booty
+	*AchBuild9b
+	-"<i>Unlocked at 15 Lenny.</i><br>( ͡° ͜ʖ ͡°)"
+	-unlocks at 15 Build9
+	-named Show Me The Booty
+	*AchBuild9c
+	-"<i>Unlocked at 40 Lenny.</i><br>( ͡° ͜ʖ ͡°)"
+	-unlocks at 40 Build9
+	-named Gimme The Booty
+	*AchBuild9d
+	-"<i>Unlocked at 70 Lenny.</i><br>( ͡° ͜ʖ ͡°)"
+	-unlocks at 70 Build9
+	-named I Want The Booty
+	*AchBuild9e
+	-"<i>Unlocked at 100 Lenny.</i><br>( ͡° ͜ʖ ͡°)"
+	-unlocks at 100 Build9
+	-named Back Up The Booty
+	*AchBuild9f
+	-"<i>Unlocked at 140 Lenny.</i><br>( ͡° ͜ʖ ͡°)"
+	-unlocks at 140 Build9
+	-named I Need The Booty
+
+	*AchBuild10a
+	-"<i>Unlocked at 1 Hexagon.</i>"
+	-unlocks at 1 Build10
+	-named so much h8
+	*AchBuild10b
+	-"<i>Unlocked at 15 Hexagons.</i>"
+	-unlocks at 15 Build10
+	-named Six-Sided Sadism
+	*AchBuild10c
+	-"<i>Unlocked at 40 Hexagons.</i>"
+	-unlocks at 40 Build10
+	-named Hexagonest
+	*AchBuild10d
+	-"<i>Unlocked at 70 Hexagons.</i>"
+	-unlocks at 70 Build10
+	-named Hyperdrive
+	*AchBuild10e
+	-"<i>Unlocked at 100 Hexagons.</i>"
+	-unlocks at 100 Build10
+	-named You Can't Believe How Hard It Is To Come Up With Flavor About Geometrical Figures

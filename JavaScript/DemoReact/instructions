@@ -1,0 +1,32 @@
+npm create vite@latest
+npm install -D tailwindcss postcss autoprefixer
+npm i -g postcss-cli
+npx tailwindcss init -p
+
+delete app.css
+
+app.jsx
+    comment imports
+    html in return
+
+main.jsx
+    remove content of render except app
+
+tailwind.config.js
+content 
+    "./index.html",
+    "./src/**/*.{html,js,ts,jsx,tsx}",
+plugins
+    require("@tailwindcss/forms")
+
+src/index.css
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+npx tailwindcss -i ./src/index.css -o ./src/output.css --watch
+
+index.html
+     <link href="./output.css" rel="stylesheet">
+
+npm i @tailwindcss/forms

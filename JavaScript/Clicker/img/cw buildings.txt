@@ -36,12 +36,22 @@ unicorn								|	rainbow			|	random chance per second
 prism								|	rainbow			|	constant production, drains power
 
 point printer						|	point			|	produces on interval
-point miner							|	point			|	pay to open mine, then constant production
+point miner							|	point			|	production penalty, then point boost
 point synthetiser					|	point			|	offline production
 
 dynamo								|	energy			|	click to crank
 generator							|	energy			|	constant production, needs refueling
 extractor							|	energy			|	click to harvest when done
+
+giant colored springs				|	ascension		|	production over time
+soul crystals						|	ascension		|	based on cookies wasted
+rainbow power cells					|	ascension		|	based on rainbow coins and energy produced
+awesome stars						|	ascension		|	based on buildings built
+
+
+1 1 2 3 5 8 13 21 34 55 89
+
+
 
 1
 5
@@ -119,11 +129,11 @@ ejection unit | cookie fuel | wormhole generator | solar pannels | plasma cannon
 racon astronaut
 
 warmech
-missile launchers | miniguns | shoulder cannon | tesla guns | coilguns | plasma throwers | grenade launchers | flamethrower | laser guns | megablade | chainsaw megablades | cerberus miniguns | flak cannon | heads-up display | jet boosters | antigrav engine | pneumatic punch | depleted uranium rounds | titanic frame | underbarrel weapons | intuitive controls
+missile launchers | miniguns | shoulder cannon | tesla guns | coilguns | plasma throwers | grenade launchers | flamethrower | laser guns | megablade | chainsaw megablades | cerberus miniguns | flak cannon | heads-up display | jet boosters | antigrav engine | pneumatic punch | depleted uranium rounds | titanic frame | underbarrel weapons | intuitive controls | energy shielding | energy blades | 
 cyber-racon
 
 cookievore
-gene splicing | regrowable teeth | regenerative tissue | toxin glands | cancer immunity | night-vision | titanium claws | full-spectrum vision | cyberisation | chromatic fur | acid blood | hypersonic scream | emergency crystalisation | grafting | 
+gene splicing | regrowable teeth | regenerative tissue | toxin glands | cancer immunity | night-vision | titanium claws | full-spectrum vision | cyberisation | chromatic fur | acid blood | hypersonic scream | emergency crystalisation | grafting | berserker gene | 
 racon monster
 
 cookie plague
@@ -131,7 +141,7 @@ symptom attenuation | hibernation | conditional lethality inhibitor | symbiotic 
 racon scientist
 
 summoning circle
-cookie sacrifices | egg_ | the titans | the light lord | the plagued | the leviathan | cultists | the starved | the dead | the barbaric | the fallen | the nephilim | forums | the hellhounds
+cookie sacrifices | egg_ | the titans | the light lord | the plagued | the leviathan | cultists | the starved | the dead | the barbaric | the fallen | the nephilim | forums | the hellhounds | the lord of the flies | the abominations | 
 racon cultist
 
 antimatter condenser
@@ -183,7 +193,7 @@ miniature improbability drive | universe desaturation | idle game devolution | a
 perfectly normal racon
 
 autoclicker
-reduced latency | custom code | lifetime license | pop-up blocker | download more ram | daily click limit bypass | sealed memory leaks | second cursor | 
+reduced latency | custom code | lifetime license | pop-up blocker | download more ram | daily click limit bypass | sealed memory leaks | second cursor | position lock | 
 racon cursor
 
 supercharger
@@ -194,23 +204,26 @@ charge amount : yellow | chartreuse | golden | peach | cream | lemon |
 charge speed : green | spring | lime | mint | aquamarine | emerald | evergreen | jade | turquoise
 boost amount : blue | cyan | azure | cerulean | cobalt | indigo | teal | navy
 boost decay : fuschia | violet | purple | rose | magenta | amethyst | aubergine | mauve | lavender | plum | 
-all : rainbow button | 
+all : rainbow button | signal lost | 
 racon button
 
 unicorn
-increased : happiness | colorfulness | sparkliness | forcefulness | shininess | fancyness | horniness | luckyness | charmingness | quickness | lumninousnesss | aromaticalness | cleanliness | sweetness | shimmeringness | cuteness | beautifulness | prettiness
+increased : happiness | colorfulness | sparkliness | forcefulness | shininess | fancyness | horniness | luckyness | charmingness | quickness | lumninousnesss | aromaticalness | cleanliness | sweetness | shimmeringness | cuteness | beautifulness | prettiness | gayness
 uniracon
 
 prism
-remove impurities | scratch-free materials | ultra-bright lightbulbs | fluorescent materials | 
+remove impurities | scratch-free materials | ultra-bright lightbulbs | fluorescent materials | skylight | 
 rainbow racon
 
 point printer
 modern printers | higher quality picture | space optimisation | ink subscription | paper subscription | printer subscription | fancier design | gold paper | paper printers | firmware update | improved hardware | negative currency | iridescent ink | ink inc. | automated printing | e-printing | 3d printing | 4d printing
+1 | 5 | 10 | 20 | 50 | 100 | 200 | 500 | 1000 | 10k | 100k | 1m
 dablon
 
 point miner
-ruby | emerald | sapphire | topaz | amethyst | quartz | diamond | onyx | moonstone | jade | opal | garnet | jet | pearl | tanzanite | aquamarine | amber | malachite | lapis lazuli | spinel | zircon | tiger's eye | black opal | red beryl | rose quartz | agate | jasper | tourmaline | 
+granite | andesite | obsidian | marble | limestone | sandstone | salt | clay | chalk | coal | mudstone | siltstone | slate | luxurite | basalt
+copper | silver | cobalt | gold | platinum | electrum | chrome | zinc | palladium | rhodium | iridium | adamantium | soleilium | tellurium | orichalcum | mithril | osmium | pyrite | wishalloy
+ruby | emerald | sapphire | topaz | amethyst | quartz | diamond | onyx | moonstone | jade | opal | garnet | jet | pearl | tanzanite | aquamarine | amber | malachite | lapis lazuli | spinel | zircon | tiger's eye | black opal | red beryl | rose quartz | agate | jasper | tourmaline | fire quartz | fire opal | citrine | smokey quartz | rose quartz | ametrine | bixbyite | kyanite | apatite
 racon miner
 
 point synthetiser
@@ -270,7 +283,7 @@ waster
 cookie waster | hired help | co-op wasting | better with friends | popular | send dudes | brothers in arms | one for all, all for one | wasting with purpose | maybe the real wasting was the friends we made along the way | 
 
 racon
-cookie eater | animal tamer | silly little creatures | trash party | weird dogs | dumpster divers | sewer dwellers
+cookie eater | animal tamer | silly little creatures | trash party | weird dogs | dumpster divers | sewer dwellers | furry friends | 
 
 crusher
 cookie crusher | biscuit basher | sugar smasher | chocolate chipper | breakfast breaker | snack snapper | wheat whacker | 
@@ -285,13 +298,13 @@ steam roller
 cookie flattener | powered by steam | rolling around very far from the speed of sound | steamroller coming through | unstoppable force | i love the smell of diesel in the morning
 
 weaponised drone
-cookie terminator | automation | father of machines | beep boop beep | cyber initiative | mechanical friends | judgment day | 
+cookie terminator | automation | father of machines | beep boop beep | cyber initiative | mechanical friends | judgement day | 
 
 explosives
-cookie exploder | go out with a bang | what makes me a good demoman? | bomberman | boom boom boom boom | shellshocked | 
+cookie exploder | go out with a bang | what makes me a good demoman? | bomberman | boom boom boom boom | shellshocked | big bang | 
 
 big ol' pit
-cookie dumper | voyage to the center of the earth | swiss cheese | it's hole! time! | diggy diggy | deep diving | elite deep diving | you dig | 
+cookie dumper | voyage to the center of the earth | swiss cheese | it's hole! time! | diggy diggy | deep diving | elite deep diving | you dig | lord of the deep | 
 
 stock exchange
 cookie trader | oh the economy | aaaand it's gone | distrust fund | i'm in debt and i smell like wet concrete | all risk and no reward | a lot of cash to spare | 
@@ -303,55 +316,55 @@ cookie wasting corp
 cookie waster(tm) | intern | part-time job | contractor | employee | employee of the month | employee of the year | team leader | assistant manager | assistant to the manager | manager | ceo | corporate overlord | president of earth
 
 propaganda campaign
-cookie demoniser | literally 1984 | you will waste the cookies and you will be happy | do it | i need you to waste cookies | big brother | 
+cookie demoniser | literally 1984 | you will waste the cookies and you will be happy | do it | i want you to waste cookies | big brother | i wake up -> there's another psyop
 
 rocket launch facility
 cookie launcher | reach for the stars | space race | rocket league | cosmic traveller | ludicrous speed | cookie space program | blasting off
 
 warmech
-cookie exterminator | the war is on | just like your chinese cartoons | size matters | heavy weapon | mechanical commando | cookie wasting warmachine
+cookie exterminator | the war is on | just like your chinese cartoons | size matters | heavy weapon | mechanical commando | cookie wasting warmachine | bringing the big guns | 
 
 cookievore
-cookie devourer | man-made horrors | it's alive! | mother nature would not approve | monster madness | what's that coming over the hill? | playing god | 
+cookie devourer | man-made horrors | it's alive! | mother nature weeps | monster madness | what's that coming over the hill? | playing god | 
 
 cookie plague
-cookie infector | biohazard | pandemic | epidemic | wicked sick | infectonator | greenland won't save you | 
+cookie infector | biohazard | pandemic | epidemic | wicked sick | infectonator | greenland won't save you | plague doctor | plague md | plague phd
 
 summoning circle
-cookie doomer | delightfully devilish | let's make a cult! | crudux cruo | pandemonium | waking the profane | this is it, the apocalypse | 
+cookie doomer | delightfully devilish | let's make a cult! | crudux cruo | pandemonium | waking the profane | this is it, the apocalypse | army of darkness | city of the damned | 
 
 antimatter condenser
-anticookie clicker | hard-reset | recipe for disaster | weird science | schrödinger's achievement | scientific mumbo jumbo | nothing matters | 
+anticookie maker | hard-reset | recipe for disaster | weird science | schrödinger's achievement | scientific mumbo jumbo | nothing matters | atom smasher | 
 
 dimensional gate
-cookie waster (from an alternate dimension) | now you're thinking | but first, we need to talk about parallel universe | 
+cookie waster (from an alternate dimension) | now you're thinking | but first, we need to talk about parallel universes | the same but different | mirror mirror | 
 
 cosmic cannon
-cookie obliterator | BFG | planet cracker | firing mah laser | star cannon | 
+cookie obliterator | BFG | planet cracker | firing mah laser | star cannon | pew | 
 
 mystery building
 thing doer | mystery achievement | knowledge is power | i know that i know nothing | what's in the box? | seeking the truth | theory of everything | 
 
 long distance pulse machine
-cookie beater | hectohertz | beatmaker | harmonious harm | noisestorm | breaker of wine glasses | stereo madness | sound of infinity | 
+cookie beater | hectohertz | beatmaker | harmonious harm | noisestorm | breaker of wine glasses | stereo madness | sound of infinity | rhythm heaven | destructive decibels | 
 
 nightmare manifestation enabler
-cookie dreamer | night terror | scared of the dark | afraid? | boo! | make your nightmares come true | i wake up -> there's another eldritch horror | slumber party | 
+cookie dreamer | night terror | scared of the dark | afraid? | boo! | make your nightmares come true | slumber party | enter a world of pure imagination | 
 
 ouroboros engine
-cookie looper | the cookie dragon eating its tail | exploiting loopholes | destroy to create | 
+cookie looper | the cookie dragon eating its tail | exploiting loopholes | destroy to create | endless cycle | 
 
 idle engine
 cookie idler | tick tock | until the end of time | perpetual motion machine | time waster | wasting cookies by doing absolutely nothing | number go up | deconstructing the medium | 
 
 metacomputer
-rm cookie | virtual reality | system operator | codemaster | superadmin | deep into the code | functional | it just works | 
+rm cookie | virtual reality | system operator | code master | superadmin | deep into the code | functional | it just works | computer scientist | code monkey
 
 potential controller
-production stopper | just waste more | what could have been | what will not be | crisis averted | better safe than sorry | 
+potential cookie waster | just waste more | what could have been | what will not be | crisis averted | better safe than sorry | higher highs | production stopper | 
 
 concept eraser
-cookies? | knowing what a cookie is by knowing what is isn't | blissful ignorance | therefore cookies aren't | imagine a world without cookies | total cookie death
+cookie unmaker | knowing what a cookie is by knowing what is isn't | blissful ignorance | therefore cookies aren't | imagine a world without cookies | total cookie death | rent-free no more | ctrl-z |
 
 normality restorator
 cookie normalifier | cookie clicker and its consequences... | insanity for the fly | law of the normal | what they took from you | 
@@ -360,18 +373,19 @@ autoclicker & supercharger
 cookie clicker | click clique | clickity click | automa-click | frenetic clicking | frantic clicking | clicking frenzy | super click | hyper click | mega click | giga click | ULTRACLICK | clicktastic | still clicking | 
 
 unicorn & prism
-rainbow realiser | taste the rainbow | colorful collection | stimulating the eye cones | full spectrum | 
+rainbow realiser | taste the rainbow | colorful collection | stimulating the eye cones | full spectrum | lightspeed colors | chroma king | 
 
 point printer & miner & synthestiser
-money maker | payday fellas | venture capitalist | time is money | 
+money maker | payday fellas | venture capitalist | time is money | cash n bash | 
 
 dynamo & generator & extractor
-power producer | power play | 
+power producer | power play | electric man | i got the power | 
 
-
+wasting
+another cookie game? | casual waster | competitive waster | hardcore waster | billions must waste | cookie killing spree | cookie massacre | cookie rampage | cookie genocide | ultimate destruction | and then there were none
 
 ascension
-and then there were none | i live again | snap back to reality | the end of all creation again | groundhog day | 
+i live again | snap back to reality | the end of all creation again | groundhog day | 
 
 hot static matter		life
 hot static energy		magic
@@ -438,4 +452,9 @@ supreme total burger master
 5 star burger general
 president of earth
 galactic ruler
+
+
+lost production formula
+x divider, y time => y (x²-x)/x = y/x * (x-1)
+ex : 50, 1 => 1/50 * (50-1) = .98
 
