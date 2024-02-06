@@ -43,10 +43,10 @@ dynamo								|	energy			|	click to crank
 generator							|	energy			|	constant production, needs refueling
 extractor							|	energy			|	click to harvest when done
 
-giant colored springs				|	ascension		|	production over time
-soul crystals						|	ascension		|	based on cookies wasted
-rainbow power cells					|	ascension		|	based on rainbow coins and energy produced
-awesome stars						|	ascension		|	based on buildings built
+giant colored springs				|	ascension		|	production over time							|	trinkets
+soul crystals						|	ascension		|	based on cookies wasted							|	skills
+rainbow power cells					|	ascension		|	based on rainbow coins and energy produced		|	swords
+awesome stars						|	ascension		|	based on buildings built						|	building level up
 
 
 1 1 2 3 5 8 13 21 34 55 89
@@ -181,7 +181,7 @@ error handler | arbitrary code execution | 2048-bit processor | cookie waster | 
 racon programmer
 
 potential controller
-inverse production | wasted potential | potential energy recycling | redirector | infinite potential | increased reserves | butterfly effect | 
+inverse production | wasted potential | potential energy recycling | redirector | infinite potential | increased reserves | butterfly effect | difference accelerator
 racon replacer
 
 concept eraser
@@ -283,10 +283,10 @@ waster
 cookie waster | hired help | co-op wasting | better with friends | popular | send dudes | brothers in arms | one for all, all for one | wasting with purpose | maybe the real wasting was the friends we made along the way | 
 
 racon
-cookie eater | animal tamer | silly little creatures | trash party | weird dogs | dumpster divers | sewer dwellers | furry friends | 
+cookie eater | animal tamer | silly little creatures | trash party | weird dogs | dumpster divers | sewer dwellers | furry friends | garbage eaters | 
 
 crusher
-cookie crusher | biscuit basher | sugar smasher | chocolate chipper | breakfast breaker | snack snapper | wheat whacker | 
+cookie crusher | biscuit basher | sugar smasher | chocolate chipper | breakfast breaker | snack snapper | wheat whacker | dough demolisher | X flattener | 
 
 incinerator
 cookie burner | can't handle the heat | disco inferno | fire and flames | 1000 degrees | super hot | hot | the burning you feel | incendiary | scorch the earth | pyromaniac | ashes to ashes | 
@@ -316,19 +316,19 @@ cookie wasting corp
 cookie waster(tm) | intern | part-time job | contractor | employee | employee of the month | employee of the year | team leader | assistant manager | assistant to the manager | manager | ceo | corporate overlord | president of earth
 
 propaganda campaign
-cookie demoniser | literally 1984 | you will waste the cookies and you will be happy | do it | i want you to waste cookies | big brother | i wake up -> there's another psyop
+cookie antagoniser | literally 1984 | you will waste the cookies and you will be happy | do it | i want you to waste cookies | big brother | i wake up -> there's another psyop | the big eye in the sky | 
 
 rocket launch facility
 cookie launcher | reach for the stars | space race | rocket league | cosmic traveller | ludicrous speed | cookie space program | blasting off
 
 warmech
-cookie exterminator | the war is on | just like your chinese cartoons | size matters | heavy weapon | mechanical commando | cookie wasting warmachine | bringing the big guns | 
+cookie exterminator | the war is on | just like your chinese cartoons | size matters | heavy weapon | mechanical commando | cookie wasting warmachine | bringing in the big guns | 
 
 cookievore
-cookie devourer | man-made horrors | it's alive! | mother nature weeps | monster madness | what's that coming over the hill? | playing god | 
+cookie devourer | man-made horrors | it's alive! | mother nature weeps | monster madness | what's that coming over the hill? | playing god | reveal the emptiness inside | 
 
 cookie plague
-cookie infector | biohazard | pandemic | epidemic | wicked sick | infectonator | greenland won't save you | plague doctor | plague md | plague phd
+cookie infector | biohazard | pandemic | epidemic | wicked sick | infectonator | greenland won't save you | plague doctor | plague md | plague phd | it spreads!
 
 summoning circle
 cookie doomer | delightfully devilish | let's make a cult! | crudux cruo | pandemonium | waking the profane | this is it, the apocalypse | army of darkness | city of the damned | 
@@ -337,7 +337,7 @@ antimatter condenser
 anticookie maker | hard-reset | recipe for disaster | weird science | schrödinger's achievement | scientific mumbo jumbo | nothing matters | atom smasher | 
 
 dimensional gate
-cookie waster (from an alternate dimension) | now you're thinking | but first, we need to talk about parallel universes | the same but different | mirror mirror | 
+cookie waster (from an alternate dimension) | now you're thinking | but first, we need to talk about parallel universes | the same but different | mirror mirror | aperture science | going portal
 
 cosmic cannon
 cookie obliterator | BFG | planet cracker | firing mah laser | star cannon | pew | 
@@ -367,7 +367,7 @@ concept eraser
 cookie unmaker | knowing what a cookie is by knowing what is isn't | blissful ignorance | therefore cookies aren't | imagine a world without cookies | total cookie death | rent-free no more | ctrl-z |
 
 normality restorator
-cookie normalifier | cookie clicker and its consequences... | insanity for the fly | law of the normal | what they took from you | 
+cookie normalifier | cookie clicker and its consequences... | insanity for the fly | law of the normal | what they took from you | going back | 
 
 autoclicker & supercharger
 cookie clicker | click clique | clickity click | automa-click | frenetic clicking | frantic clicking | clicking frenzy | super click | hyper click | mega click | giga click | ULTRACLICK | clicktastic | still clicking | 
@@ -386,6 +386,18 @@ another cookie game? | casual waster | competitive waster | hardcore waster | bi
 
 ascension
 i live again | snap back to reality | the end of all creation again | groundhog day | 
+
+ascension rank
+king | prince | duke | marquis | count | viscount | baron | lord | knight | patrician | commoner | outsider
+
+skills
+
+
+trinkets 
+
+
+swords
+
 
 hot static matter		life
 hot static energy		magic

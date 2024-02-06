@@ -1,0 +1,28 @@
+gerer deployer services (serveurs) dans conteneurs
+utilisé principalement par les devops
+
+conteneur = ensemble de programmes utilisés pour déployer un service
+ex php, mysql, nginx/apache/ubuntu
+
+images = modèle qui contient les infos pour créer un conteneur
+image -> conteneur ~= classe -> instance
+
+docker hub = site pour rechercher une image
+dockerfile = script pour créer une image
+docker-compose.yml = fichier pour créer une configuration de conteneurs reliés 
+
+intêrets de docker = gère automatiquement les requêtes et le transfert d'infos pour plusieurs sites, test de versions de logiciels, compatibilité de conteneurs sur plusieurs os
+
+installation :
+verifier virtualisation
+fonctionalités windows : activer hyper-v
+https://docs.docker.com/get-docker/
+windows subsystem for linux
+
+
+> cmd
+créer conteneur hellow world: docker run hello-world
+lister conteneurs : docker ps -a / docker container ls -a
+lister images : docker images / docker image ls
+supprimer container : docker rm [ID] [ID2] (ou premier caractères)
+supprimer image : docker rmi [ID] (d'abord supprimer containeurs reliés)
