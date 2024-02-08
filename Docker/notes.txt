@@ -26,3 +26,25 @@ lister conteneurs : docker ps -a / docker container ls -a
 lister images : docker images / docker image ls
 supprimer container : docker rm [ID] [ID2] (ou premier caractères)
 supprimer image : docker rmi [ID] (d'abord supprimer containeurs reliés)
+
+lancer container : docker start [ID] (-ai pour entrer dans le container)
+stop : docker stop [ID]
+
+entrer container : docker exec -it [ID] bash
+
+dans container :
+lister : ls
+creer fichier : touch test.js
+sortir : exit
+
+mapper dossier local to docker (cmd dans le dossier) : docker run -it --rm -v test:/test-container ubuntu
+
+docker run -itv test:/test-container ubuntu:18.04
+docker run -it -v [PATH]:test-container ubuntu:18.04
+
+apt-get install -y vim
+apt-update
+
+docker volume create (volume)
+docker volume ls
+docker run -itv (volume):/bin ubuntu:18.04

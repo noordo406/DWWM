@@ -74,7 +74,7 @@ silly costumes | toilet in every home | studies | metropolis | housings | feedin
 racon family
 friends : oppossums | red pandas | foxes | skunks | badgers | otters | moles | anteaters | weasels | wolverine | mongooses | brown bears | black bears | moon bears | polar bears
 rodent friends : mice | rats | hedgehogs | beavers | hamsters | guinea pigs | bunnies | jackrabbits | squirrels | chinchillas | marmots | porcupines | gerbils | shrews |
-exotic friends : capybaras | fennecs | platypi | armadillos | pangolins | megazostrodon | echidnas | jerboas | sugar gliders | flying squirrels | fruit bats | meerkats | panda bears
+exotic friends : capybaras | fennecs | platypi | armadillos | pangolins | megazostrodon | echidnas | jerboas | sugar gliders | flying squirrels | fruit bats | meerkats | panda bears | manuls
 feathery friends : parrots | kookaburas | toucans | robins | magpies | blue jays | swallows | kingfishers | sparrows | hummingbirds | peafowls | kiwis | pigeons | pūkekos | owls | mallards | canaries | crows | cuckoos | chickens
 legendary friends : zapper rat | zapper hedgehog | jackalope | 
 sea friends :  seahorses | crabs | 
@@ -173,7 +173,7 @@ the cookie cycle | exponentiation | nested engines | faster processing | virtual
 dracon
 
 idle engine
-faster idling | incrementation | self-sustainability | additional clocks | flavoring | upgrades | shinies | buildings | synergies | buttons | autoclicker | offline production | ascension | login rewards | microtransactions
+faster idling | incrementation | self-sustainability | additional clocks | flavoring | upgrades | shinies | buildings | synergies | buttons | autoclicker | offline production | ascension | login rewards | microtransactions | reverse-time | 
 racon idler
 
 metacomputer
@@ -286,7 +286,7 @@ racon
 cookie eater | animal tamer | silly little creatures | trash party | weird dogs | dumpster divers | sewer dwellers | furry friends | garbage eaters | 
 
 crusher
-cookie crusher | biscuit basher | sugar smasher | chocolate chipper | breakfast breaker | snack snapper | wheat whacker | dough demolisher | X flattener | 
+cookie crusher | biscuit basher | sugar smasher | chocolate chipper | breakfast breaker | snack snapper | wheat whacker | dough demolisher | flour flattener | 
 
 incinerator
 cookie burner | can't handle the heat | disco inferno | fire and flames | 1000 degrees | super hot | hot | the burning you feel | incendiary | scorch the earth | pyromaniac | ashes to ashes | 
@@ -295,10 +295,10 @@ muffin converter
 cookie converter | muffin shop | not enough muffins | just enough muffins | too many muffins | muffin emperor | galactic muffin emperor | inter-galactic muffin emperor | supreme total muffin master | 5 star muffin general | captain muffin | muffin master | muffin deity
 
 steam roller
-cookie flattener | powered by steam | rolling around very far from the speed of sound | steamroller coming through | unstoppable force | i love the smell of diesel in the morning
+cookie flattener | powered by steam | rolling around very far from the speed of sound | steamroller coming through | unstoppable force | i love the smell of diesel in the morning | all driven with an equal amount of incompetence
 
 weaponised drone
-cookie terminator | automation | father of machines | beep boop beep | cyber initiative | mechanical friends | judgement day | 
+cookie terminator | automation | father of machines | beep boop beep | cyber initiative | mechanical friends | judgement day | we, robots | 
 
 explosives
 cookie exploder | go out with a bang | what makes me a good demoman? | bomberman | boom boom boom boom | shellshocked | big bang | 
@@ -382,7 +382,7 @@ dynamo & generator & extractor
 power producer | power play | electric man | i got the power | 
 
 wasting
-another cookie game? | casual waster | competitive waster | hardcore waster | billions must waste | cookie killing spree | cookie massacre | cookie rampage | cookie genocide | ultimate destruction | and then there were none
+another cookie game? | casual waster | competitive waster | hardcore waster | billions must waste | cookie killing spree | cookie massacre | cookie rampage | cookie genocide | cookie overkill | ultimate destruction | and then there were none
 
 ascension
 i live again | snap back to reality | the end of all creation again | groundhog day | 
@@ -457,7 +457,9 @@ ceo, burger shop enterprises
 chairman, burger shop universal
 burger shop overlord
 captain burger
-
+potential burger master
+burger master in training
+burger master
 supreme total burger master
 
 
