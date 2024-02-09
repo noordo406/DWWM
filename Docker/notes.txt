@@ -42,9 +42,15 @@ mapper dossier local to docker (cmd dans le dossier) : docker run -it --rm -v te
 docker run -itv test:/test-container ubuntu:18.04
 docker run -it -v [PATH]:test-container ubuntu:18.04
 
-apt-get install -y vim
-apt-update
+installer packet dans conteneur : apt-get install -y vim
+maj conteneur : apt-update
 
 docker volume create (volume)
 docker volume ls
 docker run -itv (volume):/bin ubuntu:18.04
+
+apt-get install iputils-ping
+apt-get install iproute2
+>ip -c a
+
+docker network ls

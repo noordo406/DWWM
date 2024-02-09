@@ -74,9 +74,10 @@ silly costumes | toilet in every home | studies | metropolis | housings | feedin
 racon family
 friends : oppossums | red pandas | foxes | skunks | badgers | otters | moles | anteaters | weasels | wolverine | mongooses | brown bears | black bears | moon bears | polar bears
 rodent friends : mice | rats | hedgehogs | beavers | hamsters | guinea pigs | bunnies | jackrabbits | squirrels | chinchillas | marmots | porcupines | gerbils | shrews |
-exotic friends : capybaras | fennecs | platypi | armadillos | pangolins | megazostrodon | echidnas | jerboas | sugar gliders | flying squirrels | fruit bats | meerkats | panda bears | manuls
+exotic friends : capybaras | fennecs | platypi | armadillos | pangolins | megazostrodon | echidnas | jerboas | sugar gliders | flying squirrels | fruit bats | meerkats | panda bears | civets
+feline friends : cats | manuls | caracals | servals | sphynxes | manx | lynx | ocelots | sand cats | cougars | leopard cats | siamese | persians | maine coons | munchkins | ragdolls | russian blues | scottish folds | bengals | british shorthair
 feathery friends : parrots | kookaburas | toucans | robins | magpies | blue jays | swallows | kingfishers | sparrows | hummingbirds | peafowls | kiwis | pigeons | pūkekos | owls | mallards | canaries | crows | cuckoos | chickens
-legendary friends : zapper rat | zapper hedgehog | jackalope | 
+legendary friends : zapper rat | zapper hedgehog | jackalope | tacocat | poptart cat | gato | 
 sea friends :  seahorses | crabs | 
 cold friends : geckos | chameleons | 
 
@@ -245,6 +246,12 @@ racon energy
 
 dual upgrades 
 
+propaganda | potential : sabotage
+muffin | drone : muffin bot
+
+
+
+
 waster | cwc : team synergy
 apocalypse | summoning : horsemen
 antimatter | explosive : antimatter bombs
@@ -394,7 +401,7 @@ skills
 
 
 trinkets 
-
+B | dollar | racon plushie | rainbow skull | funny face | wires | silver pocket watch | cookie waster gold account | lithium battery | grass | jewelry case | one seventh of a horseshoe | meter | 
 
 swords
 
