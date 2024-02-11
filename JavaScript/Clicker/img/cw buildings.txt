@@ -178,11 +178,11 @@ faster idling | incrementation | self-sustainability | additional clocks | flavo
 racon idler
 
 metacomputer
-error handler | arbitrary code execution | 2048-bit processor | cookie waster | spell-checking | code that does what you want it to do | decompiler | reprogramming reality for dummies | despaghettification | all the terraflops | quantum processor | memory editor | overclocking | save wipe | software update | vr headset | multithreading
+error handler | arbitrary code execution | 2048-bit processor | cookie waster | spell-checking | code that does what you want it to do | decompiler | reprogramming reality for dummies | despaghettification | all the terraflops | quantum processor | memory editor | overclocking | save wipe | software update | vr headset | multithreading | code harvesting
 racon programmer
 
 potential controller
-inverse production | wasted potential | potential energy recycling | redirector | infinite potential | increased reserves | butterfly effect | difference accelerator
+inverse production | wasted potential | potential energy recycling | hijack | infinite potential | increased reserves | butterfly effect | difference accelerator
 racon replacer
 
 concept eraser
