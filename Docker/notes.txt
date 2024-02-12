@@ -40,7 +40,7 @@ sortir : exit
 mapper dossier local to docker (cmd dans le dossier) : docker run -it --rm -v test:/test-container ubuntu
 
 docker run -itv test:/test-container ubuntu:18.04
-docker run -it -v [PATH]:test-container ubuntu:18.04
+docker run -it -v [ABS-PATH]:test-container ubuntu:18.04
 
 installer packet dans conteneur : apt-get install -y vim
 maj conteneur : apt-update
@@ -54,3 +54,6 @@ apt-get install iproute2
 >ip -c a
 
 docker network ls
+
+docker build -t [nom-image]:[version] .
+docker run -d -p [port]:80 [nom-image]:[version]

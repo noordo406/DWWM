@@ -66,20 +66,20 @@ clicking
 wood | stone | copper | bronze | iron | aluminium | steel | obsidian | tungsten | uranium | titanium | cobalt | moonstone | mythril | superium | diamond | khamarack | perfectium | unobtainium | divinium | galaxium | universalite | oneirite
 
 waster
-positive reinforcement | energy drinks | backpacks | sidearms | implants | neural enhancements | wasting techniques | leaderboards | wasting license | elite training | cloning vats | black gloves | speed potions | instant training | tools | 
+positive reinforcement | energy drinks | backpacks | sidearms | implants | neural enhancements | wasting techniques | leaderboards | wasting license | elite training | cloning vats | black gloves | speed potions | instant training | tools | exo skeletons
 pet racon
 
 racon
 silly costumes | toilet in every home | studies | metropolis | housings | feeding throughs | free trash | documentaries | free healthcare | villas | underground complex | research labs | super racon program | 
 racon family
-friends : oppossums | red pandas | foxes | skunks | badgers | otters | moles | anteaters | weasels | wolverine | mongooses | brown bears | black bears | moon bears | polar bears
+friends : oppossums | red pandas | foxes | skunks | badgers | otters | moles | anteaters | weasels | wolverine | mongooses | brown bears | black bears | moon bears | polar bears | goats | cows | sheep | 
 rodent friends : mice | rats | hedgehogs | beavers | hamsters | guinea pigs | bunnies | jackrabbits | squirrels | chinchillas | marmots | porcupines | gerbils | shrews |
-exotic friends : capybaras | fennecs | platypi | armadillos | pangolins | megazostrodon | echidnas | jerboas | sugar gliders | flying squirrels | fruit bats | meerkats | panda bears | civets
-feline friends : cats | manuls | caracals | servals | sphynxes | manx | lynx | ocelots | sand cats | cougars | leopard cats | siamese | persians | maine coons | munchkins | ragdolls | russian blues | scottish folds | bengals | british shorthair
-feathery friends : parrots | kookaburas | toucans | robins | magpies | blue jays | swallows | kingfishers | sparrows | hummingbirds | peafowls | kiwis | pigeons | pūkekos | owls | mallards | canaries | crows | cuckoos | chickens
+exotic friends : capybaras | fennecs | platypi | armadillos | pangolins | megazostrodon | echidnas | jerboas | sugar gliders | flying squirrels | fruit bats | meerkats | panda bears | civets | wallabies | wombats
+feline friends : cats | manuls | caracals | servals | sphynxes | manx | lynx | ocelots | sand cats | cougars | leopard cats | siamese | persians | maine coons | munchkins | ragdolls | scottish folds | bengals | british shorthair
+feathery friends : parrots | kookaburas | toucans | robins | magpies | blue jays | swallows | kingfishers | sparrows | hummingbirds | peafowls | kiwis | pigeons | pūkekos | owls | mallards | canaries | crows | cuckoos | chickens | woodpeckers
 legendary friends : zapper rat | zapper hedgehog | jackalope | tacocat | poptart cat | gato | 
-sea friends :  seahorses | crabs | 
-cold friends : geckos | chameleons | 
+aquatic friends :  seahorses | crabs | turtles | axolotls | seals | otaries
+cold friends : geckos | chameleons | iguanas | tortoises | terrapins | toads | tree frogs | rain frogs | salamanders | frilled lizards | tegus | snails
 
 crusher
 stronger alloys | ultra-dense alloys | spikes | hydraulics | safe speed bypass | compounded crushers | supersonic crushers | precision machining | electromagnets | pre-crushing | double crushers | sextuple crushers | octuple hypercrushers | padded gloves | air crushers | CBT | bidirectional crusher | depressuriser | 
@@ -222,13 +222,13 @@ modern printers | higher quality picture | space optimisation | ink subscription
 dablon
 
 point miner
-granite | andesite | obsidian | marble | limestone | sandstone | salt | clay | chalk | coal | mudstone | siltstone | slate | luxurite | basalt
+granite | andesite | obsidian | marble | limestone | sandstone | salt | clay | chalk | coal | mudstone | siltstone | slate | luxurite | basalt | black marble | 
 copper | silver | cobalt | gold | platinum | electrum | chrome | zinc | palladium | rhodium | iridium | adamantium | soleilium | tellurium | orichalcum | mithril | osmium | pyrite | wishalloy
 ruby | emerald | sapphire | topaz | amethyst | quartz | diamond | onyx | moonstone | jade | opal | garnet | jet | pearl | tanzanite | aquamarine | amber | malachite | lapis lazuli | spinel | zircon | tiger's eye | black opal | red beryl | rose quartz | agate | jasper | tourmaline | fire quartz | fire opal | citrine | smokey quartz | rose quartz | ametrine | bixbyite | kyanite | apatite
 racon miner
 
 point synthetiser
-
+point | line | triangle | square | pentagon | pentagram | hexagon | hexagram | heptagon | heptagram | great heptagram | tetrahedron | pyramid | cube | octahedron | dodecahedron | icosahedron | stellated octahedron | hypertetrahedron | hypercube | 
 artificial racon
 
 dynamo
@@ -240,7 +240,7 @@ paper | dry wood | wood pellets | charcoal | coal | gasoline | kerosene | gunpow
 racon fuel
 
 extractor
-mana crystal | gemstone | calorie | money | nothing | atom | plasma | 
+mana crystal | gemstone | calorie | money | nothing | atom | plasma | battery | 
 racon energy
 
 
