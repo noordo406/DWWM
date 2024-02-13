@@ -65,11 +65,11 @@ awesome stars						|	ascension		|	based on buildings built						|	building level
 clicking 
 wood | stone | copper | bronze | iron | aluminium | steel | obsidian | tungsten | uranium | titanium | cobalt | moonstone | mythril | superium | diamond | khamarack | perfectium | unobtainium | divinium | galaxium | universalite | oneirite
 
-waster
+waster 10
 positive reinforcement | energy drinks | backpacks | sidearms | implants | neural enhancements | wasting techniques | leaderboards | wasting license | elite training | cloning vats | black gloves | speed potions | instant training | tools | exo skeletons
 pet racon
 
-racon
+racon 80
 silly costumes | toilet in every home | studies | metropolis | housings | feeding throughs | free trash | documentaries | free healthcare | villas | underground complex | research labs | super racon program | 
 racon family
 friends : oppossums | red pandas | foxes | skunks | badgers | otters | moles | anteaters | weasels | wolverine | mongooses | brown bears | black bears | moon bears | polar bears | goats | cows | sheep | 
@@ -81,31 +81,31 @@ legendary friends : zapper rat | zapper hedgehog | jackalope | tacocat | poptart
 aquatic friends :  seahorses | crabs | turtles | axolotls | seals | otaries
 cold friends : geckos | chameleons | iguanas | tortoises | terrapins | toads | tree frogs | rain frogs | salamanders | frilled lizards | tegus | snails
 
-crusher
+crusher 850
 stronger alloys | ultra-dense alloys | spikes | hydraulics | safe speed bypass | compounded crushers | supersonic crushers | precision machining | electromagnets | pre-crushing | double crushers | sextuple crushers | octuple hypercrushers | padded gloves | air crushers | CBT | bidirectional crusher | depressuriser | 
 racon crusher
 
-incinerator
+incinerator 10k
 longer chimneys | cooling systems | hellfire | oxygen pumps | heat rays | pre-heated coals | frostburn | insta-fire | heat treated materials | lava furnace | eternal flames | heat-resistant suits | phlogiston duplication | thermal shock | nuclear fusion | corrosive flames |
 racon pyro
 
-muffin converter
+muffin converter 150k
 more conveyor belts | convenient packaging | cupcakes! | mini-converters | the muffin clown | liquid muffin | the perfect recipe | self-lubricating gears | molecular recombinator | milk dispenser | waste recycling | mini-muffins | compressed cookie chunks | 
 racon muffin
 
-steamroller
+steamroller 2.5m
 bigger rollers | bigger engines | high-quality fuel | spiked rollers | dual rollers | nuclear engine | ferrofluid rollers | nos injector | nitroglycerimethanol | engine assists | aerodynamic design | speed boosters | 
 racon driver
 
-weaponised drone
+weaponised drone 47m
 reboot protocols | nanobots | multi-wavelength scanners | ai learning | battery packs | spider drones | autotanks | self-repairing | electro-magnetic shielding | laws of robotics | androids | automatic evolution | machine duplication
 racon robot
 
-explosives
+explosives 1b
 more gunpowder | chain reaction | sonic boom | cluster bombs | double explosion | gravity grenades | imploder-exploder | plasma grenade | plastic explosive | grenade launchers | napalm | fragmentation | aftershock
 racon demolitionist
 
-big ol' pit
+big ol' pit 25b
 gravity enhancer | stronger shovels | power tools | improved structural integrity | elevators | laser drills | MOLE units | mining helmets | mineral sorter | diamond-tipped | diamond tools | sharpened edges | compact dirt storage | giant plunger | declogging chemicals
 racon spartan
 
@@ -194,7 +194,7 @@ miniature improbability drive | universe desaturation | idle game devolution | a
 perfectly normal racon
 
 autoclicker
-reduced latency | custom code | lifetime license | pop-up blocker | download more ram | daily click limit bypass | sealed memory leaks | second cursor | position lock | 
+reduced latency | custom code | lifetime license | pop-up blocker | download more ram | daily click limit bypass | sealed memory leaks | second cursor | position lock | autoaim | 
 racon cursor
 
 supercharger
@@ -205,7 +205,7 @@ charge amount : yellow | chartreuse | golden | peach | cream | lemon |
 charge speed : green | spring | lime | mint | aquamarine | emerald | evergreen | jade | turquoise
 boost amount : blue | cyan | azure | cerulean | cobalt | indigo | teal | navy
 boost decay : fuschia | violet | purple | rose | magenta | amethyst | aubergine | mauve | lavender | plum | 
-all : rainbow button | signal lost | 
+all : rainbow button | signal lost | iridescent | 
 racon button
 
 unicorn
@@ -229,14 +229,14 @@ racon miner
 
 point synthetiser
 point | line | triangle | square | pentagon | pentagram | hexagon | hexagram | heptagon | heptagram | great heptagram | tetrahedron | pyramid | cube | octahedron | dodecahedron | icosahedron | stellated octahedron | hypertetrahedron | hypercube | 
-artificial racon
+shapon
 
 dynamo
 rust removal | greased chains | gearbox | 
 racon cyclist
 
 generator
-paper | dry wood | wood pellets | charcoal | coal | gasoline | kerosene | gunpowder | nitro | hydrogen | methane | uranium fission | thorium fission | hydrogen fusion | ethanol | 
+paper | dry wood | wood pellets | charcoal | coal | gasoline | kerosene | gunpowder | nitro | hydrogen | methane | uranium fission | thorium fission | hydrogen fusion | ethanol | propane | 
 racon fuel
 
 extractor
