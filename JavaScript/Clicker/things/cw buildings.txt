@@ -65,11 +65,11 @@ awesome stars						|	ascension		|	based on buildings built						|	building level
 clicking 
 wood | stone | copper | bronze | iron | aluminium | steel | obsidian | tungsten | uranium | titanium | cobalt | moonstone | mythril | superium | diamond | khamarack | perfectium | unobtainium | divinium | galaxium | universalite | oneirite
 
-waster 10
+waster
 positive reinforcement | energy drinks | backpacks | sidearms | implants | neural enhancements | wasting techniques | leaderboards | wasting license | elite training | cloning vats | black gloves | speed potions | instant training | tools | exo skeletons
 pet racon
 
-racon 80
+racon
 silly costumes | toilet in every home | studies | metropolis | housings | feeding throughs | free trash | documentaries | free healthcare | villas | underground complex | research labs | super racon program | 
 racon family
 friends : oppossums | red pandas | foxes | skunks | badgers | otters | moles | anteaters | weasels | wolverine | mongooses | brown bears | black bears | moon bears | polar bears | goats | cows | sheep | 
@@ -77,35 +77,35 @@ rodent friends : mice | rats | hedgehogs | beavers | hamsters | guinea pigs | bu
 exotic friends : capybaras | fennecs | platypi | armadillos | pangolins | megazostrodon | echidnas | jerboas | sugar gliders | flying squirrels | fruit bats | meerkats | panda bears | civets | wallabies | wombats
 feline friends : cats | manuls | caracals | servals | sphynxes | manx | lynx | ocelots | sand cats | cougars | leopard cats | siamese | persians | maine coons | munchkins | ragdolls | scottish folds | bengals | british shorthair
 feathery friends : parrots | kookaburas | toucans | robins | magpies | blue jays | swallows | kingfishers | sparrows | hummingbirds | peafowls | kiwis | pigeons | pūkekos | owls | mallards | canaries | crows | cuckoos | chickens | woodpeckers
-legendary friends : zapper rat | zapper hedgehog | jackalope | tacocat | poptart cat | gato | 
-aquatic friends :  seahorses | crabs | turtles | axolotls | seals | otaries
+legendary friends : zapper rat | zapper hedgehog | jackalope | tacocat | poptart cat | gato | blue elephant
+aquatic friends :  seahorses | crabs | turtles | axolotls | seals | otaries | dolphins | 
 cold friends : geckos | chameleons | iguanas | tortoises | terrapins | toads | tree frogs | rain frogs | salamanders | frilled lizards | tegus | snails
 
-crusher 850
+crusher
 stronger alloys | ultra-dense alloys | spikes | hydraulics | safe speed bypass | compounded crushers | supersonic crushers | precision machining | electromagnets | pre-crushing | double crushers | sextuple crushers | octuple hypercrushers | padded gloves | air crushers | CBT | bidirectional crusher | depressuriser | 
 racon crusher
 
-incinerator 10k
+incinerator
 longer chimneys | cooling systems | hellfire | oxygen pumps | heat rays | pre-heated coals | frostburn | insta-fire | heat treated materials | lava furnace | eternal flames | heat-resistant suits | phlogiston duplication | thermal shock | nuclear fusion | corrosive flames |
 racon pyro
 
-muffin converter 150k
+muffin converter
 more conveyor belts | convenient packaging | cupcakes! | mini-converters | the muffin clown | liquid muffin | the perfect recipe | self-lubricating gears | molecular recombinator | milk dispenser | waste recycling | mini-muffins | compressed cookie chunks | 
 racon muffin
 
-steamroller 2.5m
+steamroller
 bigger rollers | bigger engines | high-quality fuel | spiked rollers | dual rollers | nuclear engine | ferrofluid rollers | nos injector | nitroglycerimethanol | engine assists | aerodynamic design | speed boosters | 
 racon driver
 
-weaponised drone 47m
+weaponised drone
 reboot protocols | nanobots | multi-wavelength scanners | ai learning | battery packs | spider drones | autotanks | self-repairing | electro-magnetic shielding | laws of robotics | androids | automatic evolution | machine duplication
 racon robot
 
-explosives 1b
+explosives
 more gunpowder | chain reaction | sonic boom | cluster bombs | double explosion | gravity grenades | imploder-exploder | plasma grenade | plastic explosive | grenade launchers | napalm | fragmentation | aftershock
 racon demolitionist
 
-big ol' pit 25b
+big ol' pit
 gravity enhancer | stronger shovels | power tools | improved structural integrity | elevators | laser drills | MOLE units | mining helmets | mineral sorter | diamond-tipped | diamond tools | sharpened edges | compact dirt storage | giant plunger | declogging chemicals
 racon spartan
 
@@ -178,7 +178,7 @@ faster idling | incrementation | self-sustainability | additional clocks | flavo
 racon idler
 
 metacomputer
-error handler | arbitrary code execution | 2048-bit processor | cookie waster | spell-checking | code that does what you want it to do | decompiler | reprogramming reality for dummies | despaghettification | all the terraflops | quantum processor | memory editor | overclocking | save wipe | software update | vr headset | multithreading | code harvesting
+error handler | arbitrary code execution | 2048-bit processor | spell-checking | code that does what you want it to do | decompiler | reprogramming reality for dummies | despaghettification | all the terraflops | quantum processor | memory editor | overclocking | save wipe | software update | vr headset | multithreading | code harvesting
 racon programmer
 
 potential controller
@@ -218,14 +218,14 @@ rainbow racon
 
 point printer
 modern printers | higher quality picture | space optimisation | ink subscription | paper subscription | printer subscription | fancier design | gold paper | paper printers | firmware update | improved hardware | negative currency | iridescent ink | ink inc. | automated printing | e-printing | 3d printing | 4d printing
-1 | 5 | 10 | 20 | 50 | 100 | 200 | 500 | 1000 | 10k | 100k | 1m
+1 | 5 | 15 | 100 | 600 | 1248 | 10101 | 777777 | 1m | 1t | 0.9999999... | 0 | -1
 dablon
 
 point miner
 granite | andesite | obsidian | marble | limestone | sandstone | salt | clay | chalk | coal | mudstone | siltstone | slate | luxurite | basalt | black marble | 
 copper | silver | cobalt | gold | platinum | electrum | chrome | zinc | palladium | rhodium | iridium | adamantium | soleilium | tellurium | orichalcum | mithril | osmium | pyrite | wishalloy
 ruby | emerald | sapphire | topaz | amethyst | quartz | diamond | onyx | moonstone | jade | opal | garnet | jet | pearl | tanzanite | aquamarine | amber | malachite | lapis lazuli | spinel | zircon | tiger's eye | black opal | red beryl | rose quartz | agate | jasper | tourmaline | fire quartz | fire opal | citrine | smokey quartz | rose quartz | ametrine | bixbyite | kyanite | apatite
-racon miner
+racium
 
 point synthetiser
 point | line | triangle | square | pentagon | pentagram | hexagon | hexagram | heptagon | heptagram | great heptagram | tetrahedron | pyramid | cube | octahedron | dodecahedron | icosahedron | stellated octahedron | hypertetrahedron | hypercube | 
@@ -240,7 +240,7 @@ paper | dry wood | wood pellets | charcoal | coal | gasoline | kerosene | gunpow
 racon fuel
 
 extractor
-mana crystal | gemstone | calorie | money | nothing | atom | plasma | battery | 
+mana | gemstone | calorie | money | nothing | atom | plasma | battery | time | ki | friendship | love | light | cookie | 
 racon energy
 
 
@@ -248,6 +248,7 @@ dual upgrades
 
 propaganda | potential : sabotage
 muffin | drone : muffin bot
+computer | idle : cookie waster
 
 
 
