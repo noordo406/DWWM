@@ -297,7 +297,7 @@ crusher
 cookie crusher | biscuit basher | sugar smasher | chocolate chipper | breakfast breaker | snack snapper | wheat whacker | dough demolisher | flour flattener | 
 
 incinerator
-cookie burner | can't handle the heat | disco inferno | fire and flames | 1000 degrees | super hot | hot | the burning you feel | incendiary | scorch the earth | pyromaniac | ashes to ashes | 
+cookie burner | can't handle the heat | disco inferno | fire and flames | 1000 degrees | super hot | hot | the burning you feel | incendiary | scorch the earth | pyromaniac | ashes to ashes | infernoplex | 
 
 muffin converter
 cookie converter | muffin shop | not enough muffins | just enough muffins | too many muffins | muffin emperor | galactic muffin emperor | inter-galactic muffin emperor | supreme total muffin master | 5 star muffin general | captain muffin | muffin master | muffin deity
@@ -324,10 +324,10 @@ cookie wasting corp
 cookie waster(tm) | intern | part-time job | contractor | employee | employee of the month | employee of the year | team leader | assistant manager | assistant to the manager | manager | ceo | corporate overlord | president of earth
 
 propaganda campaign
-cookie antagoniser | literally 1984 | you will waste the cookies and you will be happy | do it | i want you to waste cookies | big brother | i wake up -> there's another psyop | the big eye in the sky | 
+cookie antagoniser | literally 1984 | you will waste the cookies and you will be happy | do it | i want you to waste cookies | big brother | i wake up -> there's another psyop | the big eye in the sky | wasting is virtue
 
 rocket launch facility
-cookie launcher | reach for the stars | space race | rocket league | cosmic traveller | ludicrous speed | cookie space program | blasting off
+cookie launcher | reach for the stars | space race | rocket league | cosmic traveller | ludicrous speed | cookie space program | blasting off | spaceC
 
 warmech
 cookie exterminator | the war is on | just like your chinese cartoons | size matters | heavy weapon | mechanical commando | cookie wasting warmachine | bringing in the big guns | 
@@ -342,7 +342,7 @@ summoning circle
 cookie doomer | delightfully devilish | let's make a cult! | crudux cruo | pandemonium | waking the profane | this is it, the apocalypse | army of darkness | city of the damned | 
 
 antimatter condenser
-anticookie maker | hard-reset | recipe for disaster | weird science | schrödinger's achievement | scientific mumbo jumbo | nothing matters | atom smasher | 
+anticookie maker | hard-reset | recipe for disaster | weird science | schrödinger's achievement | scientific mumbo jumbo | nothing matters | atom smasher
 
 dimensional gate
 cookie waster (from an alternate dimension) | now you're thinking | but first, we need to talk about parallel universes | the same but different | mirror mirror | aperture science | going portal
@@ -354,7 +354,7 @@ mystery building
 thing doer | mystery achievement | knowledge is power | i know that i know nothing | what's in the box? | seeking the truth | theory of everything | 
 
 long distance pulse machine
-cookie beater | hectohertz | beatmaker | harmonious harm | noisestorm | breaker of wine glasses | stereo madness | sound of infinity | rhythm heaven | destructive decibels | 
+cookie beater | hectohertz | beatmaker | harmonious harm | noisestorm | breaker of wine glasses | stereo madness | sound of infinity | rhythm heaven | destructive decibels | dematerialising | demolecularising | 
 
 nightmare manifestation enabler
 cookie dreamer | night terror | scared of the dark | afraid? | boo! | make your nightmares come true | slumber party | enter a world of pure imagination | 
@@ -372,7 +372,7 @@ potential controller
 potential cookie waster | just waste more | what could have been | what will not be | crisis averted | better safe than sorry | higher highs | production stopper | 
 
 concept eraser
-cookie unmaker | knowing what a cookie is by knowing what is isn't | blissful ignorance | therefore cookies aren't | imagine a world without cookies | total cookie death | rent-free no more | ctrl-z |
+cookie unmaker | knowing what a cookie is by knowing what is isn't | blissful ignorance | therefore cookies aren't | imagine a world without cookies | total cookie death | rent-free no more | ctrl-z | 
 
 normality restorator
 cookie normalifier | cookie clicker and its consequences... | insanity for the fly | law of the normal | what they took from you | going back | 
@@ -381,13 +381,13 @@ autoclicker & supercharger
 cookie clicker | click clique | clickity click | automa-click | frenetic clicking | frantic clicking | clicking frenzy | super click | hyper click | mega click | giga click | ULTRACLICK | clicktastic | still clicking | 
 
 unicorn & prism
-rainbow realiser | taste the rainbow | colorful collection | stimulating the eye cones | full spectrum | lightspeed colors | chroma king | 
+rainbow realiser | ooh shiny | taste the rainbow | colorful collection | stimulating the eye cones | full spectrum | lightspeed colors | chroma king | 
 
 point printer & miner & synthestiser
 money maker | payday fellas | venture capitalist | time is money | cash n bash | 
 
 dynamo & generator & extractor
-power producer | power play | electric man | i got the power | 
+power producer | power play | electric man | i got the power | unlimited power
 
 wasting
 another cookie game? | casual waster | competitive waster | hardcore waster | billions must waste | cookie killing spree | cookie massacre | cookie rampage | cookie genocide | cookie overkill | ultimate destruction | and then there were none
@@ -401,8 +401,10 @@ king | prince | duke | marquis | count | viscount | baron | lord | knight | patr
 skills
 
 
+6 7 17 18 30
+
 trinkets 
-B | dollar | racon plushie | rainbow skull | funny face | wires | silver pocket watch | cookie waster gold account | lithium battery | grass | jewelry case | one seventh of a horseshoe | meter | 
+B | dollar | racon plushie | rainbow skull | funny face | wires | silver pocket watch | cookie waster gold account | chicken mask | cancer | grass | jewelry case | one seventh of a horseshoe | meter | 
 
 swords
 
