@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Possessions
+{% endblock %}
+
+{% block body %}
+	<div class="container">
+		<h1>Possessions de
+			{{ user.prenom }}</h1>
+		<table class="table" {{ react_component('InfosUtilisateur', { 'user': user|serialize('json', { groups: 'list_user'} ) }) }}></table>
+
+		<table class="table" {{ react_component('TableauPossessions', { 'possessions': possessions|serialize('json', { groups: 'list_possessions'} ) }) }}></table>
+
+		<a href="{{ path('app_homepage') }}">Retour</a>
+	</div>
+{% endblock %}

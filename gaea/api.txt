@@ -1,0 +1,382 @@
+// src/KnpU/CodeBattle/Controller/Api/ProgrammerController.php
+// ...
+
+use KnpU\CodeBattle\Model\Programmer;
+
+protected function addRoutes(ControllerCollection $controllers)
+{
+    $controllers->post('/api/programmers', array($this, 'newAction'));
+
+    $controllers->get('/api/programmers/{nickname}', array($this, 'showAction'))
+        ->bind('api_programmers_show');
+		
+    $controllers->get('/api/programmers', array($this, 'listAction'));
+	
+    // point PUT and PATCH at the same controller
+    $controllers->put('/api/programmers/{nickname}', array($this, 'updateAction'));
+
+    // PATCH isn't natively supported, hence the different syntax
+    $controllers->match('/api/programmers/{nickname}', array($this, 'updateAction'))
+        ->method('PATCH');
+	
+    $controllers->delete('/api/programmers/{nickname}', array($this, 'deleteAction'));
+}
+
+public function newAction(Request $request)
+{
+	$data = json_decode($request->getContent(), true);
+
+	$this->handleRequest($request, $programmer);
+
+	if ($errors = $this->validate($programmer)) {
+		$this->throwApiProblemValidationException($errors);
+	}
+
+	$this->save($programmer);
+
+    $errors = $this->validate($programmer);
+    if (!empty($errors)) {
+        $data = array(
+            'type' => 'validation_error',
+            'title' => 'There was a validation error',
+            'errors' => $errors
+        );
+
+        return new JsonResponse($data, 400);
+    }
+
+    $this->save($programmer);
+
+    $data = $this->serializeProgrammer($programmer);
+    $response = $this->createApiResponse($programmer, 201);
+
+    $programmerUrl = $this->generateUrl(
+        'api_programmers_show',
+        ['nickname' => $programmer->nickname]
+    );
+    $response->headers->set('Location', $programmerUrl);
+
+    return $response;
+}
+
+public function showAction($nickname)
+{
+    $programmer = $this->getProgrammerRepository()->findOneByNickname($nickname);
+	
+	
+    if (!$programmer) {
+        $this->throw404('Crap! This programmer has deserted! We\'ll send a search party');
+    }
+
+    $data = $this->serializeProgrammer($programmer);
+	
+	$response = new Response(json_encode($data), 200);
+    $response->headers->set('Content-Type', 'application/json');
+
+    return $response;
+}
+
+public function listAction($nickname)
+{
+    $programmers = $this->getProgrammerRepository()->findAll();
+    $data = array('programmers' => $programmers);
+    $json = $this->serialize($data);
+
+    $response = new Response($json, 200);
+
+    return $response;
+}
+
+public function updateAction($nickname, Request $request)
+{
+    $programmer = $this->getProgrammerRepository()->findOneByNickname($nickname);
+    $apiProperties = array('avatarNumber', 'tagLine');
+
+    if (!$programmer) {
+        $this->throw404();
+    }
+	
+	
+    foreach ($apiProperties as $property) {
+        // if a property is missing on PATCH, that's ok - just skip it
+        if (!isset($data[$property]) && $request->isMethod('PATCH')) {
+            continue;
+        }
+
+        $val = isset($data[$property]) ? $data[$property] : null;
+        $programmer->$property = $val;
+    }
+
+    
+	$this->handleRequest($request, $programmer);
+
+	if ($errors = $this->validate($programmer)) {
+		$this->throwApiProblemValidationException($errors);
+	}
+
+	$this->save($programmer);
+
+    $data = $this->serializeProgrammer($programmer);
+
+    $response = new JsonResponse($data, 200);
+
+    return $response;
+}
+
+public function deleteAction($nickname)
+{
+    $programmer = $this->getProgrammerRepository()->findOneByNickname($nickname);
+
+    if ($programmer) {
+        $this->delete($programmer);
+    }
+
+    return new Response(null, 204);
+}
+
+
+private function handleRequest(Request $request, Programmer $programmer)
+{
+    $data = json_decode($request->getContent(), true);
+    $isNew = !$programmer->id;
+
+    if ($data === null) {
+        $problem = new ApiProblem(
+            400,
+            ApiProblem::TYPE_INVALID_REQUEST_BODY_FORMAT
+        );
+
+        throw new ApiProblemException($problem);
+    }
+
+
+    // determine which properties should be changeable on this request
+    $apiProperties = array('avatarNumber', 'tagLine');
+    if ($isNew) {
+        $apiProperties[] = 'nickname';
+    }
+
+    // update the properties
+    foreach ($apiProperties as $property) {
+        $val = isset($data[$property]) ? $data[$property] : null;
+        $programmer->$property = $val;
+    }
+
+    $programmer->userId = $this->findUserByUsername('weaverryan')->id;
+}
+
+
+private function throwApiProblemValidationException(array $errors)
+{
+    $apiProblem = new ApiProblem(
+        400,
+        ApiProblem::TYPE_VALIDATION_ERROR
+    );
+    $apiProblem->set('errors', $errors);
+
+    throw new ApiProblemException($apiProblem);
+}
+
+// src/KnpU/CodeBattle/Controller/BaseController.php
+// ...
+
+protected function serialize($data, $format = 'json')
+{
+    return $this->container['serializer']->serialize($data, $format);
+}
+
+protected function createApiResponse($data, $statusCode = 200)
+{
+    $json = $this->serialize($data);
+
+    return new Response($json, $statusCode, array(
+        'Content-Type' => 'application/json'
+    ));
+}
+
+// src/KnpU/CodeBattle/Tests/ProgrammerControllerTest.php
+namespace KnpU\CodeBattle\Tests;
+
+class ProgrammerControllerTest extends \PHPUnit_Framework_TestCase
+{
+	public function testPOST()
+	{
+		// create our http client (Guzzle)
+		$client = new Client('http://localhost:8000', array(
+			'request.options' => array(
+				'exceptions' => false,
+			)
+		));
+
+		$nickname = 'ObjectOrienter'.rand(0, 999);
+		$data = array(
+			'nickname' => $nickname,
+			'avatarNumber' => 5,
+			'tagLine' => 'a test dev!'
+		);
+
+		$request = $client->post('/api/programmers', null, json_encode($data));
+		$response = $request->send();
+
+		$this->assertEquals(201, $response->getStatusCode());
+		$this->assertTrue($response->hasHeader('Location'));
+		$data = json_decode($response->getBody(true), true);
+		$this->assertArrayHasKey('nickname', $data);
+	}
+
+}
+
+Deciding between POST and PUT is easy: use PUT if and only if the endpoint will follow these 2 rules:
+
+    The endpoint must be idempotent: so safe to redo the request over and over again;
+    The URI must be the address to the resource being updated.
+
+// src/KnpU/CodeBattle/Api/ApiProblem.php
+namespace KnpU\CodeBattle\Api;
+
+class ApiProblem
+{
+    const TYPE_VALIDATION_ERROR = 'validation_error';
+    const TYPE_INVALID_REQUEST_BODY_FORMAT = 'invalid_body_format';
+	
+    static private $titles = array(
+        self::TYPE_VALIDATION_ERROR => 'There was a validation error',
+        self::TYPE_INVALID_REQUEST_BODY_FORMAT => 'Invalid JSON format sent',
+    );
+	
+	private $statusCode;
+
+    private $type;
+
+    private $title;
+	
+    private $extraData = array();
+
+    public function __construct($statusCode, $type = null)
+	{
+		$this->statusCode = $statusCode;
+		$this->type = $type;
+
+		if (!$type) {
+			// no type? The default is about:blank and the title should
+			// be the standard status code message
+			$this->type = 'about:blank';
+			$this->title = isset(Response::$statusTexts[$statusCode])
+				? Response::$statusTexts[$statusCode]
+				: 'Unknown HTTP status code :(';
+		} else {
+			if (!isset(self::$titles[$type])) {
+				throw new \InvalidArgumentException('No title for type '.$type);
+			}
+
+			$this->title = self::$titles[$type];
+		}
+	}
+
+    public function getStatusCode()
+    {
+        return $this->statusCode;
+    }
+	
+    public function set($name, $value)
+    {
+        $this->extraData[$name] = $value;
+    }
+	
+	public function toArray()
+    {
+        return array_merge(
+            $this->extraData,
+            [
+                'status' => $this->statusCode,
+                'type' => $this->type,
+                'title' => $this->title,
+            ]
+        );
+    }
+    public function getTitle()
+    {
+        return $this->title;
+    }
+}
+
+// src/KnpU/CodeBattle/Api/ApiProblemException.php
+namespace KnpU\CodeBattle\Api;
+
+use Symfony\Component\HttpKernel\Exception\HttpException;
+
+class ApiProblemException extends HttpException
+{
+	private $apiProblem;
+
+    public function __construct(ApiProblem $apiProblem, \Exception $previous = null, array $headers = array(), $code = 0)
+    {
+        $this->apiProblem = $apiProblem;
+
+        parent::__construct(
+            $apiProblem->getStatusCode(),
+            $apiProblem->getTitle(),
+            $previous,
+            $headers,
+            $code
+        );
+    }
+	
+	public function getApiProblem()
+    {
+        return $this->apiProblem;
+    }
+}
+
+// src/KnpU/CodeBattle/Application.php
+// ...
+
+private function configureListeners()
+{
+    $app = $this;
+
+    $this->error(function(\Exception $e, $statusCode) use ($app) {
+		// only act on /api URLs
+		if (strpos($app['request']->getPathInfo(), '/api') !== 0) {
+			return;
+		}
+
+		// allow 500 errors to be visible to us in debug mode
+		if ($app['debug'] && $statusCode == 500) {
+			return;
+		}
+		
+		if ($e instanceof ApiProblemException) {
+			$apiProblem = $e->getApiProblem();
+		} else {
+			$apiProblem = new ApiProblem($statusCode);
+
+			if ($e instanceof HttpException) {
+				$apiProblem->set('detail', $e->getMessage());
+			}
+		}
+		$data = $apiProblem->toArray();
+		if ($data['type'] != 'about:blank') {
+			$data['type'] = 'http://localhost:8000/api/docs/errors#'.$data['type'];
+		}
+		$response = new JsonResponse(
+			$data,
+			$statusCode
+		);
+
+		return $response;
+    });
+}
+
+private function configureServices()
+{
+    // ...
+
+    $this['serializer'] = $this->share(function() use ($app) {
+        return \JMS\Serializer\SerializerBuilder::create()
+            ->setCacheDir($app['root_dir'].'/cache/serializer')
+            ->setDebug($app['debug'])
+            ->setPropertyNamingStrategy(new IdenticalPropertyNamingStrategy())
+            ->build();
+    });
+}

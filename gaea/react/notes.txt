@@ -1,0 +1,45 @@
+useEffect(() => {
+	document.title = title
+}, [title]);
+
+useEffect(() => {
+	const handler = (e) => {
+		setY(window.scrollY)
+	}
+	window.addEventListener('scroll', handler)
+	return () => {
+		window.removeEventListener('scroll', handler)
+	}
+}, []);
+
+const security = useMemo(() => {
+	return passwordSecurity(password)
+}, [password])
+
+
+const ref = useRef(null)
+useEffect(() => {
+	console.log(ref.current.offsetHeight)
+}, []);
+<div ref={ref}>
+
+const InfoMemo = memo(function Info() {
+...
+}
+
+const handleClick = useCallback(() => {
+...
+}, [])
+
+function Thing () {
+	return createPortal(return (JSX), document.body)
+}
+
+export default!!!
+const SingleLazy = lazy(() => import('./pages/Singles'))
+return <Suspense fallback={chargement}><SingleLazy/></Suspense>
+
+const theme = useContext(ThemeContext)
+<ThemeContext.Provider value="dark">
+...
+</ThemeContext.Provider>

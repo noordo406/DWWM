@@ -25,7 +25,7 @@ nightmare manifestation enabler		|	high-tech
 ouroboros engine					|	abstract
 idle engine							|	abstract
 metacomputer						|	abstract
-potential controller				|	abstract
+master controller					|	abstract
 concept eraser						|	abstract
 normality restorator				|	abstract
 
@@ -63,17 +63,17 @@ awesome stars						|	ascension		|	based on buildings built						|	building level
 +50
 
 clicking 
-wood | stone | copper | bronze | iron | aluminium | steel | obsidian | tungsten | uranium | titanium | cobalt | moonstone | mythril | superium | diamond | khamarack | perfectium | unobtainium | divinium | galaxium | universalite | oneirite
+wood | stone | copper | bronze | iron | aluminium | steel | obsidian | tungsten | uranium | titanium | cobalt | moonstone | mythril | superium | diamond | khamarack | soleilium | perfectium | unobtainium | divinium | galaxium | universalite | oneirite
 
 waster
 positive reinforcement | energy drinks | backpacks | sidearms | implants | neural enhancements | wasting techniques | leaderboards | wasting license | elite training | cloning vats | black gloves | speed potions | instant training | tools | exo skeletons
 pet racon
 
 racon
-silly costumes | toilet in every home | studies | metropolis | housings | feeding throughs | free trash | documentaries | free healthcare | villas | underground complex | research labs | super racon program | 
+silly costumes | toilet in every home | studies | housings | feeding throughs | free trash | documentaries | free healthcare | villas | underground complex | research labs | super racon program | 
 racon family
 friends : oppossums | red pandas | foxes | skunks | badgers | otters | moles | anteaters | weasels | wolverine | mongooses | brown bears | black bears | moon bears | polar bears | goats | cows | sheep | 
-rodent friends : mice | rats | hedgehogs | beavers | hamsters | guinea pigs | bunnies | jackrabbits | squirrels | chinchillas | marmots | porcupines | gerbils | shrews |
+rodent friends : mice | rats | hedgehogs | beavers | hamsters | guinea pigs | bunnies | jackrabbits | squirrels | chinchillas | marmots | porcupines | gerbils | shrews | lemmings
 exotic friends : capybaras | fennecs | platypi | armadillos | pangolins | megazostrodon | echidnas | jerboas | sugar gliders | flying squirrels | fruit bats | meerkats | panda bears | civets | wallabies | wombats
 feline friends : cats | manuls | caracals | servals | sphynxes | manx | lynx | ocelots | sand cats | cougars | leopard cats | siamese | persians | maine coons | munchkins | ragdolls | scottish folds | bengals | british shorthair
 feathery friends : parrots | kookaburas | toucans | robins | magpies | blue jays | swallows | kingfishers | sparrows | hummingbirds | peafowls | kiwis | pigeons | pūkekos | owls | mallards | canaries | crows | cuckoos | chickens | woodpeckers
@@ -171,7 +171,7 @@ full brain scan | dreamcatchers | sleep paralysis inducer | hypnosis | sensory d
 racon nightmare
 
 ouroboros engine
-the cookie cycle | exponentiation | nested engines | faster processing | virtualisation | sequentialisation | backup cookies | fractalisation | cookie kickstarter | cave full of gold coins | 
+the cookie cycle | exponentiation | nested engines | faster processing | virtualisation | sequentialisation | backup cookies | fractalisation | cookie kickstarter | cave full of gold coins | draconic dictionnary
 dracon
 
 idle engine
@@ -179,19 +179,19 @@ faster idling | incrementation | self-sustainability | additional clocks | flavo
 racon idler
 
 metacomputer
-error handler | arbitrary code execution | 2048-bit processor | spell-checking | code that does what you want it to do | decompiler | reprogramming reality for dummies | despaghettification | all the terraflops | quantum processor | memory editor | overclocking | save wipe | software update | vr headset | multithreading | code harvesting
+error handler | arbitrary code execution | 2048-bit processor | spell-checking | code that does what you want it to do | decompiler | programming for dummies | despaghettification | all the terraflops | quantum processor | memory editor | overclocking | save wipe | software update | vr headset | multithreading | code harvesting
 racon programmer
 
-potential controller
-inverse production | wasted potential | potential energy recycling | hijack | infinite potential | increased reserves | butterfly effect | difference accelerator
-racon replacer
+master controller
+inverse production | wasted potential | production redirection | cookie limiter | increased potential reserves | butterfly effect | difference accelerator | instruction book | destiny manipulation | rewrite physics | rewrite metaphysics | looking beyond the fourth wall
+racon controller
 
 concept eraser
 erase grandma | dedefintion | mind wipe | redundancy checks | purpose reestabilisher | axiomatic termination | blank replacement | babel protocol | identity reassignement | inverse ontology | word detector | upgrade
 gray animal with a masked face and a ringed tail
 
 normality restorator
-miniature improbability drive | universe desaturation | idle game devolution | alchemy labs | finger removal surgeries | retirement homes | timeline rewinding | deindustrialisation | mana catalysers | 
+miniature improbability drive | universe desaturation | idle game devolution | alchemy labs | finger removal surgeries | retirement homes | timeline rewinding | deindustrialisation | mana catalysers | project fill the earth | 
 perfectly normal racon
 
 autoclicker
@@ -292,7 +292,7 @@ waster
 cookie waster | hired help | co-op wasting | better with friends | popular | send dudes | brothers in arms | one for all, all for one | wasting with purpose | maybe the real wasting was the friends we made along the way | 
 
 racon
-cookie eater | animal tamer | silly little creatures | trash party | weird dogs | dumpster divers | sewer dwellers | furry friends | garbage eaters | 
+cookie eater | animal tamer | silly little creatures | trash party | weird dogs | dumpster divers | sewer dwellers | furry friends | garbage eaters | racon city
 
 crusher
 cookie crusher | biscuit basher | sugar smasher | chocolate chipper | breakfast breaker | snack snapper | wheat whacker | dough demolisher | flour flattener | 
@@ -326,7 +326,7 @@ cookie wasting corp
 cookie waster(tm) | intern | part-time job | contractor | employee | employee of the month | employee of the year | team leader | assistant manager | assistant to the manager | manager | ceo | corporate overlord | president of earth
 
 propaganda campaign
-cookie antagoniser | literally 1984 | you will waste the cookies and you will be happy | do it | i want you to waste cookies | big brother | i wake up -> there's another psyop | the big eye in the sky | wasting is virtue
+cookie antagoniser | literally 1984 | you will waste the cookies and you will be happy | do it | i want you to waste cookies | big brother | i wake up -> there's another psyop | the big eye in the sky | wasting is virtue | billions must waste | 
 
 rocket launch facility
 cookie launcher | reach for the stars | space race | rocket league | cosmic traveller | ludicrous speed | cookie space program | blasting off | spaceC
@@ -370,8 +370,8 @@ cookie idler | tick tock | until the end of time | perpetual motion machine | ti
 metacomputer
 rm cookie | virtual reality | system operator | code master | superadmin | deep into the code | functional | it just works | computer scientist | code monkey
 
-potential controller
-potential cookie waster | just waste more | what could have been | what will not be | crisis averted | better safe than sorry | higher highs | production stopper | 
+master controller
+cookie controller | just waste more | control delete | master of the universe | 
 
 concept eraser
 cookie unmaker | knowing what a cookie is by knowing what is isn't | blissful ignorance | therefore cookies aren't | imagine a world without cookies | total cookie death | rent-free no more | ctrl-z | 
@@ -392,7 +392,7 @@ dynamo & generator & extractor
 power producer | power play | electric man | i got the power | unlimited power
 
 wasting
-another cookie game? | casual waster | competitive waster | hardcore waster | billions must waste | cookie killing spree | cookie massacre | cookie rampage | cookie genocide | cookie overkill | ultimate destruction | and then there were none
+another cookie game? | casual waster | competitive waster | hardcore waster | cookie killing spree | cookie massacre | cookie rampage | cookie genocide | cookie overkill | ultimate destruction | and then there were none
 
 ascension
 i live again | snap back to reality | the end of all creation again | groundhog day | 
@@ -460,6 +460,9 @@ burger master in training
 burger master
 10th degree burger master
 burger deity
+chief burger deity
+executive burger deity
+supreme
 
 store owner
 franchise owner
@@ -484,3 +487,17 @@ lost production formula
 x divider, y time => y (x²-x)/x = y/x * (x-1)
 ex : 50, 1 => 1/50 * (50-1) = .98
 
+abundant
+plentiful
+common
+uncommon
+scarce
+rare
+exotic
+epic
+legendary
+mythical
+angelic
+prismatic
+oneiric
+infinite

@@ -1,0 +1,26 @@
+1° Créer une base de données d’utilisateurs
+Id				int(10)
+Nom				varchar(40)
+Prénom			varchar(40)
+email			varchar(40)
+adresse			varchar(40)
+tel				varchar(40)
+
+2° Afficher les informations dans un tableau bootstrap.
+
+3° ajouter un bouton supprimer(). Supprime un utilisateur du tableau.
+
+4° Ajouter une autre table contenant les possessions de la personne
+Id				int(1)
+Nom				varchar(40)
+Valeur			float
+Type			varchar(40)
+
+5° Afficher ces informations sur une autre page quand on clique sur le nom de la personne. On doit retrouver les informations de la personne ainsi que ses possessions dans un tableau
+
+6° Ajoutez un champ birthDate dans la table utilisateur
+birthDate		date
+
+7° Créer un service(UserService) qui permet de calculer son âge. Et ensuite afficher son âge dans le premier tableau affichant tous les utilisateurs.
+
+8° Créer une nouvelle page en utilisant les formulaires Symfony permettant d'ajouter un nouvel utilisateur

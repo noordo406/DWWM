@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Possessions
+{% endblock %}
+
+{% block body %}
+	<div class="container">
+		<h1>Possessions de
+			{{ user.prenom }}</h1>
+		<table class="table">
+			<thead>
+				<th>Id</th>
+				<th>Nom</th>
+				<th>Prénom</th>
+				<th>E-mail</th>
+				<th>Adresse</th>
+				<th>Téléphone</th>
+				<th>Date de naissance</th>
+				<th>Age</th>
+			</thead>
+			<tr>
+				<td>{{ user.id }}</td>
+				<td>{{ user.nom }}</td>
+				<td>{{ user.prenom }}</td>
+				<td>{{ user.email }}</td>
+				<td>{{ user.adresse }}</td>
+				<td>{{ user.tel }}</td>
+				<td>{{ user.birthDate|date('d-m-Y') }}</td>
+				<td>{{ user.age }}
+					ans</td>
+			</tr>
+	</table>
+	<table class="table">
+		<thead>
+			<th>Id</th>
+			<th>Nom</th>
+			<th>Valeur</th>
+			<th>Type</th>
+		</thead>
+		{% for possession in possessions %}
+			<tr>
+				<td>{{ possession.id }}</td>
+				<td>{{ possession.nom }}</td>
+				<td>{{ possession.valeur }}</td>
+				<td>{{ possession.type }}</td>
+			</tr>
+		{% endfor %}
+	</tr>
+</table>
+<a href="{{ path('app_homepage') }}">Retour</a></div>{% endblock %}

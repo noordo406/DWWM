@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Utilisateurs
+{% endblock %}
+
+{% block body %}
+	<div class="container">
+		<div {{ react_component('Hello', { 'fullName': 'Quentin' }) }}></div>
+		<table class="table" {{ react_component('TableauUsers', { 'users': users|serialize('json', { groups: 'list_user'}) }) }}></table>
+		
+		<div {{ react_component('AjouterUser', {'form': form(form)}) }}></div>
+		{# <a href="{{ path('app_ajouter') }}"><button class="btn btn-primary">Ajouter</button></a> #}
+	</div>
+{% endblock %}

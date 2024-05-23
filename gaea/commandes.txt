@@ -1,0 +1,70 @@
+nouveau projet : symfony new [dossier]
+serveur : symfony serve -d
+controller : src/Controller/ThingController.php
+twig templates : composer require templates
+check recipe utpdate : composer recipes
+twig templates : templates
+{{}} print
+{##} comment
+{%%} do
+thing|filter
+{% extends 'webpage.html.twig' %}
+{% block blockname %}default {{parent()}}{% endblock %}
+
+debug tools : composer require debug
+dump() dd()
+
+resources in public
+composer require symfony/asset
+asset() link to public
+
+link : {{ path('app_homepage', {slug: 'name'}) }}
+
+composer require encore:1.14.0
+composer require symfony/stimulus-bundle
+yarn install
+yarn watch : detects css/js in assets folder and automatically compiles them in public
+yarn add bootstrap --dev
+yarn add @fontsource/roboto-condensed --dev
+yarn add @fortawesome/fontawesome-free --dev
+yarn add axios --dev
+
+composer require symfony/ux-turbo
+yarn install --force
+
+{{ date|date('Y-m-d'}}
+composer require knplabs/knp-time-bundle
+{{ date|ago }}
+
+composer require symfony/http-client
+
+$cache->get('cachekey', function(CacheItemInterface $cacheItem) use ($httpClient) {
+	$cacheitem->expiresAfter(s);
+	function to run if no result in cache
+}
+
+php bin/console cache:pool:list
+php bin/console cache:pool:clear cache.app
+php bin/console cache:clear (for current env)
+ --env=(env)
+
+
+cache.yaml 
+       app: '%cache_adapter%'
+	  
+services.yaml
+parameters:
+    cache_adapter: 'cache.adapter.filesystem'
+
+when@dev:
+    parameters:
+        cache_adapter: 'cache.adapter.array'
+		
+services:
+    _defaults:
+        bind:
+            'bool $isDebug': '%kernel.debug%'
+			
+composer require "doctrine:^2.2" "doctrine/annotations:^1.14"
+symfony console doctrine:database:create
+php bin/console make:entity
