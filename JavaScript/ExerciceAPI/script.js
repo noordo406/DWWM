@@ -11,7 +11,6 @@ async function initCurrencies(){
             option.textContent = `${currency[0]}`
             option.value = `${currency[0]}`
             currencylist[currency[0]] = currency[1]
-            currency[0]
             let option2 = option.cloneNode(true)
             if (currency[0] == 'USD') {
                 option.selected = true
@@ -44,7 +43,8 @@ document.querySelector('button').addEventListener('click', async function(){
     const currency2 = document.querySelector("#monnaie2").value
     const amount = document.querySelector("#input").value
     const rate = await convert(currency1, currency2)
-    document.querySelector("#output").innerHTML = `${amount} ${currencylist[currency1]} équivaut à ${amount*rate} ${currencylist[currency2]}<br>(1 ${currency1} = ${rate} ${currency2})`
+    document.querySelector("#output").innerHTML =
+    `${amount} ${currencylist[currency1]} équivaut à ${(amount*rate).toFixed(4)}${currencylist[currency2]}<br>(1 ${currency1} = ${rate} ${currency2})`
     
 })
 initCurrencies()
