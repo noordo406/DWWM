@@ -44,7 +44,7 @@ document.querySelector('button').addEventListener('click', async function(){
     const amount = document.querySelector("#input").value
     const rate = await convert(currency1, currency2)
     document.querySelector("#output").innerHTML =
-    `${amount} ${currencylist[currency1]} équivaut à ${(amount*rate).toFixed(4)}${currencylist[currency2]}<br>(1 ${currency1} = ${rate} ${currency2})`
+    `${amount} ${currencylist[currency1]} équivaut à ${(amount*rate).toFixed(4)} ${currencylist[currency2]}<br>(1 ${currency1} = ${rate} ${currency2})`
     
 })
 initCurrencies()
