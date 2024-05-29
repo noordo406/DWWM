@@ -1,7 +1,7 @@
 gerer deployer services (serveurs) dans conteneurs
 utilisé principalement par les devops
 
-conteneur = ensemble de programmes utilisés pour déployer un service
+conteneur = package logiciel qui comprend les dépendances (framework, librairies,...) nécessaire à l'execution d'une app
 ex php, mysql, nginx/apache/ubuntu
 
 images = modèle qui contient les infos pour créer un conteneur
@@ -11,7 +11,7 @@ docker hub = site pour rechercher une image
 dockerfile = script pour créer une image
 docker-compose.yml = fichier pour créer une configuration de conteneurs reliés 
 
-intêrets de docker = gère automatiquement les requêtes et le transfert d'infos pour plusieurs sites, test de versions de logiciels, compatibilité de conteneurs sur plusieurs os
+intêrets de docker = gère automatiquement les dépendances et versions d'une application + compatibilité os
 
 installation :
 verifier virtualisation

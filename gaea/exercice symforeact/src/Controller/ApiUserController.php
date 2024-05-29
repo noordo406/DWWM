@@ -12,7 +12,6 @@ use Symfony\Component\Serializer\SerializerInterface;
 
 class ApiUserController extends AbstractController
 {
-    // retourner liste users
     #[Route('/api/users', name: 'api_get_users')]
     public function getUsers(UserRepository $userRepository, UserService $userService, SerializerInterface $serializer): Response
     {
