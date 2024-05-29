@@ -9,7 +9,7 @@ image -> conteneur ~= classe -> instance
 
 docker hub = site pour rechercher une image
 dockerfile = script pour créer une image
-docker-compose.yml = fichier pour créer une configuration de conteneurs reliés 
+docker-compose.yml = fichier pour créer une configuration de conteneurs reliés les uns aux autres
 
 intêrets de docker = gère automatiquement les dépendances et versions d'une application + compatibilité os
 
@@ -21,7 +21,7 @@ windows subsystem for linux
 
 
 > cmd
-créer conteneur hellow world: docker run hello-world
+créer conteneur hello world: docker run hello-world
 lister conteneurs : docker ps -a / docker container ls -a
 lister images : docker images / docker image ls
 supprimer container : docker rm [ID] [ID2] (ou premier caractères)
