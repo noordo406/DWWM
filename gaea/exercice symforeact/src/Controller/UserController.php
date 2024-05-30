@@ -85,9 +85,14 @@ class UserController extends AbstractController
     public function supprimer(UserRepository $userRepository, EntityManagerInterface $entityManager, string $slug): Response
     {
         $user = $userRepository->findOneBy(['id' => $slug]);
-        $entityManager->remove($user);
-        $entityManager->flush();
-        $this->addFlash('success', 'Utilisateur supprimé avec succès');
+        if ($user) {
+            $entityManager->remove($user);
+            $entityManager->flush();
+            $this->addFlash('success', 'Utilisateur supprimé avec succès');
+        } else {
+            $this->addFlash('error', "L'utilisateur n'existe pas");
+            return $this->redirectToRoute('app_homepage');
+        }
         return $this->redirectToRoute('app_homepage');
     }
 }
